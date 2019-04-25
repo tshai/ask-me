@@ -1,0 +1,3113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AddToBlackList" xml:space="preserve">
+    <value>הוסיפי לרשימה השחורה</value>
+  </data>
+  <data name="GivingPhoneToOnline" xml:space="preserve">
+    <value>נותנת טלפון ללקוחות מחוברים</value>
+  </data>
+  <data name="MainPage" xml:space="preserve">
+    <value>עמוד ראשי</value>
+  </data>
+  <data name="metaDescription" xml:space="preserve">
+    <value>444 מצלמות הינו אתר הוידאו צאטים והמצלמות הראשון בישראל המשלב בתוכו  שעושות 444 מול המצלמה מביתן הפרטי</value>
+  </data>
+  <data name="MicrophoneOperates" xml:space="preserve">
+    <value>מפעילה מיקרופון</value>
+  </data>
+  <data name="NewInSite" xml:space="preserve">
+    <value>חדשה באתר</value>
+  </data>
+  <data name="OffLineGirl" xml:space="preserve">
+    <value>איננה כרגע</value>
+  </data>
+  <data name="OldInSite" xml:space="preserve">
+    <value>ותיקה באתר</value>
+  </data>
+  <data name="OpenMic" xml:space="preserve">
+    <value>מפעילה מיקרופון</value>
+  </data>
+  <data name="PhoneGivesCustomers" xml:space="preserve">
+    <value>נותנת טלפון ללקוחות</value>
+  </data>
+  <data name="sex" xml:space="preserve">
+    <value>444</value>
+  </data>
+  <data name="Cameras" xml:space="preserve">
+    <value>מצלמות</value>
+  </data>
+  <data name="Enter" xml:space="preserve">
+    <value>כניסה</value>
+  </data>
+  <data name="Help" xml:space="preserve">
+    <value>עזרה</value>
+  </data>
+  <data name="Main" xml:space="preserve">
+    <value>ראשי</value>
+  </data>
+  <data name="Needed" xml:space="preserve">
+    <value>דרושות</value>
+  </data>
+  <data name="Registration" xml:space="preserve">
+    <value>הרשמה</value>
+  </data>
+  <data name="Regulations" xml:space="preserve">
+    <value>תקנון</value>
+  </data>
+  <data name="Support" xml:space="preserve">
+    <value>תמיכה</value>
+  </data>
+  <data name="isLiveShow" xml:space="preserve">
+    <value>האם השידור חי ?</value>
+  </data>
+  <data name="ShowLiveAndNotRecorded" xml:space="preserve">
+    <value>השידור תמיד חי ולא מוקלט</value>
+  </data>
+  <data name="AreGirlsIsraeli" xml:space="preserve">
+    <value>האם ה ?</value>
+  </data>
+  <data name="EmailCatch" xml:space="preserve">
+    <value>אימייל זה תפוס</value>
+  </data>
+  <data name="CanWebSiteWorkOnCellphone" xml:space="preserve">
+    <value>? האם אפשר להפעיל את האתר בטלפון סלולרי</value>
+  </data>
+  <data name="TheSiteIsForPC" xml:space="preserve">
+    <value>האתר נועד למחשב בלבד.אמנם יש מספר טלפונים שתומכים בשירות אבל ההתחייבות שלנו היא רק למחשב</value>
+  </data>
+  <data name="WeDontGuarantee" xml:space="preserve">
+    <value>כרגע איננו מתחייבים שתוכל להפעיל את המצלמה שלך אלא רק היא את שלה,וזאת מכיוון שיש תוכנות או מקומות עבודה  שחוסמים שירות זה. בכל אופן אתה תמיד תוכל לראות אותה</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>אימייל</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>סיסמא</value>
+  </data>
+  <data name="PressToEnter" xml:space="preserve">
+    <value>לחץ לכניסה</value>
+  </data>
+  <data name="UnlikeACreditCard" xml:space="preserve">
+    <value>בניגוד לכרטיס אשראי בטלפון אין לנו אפשרות לזכות אותך לאחר ביצוע השיחה</value>
+  </data>
+  <data name="CanNotOpen" xml:space="preserve">
+    <value>אין אפשרות לפתוח יותר מחשבון אחד</value>
+  </data>
+  <data name="CantGetInTo" xml:space="preserve">
+    <value>אני לא מצליח להיכנס מה יכולה להיות הסיבה?</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>סגור</value>
+  </data>
+  <data name="DueToManyErrors" xml:space="preserve">
+    <value>עקב ריבוי טעויות</value>
+  </data>
+  <data name="EmailPhoneID" xml:space="preserve">
+    <value>אימייל / טלפון / תעודת זהות</value>
+  </data>
+  <data name="forgetPass" xml:space="preserve">
+    <value>שכחת סיסמא ? [ לחץ כאן ]</value>
+  </data>
+  <data name="Intendedforages18" xml:space="preserve">
+    <value>השירות מיועד לגילאי 18 ומעלה !</value>
+  </data>
+  <data name="InvalidUsername" xml:space="preserve">
+    <value>שם המשתמש אינו תקין</value>
+  </data>
+  <data name="LogInPanel" xml:space="preserve">
+    <value>&lt;ul&gt;
+                    &lt;li&gt;כאשר הינך נרשם בפעם הראשונה ורוכש דקות,האתר מייצר לך קוד רנדומלי שזהו בעצם הכרטיס
+                        שלך.&lt;br /&gt;
+                        בתוך כרטיס זה שמורות 4 הספרות האחרונות מצידו הקידמי של כרטיס האשראי אשר משמשות אותך
+                        כסיסמא.
+                        &lt;br /&gt;
+                        במידה ורכשת דקות נוספות עם כרטיסים שונים הסיסמא נשארת זהה לרכישה הראשונה &lt;/li&gt;
+                    &lt;li&gt;באפשרותך לשנות סיסמא זו לאחר כניסתך לאתר ולבחור במקום זה כל סיסמא שתרצה &lt;/li&gt;
+                    &lt;li&gt;לקבלת עזרה מנציג &lt;a href="agas_contact.aspx"&gt;לחץ כאן&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;</value>
+  </data>
+  <data name="loginTitle" xml:space="preserve">
+    <value>&lt;h2&gt;
+            כניסה לרשומים&lt;/h2&gt;
+        &lt;div&gt;
+            אנא הכנס את הפרטים שאיתם נרשמת לאתר אימייל או טלפון או תעודת זהות + ארבעת הספרות
+            האחרונות של כרטיס האשראי או הסיסמא שבחרת
+        &lt;/div&gt;</value>
+  </data>
+  <data name="Pass4to8" xml:space="preserve">
+    <value>הקלד סיסמא בת 4 עד 8 תווים</value>
+  </data>
+  <data name="PasswordOr4digits" xml:space="preserve">
+    <value>סיסמא / 4 ספרות אחרונות בכרטיס אשראי</value>
+  </data>
+  <data name="PressEndRegistration" xml:space="preserve">
+    <value>לחץ לסיום ההרשמה</value>
+  </data>
+  <data name="SignInChatClickHere" xml:space="preserve">
+    <value>כניסה לצאט&lt;br /&gt;לחץ כאן</value>
+  </data>
+  <data name="TemporarilyLocked" xml:space="preserve">
+    <value>הכניסה ננעלה זמנית אנא נסה מאוחר יותר</value>
+  </data>
+  <data name="TheseDetailsNotInSystem" xml:space="preserve">
+    <value>פרטים אלה לא במערכת</value>
+  </data>
+  <data name="TypeEmail" xml:space="preserve">
+    <value>הקלד אימייל</value>
+  </data>
+  <data name="YouGotAccount" xml:space="preserve">
+    <value>קיים ברשותך כרטיס לחץ כאן לכניסה</value>
+  </data>
+  <data name="YourLoginDetails" xml:space="preserve">
+    <value>פרטי הכניסה שלך לאתר</value>
+  </data>
+  <data name="ArePerformersProfessional" xml:space="preserve">
+    <value>האם הנערות ליווי מקצועיות?</value>
+  </data>
+  <data name="DoesPerformerCanSee" xml:space="preserve">
+    <value>האם הבחורה יכולה לדעת אם כבר הייתי אצלה פעם או יכולה לדעת פרטים מזהים לגבי?</value>
+  </data>
+  <data name="Age" xml:space="preserve">
+    <value>גיל</value>
+  </data>
+  <data name="CommunicationsTest" xml:space="preserve">
+    <value>בדיקת תקשורת</value>
+  </data>
+  <data name="ContactUsIssueSite" xml:space="preserve">
+    <value>פנו אלינו בכל נושא באתר או שירותיו</value>
+  </data>
+  <data name="CustomerServiceNewMessage" xml:space="preserve">
+    <value>פנייה חדשה בשירות הלקוחות של אגס</value>
+  </data>
+  <data name="EmailAddressPleaseTry" xml:space="preserve">
+    <value>כתובת המייל אינה תקינה , אנא נסה</value>
+  </data>
+  <data name="ExtendedSupport" xml:space="preserve">
+    <value>תמיכה מורחבת</value>
+  </data>
+  <data name="IDMemberOnly" xml:space="preserve">
+    <value>ת.ז. *למנויים בלבד</value>
+  </data>
+  <data name="Message" xml:space="preserve">
+    <value>הודעה</value>
+  </data>
+  <data name="MorePictures" xml:space="preserve">
+    <value>תמונות נוספות</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>טלפון</value>
+  </data>
+  <data name="ReferenceHasBeenSent" xml:space="preserve">
+    <value>הפניה נשלחה ותטופל בהקדם האפשרי</value>
+  </data>
+  <data name="RegisterClickHere" xml:space="preserve">
+    <value>להרשמה&lt;br /&gt; לחץ כאן</value>
+  </data>
+  <data name="RequiresContactEmail" xml:space="preserve">
+    <value>יצירת קשר מחייבת כתובת אימייל או מספר טלפון על מנת שנוכל לצור עימך  קשר</value>
+  </data>
+  <data name="SpeedTest" xml:space="preserve">
+    <value>בדיקת מהירות</value>
+  </data>
+  <data name="SundayThursday" xml:space="preserve">
+    <value>בימים א'-ה' בין השעות 9:00-18:00</value>
+  </data>
+  <data name="TooShortNotice" xml:space="preserve">
+    <value>הודעה קצרה מדי , אנא כתבו כמה מילים לפחות</value>
+  </data>
+  <data name="YourPersonalDetails" xml:space="preserve">
+    <value>פרטיך האישיים שמורים ומוגנים היטב,ואפילו עובדי החברה בעלי גישה חתומים על הסכם סודיות קפדני ביותר</value>
+  </data>
+  <data name="termsMeta" xml:space="preserve">
+    <value>תקנון ותנאי שימוש לאתר מצלמות 444</value>
+  </data>
+  <data name="ContactUs" xml:space="preserve">
+    <value>צור קשר</value>
+  </data>
+  <data name="SignIN" xml:space="preserve">
+    <value>הרשמה</value>
+  </data>
+  <data name="AgasNeedeMinReq" xml:space="preserve">
+    <value>&lt;h3&gt;
+                    דרישות סף&lt;/h3&gt;
+                &lt;ul class="clearUList"&gt;
+                    &lt;li&gt;אינטרנט מהיר ברוחב פס מינימלי של 5 מגה לפחות&lt;/li&gt;
+                    &lt;li&gt;מצלמת אינטרנט באיכות טובה&lt;/li&gt;
+                    &lt;li&gt;מחשב עם זיכרון 2 ג'יגה לפחות&lt;/li&gt;
+                &lt;/ul&gt;</value>
+  </data>
+  <data name="metaDescriptionAgasNeeded" xml:space="preserve">
+    <value>דרושות  לאתר אגס 444</value>
+  </data>
+  <data name="StartWorkingPress" xml:space="preserve">
+    <value>לתחילת עבודה&lt;br /&gt; לחץ כאן</value>
+  </data>
+  <data name="WebcamsRequired" xml:space="preserve">
+    <value>אגס מצלמות 444 - דרושות</value>
+  </data>
+  <data name="NewMessage" xml:space="preserve">
+    <value>הודעה חדשה</value>
+  </data>
+  <data name="Have" xml:space="preserve">
+    <value>ברשותך</value>
+  </data>
+  <data name="CantOpenTowWin" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PleaseWait" xml:space="preserve">
+    <value>אנא המתן</value>
+  </data>
+  <data name="SystemMessage" xml:space="preserve">
+    <value>הודעת מערכת</value>
+  </data>
+  <data name="approve" xml:space="preserve">
+    <value>אשר</value>
+  </data>
+  <data name="Rating" xml:space="preserve">
+    <value>דרג</value>
+  </data>
+  <data name="Send" xml:space="preserve">
+    <value>שלח</value>
+  </data>
+  <data name="YouHave" xml:space="preserve">
+    <value> ברשותך </value>
+  </data>
+  <data name="t" xml:space="preserve">
+    <value>עלי</value>
+  </data>
+  <data name="CantRankDueToResons" xml:space="preserve">
+    <value>אין באפשרותך לדרג מהסיבות האלו :</value>
+  </data>
+  <data name="CantVoteTwiceAday" xml:space="preserve">
+    <value>אין אפשרות להצביע פעמיים באותו יום</value>
+  </data>
+  <data name="CantWriteReviewToSameGirl" xml:space="preserve">
+    <value>אין אפשרות לרשום חוות דעת לאותה בחורה יותר מפעם ביום</value>
+  </data>
+  <data name="CantWriteReviewWithoutChat" xml:space="preserve">
+    <value>אין אפשרות לרשום חוות דעת על בחורה שעדיין לא היית איתה בצ'ט</value>
+  </data>
+  <data name="DescriptionRateGirls" xml:space="preserve">
+    <value>הסבר על דירוג הבחורות</value>
+  </data>
+  <data name="Microphone" xml:space="preserve">
+    <value>מיקרופון :</value>
+  </data>
+  <data name="MsgTitle" xml:space="preserve">
+    <value>כותרת ההודעה</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>שם</value>
+  </data>
+  <data name="Rank" xml:space="preserve">
+    <value>דרג את</value>
+  </data>
+  <data name="Rank2" xml:space="preserve">
+    <value>דירוג</value>
+  </data>
+  <data name="Region" xml:space="preserve">
+    <value>איזור מגורים</value>
+  </data>
+  <data name="SaveReview" xml:space="preserve">
+    <value>שמור&gt;&gt;</value>
+  </data>
+  <data name="SendMsg" xml:space="preserve">
+    <value>שלח הודעה</value>
+  </data>
+  <data name="UsersReviews" xml:space="preserve">
+    <value>תגובות של גולשים</value>
+  </data>
+  <data name="UsersScore" xml:space="preserve">
+    <value>דירוג גולשים</value>
+  </data>
+  <data name="WriteReviewHere" xml:space="preserve">
+    <value>רשום כאן את הביקורת</value>
+  </data>
+  <data name="Action" xml:space="preserve">
+    <value>פעולה</value>
+  </data>
+  <data name="CardReset" xml:space="preserve">
+    <value>באפשרותך לאפס את חשבונך-איפוס זה מוחק רק את התצוגה שרואים בכרטיס זה ועדיין משאיר
+            לך את הדקות שברשותך</value>
+  </data>
+  <data name="ChatRoom" xml:space="preserve">
+    <value>מקום הצאט</value>
+  </data>
+  <data name="ComputerAddress" xml:space="preserve">
+    <value>כתובת מחשב</value>
+  </data>
+  <data name="creditCompany" xml:space="preserve">
+    <value>סליקת אשראי</value>
+  </data>
+  <data name="last4digit" xml:space="preserve">
+    <value>4 ספרות האחרונות</value>
+  </data>
+  <data name="LoginTime" xml:space="preserve">
+    <value>שעת התחברות</value>
+  </data>
+  <data name="LogoutTime" xml:space="preserve">
+    <value>שעת התנתקות</value>
+  </data>
+  <data name="OrderDate" xml:space="preserve">
+    <value>תאריך הזמנה</value>
+  </data>
+  <data name="Purchases" xml:space="preserve">
+    <value>רכישות</value>
+  </data>
+  <data name="ResetAccount" xml:space="preserve">
+    <value>אפס חשבון</value>
+  </data>
+  <data name="TimeInMinutes" xml:space="preserve">
+    <value>זמן בדקות</value>
+  </data>
+  <data name="TimeInSeconds" xml:space="preserve">
+    <value>זמן בשניות</value>
+  </data>
+  <data name="TimeOfUse" xml:space="preserve">
+    <value>זמן שימוש</value>
+  </data>
+  <data name="Use" xml:space="preserve">
+    <value>שימוש</value>
+  </data>
+  <data name="ClickHere" xml:space="preserve">
+    <value>לחץ כאן</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>תאריך</value>
+  </data>
+  <data name="MoreDetails16digitCC_error" xml:space="preserve">
+    <value>במידה והינך מעוניין בפרטים נוספים לחץ כאן</value>
+  </data>
+  <data name="MsgHasBeenReaded" xml:space="preserve">
+    <value>ההודעה נקראה</value>
+  </data>
+  <data name="MsgNotBeenReaded" xml:space="preserve">
+    <value>ההודעה עדיין לא נקראה</value>
+  </data>
+  <data name="NewMailBlink" xml:space="preserve">
+    <value>כאשר הודעה חדשה מתקבלת מעטפה תהבהב לך</value>
+  </data>
+  <data name="ReadMsg" xml:space="preserve">
+    <value>קרא הודעה</value>
+  </data>
+  <data name="seeMsgFromGirlOrAdministration" xml:space="preserve">
+    <value>בתיבת דואר זו אתה יכול לראות הודעות שקיבלת מאו מהנהלת האתר</value>
+  </data>
+  <data name="SentBy" xml:space="preserve">
+    <value>נשלח ע"י</value>
+  </data>
+  <data name="Soon" xml:space="preserve">
+    <value>בקרוב</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>סטטוס</value>
+  </data>
+  <data name="AcceptEmails" xml:space="preserve">
+    <value>מקבל מיילים מהאתר ומהבחורות</value>
+  </data>
+  <data name="AddPicToProfile" xml:space="preserve">
+    <value>הוסף תמונות לכרטיסך</value>
+  </data>
+  <data name="AddPictures" xml:space="preserve">
+    <value>הוספת תמונות</value>
+  </data>
+  <data name="CanOnlyUploadJPG" xml:space="preserve">
+    <value>אפשרי להעלות רק תמונות מסוג jpg</value>
+  </data>
+  <data name="ClickToActivateEmail" xml:space="preserve">
+    <value>לחץ כאן לאישור המייל שלך</value>
+  </data>
+  <data name="DeletePic" xml:space="preserve">
+    <value>מחק את התמונה</value>
+  </data>
+  <data name="DoNotAcceptEmails" xml:space="preserve">
+    <value>לא מקבל מיילים</value>
+  </data>
+  <data name="EmailActivated" xml:space="preserve">
+    <value>האימייל עבר אקטיבציה :</value>
+  </data>
+  <data name="EmailActivationToSexWebCam" xml:space="preserve">
+    <value>אישור אימייל לאתר מצלמות 444</value>
+  </data>
+  <data name="EmailInUse" xml:space="preserve">
+    <value>אימייל תפוס</value>
+  </data>
+  <data name="EmailNotStandard" xml:space="preserve">
+    <value>האימייל לא תיקני</value>
+  </data>
+  <data name="EmailSaved_ClickOnLink" xml:space="preserve">
+    <value>האימייל נשמר-ברגע זה נשלח אלייך אימייל לאישור עלייך ללחוץ על הקישור בתוכו כדי להפעיל את המייל שלך</value>
+  </data>
+  <data name="EmailSettings" xml:space="preserve">
+    <value>הגדרות אימייל</value>
+  </data>
+  <data name="EmailsFromSite" xml:space="preserve">
+    <value>אימיילים מהאתר</value>
+  </data>
+  <data name="FaildUploadPic" xml:space="preserve">
+    <value>העלאת התמונה נכשלה</value>
+  </data>
+  <data name="InfoSaved" xml:space="preserve">
+    <value>המידע נשמר</value>
+  </data>
+  <data name="InsetEmail" xml:space="preserve">
+    <value>הקלד אימייל</value>
+  </data>
+  <data name="MailServerBusy" xml:space="preserve">
+    <value>שרת הדואר שלנו עמוס כרגע מא נסה מאוחר יותר</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>לא</value>
+  </data>
+  <data name="NoActiveEmail" xml:space="preserve">
+    <value>אין אימייל פעיל</value>
+  </data>
+  <data name="OnlyGirlsCanSeePics" xml:space="preserve">
+    <value>רק היכולות לראות את התמונות</value>
+  </data>
+  <data name="PicUploadSuccess" xml:space="preserve">
+    <value>התמונה הועלתה בהצלחה</value>
+  </data>
+  <data name="SaveEmail" xml:space="preserve">
+    <value>שמור אימייל</value>
+  </data>
+  <data name="SendEmailToApprove" xml:space="preserve">
+    <value>שלח לי מייל לאישור</value>
+  </data>
+  <data name="WelcomeToSexWebCam" xml:space="preserve">
+    <value>ברוך הבא לאתר מצלמות 444</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>כן</value>
+  </data>
+  <data name="Card16Digit" xml:space="preserve">
+    <value>רכוש דקות בעזרת&lt;br /&gt;
+כרטיס אשראי בעל 16 ספרות</value>
+  </data>
+  <data name="CustomerInformationManagement" xml:space="preserve">
+    <value>ניהול פרטי לקוח</value>
+  </data>
+  <data name="ErrorInDataTransfer" xml:space="preserve">
+    <value>שגיאה בהעברת הנתונים</value>
+  </data>
+  <data name="ListOfGIrlsWhoBlockedYou" xml:space="preserve">
+    <value>להלן רשימת השחסמו את כרטיסך</value>
+  </data>
+  <data name="MustComposed6To8Digits" xml:space="preserve">
+    <value>הסיסמא חייבת להכיל בין 6 ל 8 מספרים</value>
+  </data>
+  <data name="MustSelectPass6To8" xml:space="preserve">
+    <value>עליך לבחור סיסמא בין 6 ל 8 מספרים</value>
+  </data>
+  <data name="UpdateDetails" xml:space="preserve">
+    <value>עדכון פרטים</value>
+  </data>
+  <data name="UserNum" xml:space="preserve">
+    <value>מספר חבר :</value>
+  </data>
+  <data name="VisibleMemberNumber" xml:space="preserve">
+    <value>מספר חבר גלוי</value>
+  </data>
+  <data name="Chat" xml:space="preserve">
+    <value>צ'ט</value>
+  </data>
+  <data name="FullRefund" xml:space="preserve">
+    <value>&lt;font style='color:red;font-weight:bold;font-size:14px'&gt;זיכוי מלא&lt;/font&gt;</value>
+  </data>
+  <data name="Game" xml:space="preserve">
+    <value>משחק</value>
+  </data>
+  <data name="Girl" xml:space="preserve">
+    <value>&lt;label style='color:blue'&gt;בחורה&lt;/label&gt;</value>
+  </data>
+  <data name="Guy" xml:space="preserve">
+    <value>&lt;label style='color:green'&gt;בחור&lt;/label&gt;</value>
+  </data>
+  <data name="Regular" xml:space="preserve">
+    <value>רגיל</value>
+  </data>
+  <data name="AndCantBecanceled" xml:space="preserve">
+    <value>ובלתי ניתנת לביטול&lt;br&gt;</value>
+  </data>
+  <data name="CantBeCanceled" xml:space="preserve">
+    <value>לידיעתך העברה זו לא ניתנת לביטול לאחר שביצעת אותה!&lt;br&gt;</value>
+  </data>
+  <data name="CantSendMsgLessThen10Seconds" xml:space="preserve">
+    <value>אין אפשרות לשלוח הודעה נוספת בפחות מ 10 שניות</value>
+  </data>
+  <data name="CheckYourApproval" xml:space="preserve">
+    <value>עליך לסמן את הסכמתך</value>
+  </data>
+  <data name="ClickBehindScenes" xml:space="preserve">
+    <value>') style='color:white'&gt;לחץ לצפיה מאחורי הקלעים&lt;/a&gt;</value>
+  </data>
+  <data name="ClickFinalOperation" xml:space="preserve">
+    <value>לחיצה על הכפתור תבצע פעולה סופית&lt;br&gt;</value>
+  </data>
+  <data name="ClickToFinish" xml:space="preserve">
+    <value> לחץ לסיום</value>
+  </data>
+  <data name="DontHaveEnoughTIme" xml:space="preserve">
+    <value>אין ברשותך מספיק דקות בחשבון ! עליך להטעין את חשבונך</value>
+  </data>
+  <data name="FiveMinutes" xml:space="preserve">
+    <value>5 דקות </value>
+  </data>
+  <data name="ForbiddenToAskTips" xml:space="preserve">
+    <value>על הנאסר לבקש טיפים</value>
+  </data>
+  <data name="GirlDontBother" xml:space="preserve">
+    <value>אסור ללהטריד בנושא הטיפים !</value>
+  </data>
+  <data name="GirlGetMsgForTip" xml:space="preserve">
+    <value>הבחורה תקבל הודעה עם המספר חבר שלך ברגע שהטיפ יועבר&lt;br&gt;</value>
+  </data>
+  <data name="GirlNumDidntReceived" xml:space="preserve">
+    <value>לא נקלט מספר הבחורה</value>
+  </data>
+  <data name="Important" xml:space="preserve">
+    <value>חשוב !</value>
+  </data>
+  <data name="InThisPageTip" xml:space="preserve">
+    <value>בעמוד זה באפשרותך לתת טיפ ל</value>
+  </data>
+  <data name="LetUsKnowTip" xml:space="preserve">
+    <value>במידה ובחורה מסויימת תדרוש זאת נודה לך אם תודיע לנו</value>
+  </data>
+  <data name="Max1Chars" xml:space="preserve">
+    <value>עוד מקסימום %1 תווים</value>
+  </data>
+  <data name="MsgSent20Seconds" xml:space="preserve">
+    <value>ההודעה נשלחה! חוייבת ב 20 שניות</value>
+  </data>
+  <data name="NoMsgHistoryBetweenYou" xml:space="preserve">
+    <value>אין היסטוריית הודעות בינכם.</value>
+  </data>
+  <data name="ReadAndUnderstand" xml:space="preserve">
+    <value> קראתי והבנתי את הפעולה</value>
+  </data>
+  <data name="TenMinutes" xml:space="preserve">
+    <value>10 דקות </value>
+  </data>
+  <data name="TransferCarried" xml:space="preserve">
+    <value>ההעברה בוצעה</value>
+  </data>
+  <data name="TransferNotCarried" xml:space="preserve">
+    <value>ההעברה לא בוצעה</value>
+  </data>
+  <data name="TwentyMinutes" xml:space="preserve">
+    <value>20 דקות </value>
+  </data>
+  <data name="TwoMinutes" xml:space="preserve">
+    <value>2 דקות </value>
+  </data>
+  <data name="YouAccountChargeForMsg" xml:space="preserve">
+    <value>הטיפ יורד ממכסת הדקות שבחשבונך</value>
+  </data>
+  <data name="YouGotRightForService" xml:space="preserve">
+    <value>זכותך לקבל את השירות המקסימלי גם ללא מתן טיפ</value>
+  </data>
+  <data name="YouReceived" xml:space="preserve">
+    <value>&lt;label style='color:yellow;font-weight:bold;'&gt;קיבלת&lt;/label&gt;</value>
+  </data>
+  <data name="YouSent" xml:space="preserve">
+    <value>שלחת</value>
+  </data>
+  <data name="EmailForSendPass" xml:space="preserve">
+    <value>אנא הקלד את הדואר האלקטרוני/טלפון שקיים באתר כדי שנשלח לך את הסיסמא</value>
+  </data>
+  <data name="EmailOrPhone" xml:space="preserve">
+    <value>אימייל/טלפון</value>
+  </data>
+  <data name="EmailWithPass" xml:space="preserve">
+    <value>אימייל עם הסיסמא נשלח אליך</value>
+  </data>
+  <data name="ErrMsg2" xml:space="preserve">
+    <value>עליך להקליד את הנתון שאיתו נרשמת או אימייל או טלפון</value>
+  </data>
+  <data name="ErrMsgPassRetrive" xml:space="preserve">
+    <value>שגיאה בשליחת הסיסמה. נסה מאוחר יותר.</value>
+  </data>
+  <data name="NotOnDateBase" xml:space="preserve">
+    <value>מצטערים אך לא נמצאת במאגר</value>
+  </data>
+  <data name="PassWasSentToPhone" xml:space="preserve">
+    <value>הסיסמא נשלחה לטלפון שלך! כעת באפשרותך להיכנס לאתר על ידי הקלדת טלפון במקום אימייל</value>
+  </data>
+  <data name="PasswordToAgas" xml:space="preserve">
+    <value>סיסמא לאתר אגס</value>
+  </data>
+  <data name="ReRegisterByMAail" xml:space="preserve">
+    <value>שחזור הרשמה דרך אימייל</value>
+  </data>
+  <data name="ReRegisterByPhone" xml:space="preserve">
+    <value>שחזור הרשמה דרך טלפון</value>
+  </data>
+  <data name="SendPass" xml:space="preserve">
+    <value>שלח סיסמא</value>
+  </data>
+  <data name="TryAginLater" xml:space="preserve">
+    <value>אין באפשרותך להיכנס כרגע נסה שוב בעוד מספר דקות</value>
+  </data>
+  <data name="Center" xml:space="preserve">
+    <value>מרכז</value>
+  </data>
+  <data name="Chick" xml:space="preserve">
+    <value>בחורה</value>
+  </data>
+  <data name="Couple" xml:space="preserve">
+    <value>זוג</value>
+  </data>
+  <data name="GirlsCanSeeUserNumChangeDetails" xml:space="preserve">
+    <value>הרואות את מספר החבר שלך כשאתה ממתין בתור באפשרותך לשנות זאת בעדכון פרטים</value>
+  </data>
+  <data name="GirlsCantSeeUserNum" xml:space="preserve">
+    <value>הלא רואות את מספר החבר שלך כשאתה ממתין בתור</value>
+  </data>
+  <data name="Man" xml:space="preserve">
+    <value>גבר</value>
+  </data>
+  <data name="NoReviews" xml:space="preserve">
+    <value>אין ביקורות להצגה.</value>
+  </data>
+  <data name="North" xml:space="preserve">
+    <value>צפון</value>
+  </data>
+  <data name="NotSpeakHeb" xml:space="preserve">
+    <value>לא דוברת עברית</value>
+  </data>
+  <data name="South" xml:space="preserve">
+    <value>דרום</value>
+  </data>
+  <data name="SpeakHeb" xml:space="preserve">
+    <value>דוברת עברית</value>
+  </data>
+  <data name="Unknown" xml:space="preserve">
+    <value>לא ידוע</value>
+  </data>
+  <data name="Woman" xml:space="preserve">
+    <value>אישה</value>
+  </data>
+  <data name="remember" xml:space="preserve">
+    <value>זכור את הפרטים לפעם הבאה</value>
+  </data>
+  <data name="contactUsByMail" xml:space="preserve">
+    <value>באפשרותך ליצור איתנו קשר בעזרת מייל או סקייפ</value>
+  </data>
+  <data name="contactUsForSupport" xml:space="preserve">
+    <value>לתמיכה צרי קשר למייל זה</value>
+  </data>
+  <data name="InternalData" xml:space="preserve">
+    <value>מידע פנימי</value>
+  </data>
+  <data name="Messages" xml:space="preserve">
+    <value>הודעות</value>
+  </data>
+  <data name="Minutes" xml:space="preserve">
+    <value>דקות</value>
+  </data>
+  <data name="MinutesWithTheUserPerMonth" xml:space="preserve">
+    <value>דקות עם החבר החודש</value>
+  </data>
+  <data name="picture" xml:space="preserve">
+    <value>תמונה</value>
+  </data>
+  <data name="SendMessage" xml:space="preserve">
+    <value>שלחי הודעה</value>
+  </data>
+  <data name="usersList" xml:space="preserve">
+    <value>רשימת לקוחות-מוגבל ל 400.</value>
+  </data>
+  <data name="BankAccount" xml:space="preserve">
+    <value>חשבון בנק</value>
+  </data>
+  <data name="BlackList" xml:space="preserve">
+    <value>רשימה שחורה</value>
+  </data>
+  <data name="ChatAmount" xml:space="preserve">
+    <value>מספר שיחות</value>
+  </data>
+  <data name="ContactSupport" xml:space="preserve">
+    <value>תמיכה טכנית</value>
+  </data>
+  <data name="Dashboard" xml:space="preserve">
+    <value>ראשי</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>מחק</value>
+  </data>
+  <data name="EmailList" xml:space="preserve">
+    <value>רשימת תפוצה</value>
+  </data>
+  <data name="EverageChat" xml:space="preserve">
+    <value>שיחה ממוצעת בשניות</value>
+  </data>
+  <data name="haveFun" xml:space="preserve">
+    <value>תהני וזיכרי שכל לקוח יכול להיות לקוח קבוע</value>
+  </data>
+  <data name="houres" xml:space="preserve">
+    <value>שעות</value>
+  </data>
+  <data name="Inbox" xml:space="preserve">
+    <value>דואר נכנס</value>
+  </data>
+  <data name="LogOut" xml:space="preserve">
+    <value>התנתק</value>
+  </data>
+  <data name="MinutesInSite" xml:space="preserve">
+    <value>דקות שיהייה באתר</value>
+  </data>
+  <data name="MinutesThisMonth" xml:space="preserve">
+    <value>דקות החודש</value>
+  </data>
+  <data name="newMessages" xml:space="preserve">
+    <value>הודעות חדשות</value>
+  </data>
+  <data name="Organize" xml:space="preserve">
+    <value>מתארגנת</value>
+  </data>
+  <data name="Outbox" xml:space="preserve">
+    <value>דואר יוצא</value>
+  </data>
+  <data name="PickMinutes" xml:space="preserve">
+    <value>מספר הצצות מאחורי הקלעים</value>
+  </data>
+  <data name="PictureManager" xml:space="preserve">
+    <value>העלאת תמונות</value>
+  </data>
+  <data name="ProfileManager" xml:space="preserve">
+    <value>ניהול פרופיל</value>
+  </data>
+  <data name="Promos" xml:space="preserve">
+    <value>פרומו</value>
+  </data>
+  <data name="recommendation2" xml:space="preserve">
+    <value>המלצות</value>
+  </data>
+  <data name="rightBack" xml:space="preserve">
+    <value>מיד אשוב</value>
+  </data>
+  <data name="search" xml:space="preserve">
+    <value>חיפוש</value>
+  </data>
+  <data name="seconds" xml:space="preserve">
+    <value>שניות</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>הגדרות</value>
+  </data>
+  <data name="Top5GirlsThisMonth" xml:space="preserve">
+    <value>5 ההמובילות החודש</value>
+  </data>
+  <data name="TopGgirlsMakingMinutesThisMonth" xml:space="preserve">
+    <value>השעשו הכי הרבה דקות החודש</value>
+  </data>
+  <data name="userNumber" xml:space="preserve">
+    <value>מספר חבר</value>
+  </data>
+  <data name="vecant" xml:space="preserve">
+    <value>פנויה</value>
+  </data>
+  <data name="WelcomBack" xml:space="preserve">
+    <value>ברוכה הבאה! ביקורך האחרון היה ב</value>
+  </data>
+  <data name="AddUserNumberToTheBlackList" xml:space="preserve">
+    <value>הוסיפי את החבר לרשימה השחורה</value>
+  </data>
+  <data name="AddUserNumberToTheEmailList" xml:space="preserve">
+    <value>p</value>
+  </data>
+  <data name="capture" xml:space="preserve">
+    <value>הקפאת תמונה</value>
+  </data>
+  <data name="CaptureFromCam" xml:space="preserve">
+    <value>שמירת תמונה מהמצלמה</value>
+  </data>
+  <data name="CurrentlyDoesNotAppearInTheSite" xml:space="preserve">
+    <value>מופיע באתר</value>
+  </data>
+  <data name="FileUploader" xml:space="preserve">
+    <value>העלאת קבצים</value>
+  </data>
+  <data name="last" xml:space="preserve">
+    <value>הקודם</value>
+  </data>
+  <data name="next" xml:space="preserve">
+    <value>הבא</value>
+  </data>
+  <data name="notApper" xml:space="preserve">
+    <value>לא מופיע</value>
+  </data>
+  <data name="Pictures" xml:space="preserve">
+    <value>תמונות</value>
+  </data>
+  <data name="PleaseSelectIfYouWantThePromoToApperInTheSite" xml:space="preserve">
+    <value>בחרי האם את רוצה שהפרומו יופיע באתר</value>
+  </data>
+  <data name="Promo" xml:space="preserve">
+    <value>פרומו</value>
+  </data>
+  <data name="save" xml:space="preserve">
+    <value>שלח</value>
+  </data>
+  <data name="TheDataWasSaved" xml:space="preserve">
+    <value>המידע נשמר</value>
+  </data>
+  <data name="TheMessageWasSent" xml:space="preserve">
+    <value>ההודעה נשלחה</value>
+  </data>
+  <data name="TheUserAddedToBlackList" xml:space="preserve">
+    <value>החבר הוסף לרשימה השחורה</value>
+  </data>
+  <data name="TheUserDeletedFromBlackList" xml:space="preserve">
+    <value>החבר נמחק מהרשימה השחורה</value>
+  </data>
+  <data name="TheUserDeleteFromEmailList" xml:space="preserve">
+    <value>החבר נמחק מרשימת התפוצה</value>
+  </data>
+  <data name="upload" xml:space="preserve">
+    <value>העלאה</value>
+  </data>
+  <data name="UploadYourImage" xml:space="preserve">
+    <value>העלי את התמונות</value>
+  </data>
+  <data name="WriteAMessage" xml:space="preserve">
+    <value>רישמי הודעה ושילחי אותה לכל רשימת התפוצה שלך</value>
+  </data>
+  <data name="YourBlackList" xml:space="preserve">
+    <value>הרשימה השחורה שלך</value>
+  </data>
+  <data name="YourEmailList" xml:space="preserve">
+    <value>רשימת התפוצה שלך-מכאן את יכולה לשלוח לחברים באתר הודעות</value>
+  </data>
+  <data name="Country" xml:space="preserve">
+    <value>ארץ</value>
+  </data>
+  <data name="DepositTo" xml:space="preserve">
+    <value>פרטי חשבון בנק</value>
+  </data>
+  <data name="FreeText" xml:space="preserve">
+    <value>טקסט חופשי-חברי האתר יכולים לראות</value>
+  </data>
+  <data name="InternalUse" xml:space="preserve">
+    <value>מידע פנימי</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>שפות</value>
+  </data>
+  <data name="nickName" xml:space="preserve">
+    <value>שם באתר-חברי האתר יוכלו לראות</value>
+  </data>
+  <data name="selectFields" xml:space="preserve">
+    <value>שדות בחירה-חברי האתר יכולים לראות</value>
+  </data>
+  <data name="TopGirlsEverageChatInSecound" xml:space="preserve">
+    <value>הבחרות עם השיחות הכי ארוכות החודש</value>
+  </data>
+  <data name="YourBirthYear" xml:space="preserve">
+    <value>שנת לידה</value>
+  </data>
+  <data name="yourCard" xml:space="preserve">
+    <value>הכרטיס שלך-מידע זה חשוף לחברי האתר</value>
+  </data>
+  <data name="behindScreen" xml:space="preserve">
+    <value>מאחורי הקלעים</value>
+  </data>
+  <data name="endDate" xml:space="preserve">
+    <value>תאריך סיום</value>
+  </data>
+  <data name="getData" xml:space="preserve">
+    <value>קבלי נתונים</value>
+  </data>
+  <data name="startDate" xml:space="preserve">
+    <value>תאריך התחלה</value>
+  </data>
+  <data name="tip" xml:space="preserve">
+    <value>טיפ</value>
+  </data>
+  <data name="YourActivity" xml:space="preserve">
+    <value>הפעילות שלך</value>
+  </data>
+  <data name="everageChatExplain" xml:space="preserve">
+    <value>ארוך שיחה ממוצעת החודש נספר בשניות</value>
+  </data>
+  <data name="imageToSmall" xml:space="preserve">
+    <value>התמונה קטנה מידי</value>
+  </data>
+  <data name="ChooseImageFromDisk" xml:space="preserve">
+    <value>בחר תמונה מהמחשב שלך</value>
+  </data>
+  <data name="otherGirlsStatus" xml:space="preserve">
+    <value>סטטוס של העובדות האחרות</value>
+  </data>
+  <data name="score" xml:space="preserve">
+    <value>ציונים</value>
+  </data>
+  <data name="statistics" xml:space="preserve">
+    <value>סטטיסטיקות</value>
+  </data>
+  <data name="uploadPicture" xml:space="preserve">
+    <value>העלאת תמונה</value>
+  </data>
+  <data name="UserScoresExplanation" xml:space="preserve">
+    <value>הסבר על הציונים</value>
+  </data>
+  <data name="UsersScors" xml:space="preserve">
+    <value>ציוני החברים באתר</value>
+  </data>
+  <data name="yourGallery" xml:space="preserve">
+    <value>הגלריה שלך</value>
+  </data>
+  <data name="performanceBeInSiteExplain" xml:space="preserve">
+    <value>כאן תוכלי לראות את זמני השהייה שלך באתר בכל הצורות כולל מיד אשוב ומתארגנת</value>
+  </data>
+  <data name="performersBeInSite" xml:space="preserve">
+    <value>זמני שיהייה באתר</value>
+  </data>
+  <data name="YourGraphThisMonth" xml:space="preserve">
+    <value>הגרף שלך החודש</value>
+  </data>
+  <data name="lastMonth" xml:space="preserve">
+    <value>חודש קודם</value>
+  </data>
+  <data name="PerformersAffiliate" xml:space="preserve">
+    <value>שהבאת</value>
+  </data>
+  <data name="price" xml:space="preserve">
+    <value>סכום</value>
+  </data>
+  <data name="YourAffiliateActivety" xml:space="preserve">
+    <value>הפעילות של השהגיעו דרכך</value>
+  </data>
+  <data name="SystemMessages" xml:space="preserve">
+    <value>הודעות מערכת</value>
+  </data>
+  <data name="Text" xml:space="preserve">
+    <value>טקסט</value>
+  </data>
+  <data name="forgotPassword" xml:space="preserve">
+    <value>שכחת סיסמא</value>
+  </data>
+  <data name="loginPage" xml:space="preserve">
+    <value>עמוד כניסה</value>
+  </data>
+  <data name="NoMessage" xml:space="preserve">
+    <value>לא היתה התכתבות ביניכם</value>
+  </data>
+  <data name="noPhoneSerive" xml:space="preserve">
+    <value>את לא רשומה לשירות זה</value>
+  </data>
+  <data name="phoneCallsControlPanel" xml:space="preserve">
+    <value>שיחות טלפון</value>
+  </data>
+  <data name="wrongDetails" xml:space="preserve">
+    <value>הפרטים אינם נכונים</value>
+  </data>
+  <data name="controlPanel" xml:space="preserve">
+    <value>מסך ניהול</value>
+  </data>
+  <data name="login" xml:space="preserve">
+    <value>כניסה</value>
+  </data>
+  <data name="generalInformation" xml:space="preserve">
+    <value>מידע כללי</value>
+  </data>
+  <data name="charts" xml:space="preserve">
+    <value>גרף</value>
+  </data>
+  <data name="EmailNotFound" xml:space="preserve">
+    <value>האימייל לא נמצא במאגר הנתונים</value>
+  </data>
+  <data name="EmailWithPasswordHasBeenSentToYou" xml:space="preserve">
+    <value>אימייל עם הסיסמא נשלח אליך</value>
+  </data>
+  <data name="internalYouWrote" xml:space="preserve">
+    <value>מידע פנימי שרשמת אודות החבר</value>
+  </data>
+  <data name="retriavePassword" xml:space="preserve">
+    <value>טופס שחזור סיסמה</value>
+  </data>
+  <data name="SussecfulSignUp" xml:space="preserve">
+    <value>ההרשמה הסתיימה בהצלחה ניציגנו ייצור איתך קשר</value>
+  </data>
+  <data name="thisEmailInUse" xml:space="preserve">
+    <value>אימייל זה בשימוש</value>
+  </data>
+  <data name="WriteInternalData" xml:space="preserve">
+    <value>רישמי מידע על הלקוח-את היחידה שיכולה לראות מידע זה</value>
+  </data>
+  <data name="youMustChooseDates" xml:space="preserve">
+    <value>עליך לבחור תאריכים</value>
+  </data>
+  <data name="englishFreeText" xml:space="preserve">
+    <value>טקסט חופשי באנגלית</value>
+  </data>
+  <data name="NickNameEn" xml:space="preserve">
+    <value>כינוי באנגלית</value>
+  </data>
+  <data name="OfficialInformation" xml:space="preserve">
+    <value>טקסט חופשי על עצמך יופיע בכרטיס שלך</value>
+  </data>
+  <data name="OfficialInformationEn" xml:space="preserve">
+    <value>טקסט חופשי על עצמך באנגלית יופיע בכרטיס שלך</value>
+  </data>
+  <data name="theUserNotExists" xml:space="preserve">
+    <value>המשתמש לא נמצא</value>
+  </data>
+  <data name="main_support_aspx_Page_Load_Run_ping" xml:space="preserve">
+    <value>בידקי פינג</value>
+  </data>
+  <data name="giveMicrophone" xml:space="preserve">
+    <value>מפעילה מיקרופון</value>
+  </data>
+  <data name="givePhone" xml:space="preserve">
+    <value>נותנת טלפון ללקוחות</value>
+  </data>
+  <data name="choose" xml:space="preserve">
+    <value>בחר</value>
+  </data>
+  <data name="affiliateLink" xml:space="preserve">
+    <value>אפיליאט לינק</value>
+  </data>
+  <data name="signUpNow" xml:space="preserve">
+    <value>הירשמי עכשיו</value>
+  </data>
+  <data name="addToEmailList" xml:space="preserve">
+    <value>הוסיפי לרשימת תפוצה</value>
+  </data>
+  <data name="main_emaillist_aspx_AddToEmailList_There_is_no_option_to_add_user_that_didnt_chat_with_you_before" xml:space="preserve">
+    <value>אין אפשרות להוסיף חבר שלא ביקר אצלך בחדר הפרטי</value>
+  </data>
+  <data name="TheUserAddedToEmailList" xml:space="preserve">
+    <value>החבר התווסף לרשימת התפוצה</value>
+  </data>
+  <data name="ThisUserAlreadyExists" xml:space="preserve">
+    <value>חבר זה כבר ברשימה</value>
+  </data>
+  <data name="customerFromCountry" xml:space="preserve">
+    <value>לקוח זה מחובר מ:</value>
+  </data>
+  <data name="PhoneSupport" xml:space="preserve">
+    <value>&lt;h3 style="text-align: right"&gt;לתמיכה ניתן ליצור קשר 7\24 &lt;/h3&gt;
+       &lt;p style="text-align: right"&gt;&lt;/p&gt;
+       &lt;p style="text-align: right"&gt;יניב 058-4666633&lt;/p&gt;</value>
+  </data>
+  <data name="main_default_aspx_Page_Load_The_admin_must_approve_your_account_before_you_can_start_broadcast_please_contect_our_live_support" xml:space="preserve">
+    <value>החשבון שלך עדיין לא אושר על ידי מנהל המערכת עלייך לפנות לתמיכה לצורך אישורו</value>
+  </data>
+  <data name="mustUploadPic" xml:space="preserve">
+    <value>כדי להיכנס לצ'ט ולהתחיל לשדר עליך להעלות לפחות תמונה אחת</value>
+  </data>
+  <data name="choiceSaved" xml:space="preserve">
+    <value>הבחירה שלך נשמרה</value>
+  </data>
+  <data name="recAppears" xml:space="preserve">
+    <value>מופיע באתר</value>
+  </data>
+  <data name="recNotAppear" xml:space="preserve">
+    <value>לא מופיע</value>
+  </data>
+  <data name="recordingNearPic" xml:space="preserve">
+    <value>ההקלטה תופיע ליד התמונות שלך</value>
+  </data>
+  <data name="recordingPage" xml:space="preserve">
+    <value>הקליטי את עצמך כדי לעניין לקוחות</value>
+  </data>
+  <data name="affiliateMarketing" xml:space="preserve">
+    <value>אפיליאט</value>
+  </data>
+  <data name="anotherDimension" xml:space="preserve">
+    <value>מימד אחר</value>
+  </data>
+  <data name="anotherDimensionDescription" xml:space="preserve">
+    <value>קורות חיים בוידאו מספקים מימד אחר על האדם הנצפה,בהשוואה לקורות חיים רגילים אותם אפשר לערוך או להעזר בחברים.כאן ממש רואים את האדם שיושב מולך.</value>
+  </data>
+  <data name="bigLogo" xml:space="preserve">
+    <value>המהפכה כבר כאן</value>
+  </data>
+  <data name="companyLogin" xml:space="preserve">
+    <value>כניסה לחברות</value>
+  </data>
+  <data name="companyRegister" xml:space="preserve">
+    <value>הרשמה לחברות</value>
+  </data>
+  <data name="contactChat" xml:space="preserve">
+    <value>לחץ לתמיכה</value>
+  </data>
+  <data name="customizationOption" xml:space="preserve">
+    <value>אפשרות התאמה אישית</value>
+  </data>
+  <data name="customizationOptionDescription" xml:space="preserve">
+    <value>אפשרות התאמה אישית של מוצר זה לאתר שלך</value>
+  </data>
+  <data name="downloadSoftware" xml:space="preserve">
+    <value>האם צריך להוריד תוכנה בשביל להשתמש בשירות?</value>
+  </data>
+  <data name="downloadSoftwareDescription" xml:space="preserve">
+    <value>אין צורך השירות שלנו הוא שירות אינטרנטי ופועל דרך דפדפן גוגל כרום.</value>
+  </data>
+  <data name="easyForUse" xml:space="preserve">
+    <value>נוחות שימוש</value>
+  </data>
+  <data name="easyForUseDescription" xml:space="preserve">
+    <value>נוחות שימוש מירבית.אפליקציות לכל סוגי הניידים .ודגש על חויית משתמש.</value>
+  </data>
+  <data name="explOfTheService" xml:space="preserve">
+    <value>הסבר על השירות</value>
+  </data>
+  <data name="faq" xml:space="preserve">
+    <value>עזרה</value>
+  </data>
+  <data name="fullIntegretion" xml:space="preserve">
+    <value>אינטגרציה מלאה</value>
+  </data>
+  <data name="fullIntegretionDescription" xml:space="preserve">
+    <value>תמיכה בהתממשקות למוצרים קיימים שברשותך</value>
+  </data>
+  <data name="fullSupport" xml:space="preserve">
+    <value>תמיכה מלאה</value>
+  </data>
+  <data name="fullSupportDescription" xml:space="preserve">
+    <value>אנחנו כאן כדי ללוות את עבודתך ולעזור לך במידת הצורך.</value>
+  </data>
+  <data name="getRidOfPaper" xml:space="preserve">
+    <value>נפטרים מהנייר</value>
+  </data>
+  <data name="getRidOfPaperDescription" xml:space="preserve">
+    <value>כל תהליך הגיוס מרוכז,  מתועד ומגובה לענן באופן אוטומטי,לא צריכים לרשום יותר על ניירות וחוסכים זמן וכסף.</value>
+  </data>
+  <data name="howItWorks" xml:space="preserve">
+    <value>איך זה עובד בדיוק?</value>
+  </data>
+  <data name="howItWorksDescription" xml:space="preserve">
+    <value>מתחילים בכפתור ההרשמה למעלה.  
+                    לאחר ההרשמה תוכלו להכניס למערכת את פרופיל החברה שלכם לוגו סרטון ומידע נוסף.
+                    בשלב השני תוכלו להוסיף תחת החברה את המראיינים שלכם או פשוט להתחיל להזמין מועמדים לעבודה באמצעות הוידאו צאט או להזמין מעומדים לענות על שאלונים שלכם בווידאו.</value>
+  </data>
+  <data name="liveInterviewDown" xml:space="preserve">
+    <value>הינו אתר חדשני המאפשר לחברות כוח אדם וחברות השמה ליעל את תהליכי המיון הראשונים והמתקדמים של עובדים חדשים.
+                            האתר מאפשר לבצע ראיון עבודה בוידאו בעזרת תבנית המוגדרת מראש.ולאחר מכן אף לבצע ראיון עבודה אמיתי בוידאו צ'ט בעזרת ולשמור את הראיון בענן ממערכת שלנו.  
+                            המערכת מאפשרת להגדיר תבניות של רעיונות עבודה מוקלטים.לשף את המידע עם עובדים אחרים.ואף מכילה מערכת מתוזמנת של ראיונות עבודה.</value>
+  </data>
+  <data name="navigationMenu" xml:space="preserve">
+    <value>תפריט ניווט</value>
+  </data>
+  <data name="powerfullProduct" xml:space="preserve">
+    <value>מוצר עוצמתי</value>
+  </data>
+  <data name="powerfullProductDescription" xml:space="preserve">
+    <value>מוצר זה מהווה פתרון מלא לניהול והשמת עובדים.</value>
+  </data>
+  <data name="privacyPolicy" xml:space="preserve">
+    <value>פרטיות</value>
+  </data>
+  <data name="saveTimeAndEffort" xml:space="preserve">
+    <value>חוסכים זמן ודלק</value>
+  </data>
+  <data name="saveTimeAndEffortDescription" xml:space="preserve">
+    <value>חסוך למתראיינים זמן מבוזבז של עמידה בפקקים וחיפוש חניה.כמו כן הוצאות כגון חניה ודלק...</value>
+  </data>
+  <data name="serviceBenefits" xml:space="preserve">
+    <value>מה היתרונות של השירות?</value>
+  </data>
+  <data name="serviceBenefitsDescription" xml:space="preserve">
+    <value>שמקבלים קורות חיים  ממועמד זה אומר הרבה אבל שמקבלים קורות חיים מוקלטים זה נותן לך להבין בדיוק מי הבנאדם.
+                    אפשר לראות את שפת הגוף והדיבור ולהבין יותר מאשר קורות חיים על דף, 
+                             בנוסף לזה אתם יכולים לכוון אותו לענות על שאלות שהכנתם מראש במערכת ולקבל תשובות.
+                              אפשר לשתף את הקורות חיים המוקלטים עם צוות החברה ולקבל חוות דעת נוספת.
+   
+                    ראיון עבודה בוידאו צאט יכול לחסוך הרבה זמן וכסף למועמד וגם כמובן לכם ובנוסף לזה כמובן שתוכלו לשמור את ההקלטה ולשתף אותה עם הצוות שלכם ולקבל חוות דעת נוספת.</value>
+  </data>
+  <data name="smallLogo" xml:space="preserve">
+    <value>פתרונות לגיוס עובדים</value>
+  </data>
+  <data name="termsAndPolicies" xml:space="preserve">
+    <value>תנאים ומדיניות</value>
+  </data>
+  <data name="termsOfUse" xml:space="preserve">
+    <value>תנאי שימוש</value>
+  </data>
+  <data name="unbeatablePrices" xml:space="preserve">
+    <value>מחירים ללא תחרות</value>
+  </data>
+  <data name="unbeatablePricesDescription" xml:space="preserve">
+    <value>עלויות תפעול נמוכות מאוד שיחסכו לך כסף רב בכל חודש</value>
+  </data>
+  <data name="whatIsTheService" xml:space="preserve">
+    <value>מהו השירות הזה ?</value>
+  </data>
+  <data name="whatIsTheServiceDescription" xml:space="preserve">
+    <value>אנו מספקים מערכת עזר אינטרנטית לגיוס כוח אדם.
+                                         א.	המערכת מאפשרת לחברות או חברות השמה לבצע ראיונות וסינון לעובדים פוטנציאלים באמצעות וידאו צאט דו כיווני מתוזמן ע"י הזמנה במייל או SMS,
+                     המערכת מאפשרת להקליט את השיחות וידאו, לקטלג אותם ולשתף זאת עם הצוות או חברות אחרות.
+                                        ב. 	וידאו על פי דרישה, קורות חיים בוידאו, המערכת מאפשרת להזין שאלון עם שאלות שלכם ולהזמין מועמדים להקליט את התשובות בוידאו. את קבצי הוידאו תוכלו לקטלג ולשתף עם הצוות שלכם או חברות אחרות.</value>
+  </data>
+  <data name="whoIsTheServiceFor" xml:space="preserve">
+    <value>למי מיועד השירות ?</value>
+  </data>
+  <data name="whoIsTheServiceForDescription" xml:space="preserve">
+    <value>השירות מיועד לחברות שמגיסות עובדים וחברות השמה שרוצות לחסוך זמן על ראיונות עבודה ולחסוך למרואיינים זמן חניה דלק וכסף מיותר</value>
+  </data>
+  <data name="affiliateSystem" xml:space="preserve">
+    <value>תקרוב תעלה מערכת אפיליאט</value>
+  </data>
+  <data name="checkForPassword" xml:space="preserve">
+    <value>סיסמא</value>
+  </data>
+  <data name="errorEmail" xml:space="preserve">
+    <value>עליך להקליד אימייל</value>
+  </data>
+  <data name="fullName" xml:space="preserve">
+    <value>שם מלא</value>
+  </data>
+  <data name="invitationFromACompany" xml:space="preserve">
+    <value>הגעת לעמוד זה מכיון שקיבלת הזמנה מחברת</value>
+  </data>
+  <data name="newEmployee" xml:space="preserve">
+    <value>הרשמה לחברות</value>
+  </data>
+  <data name="passwordPlaceholder" xml:space="preserve">
+    <value>סיסמא בין 6 ל 8 תווים באנגלית ומספרים בלבד</value>
+  </data>
+  <data name="registeredForInterviewers" xml:space="preserve">
+    <value>הרשמה למראיינים</value>
+  </data>
+  <data name="serveAsAnInterviewer" xml:space="preserve">
+    <value>לשמש כמראיין</value>
+  </data>
+  <data name="addCompany" xml:space="preserve">
+    <value>הוסף חברה</value>
+  </data>
+  <data name="anyCompanies" xml:space="preserve">
+    <value>כרטיס זה עדיין לא משוייך לשום חברה</value>
+  </data>
+  <data name="companyAddress" xml:space="preserve">
+    <value>כתובת חברה</value>
+  </data>
+  <data name="companyName" xml:space="preserve">
+    <value>שם החברה</value>
+  </data>
+  <data name="companyProfile" xml:space="preserve">
+    <value>פרופיל חברה</value>
+  </data>
+  <data name="Continue" xml:space="preserve">
+    <value>המשך</value>
+  </data>
+  <data name="dataForNewCompany" xml:space="preserve">
+    <value>&lt;li&gt;שם חברה&lt;/li&gt;
+                                     
+                                          &lt;li&gt;תאריך הוספה &lt;/li&gt;
+                                                   
+                                               &lt;li&gt;המשך</value>
+  </data>
+  <data name="invalidPhone" xml:space="preserve">
+    <value>טלפון לא תקין</value>
+  </data>
+  <data name="invalidService" xml:space="preserve">
+    <value>שירות לא תקין</value>
+  </data>
+  <data name="listOfCompanies" xml:space="preserve">
+    <value>רשימת חברות משוייכות</value>
+  </data>
+  <data name="managementCompany" xml:space="preserve">
+    <value>ניהול חברת</value>
+  </data>
+  <data name="markOptIn" xml:space="preserve">
+    <value>עליך לסמן הסכמה</value>
+  </data>
+  <data name="numberOfCP" xml:space="preserve">
+    <value>מספר ח.פ / עוסק מורשה</value>
+  </data>
+  <data name="other" xml:space="preserve">
+    <value>אחר</value>
+  </data>
+  <data name="pageTitle" xml:space="preserve">
+    <value>ראיונות עבודה בוידאו צ'ט</value>
+  </data>
+  <data name="payment" xml:space="preserve">
+    <value>תשלום</value>
+  </data>
+  <data name="recordedInterviewers" xml:space="preserve">
+    <value>ראיונות וידאו מוקלט</value>
+  </data>
+  <data name="registeredInterviewers" xml:space="preserve">
+    <value>מראיינים רשומים</value>
+  </data>
+  <data name="technicalProblems" xml:space="preserve">
+    <value>בעיות טכניות</value>
+  </data>
+  <data name="termsOfUseEnd" xml:space="preserve">
+    <value>דף התקנון מכונן הסכם משפטי בין האתר ובין העובד/לקוח, וגם בין האתר ובין כל גוף עסקי
+                אשר יש לעובד/לקוח אינטרס או חבות משפטית או עסקית כלפיו. אם חלק כלשהוא מההסכם יקבע
+                כבלתי ניתן לאכיפה ע"י סמכות משפטית חוקית, אזי שאר ההסכם לא יושפע כתוצאה מהחלטה זו.&lt;br /&gt;
+                ההסכם רשום בעברית ואינו ניתן לפירוש ע"י צד שלישי, לא תתקבל כל פרשנות של ההסכם או
+                כל תביעה שתבסס על הבנה לא נכונה של התקנון כתוצאה מתרגום לשפה אחרת.&lt;br /&gt;
+                מקום השיפוט הבלעדי בכל עניין ומחלוקת בכל הנוגע לשירותים באתר, יהיה בית המשפט המוסמך
+                בלונדון, אשר ידון בעניין בהתאם לדיני אנגליה.
+                &lt;br /&gt;</value>
+  </data>
+  <data name="termsOfUseH4" xml:space="preserve">
+    <value>ע"י קבלה ואישור של ההסכם הנ"ל הינך מאשר את הבאים:</value>
+  </data>
+  <data name="termsOfUseH5" xml:space="preserve">
+    <value>המסמך מנוסח בלשון זכר מטעמי נוחות בלבד והוא מתייחס באופן שווה לשני המינים. כל האמור
+                בלשון זכר, כוחו יפה גם בלשון נקבה. באמצעות כניסה לאתר זה אתה מקבל על עצמך את התנאים
+                הבאים:  הסכמתם, האתר מבקש ממך לקרוא ולאשר את הדברים הבאים.</value>
+  </data>
+  <data name="activationToEmail" xml:space="preserve">
+    <value>אקטיבציה למייל</value>
+  </data>
+  <data name="AddAnInterviewer" xml:space="preserve">
+    <value>הוסף מראיין</value>
+  </data>
+  <data name="AddQuestions" xml:space="preserve">
+    <value>הוספת שאלות לראיון עבודה מוקלט</value>
+  </data>
+  <data name="collaborative" xml:space="preserve">
+    <value>שיתופי</value>
+  </data>
+  <data name="companyManagement" xml:space="preserve">
+    <value>ניהול חברה</value>
+  </data>
+  <data name="CreateRecordedInterview" xml:space="preserve">
+    <value>צור ראיון מוקלט</value>
+  </data>
+  <data name="dateAdded" xml:space="preserve">
+    <value>תאריך הוספה</value>
+  </data>
+  <data name="DateOfEstablishment" xml:space="preserve">
+    <value>תאריך הקמה</value>
+  </data>
+  <data name="Director" xml:space="preserve">
+    <value>מנהל</value>
+  </data>
+  <data name="edit" xml:space="preserve">
+    <value>עריכה</value>
+  </data>
+  <data name="editCompanyProfile" xml:space="preserve">
+    <value>פרופיל אישי</value>
+  </data>
+  <data name="editQuestions" xml:space="preserve">
+    <value>ערוך שאלות</value>
+  </data>
+  <data name="EmailOnly" xml:space="preserve">
+    <value>אימייל</value>
+  </data>
+  <data name="internalDataEG" xml:space="preserve">
+    <value>מידע פנימי למשל שם,מקצוע...</value>
+  </data>
+  <data name="internalInformation" xml:space="preserve">
+    <value>מידע פנימי</value>
+  </data>
+  <data name="Interviewer" xml:space="preserve">
+    <value>מראיין</value>
+  </data>
+  <data name="InterviewerOnly" xml:space="preserve">
+    <value>רגיל : מראיין בלבד</value>
+  </data>
+  <data name="InterviewsInterviewedByInterviewees" xml:space="preserve">
+    <value>ראיונות שמרואיינים הקליטו</value>
+  </data>
+  <data name="Invitations" xml:space="preserve">
+    <value>הזמנות</value>
+  </data>
+  <data name="invitationsSent" xml:space="preserve">
+    <value>הזמנות שנשלחו</value>
+  </data>
+  <data name="liveInterviews" xml:space="preserve">
+    <value>ראיונות וידיאו חי</value>
+  </data>
+  <data name="logs" xml:space="preserve">
+    <value>הודעות מערכת</value>
+  </data>
+  <data name="ManagerInvitationAndDel" xml:space="preserve">
+    <value>מנהל : הזמנה ומחיקה של מראיינים נוספים.ושל ראיונות קיימים.</value>
+  </data>
+  <data name="managingInterviews" xml:space="preserve">
+    <value>ניהול ראיונות</value>
+  </data>
+  <data name="NoPermissionToDelete" xml:space="preserve">
+    <value>אין הרשאה למחיקה</value>
+  </data>
+  <data name="permissions" xml:space="preserve">
+    <value>הרשאות</value>
+  </data>
+  <data name="Questionnaire" xml:space="preserve">
+    <value>נושא</value>
+  </data>
+  <data name="Questions" xml:space="preserve">
+    <value>שאלות</value>
+  </data>
+  <data name="SaveAndContinue" xml:space="preserve">
+    <value>שמור והמשך</value>
+  </data>
+  <data name="sendAnIvitation" xml:space="preserve">
+    <value>שלח הזמנה</value>
+  </data>
+  <data name="sendToInterviewee" xml:space="preserve">
+    <value>שליחה למרואיין</value>
+  </data>
+  <data name="templatesForRecInterview" xml:space="preserve">
+    <value>תבניות לראיונות מוקלטים</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>כותרת</value>
+  </data>
+  <data name="TitleForInterview" xml:space="preserve">
+    <value>כותרת לראיון</value>
+  </data>
+  <data name="workersManagement" xml:space="preserve">
+    <value>ניהול עובדים</value>
+  </data>
+  <data name="AddAUser" xml:space="preserve">
+    <value>הוסף משתמש</value>
+  </data>
+  <data name="InvitationToVideoInterviewChat" xml:space="preserve">
+    <value>הזמנה לראיון עבודה בוידאו צ'ט</value>
+  </data>
+  <data name="ListOfInvitations" xml:space="preserve">
+    <value>רשימת הזמנות לראיונות מוקלטים</value>
+  </data>
+  <data name="bringDown" xml:space="preserve">
+    <value>הורד</value>
+  </data>
+  <data name="bringUp" xml:space="preserve">
+    <value>העלה</value>
+  </data>
+  <data name="continueToNextQuestion" xml:space="preserve">
+    <value>שמור שאלה</value>
+  </data>
+  <data name="invitationToRecordCVs" xml:space="preserve">
+    <value>הזמנה לראיון עבודה</value>
+  </data>
+  <data name="typeQuestion" xml:space="preserve">
+    <value>שאלה</value>
+  </data>
+  <data name="writeDownaQuestion" xml:space="preserve">
+    <value>רשום שאלה</value>
+  </data>
+  <data name="clientNO" xml:space="preserve">
+    <value>מס' לקוח</value>
+  </data>
+  <data name="dateForInterview" xml:space="preserve">
+    <value>תאריך לראיון</value>
+  </data>
+  <data name="freeTextToInterview" xml:space="preserve">
+    <value>מלל חופשי</value>
+  </data>
+  <data name="invitationToVideoChat" xml:space="preserve">
+    <value>הזמנה לראיון עבודה בוידאו צ'ט</value>
+  </data>
+  <data name="nameOfInterviewer" xml:space="preserve">
+    <value>שם המראיין ששלח</value>
+  </data>
+  <data name="sendInvitation" xml:space="preserve">
+    <value>שליחת הזמנה לראיון חי למרואיין</value>
+  </data>
+  <data name="timeForMeet" xml:space="preserve">
+    <value>זמן למפגש</value>
+  </data>
+  <data name="timeLeft" xml:space="preserve">
+    <value>זמן שנשאר</value>
+  </data>
+  <data name="timeZone" xml:space="preserve">
+    <value>אזור זמן</value>
+  </data>
+  <data name="chatDropDown1" xml:space="preserve">
+    <value>איננו</value>
+  </data>
+  <data name="chatDropDown2" xml:space="preserve">
+    <value>תפוס</value>
+  </data>
+  <data name="chatDropDown3" xml:space="preserve">
+    <value>פנוי</value>
+  </data>
+  <data name="chatDropDown4" xml:space="preserve">
+    <value>מיד אשוב</value>
+  </data>
+  <data name="chatDropDown5" xml:space="preserve">
+    <value>מתארגן</value>
+  </data>
+  <data name="chatDropDown6" xml:space="preserve">
+    <value>ללא סטטוס</value>
+  </data>
+  <data name="CustomerInYourQueue" xml:space="preserve">
+    <value>לקוחות בתור שלך</value>
+  </data>
+  <data name="detailsAboutCustomer" xml:space="preserve">
+    <value>פרטים על הלקוח</value>
+  </data>
+  <data name="GlimpseIntoCustomer" xml:space="preserve">
+    <value>הצצה ללקוחות</value>
+  </data>
+  <data name="InfoAboutCustomerOnlyYouSee" xml:space="preserve">
+    <value>מידע פנימי על הלקוח רק אתה יכול לראות</value>
+  </data>
+  <data name="Open" xml:space="preserve">
+    <value>פתוח</value>
+  </data>
+  <data name="queueForCustomer" xml:space="preserve">
+    <value>תור ללקוחות</value>
+  </data>
+  <data name="registerHere" xml:space="preserve">
+    <value>רשום כאן</value>
+  </data>
+  <data name="saveDetails" xml:space="preserve">
+    <value>שמור פרטים</value>
+  </data>
+  <data name="SiteCustomers" xml:space="preserve">
+    <value>לקוחות באתר</value>
+  </data>
+  <data name="DateSend" xml:space="preserve">
+    <value>תאריך שליחה</value>
+  </data>
+  <data name="InternalInfoAboutInterw" xml:space="preserve">
+    <value>ערכית מידע פנימי על מראיין</value>
+  </data>
+  <data name="NoRecord" xml:space="preserve">
+    <value>אין הקלטה</value>
+  </data>
+  <data name="Owner" xml:space="preserve">
+    <value>מקים</value>
+  </data>
+  <data name="Record" xml:space="preserve">
+    <value>קיימת הקלטה</value>
+  </data>
+  <data name="RecordedInterview" xml:space="preserve">
+    <value>ראיון מוקלט</value>
+  </data>
+  <data name="RecordStatus" xml:space="preserve">
+    <value>סטטוס הקלטה</value>
+  </data>
+  <data name="SeeTheRecords" xml:space="preserve">
+    <value>צפיה בהקלטה</value>
+  </data>
+  <data name="SendInvitationToInterviewee" xml:space="preserve">
+    <value>שליחת הזמנה לראיון מוקלט למרואיין"</value>
+  </data>
+  <data name="SendInvitationToView" xml:space="preserve">
+    <value>שלח הזמנה לצפייה</value>
+  </data>
+  <data name="InvitationForViewResume" xml:space="preserve">
+    <value>ההזמנה לצפייה בקורות חיים</value>
+  </data>
+  <data name="linkInvitationAsInterviewer" xml:space="preserve">
+    <value>לינק הזמנה כמראיין</value>
+  </data>
+  <data name="notRecordingWriteNow" xml:space="preserve">
+    <value>לא מקליט כרגע</value>
+  </data>
+  <data name="PressToActivate" xml:space="preserve">
+    <value>לחץ להפעלת הכרטיס</value>
+  </data>
+  <data name="recordResumeToCompany" xml:space="preserve">
+    <value>הקלטת קורות חיים לחברת</value>
+  </data>
+  <data name="recordYourResume" xml:space="preserve">
+    <value>הקלט קורות חיים</value>
+  </data>
+  <data name="startRecording" xml:space="preserve">
+    <value>התחל הקלטה</value>
+  </data>
+  <data name="subscriptionInvitation" xml:space="preserve">
+    <value>קיבלת הזמנת הצטרפות</value>
+  </data>
+  <data name="TheOrderWasCreated" xml:space="preserve">
+    <value>הזמנה זו נוצרה על ידי</value>
+  </data>
+  <data name="ClickHereForTheAnswer" xml:space="preserve">
+    <value>לחץ כאן בסיום התשובה</value>
+  </data>
+  <data name="ClickToEnterTheCard" xml:space="preserve">
+    <value>לחץ לכניסה לכרטיס</value>
+  </data>
+  <data name="ClickToRestart" xml:space="preserve">
+    <value>להתחלה מחדש לחץ כאן</value>
+  </data>
+  <data name="DuringTheRecord" xml:space="preserve">
+    <value>במהלך ההקלטה יופיעו כאן שאלות שהמראיין הכין</value>
+  </data>
+  <data name="GoToNextQuestion" xml:space="preserve">
+    <value>עבור לשאלה הבאה</value>
+  </data>
+  <data name="InvitationToRecordVideoCVs" xml:space="preserve">
+    <value>הזמנה להקלטת קורות חיים בוידאו</value>
+  </data>
+  <data name="LinkToActivateYourAccount" xml:space="preserve">
+    <value>לינק להפעלת כרטיסך</value>
+  </data>
+  <data name="PasteCodeFromEmail" xml:space="preserve">
+    <value>הדבק את הקוד מהאימייל:</value>
+  </data>
+  <data name="PlayAgain" xml:space="preserve">
+    <value>נגן שוב</value>
+  </data>
+  <data name="PressToActivate2" xml:space="preserve">
+    <value>כדי להפעיל את השירות עליך ללחוץ על הכפתור</value>
+  </data>
+  <data name="PreviousWatchs" xml:space="preserve">
+    <value>שליחות קודמות של הוידאו</value>
+  </data>
+  <data name="QuestionarryEnd" xml:space="preserve">
+    <value>השאלון הסתיים לצפיה לחץ כאן</value>
+  </data>
+  <data name="RecordResumeToCompanyAct" xml:space="preserve">
+    <value>הקלטת קורות חיים לחברת</value>
+  </data>
+  <data name="RestorePasswordToInterviewer" xml:space="preserve">
+    <value>שחזור סיסמת מראיין</value>
+  </data>
+  <data name="SaveToPC" xml:space="preserve">
+    <value>שמור למחשב</value>
+  </data>
+  <data name="SendingVideoWatchInvitation" xml:space="preserve">
+    <value>שליחת הזמנת צפייה לוידאו</value>
+  </data>
+  <data name="SendToInterviewer" xml:space="preserve">
+    <value>שלח למראיין</value>
+  </data>
+  <data name="Views" xml:space="preserve">
+    <value>צפיות</value>
+  </data>
+  <data name="WatchLiveVideo" xml:space="preserve">
+    <value>צפיה בקורות חיים בוידאו</value>
+  </data>
+  <data name="WatchVideo" xml:space="preserve">
+    <value>צפה בוידאו</value>
+  </data>
+  <data name="WelcomeToTheSite" xml:space="preserve">
+    <value>ברוך הבא לאתר</value>
+  </data>
+  <data name="YourCodeIs" xml:space="preserve">
+    <value>הקוד שלך הוא</value>
+  </data>
+  <data name="YourPasswordIs" xml:space="preserve">
+    <value>הסיסמא שלך היא</value>
+  </data>
+  <data name="AddBrand" xml:space="preserve">
+    <value>פרסום של המותג שלך בכל הזמנה</value>
+  </data>
+  <data name="Basic" xml:space="preserve">
+    <value>Basic</value>
+  </data>
+  <data name="BasicInclude" xml:space="preserve">
+    <value>200 הקלטות של ראיון מוקלט או לייב צאט</value>
+  </data>
+  <data name="BasicPrice" xml:space="preserve">
+    <value> 499 ₪ / לחודש</value>
+  </data>
+  <data name="companyLinkedIn" xml:space="preserve">
+    <value>Company LinkedIn</value>
+  </data>
+  <data name="companyWebSite" xml:space="preserve">
+    <value>אתר החברה</value>
+  </data>
+  <data name="ConfirmCreateCompany" xml:space="preserve">
+    <value>הינך מצהיר שהינך נציג החברה</value>
+  </data>
+  <data name="media" xml:space="preserve">
+    <value>Мedia</value>
+  </data>
+  <data name="Positions" xml:space="preserve">
+    <value>הוספת משרות ללא הגבלה</value>
+  </data>
+  <data name="Premium" xml:space="preserve">
+    <value>Premium</value>
+  </data>
+  <data name="PremiumInclude" xml:space="preserve">
+    <value>1500 הקלטות של ראיון מוקלט או לייב צאט</value>
+  </data>
+  <data name="PremiumPrice" xml:space="preserve">
+    <value>2499 ₪ / לחודש</value>
+  </data>
+  <data name="PricingTable" xml:space="preserve">
+    <value>חבילות ומחירים</value>
+  </data>
+  <data name="Pro" xml:space="preserve">
+    <value>Pro</value>
+  </data>
+  <data name="ProInclude" xml:space="preserve">
+    <value>400 הקלטות של ראיון מוקלט או לייב צאט</value>
+  </data>
+  <data name="ProPrice" xml:space="preserve">
+    <value> 999 ₪ / לחודש</value>
+  </data>
+  <data name="RecordStatusInactive" xml:space="preserve">
+    <value>סטטוס הקלטה: לא פעיל</value>
+  </data>
+  <data name="SocialProfile" xml:space="preserve">
+    <value>פרופיל רשתות חברתיות</value>
+  </data>
+  <data name="Trial" xml:space="preserve">
+    <value>30 ימי נסיון חינם</value>
+  </data>
+  <data name="UploadLogo" xml:space="preserve">
+    <value>העלה לוגו</value>
+  </data>
+  <data name="WeWorkWith" xml:space="preserve">
+    <value>השירות שלנו מתאים לחברות קטנות סטארטפים או חברות גדולות וכמובן לחברות השמה וכוח אדם</value>
+  </data>
+  <data name="Prices" xml:space="preserve">
+    <value>חבילות</value>
+  </data>
+  <data name="BuildLibrary" xml:space="preserve">
+    <value>Build out a library of videos so you can easily use them in the future</value>
+  </data>
+  <data name="Finish" xml:space="preserve">
+    <value>סיים</value>
+  </data>
+  <data name="Interviewee" xml:space="preserve">
+    <value>למרואיין</value>
+  </data>
+  <data name="MyCamera" xml:space="preserve">
+    <value>המצלמה שלי</value>
+  </data>
+  <data name="Unregistered" xml:space="preserve">
+    <value>לא רשום</value>
+  </data>
+  <data name="UploadVideo" xml:space="preserve">
+    <value>העלה וידאו</value>
+  </data>
+  <data name="VideoLibrary" xml:space="preserve">
+    <value>ספריית וידאו</value>
+  </data>
+  <data name="CameraMicrophoneChecking" xml:space="preserve">
+    <value>בדיקת תקינות מצלמה ומיקרופון</value>
+  </data>
+  <data name="ClickToCheck" xml:space="preserve">
+    <value>לחץ כאן לבדיקת המיקרופון והמצלמה</value>
+  </data>
+  <data name="ContinueRecordResume" xml:space="preserve">
+    <value>המשך להקלטת קורות חיים</value>
+  </data>
+  <data name="ContinueToRecord" xml:space="preserve">
+    <value>במידה ואתה רואה ושומע את עצמך לחץ להמשך</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>משתמש</value>
+  </data>
+  <data name="ClickTheLink" xml:space="preserve">
+    <value>לחץ על הקישור ששלחת לו</value>
+  </data>
+  <data name="registeredInSite" xml:space="preserve">
+    <value>נרשם לאתר</value>
+  </data>
+  <data name="Employee" xml:space="preserve">
+    <value>מראיין</value>
+  </data>
+  <data name="newVideoRecorded" xml:space="preserve">
+    <value>הוקלט וידאו חדש</value>
+  </data>
+  <data name="CompanyInformation" xml:space="preserve">
+    <value>ערוך פרטי חברה</value>
+  </data>
+  <data name="UploadPhoto" xml:space="preserve">
+    <value>Upload Photo</value>
+  </data>
+  <data name="youGotNewMessage" xml:space="preserve">
+    <value>קיבלת הודעה חדשה מ:</value>
+  </data>
+  <data name="CreateLiveInterview" xml:space="preserve">
+    <value>יצירת תבנית לראיון חי</value>
+  </data>
+  <data name="corporateManagment" xml:space="preserve">
+    <value>ניהול חברות</value>
+  </data>
+  <data name="EmployeeName" xml:space="preserve">
+    <value>שם המראיין</value>
+  </data>
+  <data name="Link" xml:space="preserve">
+    <value>קישור</value>
+  </data>
+  <data name="noteToWatcher" xml:space="preserve">
+    <value>הודעה לצופה</value>
+  </data>
+  <data name="templatedForLiveInterview" xml:space="preserve">
+    <value>הזמנות לראיונות חיים</value>
+  </data>
+  <data name="watcherOpinion" xml:space="preserve">
+    <value>חוות דעת צופה</value>
+  </data>
+  <data name="EmployeeProfile" xml:space="preserve">
+    <value>פרופיל אישי</value>
+  </data>
+  <data name="fileUploaded" xml:space="preserve">
+    <value>הקובץ הועלה בהצלחה נא המתן לפניה מהמראיין</value>
+  </data>
+  <data name="recordingStatusNotOn" xml:space="preserve">
+    <value>סטטוס הקלטה: כרגע לא מופעל</value>
+  </data>
+  <data name="cantDecide" xml:space="preserve">
+    <value>צריך לחשוב</value>
+  </data>
+  <data name="defineLiveInterview" xml:space="preserve">
+    <value>המשך להגדרת ראיון חי</value>
+  </data>
+  <data name="Interesting" xml:space="preserve">
+    <value>נראה מעניין</value>
+  </data>
+  <data name="notInteresting" xml:space="preserve">
+    <value>לא מעניין</value>
+  </data>
+  <data name="watchRecordedInterview" xml:space="preserve">
+    <value>המשך לצפיה בראיון המוקלט</value>
+  </data>
+  <data name="liveVideoInterviewTour" xml:space="preserve">
+    <value>&lt;h2 class="display-4"&gt;&lt;i class="fa fa-video-camera" aria-hidden="true"&gt;&lt;/i&gt;ראיון עבודה חי בוידאו צאט&lt;/h2&gt;
+              &lt;p&gt;ראיין בקלות מועמדים בזמן אמת ללא קשר למקום הימצאותם בוידאו צאט ותוכל ולהקליט את הראיון, כך שתוכל לחזור אליו מאוחר יותר.&lt;br /&gt;
+- תזמון לראיון בוידאו צאט &lt;br /&gt;
+- הראיונות מתבצעים ישירות בדפדפן האינטרנט שלך &lt;br /&gt;
+- שתף בקלות את הראיון עם קולגות או חברות נוספות&lt;/p&gt;&lt;br /&gt;</value>
+  </data>
+  <data name="oneWayVideoInterviewTour" xml:space="preserve">
+    <value>&lt;h2 class="display-4"&gt; &lt;i class="fa fa-file-video-o" aria-hidden="true"&gt;&lt;/i&gt;קורות חיים / ראיון וידאו מוקלט&lt;/h2&gt;
+              &lt;p&gt;בוא להכיר את המועמדים שלך טוב יותר בפחות זמן, שלח להם קישור להקלטת קורות חיים או תן להם לענות בוידאו מוקלט על שאלות שהכנת מראש.&lt;br /&gt;
+ - צור שאלות ללא הגבלה&lt;br /&gt;
+ - שלח הזמנות להקלטת וידאו ללא הגבלה &lt;br /&gt;
+ - תקבל הודעה על כל וידאו שהוקלט במערכת&lt;br /&gt;
+ - שתף את הקלטת הוידאו עם קולגות לעבודה או עם חברות נוספות.&lt;/p&gt;&lt;br /&gt;</value>
+  </data>
+  <data name="quizCandidateTour" xml:space="preserve">
+    <value>&lt;h2 class="display-4"&gt;&lt;i class="fa fa-check-square-o" aria-hidden="true"&gt;&lt;/i&gt;צור מבחן/שאלון על זמן למועמדים&lt;/h2&gt;
+    &lt;p&gt;
+        צור מבחן אמריקאי/שאלון על זמן למועמדים&lt;br /&gt;
+        - רשום את השאלות שלך &lt;br /&gt;
+        - צור תשובות מוכנות מראש&lt;br /&gt;
+        - שלח את השאלות למועמד בלחיצת כפתור אחת &lt;br /&gt;
+    &lt;/p&gt;</value>
+  </data>
+  <data name="videoLibraryTour" xml:space="preserve">
+    <value>&lt;h2 class="display-4"&gt;&lt;i class="fa fa-file-video-o" aria-hidden="true"&gt;&lt;/i&gt;סרטון תדמית לחברה/משרה&lt;/h2&gt;
+    &lt;p&gt;
+        צור סרטון של החברה שלך או המשרה ושתף זאת עם המרואיינים שלך.&lt;br /&gt;
+        -
+        העלה סרטונים המייצגים את החברה שלך - פעילות, אווירה, עובדים&lt;br /&gt;
+    &lt;/p&gt;</value>
+  </data>
+  <data name="ChangePassword" xml:space="preserve">
+    <value>שנה סיסמא</value>
+  </data>
+  <data name="ConfNewPassword" xml:space="preserve">
+    <value>תאשר סיסמא חדשה</value>
+  </data>
+  <data name="OldPassword" xml:space="preserve">
+    <value>הזן את הסיסמה הישנה שלך</value>
+  </data>
+  <data name="features" xml:space="preserve">
+    <value>מוצרים</value>
+  </data>
+  <data name="featuresTitle" xml:space="preserve">
+    <value>כל מה שאתה צריך עבור גיוס וסינון ראשוני לראיונות עבודה במקום אחד!</value>
+  </data>
+  <data name="NewPassword" xml:space="preserve">
+    <value>סיסמה</value>
+  </data>
+  <data name="Canceled" xml:space="preserve">
+    <value>בוטל</value>
+  </data>
+  <data name="Confirmed" xml:space="preserve">
+    <value>אושר</value>
+  </data>
+  <data name="Reservation" xml:space="preserve">
+    <value>הסתייגות</value>
+  </data>
+  <data name="GoToLiveVideo" xml:space="preserve">
+    <value>עבור אל וידאו חי</value>
+  </data>
+  <data name="changeDeadline" xml:space="preserve">
+    <value>לשינוי מועד לחץ כאן</value>
+  </data>
+  <data name="clickCancel" xml:space="preserve">
+    <value>לביטול לחץ כאן</value>
+  </data>
+  <data name="clickConfirmation" xml:space="preserve">
+    <value>לאישור לחץ כאן</value>
+  </data>
+  <data name="compatibleWith" xml:space="preserve">
+    <value>תואם ל:</value>
+  </data>
+  <data name="coordinateTo" xml:space="preserve">
+    <value>אני רוצה לתאם ל:</value>
+  </data>
+  <data name="goToLiveInterview" xml:space="preserve">
+    <value>כניסה לראיון עבודה</value>
+  </data>
+  <data name="sendMessageInterviewer" xml:space="preserve">
+    <value>שלח הודעה למראיין</value>
+  </data>
+  <data name="createTemplateLiveInterview" xml:space="preserve">
+    <value>צור תבנית לראיון עבודה בוידאו צאט</value>
+  </data>
+  <data name="enterChat" xml:space="preserve">
+    <value>כניסה לצ'ט</value>
+  </data>
+  <data name="invalidEmail" xml:space="preserve">
+    <value>האימייל אינו תיקני</value>
+  </data>
+  <data name="interviewData" xml:space="preserve">
+    <value>פרטי הראיון</value>
+  </data>
+  <data name="accountNeed" xml:space="preserve">
+    <value>האם אני צריך להירשם באתר ?</value>
+  </data>
+  <data name="accountNeedDescription" xml:space="preserve">
+    <value>המועמדים לא צריכים להירשם וליצור חשבון כדי להקליט ראיון וידאו. כל מה שנדרש כדי להשלים את הראיון שלך הוא ללחוץ על הקישור שקיבלת לדוא"ל שלך ולפעול לפי השלבים.</value>
+  </data>
+  <data name="doIhaveToPay" xml:space="preserve">
+    <value>קיבלתי הזמנה במייל לראיון עבודה האם אני צריך לשלם על זה ?</value>
+  </data>
+  <data name="doIhaveToPayDescription" xml:space="preserve">
+    <value>לא, הפלטפורמה שלנו היא ללא תשלום עבור המועמדים.</value>
+  </data>
+  <data name="facCand" xml:space="preserve">
+    <value>שאלות נפוצות למועמדים</value>
+  </data>
+  <data name="howToDoInterview" xml:space="preserve">
+    <value>איך אני עושה את הראיון שלי?</value>
+  </data>
+  <data name="howToDoInterviewDescription" xml:space="preserve">
+    <value>Live-Interview .הוא קל מאוד לשימוש יש שתי אפשרויות של ראיונות עבודה הראשון זה בוידאו מוקלט מראש עם שאלות כתובות והשני זה ראיון בוידאו צאט חי עם נציג החברה.
+לגביי ראיון מוקלט תקבל הודעת דוא"ל עם הוראות מפורטות כיצד להקליט את הראיון שלך. כדי להשלים את ראיון הווידאו שלך, תזדקק למצלמת אינטרנט במחשב / מחשב נייד או בטלפון חכם. תוכל להתחיל על ידי לחיצה על הקישור שנשלח לדוא"ל שלך. ראיון הווידאו מורכב בדרך כלל ממספר שאלות כתובת שהחברות שואלות בנוגע לתפקיד. השאלות יופיעו בזמן הקלטת הוידאו.
+בראיון וידאו צאט חי תקבל הודעת דוא"ל עם תאריך ושעה לביצוע הפגישה הוירטואלית במידה ותאשר זאת תקבל מייל נוסף עם קישור לכניסה לוידאו צאט</value>
+  </data>
+  <data name="recordAgain" xml:space="preserve">
+    <value>מה אם לא יצא לי טוב הוידאו ואני לא בטוח לגביי התשובות שעניתי, האם אוכל להקליט שוב את הראיון מחדש?</value>
+  </data>
+  <data name="recordAgainDescription" xml:space="preserve">
+    <value>כן, לאחר מענה על כל השאלות יש לך את ההזדמנות לצפות בוידאו שיצרת, אם אתה לא מרוצה תוכל להקליט אחד חדש ולהחליף את הקודם. לאחר שסיימת יש לך כפתור כדי לשלוח לנציג החברה.</value>
+  </data>
+  <data name="whatIsTheLiveInterview" xml:space="preserve">
+    <value>מה זה Live-Interview?</value>
+  </data>
+  <data name="whatIsTheLiveInterviewDescription" xml:space="preserve">
+    <value>Live-Interview הוא פלטפורמת גיוס המעניקה למועמדים לעבודה הזדמנות לעשות ראיונות עבודה מבלי לצאת מהבית גם בוידאו מוקלט או דרך וידאו צאט חי עם מקום העבודה. 
+יותר ויותר מעסיקים בארץ ובעולם משתמשים בטכנולוגיה של ראיון וידאו, מבלי להטריח את המועמד להגיע למשרדים שלהם לראיון עבודה. הייתרונות עבור המועמד הינם חסכון בזמן וכסף. אפשר לבצע את הראיון בכל מקום ושעה גם במשרות בחו"ל,  ראיונות הוידאו מאפשרים למעסיקים להיחשף למספר רב יותר של מועמדים, לאפשר לכמה בעלי תפקידים לצפות בראיון ואף עשוי להישמר בארכיוני המגייס, לצורך תפקידים עתידיים אחרים שייפתחו.</value>
+  </data>
+  <data name="whatNext" xml:space="preserve">
+    <value>השלמתי ושלחתי את הראיון שלי בווידאו. מה עכשיו?</value>
+  </data>
+  <data name="whatNextDescription" xml:space="preserve">
+    <value>מזל טוב. עכשיו אתה צריך לקבל עדכון מהחברה האם אתה עובר לשלב הבא או לא.</value>
+  </data>
+  <data name="whereInterviewGo" xml:space="preserve">
+    <value>לאן בדיוק הסרטון שאצלם יגיע?</value>
+  </data>
+  <data name="whereInterviewGoDescription" xml:space="preserve">
+    <value>הראיון שלך מגיע אך ורק לחברה ששלחה לך את הזימון לראיון. במידה וקיבלת את הזימון דרך חברת השמה היא תוכל לשתף זאת עם חברות שמחפשות לגייס מישהו כמוך.</value>
+  </data>
+  <data name="Disconnect" xml:space="preserve">
+    <value>נתק</value>
+  </data>
+  <data name="interviewerInTheRoom" xml:space="preserve">
+    <value>המראיין בחדר אנא המתן לתחילת השיחה</value>
+  </data>
+  <data name="notUsingHeadset" xml:space="preserve">
+    <value>אם אינך משתמש באוזניה, תשמע רעש במהלך בדיקה זו. הרעש הזה לא יופיע בשימוש אמיתי</value>
+  </data>
+  <data name="scheduledDate" xml:space="preserve">
+    <value>תאריך מתוזמן</value>
+  </data>
+  <data name="startConversation" xml:space="preserve">
+    <value>התחל שיחה</value>
+  </data>
+  <data name="writeHere" xml:space="preserve">
+    <value>רישמי כאן</value>
+  </data>
+  <data name="partFive" xml:space="preserve">
+    <value>חלק 5: יתרונות  של ראיון עבודה בוידאו עבור חברות כח אדם והשמה</value>
+  </data>
+  <data name="partFiveDescription" xml:space="preserve">
+    <value>&lt;a href="partFive.aspx"  class="greyLetters"&gt;ראיונות וידאו עבור חברת כח אדם: ייצוג טוב יותר של מועמדים ללקוחות&lt;br&gt;
+קבל יותר הכנסות עם ראיון וידאו עבור אנשי צוות&lt;br&gt;
+פתרונות גיוס: באמצעות Live interview  תוכל להעסיק את המועמדים הטובים ביותר&lt;br&gt;&lt;/a&gt;</value>
+  </data>
+  <data name="partFour" xml:space="preserve">
+    <value>חלק 4: תעשיות ומשרות שונות ראיונות וידאו</value>
+  </data>
+  <data name="partFourDescription" xml:space="preserve">
+    <value>&lt;a href="partFour.aspx"  class="greyLetters"  &gt;גייס עובדים טכנולוגיים מעולים בעזרת גייס אנשי מכירות מעולים בעזרת  Live-interview&lt;br&gt;
+גייס אנשי מכירות מעולים בעזרת  Live-interview&lt;br&gt;
+קבל 3 טיפים לגיוס עובדים בוידאו&lt;br&gt;
+ראיון גם נותני שירות עצמאים בעזרת Live-interview&lt;br&gt;
+יזמים מצליחים משתמשים ב Live -interview &lt;br&gt;
+רואי חשבון ועורכי דין משתמשים ב Live Interview כדי לגייס עובדים&lt;br&gt;
+מצא מנהלי משרד ופקידים עם Live- interview&lt;br&gt;
+פתרונות שיווק באינטרנט מגייסים עובדים עם Live- interview&lt;br&gt;
+מציאת עובדים טובים יותר בתעשייה הקמעונאית עם ראיונות עבודה בוידאו Live-interview&lt;br&gt;
+הימנעות תחלופת עובדים עם Live-interview&lt;br&gt;&lt;/a&gt;</value>
+  </data>
+  <data name="partOne" xml:space="preserve">
+    <value>חלק 1: מדריך היכרות ראיונות עבודה בוידאו</value>
+  </data>
+  <data name="partOneDescription" xml:space="preserve">
+    <value>&lt;a href="partOne.aspx"  class="greyLetters"  &gt; המדריך היכרות לראיונות וידאו&lt;br&gt; 
+ מדוע ראיונות מקוונים הוא העתיד&lt;br&gt;
+השתמש בראיון בוידאו כדי להתגבר על הפערים&lt;br&gt;
+היתרון של ראיונות וידאו&lt;br&gt;
+במקרה זה ראיון וידאו הוא הפתרון הטוב ביותר&lt;br&gt;
+ראיון וידאו עבור משאבי אנוש&lt;br&gt;
+ראיון עבודה חי - כדי לגייס עובדים מקצוענים&lt;br&gt;
+ראיון וידאו שאלות נפוצות&lt;br&gt;&lt;/a&gt;</value>
+  </data>
+  <data name="partSix" xml:space="preserve">
+    <value>חלק 6: ראיון עבודה בוידאו עבור המועמדים</value>
+  </data>
+  <data name="partSixDescription" xml:space="preserve">
+    <value>&lt;a href="partSix.aspx"  class="greyLetters"&gt;טיפים לראיון וידאו&lt;br&gt;
+דברים שיש להימנע מהם בראיון הווידאו שלך&lt;br&gt;
+איך לענות - שאלות פופולריות בראיון עבודה בוידאו &lt;br&gt;
+טיפים לשפת הגוף עבור ראיון הווידאו שלך&lt;br&gt;
+איך להראות טוב בראיון הווידאו שלך&lt;br&gt;
+היתרונות של ראיונות עבודה בוידאו&lt;br&gt;&lt;/a&gt;</value>
+  </data>
+  <data name="partThree" xml:space="preserve">
+    <value>חלק 3:  נקודות חשובות בראיון עבודה בוידאו</value>
+  </data>
+  <data name="partThreeDescription" xml:space="preserve">
+    <value>&lt;a href="partThree.aspx"  class="greyLetters"  &gt; כיצד לייצג את המותג שלך בראיון וידאו&lt;br&gt;
+איך המועמדים באמת מרגישים עם ראיונות בוידאו? &lt;br&gt;
+שיפור המיקום של המדיה החברתית בעוצמה של ראיונות וידאו&lt;br&gt;
+שאלות מכשילות להצלחת ראיונות עבודה בוידאו&lt;br&gt;
+ארגון ובחירה בראיונות וידאו&lt;br&gt;&lt;/a&gt;</value>
+  </data>
+  <data name="partTwo" xml:space="preserve">
+    <value>חלק 2: סוגי ראיונות עבודה בוידאו</value>
+  </data>
+  <data name="partTwoDescription" xml:space="preserve">
+    <value>&lt;a href="partTwo.aspx"  class="greyLetters"  &gt; ראיונות וידאו מוקלטים: מהי הדרך הטובה ביותר להציג מועמדים? &lt;br&gt;
+ראיונות בוידאו חי: הפתרון הטוב ביותר לגיוס עובדים במהירות ובלי לבזבז זמן&lt;br&gt;
+ראיונות וידאו חי לשיתוף פעולה טוב יותר&lt;br&gt;&lt;/a&gt;</value>
+  </data>
+  <data name="videoInfoRes" xml:space="preserve">
+    <value>מידע על ראיון עבודה מצולם בוידיאו</value>
+  </data>
+  <data name="introductoryGuide" xml:space="preserve">
+    <value>מדריך היכרות ראיונות בוידאו</value>
+  </data>
+  <data name="introductoryGuideDescription" xml:space="preserve">
+    <value>כאן תוכלו ללמוד עוד על ראיונות עבודה בוידאו. מהו בדיוק ראיון עבודה בוידאו ? איך זה שונה מוידאו צ'אט? ואיך אתה יכול להשתמש בראיונות וידאו כדי לקבל את ההחלטה העסקית הטובה ביותר? &lt;br&gt;
+מהו ראיון וידאו? &lt;br&gt;
+ראיון וידאו משתמש בטכנולוגיית וידאו באינטרנט כדי לאפשר למחפשי עבודה ומעסיקים להתחבר בצורה המהירה ביותר. ראיונות וידאו יכולים להתרחש מרחוק ולהשתמש בטכנולוגיית וידאו כאמצעי תקשורת. חזות ונראות של המועמד היא פרמטר חשוב ביותר. ובראיונות וידאו יש לך את האפשרות לתת למועמדים דרך טובה יותר להציג את עצמם, הן מילולית ולא מילולית. &lt;br&gt;
+ראיונות וידאו לעומת וידאו צ'אט -
+ראיונות וידאו הם בערך אותו דבר כמו וידאו צ'אט, נכון? לא. פלטפורמות וידאו צ'אט נוצרו רק בשביל זה: עבור צ'אט. לעומת זאת, פלטפורמות ראיונות עבודה בוידאו מוקלט נועדו במיוחד לתהליך הסינון הראשוני והגיוס, הפלטפורמה מאפשר לצפות שוב ושוב במועמד ובנוסף שיתוף הראיון עבודה עם המנהלים כדי לקבל החלטה משותפת. &lt;br&gt;
+סוגי ראיונות וידאו -
+לא כל הראיונות בווידאו שווים. להלן שני סוגים עיקריים של ראיונות באינטרנט:
+ראיונות וידאו צאט חי -
+אתה לא רוצה לבזבז זמן וכסף במהלך תהליך הראיון? לא עוד ראיונות וידאו חי. ראיונות אלה לעבוד בדיוק כמו מסורתיים פנים אל פנים, מינוס עלויות הנסיעה וכל הזמן זה לוקח לתזמן. &lt;br&gt;
+אין צורך בהתקנה של תוכנה או כל דבר מסורבל אחר מעסיקים ומחפשי עבודה יכול לצור חיבור בכל פעם ובכל מקום דרך אתר האינטרנט שלנו Live-interview.com . &lt;br&gt;
+ראיונות וידאו מוקלט
+מהו ראיון וידאו מוקלט? הוידאו המוקלט מאפשר ליצור סדרה של שאלות לראיון עבודה, אשר מועמדים לעבודה צריכים להקליט תשובות בוידאו בזמן הפנוי שלהם. &lt;br&gt;
+
+מועמדים לעבודה בפורמט וידאו מוקלט עונים על השאלות שהכנתם מראש לראיון תוך הצגת את כישורי התקשורת שלהם, אישיות, ומקצוענות, זה סוג של ראיון וירטואלי שנותן לחברות את היכולת לראות תוך כמה זמן המועמד חושב לפני מתן התשובה. &lt;br&gt;
+איך אתה יכול להשתמש בראיונות וידאו כדי לקבל את ההחלטות הטובות ביותר? &lt;br&gt;
+גיוס העובד המושלם למשרה הספציפית זה לא תמיד קל. מציאת מישהו שיכול להשתלב עם התרבות הייחודית של החברה שלך יכול להיות אפילו יותר קשה. פתרונות Live-interview  יכולים לסייע בגיוס אנשי מקצוע ולקבלת החלטות טובות יותר לגבי עובדים. הנה איך: &lt;br&gt;
+לחסוך זמן יקר וכסף. &lt;br&gt;
+סינון המועמדים יכול לקחת חלק נכבד מהזמן שלך ואת הכסף שלך. ראיונות וידאו יהפכו את התהליך להרבה יותר קל על ידי שהפלטפורמה שלנו  מאפשרת לך להתחבר עם מועמדים פנים אל פנים מבלי לפגוש אותם פיזית. כאשר מדובר סינון המועמדיםץ לחסוך זמן ולמנוע בעיות תזמון וכאבי ראש. &lt;br&gt;
+קבל תובנה טובה יותר בשלב מוקדם. &lt;br&gt;
+כל אחד יכול להישמע טוב בראיון טלפוני או קורות חיים. ראיונות וידאו לעומת זאת מאפשרים לך לראות רמזים חזותיים שיכולים להשפיע על ההחלטה שלך. תוכל לבחון את הבעות הפנים שלהם שפת הגוף והאישיות שלהם וכמובן מקצועיות בתחום. &lt;br&gt;
+שתף פעולה עם עמיתים. &lt;br&gt;
+כשמגיע הזמן לסנן מועמדים או להביא אותם לראיון אישי, לא כל אחד צריך תמיד יכול להיות נוכח. עם ראיונות וידאו מוקלט או לייב צאט ניתן לשתף עם עמיתים. נוסף על כך, הם יכולים להגיב ולדרג מועמדים אז קדימה הרשם כבר עכשיו....</value>
+  </data>
+  <data name="whyOnlineInterviewFuture" xml:space="preserve">
+    <value>מדוע ראיונות עבודה מקוונים הם העתיד</value>
+  </data>
+  <data name="whyOnlineInterviewFutureDescription" xml:space="preserve">
+    <value>&lt;p style="direction: rtl;"&gt;גמישות&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;מי רוצה להיות כבול ללוח הזמנים כל הזמן? ראיונות עבודה בוידאו מאפשרים לכם לגייס או לראיין על הדרך! לדוגמא, ראיון מקוון מציע אפליקציית ראיונות נוחה המאפשרת למחפשי עבודה להקליט ראיונות בכל מקום שבו הם נמצאים. כעת אתם יכולים לצפות במועמדים המובילים שלכם מחדר הישיבות, קרון הרכבת או אפילו בבריכה!&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;חסכון בעלויות&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;ראיונות מקוונים בוידאו הם דרך נהדרת לחסוך בעלויות. למשל, הם מפנים יותר זמן על ידי הפיכת המועמדים הקשים ביותר להשגה לזמינים במרחק של לחיצת כפתור. הם גם חוסכים עלויות נסיעה עד כ 67%!&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;אימוץ ויזואליות&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;המדיה הויזואלית היא גל העתיד. אחרי הכל, תמונה שווה אלף מילים, אפילו בצורה מקוונת. שימוש בראיונות וירטואליים מאפשר לכם לראות ולשמוע מהמועמדים שלכם מהר יותר ולהעריך בין אם המועמד הוא המתאים למשרה.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;עבור מחפשי העבודה, ראיונות עבודה מקוונים מאפשרים להם להדגים את כל מיומנויות התקשורת שלכם בקלות. כעת אתם יכולים להכניס את הדחף, השאפתנות והאישיות שלכם בשלב מוקדם יותר של תהליך הגיוס. כמעסיק, ראיונות עבודה בוידאו בונים גשר מהיר יותר בין פרסום מועמדות לעבודה לבין מציאת המועמד המושלם.&lt;/p&gt;</value>
+  </data>
+  <data name="enhancingSocialMediaPosition" xml:space="preserve">
+    <value>שיפור המיקום של המדיה החברית באמצעות כוחם של ראיונות הוידאו</value>
+  </data>
+  <data name="enhancingSocialMediaPositionDescription" xml:space="preserve">
+    <value>&lt;p style="direction: rtl;"&gt;&amp;nbsp;פלטפורמות המדיה החברתית מספקות הזדמנות עבור החברה שלך לשתף מידע על הארגון והמסר שלו.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;אתם יכולים גם לתת מידע על משרות פנויות בפני מחפשי עבודה.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;זה חשוב לשקול לבסס נוכחות בערוצים חברתיים מרובים כדי שתוכלו להבטיח כי המשרות שלכם מגיעות לקהל רחב ככל הניתן.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;אולם אתם קודם כל צריכים להגדיר מה צרכי הגיוס שלכם ולזהות את סוגי המשרות שאתם צריכים למלא.&amp;nbsp;&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;מכאן תחליטו אילו אתרי מדיה חברתית אתם רוצים לנצל כדי להגיע לקהל היעד של המועמדים שלכם.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;אם אתם נמצאים בעסקי הקמעונאות, אתם אולי תרצו באתרים כמו פייסבוק אחר עובדים פוטנציאלים. אם אתם מחפשים לגייס מנהל מכירות או מומחה לשיווק, לינקדין יכולה להיות המקום המתאים לכך. מותג המעסיק שלכם הוא גורם חשוב ליצירת חוויה חיובית למועמד ומשיכת האנשים הנכונים לחברה שלכם. המדיה החברתית וטכנולוגיית ראיונות העבודה בוידאו נותנים לחברות יותר הזדמנויות לשפר, לשמר או לדבוק במסר מיתוג עקבי. מחקרים למעשה מצאו כי השימוש במדיה החברתית הופך מיתוגים של מעסיקים לאטרקטיביים יותר למועמדים פוטנציאלים.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;זה קריטי שהחברה שלכם תהיה באופן עקבי בפלטפורמות המדיה החברתית ובראיונות עבודה בוידאו. בין אם מדובר בחשבון הטוויטר שלכם או במוקד ראיונות עבודה בוידאו, הם צריכים לספר את אותו הסיפור ולהיות מזוהים באופן מידי כדי שמועמדים לא יתבלבלו מההודעות המרובות. צרו מותג מעסיק שלא רק אינפורמטיבי, אלא גם מהנה ומפתה. שתפו תמונות מרחבי המשרד ומטיולי חברה. ואל תפחדו להראות את האנשים הכי טובים שלכם על ידי הבלטת עובדים. ראיונות מקוונים מאפשרים לכם להתאים באופן אישי את פורטל ראיונות הוידאו שלכם עם צבעי החברה והלוגואים, בנוסף לסרטונים לקידום המותג. חברות צריכות לנצל את פלטפורמות המדיה החברתית באמצעות גישה לפרופילים פוטנציאלים לגיוס על מנת לשפוט את המקצועיות ואת כישורי המנהיגות. זו דרך נהדרת להפריד מועמדים איכותיים מגיוסים בעיתיים. ראיונות עבודה בוידאו הם דרך נוחה, יעילה וחסכנית להתחבר באופן אישי למועמדים. תשלבו את זה עם אסטרטגיות המדיה החברתית שלכם ואתם תהיו בדרך נכונה למשיכת מועמדים מובילים לחברתכם. אתם לא תצטרכו יותר לשפוט מועמד אך ורק על בסיס קורות החיים שלו שאתם עלולים להסתכל עליהם במשך מספר שניות בלבד. באמצעות גיוס במדיה החברתית וראיונות עבודה בוידאו, תהיה לכם תמונה גדולה ומקיפה יותר על המועמד. על ידי מעורבות עם המועמדים במדיה החברתית תוך כדי שיחות על נושאים הקשורים לתעשייה ומענה על שאלות, אתם יכולים לבנות חיבור אישי לפני הגשת המועמדות לעבודה או הראיון. זאת הסיבה ששליש מתוך מנהלי הגיוס והמגייסים אומרים שגיוס ברשת החברתית האיץ את תהליך הגיוס שלהם. ניצול ראיונות עבודה מקוונים או מוקלטים יאפשר לכם להתחבר למועמדים ברמה אישית יותר מבלי לבזבז זמן בשיחות עם האנשים הלא נכונים. קיימת כמות גדולה של אנשים המשתמשים במדיה החברתית מידי יום כדי לשתף והעביר את המידע שלהם.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;לכן זה לא מפתיע שחברות נוספות מבינות את היתרונות של ניצול טכנולוגיית המיקור, החיבור וההערכה של מועמדים מבטיחים. יישום שילוב אסטרטגיות של רשתות חברתיות וראיונות עבודה בוידאו לתהליך הגיוס שלכם תביא למועמדים טובים יותר שיתרמו רבות לארגונכם, כך שתוכלו לבצע החלטות גיוס חכמות יותר.&lt;/p&gt;</value>
+  </data>
+  <data name="howDoCandidatesReallyFeel" xml:space="preserve">
+    <value>כיצד מועמדים באמת מרגישים בנוגע לראיונות עבודה בוידאו?</value>
+  </data>
+  <data name="howDoCandidatesReallyFeelDescription" xml:space="preserve">
+    <value>&lt;p&gt;כדי לקבל תובנה טובה יותר בנוגע להשפעה שיש לראיונות עבודה בוידאו על חווית המועמד, להלן מספר הסברים פשוטים של השאלות הנפוצות ביותר:&lt;br /&gt; האם מועמדים אוהבים ראיונות עבודה בוידאו?&lt;br /&gt; התשובה הקצרה היא כן. לפי מחקר שנערך לאחרונה של 400 מחפשי עבור, כמחצית מהנשאלים עם ניסיון מוקדם בראיונות עבודה בוידאו מעדיפים אותם מאשר פורמטים של ראיונות למרחקים ארוכים (כמו ראיון טלפוני). זה אומר הרבה, בהתחשב שראיונות עבודה בוידאו עדיין נחשבים לפורמט חדש יחסית של ראיונות.&lt;br /&gt; אז מה בדיוק מועמדים אוהבים בראיונות עבודה בוידאו?&lt;br /&gt; הם נוחים&lt;br /&gt; יותר מהכל, ראיונות עבודה בוידאו הם נוחים לכל הצדדים המעורבים. לא רק שהם מבטלים א הצורך לתכנן את הראיון סביב לוחות זמנים מרובים, אלא שהם גם מקלים על המועמדים להתראיין מכל מקום, על כל מכשיר ובכל זמן &amp;ndash; אפילו כאשר הם נמצאים בדרכים. על ידי הפיכת תהליך הראיון לגמיש יותר, מועמדים יכולים לחסוך זמן המשויכות לשיטות המסורתיות של הראיונות.&lt;br /&gt; קל להשתמש בהם&lt;br /&gt; הוידאו השתלט על היבטים מרובים של החיים האישיים והמקצועיים שלנו, מהאופן שבו אנחנו שומרים על קשר עם יקירינו ועד לאופן שבו אנחנו מראיינים מועמדים למשרות פנויות. מפני שפלטפורמות וידאו צ'אט משחקות תפקיד כה בולט בחיינו, מועמדים לעיתים קרובות מרגישים בנוח להתראיין דרך וידאו. הדור החדש של מחפשי העבודה מכיר את הטכנולוגיה ונוח לו להופיע בפני מצלמה. הדורות המבוגרים יותר של העובדים עלולים שלא להרגיש כל כך בנוח עם טכנולוגיית הוידאו, ראיונות עבודה בוידאו מעוצבים להיות מאוד ידידותיים למשתמש. אם אתם מצליחים להפעיל לנגן ולהקליט סרטונים ביוטיוב או סקייפ עם חברים, אתם יכולים להבין את ראיונות העבודה בוידאו.&lt;br /&gt; הם יוצרים יותר הזדמנויות&lt;br /&gt; זה נכון במיוחד עבור מועמדים לעבודה אשר נמצאים במרחק רב. ראיונות וידאו מקוונים הופכים ראיונות של פנים מול פנים עם מועמדים רחוקים לאפשריים, ובכך למשוך כישרונות מחו"ל.&lt;br /&gt; גם ראיונות וידאו מקוונים ומוקלטים הופכים מאפשרים יצירת קשר ויזואלי עם מועמד שאחרת לא הייתם זוכים לפגוש אותו באופן אישי.&lt;br /&gt; כיצד ראיונות עבודה בוידאו משקפים על החברה?&lt;br /&gt; סינון מועמדים לעבודה וביצוע ראיונות עבודה באמצעות וידאו משקף היטב על החברה. עבור מתחילים, כשזה נוגע לחוויית המשתמש, ראיונות עבודה בוידאו מציירים חברות כחדשניות, עכשוויות ומתמצאות בטכנולוגיה. כתוצאה מכך, אנשי מקצוע מתחום הגיוס יכולים לצפות למשוך מועמדים יצירתיים ומתמצאים בטכנולוגיה באותה המידה. בנוסף, יותר אפשרות אומר יותר מועמדים. מתן הזדמנות לראיון באמצעות וידאו מקל על מועמדים במרחק רב לקחת חלק בתהליך הראיון וזה יכול לשפר את מותג התעסוקה של החברה.&lt;br /&gt; האם ראיונות עבודה בוידאו עוזרים או פוגעים בחוויית המועמד?&lt;br /&gt; בסופו של דבר, חוויית המועמד היא טובה כפי שאתם גורמים לה להיות. אבל ראיונות עבודה בוידאו יכולים לגרום לחוויית המועמד לבלוט. הם נוחים, קלים ומרגשים עבור המועמדים וגם עבור אנשי המקצוע. עם זאת, אם משתמשים בהם בצורה לא נכונה, ראיונות עבודה בוידאו יכולים להפוך את חוויית המועמד לשלילית במהלך תהליך הראיון.&lt;br /&gt; המפתח ביצירת חוויית מועמד חיובית באמצעות ראיון עבודה בוידאו היא להילחם בחששות המועמד בשלב מוקדם. על ידי שימוש בפלטפורמה המעוצבת במיוחד לראיונות עבודה בוידאו, אנשי מקצוע מתחום הגיוס יכולים להיות סמוכים ובטוחים כי המועמדים חווים קישוריות מוגבלות ואיכות קול/שמע ברמה מעולה.&lt;/p&gt;</value>
+  </data>
+  <data name="howToRepresentYorBrand" xml:space="preserve">
+    <value>כיצד לייצג את המותג שלך בראיון עבודה בוידאו?</value>
+  </data>
+  <data name="howToRepresentYorBrandDescription" xml:space="preserve">
+    <value>&lt;p style="direction: rtl;"&gt;כשזה מגיע למציאת המועמד המושלם למשרות הפתוחות בחברתכם, הראיון הוא חיוני כדי לגלות למי יש את מה שנדרש ולמי אין.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;ראיון עבודה בוידאו צאט אינו שונה מפגישה אישית.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;רק מפני שאתם מתחברים למועמד בראיון עבודה בוידאו, זה לא אומר שאתם צריכים להקל על המועמדים.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;זה חשוב לשאול שאלות קשות על מנת לגלות אם המועמד שלכם טוב במציאות.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;שאלות קשות בראיון עבודה בוידאו מאפשרות לכם לראות כיצד המועמד מגיב וחושב.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;אם אתם מחוברים בראיון וידאו צאט מקוון, אתם יכולים לראות כיצד המועמדים מגיבים בזמן אמת ולהעריך יכולות תקשורת לא מילוליות.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;אם אתם מתקשרים באמצעות ראיון וידאו מוקלט, אתם עדיין צריכים לשאול שאלות קשות.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;בגלל שלמועמד יש יותר זמן להתכונן ולהקליט מחדש את תשובותיו, שאלות קשות בראיון נחוצות לסנן המועמדים הטובים ביותר מהשאר.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;בתקווה שהטיפים הללו יעזרו לכם לחשוב בעצמכם כדי שתוכלו למצוא את המועמד המתאים ביותר עבור חברתכם.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;1. ספר לנו על עצמך.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;זאת אחת מהשאלות הכי סטנדרטיות בראיון עבודה. מחפש עבודה שעונה על השאלה הזאת יכול לתת לכם כמות מפתיעה של מידע על עצמו ומטרותיו מהמידע שהוא בוחר לשתף.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;2. מדוע כדאי לנו להעסיק אותך?&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;זאת שאלה סטנדרטית נוספת בראיון עבודה, היא עוזרת לכם להעריך את הבטחון והתאמת הכישורים של המועמד עם העמדה המבוקשת. אם תוך כדי צפייה בוידאו המועמד נראה מבולבל באופן שבו הוא עונה על השאלה מדוע הוא האדם המתאים לעבודה, אולי זה מפני שהוא לא.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;3. מה ההישג הגדול ביותר בקריירה שלך?&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;שאלות הנוגעות למצבים מבקשות מהמתמודדים להשתמש בדוגמאות אמיתיות של חוויות אישיות שלהם כדי להדגים את ערכם. זה נותן לך מושג טוב יותר כיצד הכישורים שלהם מתבטאים בעבודה.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;4. ספר לנו על טעות גדולה שביצעת, כיצד התמודדת איתה ומה למדת מהחוויה.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;שוב, שאלות הנוגעות למצבים בראיונות מספרות לכם הרבה על האופן שבו המועמדים פועלים ומגיבים בסביבת עבודה אמיתית. שאלות של מצבים על הישגים הן בהחלט חשובות כדי לראות את המועמדים במיטבם. אבל זכרו, אף אדם לא נמצא במיטבו כל הזמן.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;טעויות קורות, לכן זה חשוב להשתמש בראיון בשאלות הנוגעות למצבים כדי להעריך כיצד מועמדים מגיבים כאשר הם מבצעים טעות. הטעות, התגובה והלקח הנלמד יכולים לספר לכם הרבה על האופן שבו המועמד מתמודד עם מכשולים ועם מצבי לחץ.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;5. מדוע אתה רוצה את העבודה הזאת?&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;זאת שאלה סטנדרטית נוספת בראיון עבודה, התשובה לשאלה הזאת יכולה לעזור לכם להעריך את שאיפות הקריירה. האם זאת עוד משכורת עבור המועמד או שהוא באמת מעוניין בחברה ובתעשייה שלכם? בזמן שהוא עונה, חפשו אחר תשוקה כנה הנוגעת לקריירה.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;6. היכן אתה רואה את עצמך בעוד חמש שנים?&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;זאת שאלה סטנדרטית נוספת בראיון שנועדה להעריך שאיפות קריירה. אתם רוצים מועמד שמוכן להתמיד בארגון מכיוון שהחלפת עובדים היא כל כך יקרה. אבל יותר מכך, אתם רוצים אדם שלמעשה מעורב ובעל מוטיבציה בעמדה המבוקשת או בתעשייה. אם המועמד רואה את עצמו בתעשייה או בחברה אחרת לאחר חמש שנים, הוא כנראה לא המועמד המתאים עבורכם.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;7. איזה סוג של סביבת עבודה אתה מעדיף?&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;השאלה הזאת מתמקדת על תרבות החברה מכיוון ש 46% מהגיוסים החדשים בעסקים קטנים נכשלים בתוך 18 החודשים הראשונים. הסיבה לכך? ב 89% מהמקרים, זאת היית אי התאמה עם תרבות החברה.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;אתם תמיד יכולים ללמד את המיומנויות, אבל למצוא מישהו שיתאים לתרבות חברתכם הוא דבר שהרבה יותר מורכב. תנו למועמד לספר לכם איזה סוג של תרבות חברה הוא יעדיף לעבוד ותוכלו לראות אם האידיאל שלו מתאים לחברה שלכם.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;8. מה החסרונות הכי גדולים שלך?&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;זאת באמת שאלה קשה כשהיא נשאלת בראיון, אבל כמו כל שאלה אחרת, היא יכול לספר לכם כיצד המועמד ניגש לבעיות. חפשו אחר מועמדים שלא מחפשים לתת לכם תשובה חוזרת ובמקום בוחרים חיסרון שהם מתייחסים אליו ולמדו ממנו.&amp;nbsp;&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;9. ספר לנו על פעם שעשית מעל ומעבר כדי לבצע משימה.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;התשובה לשאלה הזאת תספר לכם שני דברים חשובים. הדבר הראשון, זאת הזדמנות נוספת עבור המועמד להשאיר רושם חיובי על ידי כך שהוא מראה לכם משהו באמת מרשים. דבר שני, היא תספר לכם מה המועמד מחשיב כ"מעל ומעבר". אם הדוגמא לא כל כך מרשימה, אולי זה מפני שהמועמד הוא עובד שהולך הביתה בשעה חמש בדיוק ועושה רק מה שנדרש ממנו.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;10.כיצד אתה מעריך הצלחה?&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;בזמן שזאת לא אחת השאלות הסטנדרטיות בראיון עבודה, השאלה הזאת כנראה צריך להופיע. היא נותנת לכם מושג טוב על מה המועמד מחפש בעבודה ובקריירה שלו. האם הוא מחפש אחר עבודה מאתגרת ואחראיות או פשוט תלוש שכר גדול יותר? שימו לב לאופן שבו המועמד עונה כדי לראות מה הוא מחשיב כחשוב עבורו.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;שימוש בסוג כזה של שאלות יכול לעזור לכם להשתמש בראיונות עבודה בוידאו על מנת למצוא את הכישרון הטוב ביותר עבור חברתכם.&lt;/p&gt;</value>
+  </data>
+  <data name="liBestForSpeedy" xml:space="preserve">
+    <value>ראיונות וידאו מקוונים: הפתרון הטוב ביותר לגיוס מהיר </value>
+  </data>
+  <data name="liBestForSpeedyDescription" xml:space="preserve">
+    <value>תהליך גיוס יעיל הוא חיוני אם אתם רוצים להימנע מעמדות פנויות במשך שבועות או אפילו מספר ימים בלבד. על פי האגודה לניהול משאבי אנוש, זה בדרך כלל לוקח בין 29 ל 43 ימים כדי לגייס עובד חדש.
+ זה הרבה יותר מידי, במיוחד אם אתם זקוקים לאדם איכותי באופן מידי כדי שיעזור לחברה לצמוח.
+השגת תהליך גיוס יעיל פירושו ניתוק משיטות הגיוס המסורתיות שמבזבזות זמן ושיפור שיתוף הפעולה בצוות הגיוס על מנת שההחלטות בנוגע למועמד יתקבלו מהר יותר.
+ראיונות עבודה וידאו ובמיוחד הראיונות המקוונים הם פתרונות טכנולוגיים עוצמתיים אשר מאפשרים לחברות להגיע להחלטה מהירה בנוגע למועמד.
+כאשר מצאתם מועמד מצוין, אתם צריכים לעבוד מהר לפני שמישהו מהמתחרים יגנוב לכם אותו.
+אתם כנראה אף השתמשתם בפלטפורמת הצ'אט המקוונת בעבר,  בין אם זה , סקייפ אוFacetime  ולכן אתם כבר מכירים את הרעיון.
+ ההבדל המשמעותי בין צ'אט וידאו מקוון לבין ראיונות עבודה בוידאו הוא שראיונות עבודה בוידאו מעוצבים במיוחד עבור גיוס או תהליך ההעסקה.</value>
+  </data>
+  <data name="liBestPractice" xml:space="preserve">
+    <value>Live Interview - השיטות הטובות ביותר לגיוס עובדים מקצוענים</value>
+  </data>
+  <data name="liBestPracticeDescription" xml:space="preserve">
+    <value>&lt;p style="direction: rtl;"&gt;כדי להפיק את המיטב מניצול ראיונות העבודה שלכם בוידאו, אתם קודם כל צריכים להקים תכנית משחק משלכם על ידי זיהוי מטרות הגיוס שלכם.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;אילו סוגי משרות אתם צריכים למלא במהלך החודשים הקרובים או השנה הקרובה? לאחר שהגדרתם את זה, אתם יכולים ליישם את הטיפים הבאים לתוך אסטרטגיית ראיונות הוידאו שלכם כדי להביא כישרונות שיצטרפו לצוות שלכם.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;תהיו שקופים עם המועמדים בנוגע לתהליך הגיוס&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;למרות שהפופולריות של ראיונות עבודה בוידאו גדלה באופן משמעותי בשנים האחרונות, עדיין קיימות חברות שלא מנצלות את הטכנולוגיה הזאת.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;לכן קיימים מחפשי עבודה שאולי לא מכירים את שיטת הראיונות הזאת.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;אתם צריכים לקחת את הזמן ולהודיע למועמדים שלכם לתפקיד כי ראיון עבודה בוידאו משחק תפקיד בתהליך הגיוס שלכם.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;תתחילו את תהליך הראיון בכך שתשאלו את המועמד אם הוא אי פעם רואיין בוידאו.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;אם זאת הפעם הראשונה שלו שבה הוא מרואיין באופן זה, קחו את הזמן כדי להסביר על התהליך ומה מצפה לו.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;הראיון המוקלט מציע למועמדים גמישות רבה מכיוון שהם אלה שצריכים להחליט מתי לבצע אותו בתוך מסגרת הזמן שניתנה להם.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;עם זאת, אתם לא צריכים לקזז את היתרון הזה בכך שתיתנו זמן קצר מידי למועד האחרון של הראיון.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;אתם תרצו לתת למועמדים שלכם בין 5-7 ימים כדי להקליט את תשובותיהם. זאת כמות זמן מספקת עבורם כדי להכיר את פלטפורמת ראיונות העבודה בוידאו וכדי לבחון את הציוד שלהם.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;תנצלו את הזדמנויות המיתוג&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;החשיבות של חוויית המועמד לא מודגשת מספיק.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;מכיוון שאתם שואפים לגייס כשרון מוביל, זה חשוב לפתח חזות חיובית עבור חברתכם כמעסיקים.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;תוודאו כי אתם לא מתעלמים מהזדמנויות המיתוג במהלך ראיון העבודה בוידאו.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;לראות את לוגו החברה והצבעים יאפשר למועמדים לחוות ראיון עבודה בוידאו עקבי וממותג. הם לא יישארו עם תהיות לגבי הארגון שהם מתראיינים בו.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;בנוסף, ראיונות עבודה בוידאו יכולים להיות מרכיב אחד של המותג הכללי של החברה אשר מעביר רושם מתחשב וחדשני לעובדים פוטנציאלים ויכול לעזור משמעותית במשיכת כישרונות גדולים.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;ראיון עבודה יזום בוידאו מראה באופן מידי מועמדים שחברתכם מוכנה לאמץ טכנולוגיה חדשה.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;השיטות הטובות ביותר לביצוע ראיון עבודה מקוון:&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;בדקו את חיבור האינטרנט והציוד שלכם&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;בדיוק כמו שאתם מצפים ממועמד להתכונן לראיון העבודה בוידאו, כך גם אתם צריכים לעשות.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;זה חשוב לבדוק מראש את חיבור האינטרנט, המצלמה והמיקרופון כדי להימנע מתקלות במהלך הראיון.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;בזמן שאתם מנהלים ראיון עבודה מקוון ברשת אלחוטית, אנחנו ממליצים להתחבר לאינטרנט באמצעות שימוש בכבל אינטרנט בשביל ביצועים טובים יותר.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;אתם גם תרצו לסגור תוכנות ודפדפנים שלא תצטרכו במהלך ראיון העבודה המקוון מכיוון שהם יכולים להשתמש במשאבים ולהאט את החיבור. מצלמת האינטרנט שלכם היא כמובן חלק חיוני לראיון וידאו מוצלח.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;וודאו כי היא מחוברת למחשב וסגרו כל תוכנה שיכולה להשתמש בה (כמו סקייפ או FaceTime). מרבית מצלמות האינטרנט מגיעות עם מיקרופון מובנה, אולם, אם אתם מחליטים להשתמש במיקרופון עצמאי או אוזניות, תעשו בדיקה חוזרת כדי לוודא כי המיקרופון מחובר למחשב שלכם.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;ושוב, סגרו מראש כל תוכנה שעלולה להשתמש במיקרופון במהלך הראיון.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;זה חשוב מאוד לשים לב לרעשים מסביב, לרעשי הרקע ולאורות במקום שבו אתם בוחרים לבצע את ראיון הוידאו. ניתן לבצע ראיון עבודה בוידאו כמעט בכל מקום, אולם, אתם צריכים לשים לב לסביבה.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;&amp;nbsp;&lt;/p&gt;</value>
+  </data>
+  <data name="liBetterHiring" xml:space="preserve">
+    <value>ראיונות וידאו מקוונים לשיתוף פעולה טוב יותר בתהליך הגיוס</value>
+  </data>
+  <data name="liBetterHiringDescription" xml:space="preserve">
+    <value>&lt;span lang="HE" style="font-weight: normal;"&gt;בדרך כלל לוקח לחברות לפחות חודש כדי לגייס עובד חדש. &lt;/span&gt;
+&lt;span lang="HE" style="font-weight: normal;"&gt;לגרום למועמדים להמתין הרבה זמן להחלטה עלול להשאיר רושם שלילי כאשר חושבים על החברה שלכם והם עלולים לחפש עבודה במקום אחר.&lt;/span&gt;
+&lt;span lang="HE" style="font-weight: normal;"&gt; אצל חברות אשר מגיעות להחלטות גיוס מהר יותר, המשמעות של זה יכולה לשפר את שיתוף הפעולה של צוות הגיוס שלהן.&lt;/span&gt;
+&lt;span lang="HE" style="font-weight: normal;"&gt; על מנת לקבל החלטה בנוגע לגיוס, חוות הדעת של עמיתים אחרים עשויה להיות נדרשת.&lt;/span&gt;
+&lt;span lang="HE" style="font-weight: normal;"&gt; אולם הצורך לשינוי לוחות זמנים של אנשים מרובים כאשר קובעים ראיון עם מועמד יכול להיות מאוד קשה, אם לא בלתי אפשרי.&lt;/span&gt;
+&lt;span lang="HE" style="font-weight: normal;"&gt; בנוסף ייתכנו מקרים שבהם משהו צץ ברגע האחרון ועמית או שניים אינם יכולים להיות נוכחים בראיון שנקבע עבור המועמד. באמצעות ראיונות וידאו מוקלטים אתם יכולים בקלות לעדכן את עמיתיכם.&lt;/span&gt;
+&lt;span lang="HE" style="font-weight: normal;"&gt; ראיונות וידאו מקוונים עובדים כמו עמיתים מקבילים בתלת ממד, רק ללא עלויות הנסיעה והטרחה של קביעת ראיון אישי מסורתי. &lt;/span&gt;
+&lt;span lang="HE" style="font-weight: normal;"&gt;יתר על כן, ניתן לשתף ראיון מוקלט עם העמיתים שלהם ולנגן אותו מחדש בכל עת. אם עמית לא יכול להיות במקום באופן אישי והוא מהווה חלק משמעותי של ההחלטה, הוא עדיין יוכל לקבל תחושה טובה לגבי פוטנציאל ההתאמה, הכישורים והמשקל של המועמד בין אם יש צורך להמשיך איתו או לא.&lt;/span&gt;
+&lt;span lang="HE" style="font-weight: normal;"&gt; המשמעות של שיתוף פעולה טוב יותר בצוות הגיוס אומרת שאתם יכולים להבטיח כי החלטת גיוס חכמה מתקבלת בכל פעם. החלטת גיוס רעה יכולה לעלות לחברה באופן משמעותי. אם אתם מסוגלים לשתף פעולה יותר בקלות, אתם תוכלו גם לעשות את זה מהר יותר.&lt;/span&gt;
+&lt;span lang="HE" style="font-weight: normal;"&gt; זה אומר שניתן להגיע להחלטות גיוס חשובות במהירות ומאפשרות לכם להרחיב את הצעות העבודה למועמדים המוכשרים לפני שחברות אחרות מגיעות אליהם.&lt;/span&gt;</value>
+  </data>
+  <data name="organizationAndSelection" xml:space="preserve">
+    <value>ארגון ובחירה בראיונות וידאו</value>
+  </data>
+  <data name="organizationAndSelectionDescription" xml:space="preserve">
+    <value>&lt;p style="direction: rtl;"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;כאשר יש ארגון נהדר זאת דרך נהדרת לא רק לשמור על עובדים מעורבים ומלאי מוטיבציה, אלא גם דרך חכמה למשוך מועמדים מובילים.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;האנשים שאתם רוצים להתמקד עליהם עם אסטרטגיית הגיוס שלכם הם אותם האנשים שמחפשים אחר חברות עם יתרונות נהדרים. לא סגורים עדיין על החיוניות של תרבות ארגון טובה בשביל גיוס מועמדים מובילים?&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;להלן מספר סיבות לכך שאתם לא יכולים להרשות לעצמכם להתעלם מתרבות החברה:&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;ראיון עבודה בוידאו יכול לתת לכם תמונה ברורה יותר של האישיות, השאיפות ומטרות הקריירה של המועמד.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;באמצעות שימוש בראיון עבודה בוידאו אתם צריכים להעריך בין אם המועמד יתאים כמו כפפה לתרבות הנוכחית שלכם.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;שאלו שאלות על האופן שבו הם עובדים עם אחרים ומה תהיה סביבת המשרד האידיאלית שלהם.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;אולם היתרון האמיתי של ראיון עבודה בוידאו הוא היכולת לקבל מבט אישי יותר על המועמדים מהר יותר מאשר בתהליך הגיוס המסורתי.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;על ידי התשובות של מחפשי עבודה בראיון מוקלט, אתם יכולים לסנן מועמדים לא מתאימים ולהתמקד רק על המועמדים שיתאימו לארגון שלכם.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;זה יעזור לכם להפחית את המועמדים שלא מתאימים ושיעזבו את הארגון שלכם ברגע שיקבלו הצעה טובה יותר. שימוש בראיונות וידאו מסייע למתג את החברה שלכם כארגון המאמץ טכנולוגיות חדשות.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;אתם מראים כי החברה פתוחה לרעיונות חדשים ודרכים חדשות לטיפול בבעיות נפוצות. זה יעזור למתג את תרבות החברה שלכם כמקום הפתוח לרעיונות חדשים ולחדשנות.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;בתמורה, מיתוג החברה הזה סביר להניח שימשוך מועמדים חכמים בעלי רעיונות גדולים על האופן שבו ניתן לחדש ולהגדיל את הארגון שלכם.&lt;/p&gt;</value>
+  </data>
+  <data name="recordedVideoInterview" xml:space="preserve">
+    <value>ראיונות וידאו מוקלטים: מה הדרך הטובה ביותר לסינון מועמדים</value>
+  </data>
+  <data name="recordedVideoInterviewDescription" xml:space="preserve">
+    <value>&lt;p style="direction: rtl;"&gt;יש לכם כמות גבוהה במיוחד של מועמדים לעבודה שצריך לסנן ואתם רוצה לצמצם את כמות המועמדים ולזהות את ההתאמה הטובה ביותר לעבודה, אתם צריכים לסנן ולעבור על כל מועמד ראוי.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;סינון המועמדים לפני הזמנתם לראיון אישי ופורמלי היא הכרחית, במיוחד אם כאשר אתם מתחשבים בעובדה כי מתקבלות בממוצע 250 קורות חיים עבור כל פתיחה של משרה בארגון.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;באמצעות ראיונות עבודה מוקלטים שבהם מועמדים מקליטים את תשובותיהם לסדרת שאלות טקסט או שאלות על בסיס וידאו בכמות זמן שנקבעה מראש, הסינון לא חייב להיות מייגע וגוזל זמן.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;&lt;br /&gt; תקשורת עם המועמדים&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;&lt;br /&gt; גם ראיונות וידאו מוקלטים וראיונות טלפוניים נותנים לכם הזמנות לשאול שאלות ולקבל תובנה טובה יותר על היכולת של המועמד למלא את המטלות של תפקיד מסוים. זה המקום שבו קווי הדמיון מסתיימים.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;בניגוד לראיונות בטלפון, ראיונות עבודה בוידאו נותנים לכם תמונה שלמה יותר של המועמד.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;במקום להסתמך נימת קולם של מתמודדים כדי להעריך את העניין, האישיות והמקצועיות שלהם, ראיונות עבודה מוקלטים מאפשרים לכם לאסוף סימנים ויזואליים חשובים כמו הבעות פנים ושפת הגוף שיכולים באופן פוטנציאלי להשפיע על החלטת הגיוס.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;באמצעות ראיונות וידאו מוקלטים, אתם יכולים לראות מה אתם הולכים לקבל לפני שהמועמד בכלל דורך במשרדכם.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;&lt;br /&gt; קביעת ראיון ראשוני&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;&lt;br /&gt; הטבע של ראיונות וידאו מוקלטים לוקח את הטרחה מתהליך הקביעה של הראיון.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;למעשה זה מצריך מעט מאוד זמן כדי לסנן מועמדים באמצעות וידאו.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;תיצרו רשימת שאלות לראיון שתרצו שהמועמד יענה עליהם, תשלחו קישור לפלטפורמת הראיון וצפו בהקלטות הראיון בזמן שנוח לכם.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;&lt;br /&gt; השוואה&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;&lt;br /&gt; דרך ראיונות וידאו מוקלטים אתם יכולים להבטיח כי כל המועמדים נשאלים אותו הדבר וניתנת להם אותה כמות זמן כדי להתכונן ולמסור את תשובותיהם ובכך מאזנים את מאזן הכוחות. יתר על כן, ניתן לעצור ולנגן שוב ושוב ראיונות מוקלטים, דבר שהופך את זה לפשוט להעריך בצורה הוגנת יותר מועמדים.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;&lt;br /&gt; שיתוף פעולה בהחלטות הגיוס&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;&lt;br /&gt; בין אם אתם מסתמכים על הערכות בכתב על הראיון או הערות מילוליות כדי להעריך מועמדים, ניתן לשתף ראיונות וידאו מוקלטים עם אחרים כדי שהם יוכלו לקחת החלטת בלתי משוחדות משלהם.&lt;/p&gt;</value>
+  </data>
+  <data name="theBenefit" xml:space="preserve">
+    <value>היתרון של ראיונות עבודה בוידאו</value>
+  </data>
+  <data name="theBenefitDescription" xml:space="preserve">
+    <value>&lt;p style="direction: rtl;"&gt;מה היתרון של שימוש בראיונות וידאו מקוונים? קיימות הרבה סיבות לכך שראיון וירטואלי יכול לייעל את תהליך הגיוס.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;כולנו יודעים שתהליך הגיוס המסורתי יכול להיות לעיתים כאב ראש.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;ראיונות עבודה בוידאו עוזרים לנקות חלק מהבלגן בתהליך והופכים את מאמצי הגיוס שלכם ליעילים יותר.&lt;br /&gt; הדרך שבה דברים מתבצעים כיום&lt;br /&gt; דיברנו על האופן שבו ניתן לשפר את יעילות הגיוס באמצעות שימוש בראיונות עבודה בוידאו, בואו נציץ מאחורי וילון הגיוס.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;האופן שבו דברים מתבצעים בתהליך הגיוס מוביל חברות ומגייסים לבזבז זמן יקר וכסף.&lt;br /&gt; שתי ההוצאות הגדולות ביותר בתהליך הגיוס הן הזמן והנסיעות.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;על פי העבודה והמועמד, חלק מהחברות מוכנות להטיס כישרון לראיון. זה יכול להוביל לעלויות גבוהות ללא ערובה שהמועמד יהפוך לעובד.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;הנסיעות אינן החלק היחיד של התהליך המסורתי של הגיוס. מגייסים ומנהלי גיוס מבזבזים הרבה זמן יקר בניסיון למצוא את האנשים הטובים עבור העבודה. המגייס הממוצע מבזבז כ 15 שעות בשבוע בסינון מועמדים.&lt;br /&gt; תהיו יעילים יותר בראיונות העבודה בוידאו&lt;br /&gt; ראיונות עבודה מקוונים יכולים לעזור לכם לצמצם את תהליך הגיוס המסורתי ולחסוך לחברה שלכם זמן וכסף.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;כיצד ראיונות עבודה מקוונים עוזרים? הם מייעלים את תהליך הגיוס.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;לדוגמא, מעסיקים יכולים לצפות במועמדים עונים על שאלותיהם מתי והיכן שהם רוצים.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;הבנתם שהמועמד לא מתאים לתפקיד בשלב מוקדם? כעת אינכם כבולים לטלפון.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;זאת אחת מסיבות המרכזיות לכך שהרבה מגייסים מאמצים ראיונות עבודה בוידאו.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;ראיונות וידאו מקוונים הם נהדרים עבור מועמדים מרוחקים ופסיביים.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;כעת אתם יכולים לחסוך 100% מהוצאות הנסיעה שלכם באמצעות המצלמה הביתית שלכם.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;בנוסף, קביעת ראיונות עם מועמדים פסיביים יכולה לעיתים קרובות להיות קשה.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;בעוד אתם רוצים שהמועמדים הטובים ביותר יהיו מולכם, הם לעיתים קרובות עסוקים מידי או שהם מועסקים כיום.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;גם מנהלי הגיוס וגם המועמדים יכולים לקבוע ראיון פנים מול פנים מבלי שינויים חוזרים ונשנים של קביעת מועד מתאים.&lt;br /&gt; בואו נהיה כנים, אנחנו חיים בעידן הדיגיטלי. צרכנים מחפשים באינטרנט כל דבר החל מעצה ובידור ועד לספרים ומוצרים. לא קיים דבר שלא ניתן למצוא באינטרנט.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;לכן מדוע לא לנצל את ההמלצות של הגיוסים המקוונים החדשים?&lt;br /&gt; השימוש בראיון וידאו מקוון מראה למגייסים פוטנציאלים כי החברה שלכם מבינה את השוק המקוון. אם תאמצו את הטכנולוגיה העולה ודרכים חדשות לגשת לתהליכי הגיוס, אתם תמשכו כישרונות בעלי ערכים דומים.&lt;/p&gt;</value>
+  </data>
+  <data name="trickyQuestionsForVideo" xml:space="preserve">
+    <value>שאלות מכשילות להצלחת ראיונות עבודה בוידאו</value>
+  </data>
+  <data name="trickyQuestionsForVideoDescription" xml:space="preserve">
+    <value>&lt;p style="direction: rtl;"&gt;כשזה מגיע למציאת המועמד המושלם למשרות הפתוחות בחברתכם, הראיון הוא חיוני כדי לגלות למי יש את מה שנדרש ולמי אין. ראיון עבודה בוידאו אינו שונה מפגישה אישית.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;רק מפני שאתם מתחברים למועמד בראיון עבודה בוידאו, זה לא אומר שאתם צריכים להקל על המועמדים.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;זה חשוב לשאול שאלות קשות על מנת לגלות אם המועמד שלכם טוב במציאות. שאלות קשור בראיון עבודה בוידאו מאפשר לכם לראות כיצד המועמד מגיב וחושב. אם אתם מחוברים בראיון וידאו מקוון, אתם יכולים לראות כיצד המועמדים מגיבים בזמן אמת ולהעריך יכולות תקשורת לא מילוליות. אם אתם מתקשרים באמצעות ראיון וידאו מוקלט, אתם עדיין צריכים לשאול שאלות קשות.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;בגלל שלמועמד יש יותר זמן להתכונן ולהקליט מחדש את תשובותיו, שאלות קשות בראיון נחוצות לסנן המועמדים הטובים ביותר מהשאר.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;בתקווה שהטיפים הללו יעזרו לכם לחשוב בעצמכם כדי שתוכלו למצוא את המועמד המתאים ביותר עבור חברתכם.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;1. ספר לנו על עצמך.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;זאת אחת מהשאלות הכי סטנדרטיות בראיון עבודה. מחפש עבודה שעונה על השאלה הזאת יכול לתת לכם כמות מפתיעה של מידע על עצמו ומטרותיו מהמידע שהוא בוחר לשתף.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;2. מדוע כדאי לנו להעסיק אותך?&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;זאת שאלה סטנדרטית נוספת בראיון עבודה, היא עוזרת לכם להעריך את הבטחון והתאמת הכישורים של המועמד עם העמדה המבוקשת. אם תוך כדי צפייה בוידאו המועמד נראה מבולבל באופן שבו הוא עונה על השאלה מדוע הוא האדם המתאים לעבודה, אולי זה מפני שהוא לא.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;3. מה ההישג הגדול ביותר בקריירה שלך?&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;שאלות הנוגעות למצבים מבקשות מהמתמודדים להשתמש בדוגמאות אמיתיות של חוויות אישיות שלהם כדי להדגים את ערכם. זה נותן לך מושג טוב יותר כיצד הכישורים שלהם מתבטאים בעבודה.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;4. ספר לנו על טעות גדולה שביצעת, כיצד התמודדת איתה ומה למדת מהחוויה.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;שוב, שאלות הנוגעות למצבים בראיונות מספרות לכם הרבה על האופן שבו המועמדים פועלים ומגיבים בסביבת עבודה אמיתית. שאלות של מצבים על הישגים הן בהחלט חשובות כדי לראות את המועמדים במיטבם. אבל זכרו, אף אדם לא נמצא במיטבו כל הזמן.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;טעויות קורות, לכן זה חשוב להשתמש בראיון בשאלות הנוגעות למצבים כדי להעריך כיצד מועמדים מגיבים כאשר הם מבצעים טעות. הטעות, התגובה והלקח הנלמד יכולים לספר לכם הרבה על האופן שבו המועמד מתמודד עם מכשולים ועם מצבי לחץ.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;5. מדוע אתה רוצה את העבודה הזאת?&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;זאת שאלה סטנדרטית נוספת בראיון עבודה, התשובה לשאלה הזאת יכולה לעזור לכם להעריך את שאיפות הקריירה. האם זאת עוד משכורת עבור המועמד או שהוא באמת מעוניין בחברה ובתעשייה שלכם? בזמן שהוא עונה, חפשו אחר תשוקה כנה הנוגעת לקריירה.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;6. היכן אתה רואה את עצמך בעוד חמש שנים?&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;זאת שאלה סטנדרטית נוספת בראיון שנועדה להעריך שאיפות קריירה. אתם רוצים מועמד שמוכן להתמיד בארגון מכיוון שהחלפת עובדים היא כל כך יקרה. אבל יותר מכך, אתם רוצים אדם שלמעשה מעורב ובעל מוטיבציה בעמדה המבוקשת או בתעשייה. אם המועמד רואה את עצמו בתעשייה או בחברה אחרת לאחר חמש שנים, הוא כנראה לא המועמד המתאים עבורכם.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;7. איזה סוג של סביבת עבודה אתה מעדיף?&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;השאלה הזאת מתמקדת על תרבות החברה מכיוון ש 46% מהגיוסים החדשים בעסקים קטנים נכשלים בתוך 18 החודשים הראשונים. הסיבה לכך? ב 89% מהמקרים, זאת היית אי התאמה עם תרבות החברה.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;אתם תמיד יכולים ללמד את המיומנויות, אבל למצוא מישהו שיתאים לתרבות חברתכם הוא דבר שהרבה יותר מורכב. תנו למועמד לספר לכם איזה סוג של תרבות חברה הוא יעדיף לעבוד ותוכלו לראות אם האידיאל שלו מתאים לחברה שלכם.&lt;br /&gt; 8. מה החסרונות הכי גדולים שלך?&lt;br /&gt; זאת באמת שאלה קשה כשהיא נשאלת בראיון, אבל כמו כל שאלה אחרת, היא יכול לספר לכם כיצד המועמד ניגש לבעיות. חפשו אחר מועמדים שלא מחפשים לתת לכם תשובה חוזרת ובמקום בוחרים חיסרון שהם מתייחסים אליו ולמדו ממנו. &lt;br /&gt; 9. ספר לנו על פעם שעשית מעל ומעבר כדי לבצע משימה.&lt;br /&gt; התשובה לשאלה הזאת תספר לכם שני דברים חשובים. הדבר הראשון, זאת הזדמנות נוספת עבור המועמד להשאיר רושם חיובי על ידי כך שהוא מראה לכם משהו באמת מרשים. דבר שני, היא תספר לכם מה המועמד מחשיב כ"מעל ומעבר". אם הדוגמא לא כל כך מרשימה, אולי זה מפני שהמועמד הוא עובד שהולך הביתה בשעה חמש בדיוק ועושה רק מה שנדרש ממנו.&lt;br /&gt; 10.כיצד אתה מעריך הצלחה?&lt;br /&gt; בזמן שזאת לא אחת השאלות הסטנדרטיות בראיון עבודה, השאלה הזאת כנראה צריך להופיע. היא נותנת לכם מושג טוב על מה המועמד מחפש בעבודה ובקריירה שלו. האם הוא מחפש אחר עבודה מאתגרת ואחראיות או פשוט תלוש שכר גדול יותר? שימו לב לאופן שבו המועמד עונה כדי לראות מה הוא מחשיב כחשוב עבורו.&lt;br /&gt; שימוש בסוג כזה של שאלות יכול לעזור לכם להשתמש בראיונות עבודה בוידאו על מנת למצוא את הכישרון הטוב ביותר עבור חברתכם.&lt;/p&gt;</value>
+  </data>
+  <data name="useVideoInterviewing" xml:space="preserve">
+    <value>שימוש בראיונות עבודה בוידאו כדי להתגבר על הפער</value>
+  </data>
+  <data name="useVideoInterviewingDescription" xml:space="preserve">
+    <value>&lt;p style="direction: rtl;"&gt;תהליך הגיוס המסורתי יכול להיות מאוד ארוך.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;ראיונות עבודה וידאו בונים גשר טוב יותר שנועד לעקוף את כל מחסומי הגיוס המסורתיים.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;לדוגמא, קיימים אינספור קורות חיים שיש לעבור עליהם, ראיונות טלפוניים נמשכים בממוצע 15 דקות לשיחה ובנקודה הזאת המגייסים אפילו לא מצאו עדיין את המועמדים הטובים ביותר שלהם.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;ברגע שיש צורך בביצוע של ראיונות נוספות, אתם צריכים לתזמן את אותם הראיונות עם המועמד באופן אישי.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;נהדר! כעת יש לכם קשיי תזמון שצריך לנהל.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;לא פלא שהזמן הממוצע שדרוש כדי למלא משרה הוא 30 ימים.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;זה נס שזה לא אורך יותר! עבור מחפשי עבודה, תהליך הראיונות יכול להיות לא פחות כואב.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;אתם לעיתים קרובות תצטרכו לבצע אינספור שיחות טלפון וראיונות אישיים.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;זה אומר לתכנן, לנסוע ולפעמים אף לקחת יום חופש מהעבודה.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;ראיונות עבודה מקוונים הם דרך נהדרת לקיצור התהליך הזה.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;במקום לשחות בתוך זרם אינסופי של קורות חיים וראיונות: בנו גשר! ראיונות וירטואליים יכולים לעזור לקצר את התהליך בין המיון, קורות החיים ומציאת המועמד המושלם להעסקה.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;לדוגמא, ראיונות חד כיווניים הם דרך נהדרת לקצר את הראיונות הטלפוניים הראשוניים שצורכים הרבה זמן.&lt;br /&gt; מחפשי עבודה יכולים להקליט תשובות לראיונות עבודה המבוססים על טקסט שמפורסמים על ידי מעסיקים ולהראות את מיומנויות התקשורת, הכריזמה והכישורים שלהם.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;הם יכולים להקליט ראיונות אלה בזמנם החופשי ואף על גבי המכשירים הניידים שלהם.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;מעסיקים יכולים לצפות כעת בראיונות וידאו מוקלטים כאשר לוח הזמנים מאפשר להם.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;אין צורך יותר לבזבז 30 דקות על מועמד שמעסיק יודע שאינו מתאים לאחר 90 השניות הראשונות.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;&lt;br /&gt; ראיונות עבודה בוידאו מאפשרים גם למחפשי עבודה וגם למגייסים לחסוך זמן יקר כדי שהם יוכלו להתמקד על ההזדמנויות הטובות ביותר שלהם.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;במקום להזמין עשרות מועמדים מתאימים לראיונות, תביאו רק את המועמדים המובילים לפגישה אישית. ראיונות עבודה בוידאו יכולים לעבוד גם כדרך לקצר בצורה יעילה את תהליך הגיוס אצל מחפשי עבודה וגם אצל המעסיקים. מעסיקים יבלו פחות זמן במיון מועמדים ויתמקדו יותר על אנשים המתאימים לעבודה.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;מחפשי עבודה יכולים להשתמש בוידאו כדי לבצע ראיונות עבור עבודות קרובות ורחוקות ללא צורך בנסיעות והקושי בלוח הזמנים. וידאו מקוון בונה גשר טוב יותר בין הגשת המועמדות לעבודה ומציאת ההתאמה המושלמת&lt;/p&gt;</value>
+  </data>
+  <data name="videoInterviewForHR" xml:space="preserve">
+    <value>ראיון וידאו עבור משאבי אנוש וכח אדם</value>
+  </data>
+  <data name="videoInterviewForHRDescription" xml:space="preserve">
+    <value>&lt;p style="direction: rtl;"&gt;האם אתה מרגיש שתהליך ההעסקה שלך הוא קצת מיושן ...? לֹא יָעִיל? לֹא אִישִׁי? אם כן, אולי הגיע הזמן להסתכל לתוך הפתרון חדשני שלנו &amp;nbsp;interview Live.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;זה לא קל לדרג ולהעריך את המועמד על ידי מה שהם כתבו קורות חיים על הנייר. אבל מה עם אישיות, ההתלהבות או המקצוענות?&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;למעשה על ידי ראיית מועמדים באמצעות ראיונות וידאו, מנהלי גיוס טובים יותר יכולים להבין יותר מיהו הבנאדם ומה היכולות.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;קורות חיים מוקלטים&amp;nbsp; מאפשרים ל HR צורה של מיון וסינון ראשוני הוא הרבה יותר יעיל ומאפשר למעסיקים לקבל תובנות נוספות על המועמדים בנוסף, עם היכולת לחלוק ראיונות וידאו עם חברי הצוות, שיתוף פעולה פנימי מעולם לא היה קל יותר. עם כלים אלה. ראיונות בוידאו מביאים את החיים לתהליך המיון והסינון הראשוני. ובכך לקבל החלטות טובות יותר כדי לבחור את העובדים &amp;nbsp;הטובים ולטווח ארוך.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;במובן מסוים, ראיונות וידאו מאפשרים למנהלי גיוס כדי "לשמוע" מה לא אמר בעת הצגת תגובות טקסט. ראיון וידאו עבור משאבי אנוש משלב את היתרונות של מסך הטלפון ואת ראיון אישי כדי להעריך עוד מיומנויות של המועמד, עמדות ואישים.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;במובן מסוים, ראיונות בוידאו מאפשרים למנהלי הגיוס לשמוע ולהבין מה שלא נאמר בקורות חיים הכותבים. ראיון עבודה בוידאו משלב את היתרונות של מסך טלפון ואת הראיון האישי כדי להעריך עוד יותר את היכולות של המועמד.&lt;/p&gt;</value>
+  </data>
+  <data name="whichCaseVideoIsBest" xml:space="preserve">
+    <value>באיזה מקרה ראיון עבודה בוידאו הוא הפתרון הטוב ביותר</value>
+  </data>
+  <data name="whichCaseVideoIsBestDescription" xml:space="preserve">
+    <value>&lt;p style="direction: rtl;"&gt;בקצרה, ראיונות עבודה בוידאו יוצרים דרך נוחה, חדשנית ומעניינת עבור מגייסים ליצירת קשר עם מחפשי עבודה.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;אבל הכי חשוב, ראיונות עבודה בוידאו מספקים ייחודיות ששיחות הטלפון או פגישות מול פנים של ראיונות העבודה המסורתיים פשוט לא היו עובדים.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;כאשר קיימת כמות גדולה של מועמדים שצריך לסנן.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;עבור גיוס אנשי מקצוע הלחוצים בזמן, סינון מועמדים הוא חלק הכרחי של תהליך הגיוס ובמיוחד כאשר יש מועמדים בעלי ערך גבוה.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;כאשר יש לכם כמות גדולה של מועמדים, לבזבז 30 דקות בטלפון עם כל אחד הוא לא ניצול יעיל של הזמן.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;לא כאשר אתם יכולים לצפות בעשרה ראיונות וידאו מוקלטים באותו זמן שלוקח לכם לבצע שיחת טלפון אחת. ראיונות וידאו מוקלטים שבהם מועמדים מקליטים את תשובותיהם לסדרת שאלות שנקבעה מראש נותנים לסינון משמעות חדשה לחלוטין.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;הם לא רק נותנים לכם הזדמנות להתחבר למועמדים באופן ויזואלי, ראיונות עבודה בוידאו גם נוחים. במקום לבזבז את הזמן בקביעת שיחת טלפון בתוך לוח הזמנים העמוס של כולם, ניתן לצפות בראיונות וידאו מוקלטים בזמנכם הפנוי.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;כאשר אתם צריכים לראיין מועמדים שנמצאים במרחק רב.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;כשזה נוגע לחיפוש אחר כשרון מוביל, לפעמים זה נחוץ לצאת מגבולות האזור האישי שלכם.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;אבל למשוך ולתקשר עם כשרון מרוחק יכול להיות דבר קשה בגלל מגבלות גיאוגרפיים ואזורי זמן.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;זה המקום שבו ראיונות עבודה בוידאו יכולים לעזור.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;על ידי הצעה של ראיון עבודה בוידאו, אתם יכולים להרחיב את חיפוש מועמדי העבודה לגלובלי ולמשוך מועמדים שאחרת לא היו פונים למשרה.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;כאשר אתם רוצים למשוך מועמדים פסיביים יותר.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;מועמדים פסיביים הם בעלי ביקוש רב. הם פונים לחברות מפני שהם הדגימו את כישוריהם ואת מומחיותם על ידי כך שהם משגשגים בעמדות דומות. הידעתם כי 75% מאנשי המקצוע מגדירים עצמם כ"מועמדים פסיביים"? במילים אחרות, שלושה רבעים מתוך אנשי המקצוע אינם מחפשים באופן פעיל אחר עבודה חדשה, אבל זה לא אומר שהם אינם פתוחים להזדמנויות אחרות הנקרות בדרכם. יצירת קשר עם מועמד פסיבי בנוגע להזדמנות עבודה יכולה להיות דבר בעייתי עקב לוח הזמנים העמוס שלהם.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;למרבה המזל, ראיונות עבודה בוידאו מקלים על הפנייה והמשיכה של לקוחות פסיביים.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;לקוחות פסיביים עלולים שלא לרצות להתחייב בכל הכוח לראיון עבודה, אבל יכולים לקחת מספר דקות כדי להשתתף בראיון עבודה בוידאו. בהתאם ללוחות הזמנים שלהם, מועמדים פסיביים יעריכו את גורמי הנוחות והחיסכון בזמן של ראיונות עבודה בוידאו.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;כאשר אתם צריכים לשתף פעולה בהחלטות גיוס.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;הטבע של ראיונות עבודה בוידאו הופכים את שיתוף הפעולה בגיוס לפשוט יותר מאי פעם, מכיוון שאף אחד לא צריך להיות נוכח פיזית בזמן הראיון. ניתן לשלוח לעמיתים ולקוחות כאחד הקלטות של ראיונות עבודה בוידאו לצפייה והערכה לאחר שהראיון התקיים. הקלטות אלו מקלות על השיתוף פעולה של כולם, דבר המבטיח כי אתם לוקחים החלטות גיוס הרבה יותר מודעות. המשמעות של שיתוף פעולה טוב יותר הוא גיוס טוב יותר.&lt;/p&gt;</value>
+  </data>
+  <data name="connectChat" xml:space="preserve">
+    <value>התחל לראיין</value>
+  </data>
+  <data name="facebook" xml:space="preserve">
+    <value>Facebook</value>
+  </data>
+  <data name="logo" xml:space="preserve">
+    <value>סֵמֶל</value>
+  </data>
+  <data name="vatNum" xml:space="preserve">
+    <value>VAT number</value>
+  </data>
+  <data name="createMultiChoiceTemplate" xml:space="preserve">
+    <value>יצירת תבנית בחירה מרובה</value>
+  </data>
+  <data name="multiChoiceTemplate" xml:space="preserve">
+    <value>תבניות לבדיקות רב-ברירות</value>
+  </data>
+  <data name="multiChoiceTest" xml:space="preserve">
+    <value>מבחן/שאלון על זמן</value>
+  </data>
+  <data name="customerInRoom" xml:space="preserve">
+    <value>המרואיין ממתין בחדר לחץ לחיבור המצלמות</value>
+  </data>
+  <data name="answer" xml:space="preserve">
+    <value>Answer </value>
+  </data>
+  <data name="answer2" xml:space="preserve">
+    <value>Answer 2</value>
+  </data>
+  <data name="answer3" xml:space="preserve">
+    <value>Answer 3</value>
+  </data>
+  <data name="answer4" xml:space="preserve">
+    <value>Answer 4</value>
+  </data>
+  <data name="multiChoiceQandA" xml:space="preserve">
+    <value>Add question and answers</value>
+  </data>
+  <data name="writeDownaAnswer" xml:space="preserve">
+    <value>Write down an answer</value>
+  </data>
+  <data name="questionType" xml:space="preserve">
+    <value>Choose question type</value>
+  </data>
+  <data name="rightAnswer" xml:space="preserve">
+    <value>Choose correct answer</value>
+  </data>
+  <data name="timePerQuestion" xml:space="preserve">
+    <value>timePerQuestion</value>
+  </data>
+  <data name="timePerQuestionDescrp" xml:space="preserve">
+    <value>Write time in seconds</value>
+  </data>
+  <data name="administrativeProfessionals" xml:space="preserve">
+    <value>אנשי מקצוע אדמינסטרטיביים: גיוס הטובים ביותר באמצעות ראיון עבודה בוידאו</value>
+  </data>
+  <data name="administrativeProfessionalsDescription" xml:space="preserve">
+    <value>&lt;p style="direction: rtl;"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;אנשי מקצוע אדמינסטרטיביים טובים שומרים על הפעילות החלקה של חברתכם. בין אם אתם מגייסים עוזר אדמינסטריבי, מנהל משאבי אנוש או מומחה ליחסי עבודה, אתם צריכים להבטיח כי חברתכם מוצאת את האדם הטוב ביותר.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;אנשי המקצוע האלה שומרים על תפקוד משרדכם&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;ועדיין חברות רבות מתעלמות מהעמדות החיוניות הללו בחיפוש אחר גיוס האנשים הטובים ביום.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;אם הארגון שלכם נופל בגיוס אנשי מקצוע אדמינסטרטיבים מצוינים אתם עלולים למצוא עצמכם למטה.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;מתמיכה אדמינסטרטיבית של עבודות בסיסיות ועד למנהל משאבי אנוש, אלו הם העובדים אשר שומרים על הארגון שלכם בתפקוד מלא.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;אתם לא יכולים להתעלם מהחשיבות של גיוס אדם עם האישיות המתאימה לתפקיד.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;עוזר טוב יתאים לתרבות חברתכם בקלות, אבל הדבר היותר חשוב הוא שאישיותו תשתלב עם המנהלים הבכירים או הזוטרים שלהם הוא להם. אם אתם לא משקיעים בתהליך הראיון, אתם אולי תמצאו את עצמם עם מועמד מוכשר שהמנהלים שלכם פשוט לא נהנים לעבוד איתו. אתם צריכים גם כישורים וגם אישיות נהדרת כזה נוגע להעסקה של העוזר האישי הנכון.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;ראיון עבודה בוידאו יכולה לעזור בחיפוש הזה על ידי כך שהוא מחבר אתכם מהר יותר ובאופן אישי יותר עם מועמדים אדמינסטרטיביים מצוינים, וכל זאת מבלי לבזבז זמן בדיבורים עם האנשים הלא נכונים. הודות לראיון וידאו מוקלט, חברות יכולות לצפות במועמדים עונים על שאלות שנכתבו מראש באמצעות הוידאו. בדרך הזאת, רק המועמדים עם האישיות הנכונה והכישורים יצליחו לעבור לשלב הבא בתהליך הראיון. זה מאפשר למנהלים לבזבז פחות זמן ולהתחבר רק למועמדים הטובים ביותר.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;ראיון עבודה בוידאו יכול לעזור לכם לראות בקלות לאיזה מן המועמדים שלכם יש את הכישורים הטכנולוגיים הטובים ביותר עבור העולם הדיגיטלי שאנו חיים בו. לדוגמא, מועמדים שיכולים לשלב וידאו עם קורות החיים שלהם בתוך פרופיל המדיה החברתית שלהם, הם כנראה מתמצאים יותר בטכנולוגיה מאשר אותם מועמדים ששולחים קבצי קורות חיים באמצעות הדואר האלקטרוני. אותם אנשים שלא טורחים לציין את הרקע שלהם בראיון עבודה בוידאו, מראים כי הם לא חושבים כרגע על העידן הדיגיטלי.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;מציאת התומך האדמינסטרטיבי הנכון זה לא תמיד דבר פשוט, בין אם אתם מחפשים עוזר מוביל או מנהל משאבי אנוש. ניצול ראיון עבודה בוידאו יכול לעזור לכם להתחבר באופן יותר אישי ולהעריך את הכישורים בצורה קלה יותר, דבר המוביל לגיוס של האנשים הטובים ביותר.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;&amp;nbsp;&lt;/p&gt;</value>
+  </data>
+  <data name="avoidingEmployeeTurnover" xml:space="preserve">
+    <value>הימנעות מתחלופת עובדים עם ראיון וידאו מקוון Live Interview</value>
+  </data>
+  <data name="avoidingEmployeeTurnoverDescription" xml:space="preserve">
+    <value>&lt;p style="direction: rtl;"&gt;אם אתם מבזבזים את כל זמנכם על גיוס, הסיכויים הם שאתם מאבדים זמן יקר וכסף שיהיה כדאי להשקיע אותו במקום אחר.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;אתם צריכים למצוא עובדים מצוינים שמתאימים לתרבות הארגון שלכם ויהיו נרגשים מהצמיחה של החברה. ניצול ראיון הוידאו, גיוס מנהלים בתעשיית שירותי המזון יכול למצוא עובדים שיישארו בסביבה עם פחות זמן שבוזבז. החדשות הטובות הן לא רק עבור השורה התחתונה שלכם, אלא גם עבור שירות הלקוחות ומורל העובדים שלכם.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;מהם אתגרי הגיוס שמתמודדים איתם בתעשיית המסעדנות?&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;גיוס של מנהלים מצוינים, מלצרים וצוות המסעדה הוא לא תמיד דבר פשוט.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;אולם, החלק הקשה יותר הוא שמירה על העובדים הטובים שכבר עובדים במסעדה. שימוש בראיון עבודה בוידאו יכול להיות דרך טובה להתחבר למועמדים מבלי לבזבז הרבה זמן בראיונות של מועמדים שאינם מתאימים לעבודה.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;ראיון עבודה וירטואלי מוקלט מאפשר למנהלי הגיוס לראות את מחפשי העבודה לפני שהם נפגשים איתם פנים מול פנים.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;אחת מהסיבות העיקריות לתחלופת העובדים הגדולה בתעשיית שירותי המזון היא שמנהלים מגייסים בגלל הכישורים ולא בגלל ההתאמה לתרבות הארגון. במקום לבזבז זמן בדיבורים עם מחפשי עבודה שפשוט לא יתאימו, שימוש בראיון וידאו וירטואלי מוקלט הוא דרך מהירה לדעת באופן מידי אם המועמד מתאים לחברתכם. בראיון וידאו מוקלט, מעסיקים מציגים שאלות כתובות ומחפשי העבודה עונים עליהן בוידאו.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;אם אתם יודעים כי המלצר או המנהל הפוטנציאלי הוא לא מתאים לעבודה, אתם יכולים לצאת מהוידאו מבלי לבזבז את הזמן בקביעת ראיון אישי. בנוסף, אם אין לכם את הזמן לעבור על כל מחפשי העבודה המגיעים למסעדה שלכם, אתם יכולים להתחבר עם המועמדים בזמן אמת באמצעות ראיונות וידאו מקוונים&lt;/p&gt;</value>
+  </data>
+  <data name="executiveManagementHiring" xml:space="preserve">
+    <value>גיוס הנהלה בכירה: 3 טיפים לראיון בוידאו</value>
+  </data>
+  <data name="executiveManagementHiringDescription" xml:space="preserve">
+    <value>&lt;p style="direction: rtl;"&gt;&amp;nbsp;גיוס מועמדים להנהלה הגבוהה יכול לעשות הבדל גדול בארגון שלכם, בתרבות החברה ובשורה התחתונה של החברה.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;המנהלים האלה יצעידו את החברה שלכם קדימה ולכן אתם צריכים לגייס את הטובים ביותר.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;אתם זקוקים לדרך טובה יותר לגיוס עמדות של ההנהלה הבכירה כדי שלא תסיימו בכך שתשלמו על תחלופת עובדים יקרה.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;למרבה המזל ראיון עבודה בוידאו יכול להיות הפתרון שלכם בכך שהוא עוזר לכם להתחבר עם המנהלים הבכירים באופן אישי, למצוא את הכישורים הנכונים ולקצר את תהליך הגיוס.&lt;br /&gt; להלן שלושה טיפים לשימוש בראיון עבודה בוידאו על מנת לגייס מנהלים בכירים לצרכי החברה שלכם ולהפחית את תחלופת העובדים:&lt;br /&gt; חיבור אישי&lt;br /&gt; כשזה מגיע לגיוס המנהלים הבכירים הנכונים עבור חברתכם, מציאת ההתאמה הנכונה היא חשובה מאוד.&lt;br /&gt; מעבר לכישורים, אתם צריכים למצוא אדם שמתיישר עם הצהרת המשימה של החברה, מישהו בעל הדחף הנכון והנחישות לעבודה, מישהו שיכול לשפר את תרבות החברה ולהצעיד את הארגון שלכם קדימה.&lt;br /&gt; לכן זה הגיוני לנסות ולהתחבר באופן אישי עם מועמדי ההנהלה המובילים בשלב מוקדם בתהליך. ראיון עבודה בוידאו מאפשר לכם לעשות זאת, הוא הופך את החיבור האישי לפשוט יותר מהרגעים הראשונים של התהליך. בין אם אתם מחוברים בראיון עבודה מקוון או מוקלט, הכלי הטכנולוגי הזה מפשט את הערכת האישיות, כישורי התקשורת וההתאמה הכללית.&lt;br /&gt; מציאת הכישורים המתאימים&lt;br /&gt; גיוס מועמד ניהולי מוביל או מנכ"ל דורש קבוצת סט כישורים מאוד מסוים ומעודן. את הכישורים האלה לא פשוט למצוא ומועמדים בעלי הכישורים המתאימים יכולים להימצא מעבר לאזור הנוחות הגיאוגרפי של חברתכם. באמצעות ראיונות עבודה בוידאו, אתם יכולים להתחבר למועמדים הרחוקים האלה בקלות, ביעילות ובזול. במקום להוציא כסף על כרטיסי טיסה ומלונות, אתם יכולים להתחבר פנים מול פנים באמצעות ראיון בוידאו. בדרך הזאת אתם יכולים למצוא מועמדים לתפקידי ניהול, מנכ"לים וכישרון ניהולי מוביל בזמן שאתם חוסכים כסף.&lt;br /&gt; שיתוף פעולה פשוט יותר&lt;br /&gt; בין אם אתם מגייסים מנכ"ל או מנהל בכיר, תיאום ותקשורת הם המפתח. זה חשוב גם לצוות הגיוס וגם לצוות אנשי המקצוע להיות מתואמים עם צוות ההנהלה הפנימית כדי לבצע גיוס בכיר איכותי. ראיונות עבודה בוידאו יכולים לעזור לתקשר אפילו עם צוותי ההנהלה הבכירים ביותר. לדוגמא, מענה של מועמדים לשאלות בראיון וידאו מוקלט. צוות החברה או צוות ההנהלה הפנימי יכול לצפות בתשובות בוידאו בכל עת.&lt;br /&gt; גיוס כשרון מוביל להנהלה הבכירה הוא אינו תמיד פשוט. אבל אם אתם רוצים להימנע מתחלופת עובדים, תגייסו אנשים טובים ותמצאו מנהיגים חדשים שיצעידו את חברתכם קדימה אל עבר פתרונות חדשים. ראיון עבודה בוידאו יכול להיות המפתח בעזרה למאמצי התיאום, מציאת האנשים הנכונים וחיבור אישי עם הטובים ביותר&lt;/p&gt;</value>
+  </data>
+  <data name="financialAccountingServices" xml:space="preserve">
+    <value>שירותים פיננסיים וחשבונאים מגייסים עם ראיון עבודה בוידאו </value>
+  </data>
+  <data name="financialAccountingServicesDescription" xml:space="preserve">
+    <value>&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;בין אם אתם מחפשים לגייס אדם כדי להתמודד עם שירותי החשבונאות או הביטחון הפיננסיץ. זה אומר שאתם כנראה זקוקים לאנשי המקצוע האלה בתחום הפיננסי יותר מתמיד ובמקביל נאבקים על תקציב גיוס נמוך יותר.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;ראיונות עבודה בוידאו עוזרים למעסיקים להתחבר עם אנשי מקצוע מתחום החשבונאות והתחום הפיננסי מהר יותר ובאופן אישי יותר מאי פעם. זה גם עוזר למעסיקים לגשר על מרחקים אדירים, עוזר לחברות להתמקד על גיוס האנשים הטובים ביותר.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;ראיון מקוון: פתרון שירותים פיננסיים בתעשייה&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;הודות לכוחם של ראיונות עבודה בוידאו, מעסיקים מוצאים כי קל יותר להתחבר למועמדים הטובים ביותר. בין אם החברה מחפשת אחר פקידים, שירותי השקעות מקצועיים או אדם שיעקוב אחר הביטחון הפיננסי של החברה, ראיונות בוידאו יכולים להיות הפתרון.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;גיוס מתלמדים לעבודות בסיסיות&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;הודות לראיון מוקלט בוידאו, סטודנטים לא צריכים לפנות זמן מלוח הזמנים של הלימודים על מנת להקליט תשובות לשאלות ראיון הכתובות מראש. אתם יכולים לחתוך את הרעש מירידי התעסוקה ובמקום להתמקד על מילוי של העבודות הבסיסיות שלכם.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;המשבר הכלכלי הגלובלי אולי הקשה על חברות למצוא את האנשים הטובים ביותר. אבל הודות לכוחו של ראיון בוידאו, החברה שלכם יכולה להימנע מהחוסר סדר, להפחית את תחלופת העובדים ולגייס את אנשי המקצוע הטובים ביותר בתחום השירותים הפיננסיים והחשבונאות.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;&amp;nbsp;&lt;/p&gt;</value>
+  </data>
+  <data name="findingBetterRetail" xml:space="preserve">
+    <value>מציאת עובדים טובים יותר בתעשיית הקמעונאות עם ראיון וידאו מקוון Live Interview</value>
+  </data>
+  <data name="findingBetterRetailDescription" xml:space="preserve">
+    <value>&lt;p style="direction: rtl;"&gt;&lt;br /&gt; במגזר הקמעונאי תחלופת העובדים היא דאגה גדולה.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;כולנו יודעים כי קשה למצוא עובדים טובים ולכן זה יכול להיות אף יותר שובר לב אם הם עוזבים הארגון הקמעונאי שלכם.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;בין אם מדובר בעובד חנות, מנהל או קופאי, הארגון הקמעונאי שלכם זקוק לעובדים טובים.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;גיוס עובדים מתאימים לעבודה הוא קשה, וזאת הסיבה שחברות רבות פונות לראיונות עבודה בוידאו כדי למצוא אותם.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;למעשה, 6 מתוך 10 חברות כרגע מנצלות ראיונות עבודה בוידאו בתהליך הגיוס שלהן כדי למצוא את האנשים הנכונים.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;אז מהן הדאגות העיקריות בתעשיית הקמעונאות וכיצד ראיון בוידאו יכול לעזור לחברה לגרום לכשרון מוביל להישאר בסביבה? בואו נביא על חלק מאותן דאגות.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;&lt;br /&gt; האתגרים בתעשיית הקמעונאות והגיוס:&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;&lt;br /&gt; לפני שאתם מסתכלים על האופן שבו ראיון עבודה בוידאו יכול לספק פתרונות להפחתת תחלופת העובדים, אנחנו קודם כל צריכים להסתכל לתוך בעיות הגיוס שאנחנו מתמודדים איתן בתעשיית הקמעונאות.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;מפני שרבים מאותם עובדים בעבודות קמעונאות הם עובדים במשרה חלקית, תחלופת העובדים היא דאגה גדולה. העובדים האלה לא מרגישים כחלק ממשפחת הארגון והם לעיתים קרובות עוזרים כשמוצגות בפניהם הזדמנויות טובות יותר.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;הרבה עובדים קמעונאיים אינם מחפשים אחר קריירה, אבל רוב העבודות הללו עוזרות לשלם את החשבונות כיום. אז במקום לחפש קדימה לקריירה ארוכה בארגון ולהתקדם בסולם הארגון, אותם עובדים מסתכלים קדימה ולא רואים דבר מלבד תלוש המשכורת הקרוב שלהם.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;&lt;br /&gt; אחד מהיתרונות הגדולים ביותר של ראיון בוידאו הוא היכולת לראות כמות גדולה יותר של מחפשי עבודה בזמן קצר יותר. לדוגמא, בראיון וירטואלי מוקלט, מעסיקים מציגים שאלות כתובות ומחפשי העבודה עונים עליהן בוידאו.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;התשובות בוידאו נותנות למעסיקים תחושה אישית בנוגע למועמד, בזמן שמאפשרים לתהליך הראיון להיות יותר נייד.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;מפני שמעסיקים יכולים לצפות כעת בתשובות של מחפשי העבודה בכל עת, הראיונות הללו יכולים לעבוד גם במהלך לוח זמנים מאוד עמוס. בנוסף, אתם יכולים לצפות בעשרה ראיונות בוידאו באותה כמות זמן שלוקח לכם לבצע שיחת טלפון אחת! עבור תעשייה עם תחלופת עובדים גדולה כמו בתעשיית הקמעונאות, זאת יכולה להיות דרך נהדרת לחסוך זמן בתהליך הגיוס.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;מחפשי עבודה אשר מתאימים לתרבות הארגון שלכם נמצאים בסבירות גבוהה יותר שישארו מאשר אותם אנשים שאינם מתאימים. בראיון עבודה בוידאו, הציגו שאלות שבהן תוכלו למצוא כיצד תיראה תרבות הארגון האידיאלית עבור המועמד שלכם. וודאו כי אתם כנים מאוד לגבי תרבות הארגון שלכם.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;&lt;br /&gt; זכרו כי אתם תמיד יכולים ללמד כישורים, אבל זה קשה יותר להתאים עובד לתוך תרבות הארגון שלכם.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;אותם עובדים אשר יתאימו לתוך סביבת הארגון שלכם נמצאים בסבירות גבוהה יותר להישארות בארגון וכתוצאה מכך יפחיתו את תחלופת העובדים שלכם. הרבה עובדים קמעונאיים עוזבים את העבודות שלכם במגזר הזה מפני שהם לא רואים נתיב ברור לקריירה. הם לא עוזבים בגלל משכורות גבוהות יותר, הם עוזבים בגלל הזדמנויות מקצועיות. אז אם אתם רוצים לשמור על הכישרונות המובילים שלכם, תציעו לכם נתיב ברור לקריירה.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;&lt;br /&gt; תשתמשו בהזדמנות הראיון כדי לבטא בדיוק כיצד מועמד שעובד במשרה חלקית או שעתית יכול להפוך להיות כוכב בארגון. הצעה של נתיב קריירה ברור ישירות בתוך ראיון הוידאו יגרום למגוייסים שלכם להישאר בסביבה. תחלופת עובדים יכולה להיות מאוד יקרה בתעשיית הקמעונאות וזאת הסיבה לכך שאתם צריכים לאמץ ראיונות בוידאו שיסייעו לכם לגייס עובדים שיצמחו בתוך חברתכם.&lt;/p&gt;</value>
+  </data>
+  <data name="freelanceJobs" xml:space="preserve">
+    <value>עבודות לפרילנסרים באמצעות שימוש ב Live Interview</value>
+  </data>
+  <data name="freelanceJobsDescription" xml:space="preserve">
+    <value>&lt;p style="direction: rtl;"&gt;כלכלת הפרילנסרים הולכת ומתחזקת, כאשר עוד ועוד אנשי מקצוע עובדים בלוחות זמנים שאינם מסורתיים. רוב התחום הזה נדחה בגלל כלכלה חדשה וזה אילץ מועמדים להיות יותר יצירתיים ולחשוב מחוץ לקופסא.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;עבור מעסיקים, הפיתוי של גיוס פרילנסר הוא די ברור. אנשי המקצוע המוסמכים האלה יכולים לעזור לחברתכם לצמוח ולהביא סט של כישורים מפותחים היטב אל השולחן.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;אתם אולם תצטרכו אדם שמבצע כתיבה עצמאית או שיווק עצמאי על בסיס של פרויקטים חד פעמיים, דבר שאינו יעיל כאשר מגייסים מישהו מבפנים לבצע זאת.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;גיוס מועמדים נהדרים לביצוע עבודות עצמאיות הוא גם דרך נהדרת להכנת קרקע מוכחת עבור מועמדים שאולי ירצו להיות מועסקים לטווח ארוך. במקום לסמוך על המפנים בקורות החיים או העבודה בתיק העבודות שלהם, אתם יכולים לראות ממה הם באמת עשויים על ידי הערכת הפרויקטים שהם מבצעים עבורכם באופן עצמאי.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;אז כיצד אתם מוצאים מועמדים מובילים עבור עבודות עצמאיות? ראיון עבודה בוידאו יכול להיות דרך נהדרת למלא את העבודות העצמאיות הריקות עם מועמדים כישרוניים ומוסמכים.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;אחד מהדברים הטובים ביותר בראיון עבודה בוידאו הוא היכולת להתחבר באופן אישי עם מועמד.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;בין אם אתם מחפשים אדם שיבצע כתיבה או צילום עצמאי, אתם תרצו להתחבר אליו כמו כל מועמד אחד שאתם מביאים אל החברה.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;אחרי הכל רק מפני שמועמד נותן שירות עצמאי זה לא אומר שזה לא חשוב עבורו להתאים לתרבות הכללית של החברה.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;המועמד עדיין מייצג את חברתכם.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;אפילו אם אתם רק מעסיקים אותו לבצע עבודה עצמאית קטנה עבור אתר החברה. אתם צריכים אדם אשר מבין את החברה ויותר חשוב, אדם שאתם יכולים לסמוך עליו שיספק עבודה ברמה גבוהה. ציינו לפני כן שחברות מסוימות משתמשים בעבודות עצמאיות כבסיס להערכת מועמדים שהן אולי רוצות להביא על בסיס של משרה מלאה. לכן זה חשוב להתחיל לוודא כי המועמד מתאים לתוך תרבות החברה בשלב מוקדם ככל הניתן של תהליך הגיוס.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;שימוש בראיונות עבודה בוידאו מאפשרים לכם להתחבר באופן אישי עם המועמדים הטובים והמבריקים ביותר. בראיון וידאו מקוון, אתם יכולים להתחבר פנים מול פנים באותו אופן אישי שהייתם עושים אם המועמד היה יושב מולכם בעברו השני של השולחן. החשוב מכל, אתם יכולים לשתף את המועמדים המובילים שלכם עם יתר הצוות.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;&amp;nbsp;&lt;/p&gt;</value>
+  </data>
+  <data name="hiringGreatSales" xml:space="preserve">
+    <value>גיוס אנשי מכירות מעולים באמצעות Live Interview</value>
+  </data>
+  <data name="hiringGreatSalesDescription" xml:space="preserve">
+    <value>&lt;p style="direction: rtl;"&gt;גיוס אנשי המכירות הטובים ביותר יכול להיות דבר חשוב. מחקר שנערך לאחרונה בסביבת עסקים לעסקים חשף כי איכות איש המכירות היא הגורם המשפיע ביותר כשזה נוגע לקבלת החלטות קנייה.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;איש מכירות טוב יכול ליצור או לשבור את העסק שלכם.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;64% מאנשי המכירות נכשלים מפני שהם פשוט לא מתאימים לתפקיד, הגיוס הוא חיוני כשזה נוגע להרכבת צוות אנשי מכירות חזק עבור הארגון שלכם וראיונות עבודה בוידאו יכולים להיות הכלי המתאים שמבטיח כי אתם מעסיקים את מחפשי העבודה המוכשרים ביותר. העבודות האלה מעריכות כישורי תקשורת מעולים וראיון בוידאו יאפשר לכם להעריך כישורים שכאלה מהר ועם הרבה פחות בעיות.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;לדוגמא, במקום לבצע מספר ראיונות טלפוניים על מנת להעריך את כישורי התקשורת, אתם יכולים לבחור רשימת שאלות עבור הראיון ולשלוח את אותה לכל המועמדים שלכם. המועמדים יענו על השאלות הקשות האלה בראיון וידאו מוקלט.&lt;br /&gt; בראיון וידאו מוקלט, מחפשי עבודה עונים בוידאו על שאלות הראיון שנכתבו על ידי המעסיק. ניתן לצפות בתשובות הראיון בכל עת על ידי צוות הגיוס שלכם. כעת אתם יכולים לשפוט את האישיות ואת יכולות התקשורת מבלי לבזבז זמן על המועמד הלא נכון. כשמגיע הזמן לבחור מועמדים לראיון וידאו יותר אישי, אתם יכולים לבחור רק מועמדים בעלי אישיויות אגרסיביות ומלאות במספיק בטחון כדי להיות אנשי מכירות טובים. להלן מספר שאלות קשות שאתם צריכים לשאול במהלך ראיון מקוון על מנת למצוא את האנשים הטובים ביותר:&lt;br /&gt; האם אתה מעדיף מעגל מכירות ארוך או קצר?&lt;br /&gt; מה הדבר שאתה הכי פחות אוהב בתחום המכירות?&lt;br /&gt; מה הופך אותך לאיש מכירות טוב?&lt;br /&gt; ספר לנו על מטרות הקריירה שלך.&lt;br /&gt; שאלות הראיון האלה יאפשרו לכם לגלות יותר על מה מועמד המכירות שלכם יודע ומה סוג ההתאמה שלו למשרות הפתוחות שלכם. על ידי התמקדות על הידע ומטרות הקריירה, אתם תוכלו לגלות עד כמה רציני המועמד בנוגע לקריירה בתחום המכירות. ראיונות וידאו יכולים להיות דרך נהדרת למציאת המועמד המוביל לצוות המכירות שלכם מבלי לבזבז זמן ואנרגיה במהלך תהליך הגיוס.&lt;/p&gt;</value>
+  </data>
+  <data name="hiringGreatTechnology" xml:space="preserve">
+    <value>גיוס עובדי הייטק מעולים באמצעות Live Interview</value>
+  </data>
+  <data name="hiringGreatTechnologyDescription" xml:space="preserve">
+    <value>&lt;p style="direction: rtl;"&gt;בגלל המחסור באנשי הייטק והפער בכישורים, זה למעשה קשה יותר מאי פעם למצוא את האנשים הנכונים שאתם צריכים עבור המשרות הפתוחות שלכם. למרות שיעור האבטלה הגבוה, מציאת האנשים המתאימים בתחום הטכנולוגיה הוא עדיין אתגר אמיתי. זה מפני שבזמן שמספר מחפשי העבודה המובטלים הוא גבוה, מספר אנשים שיכולים לבצע עבודות הייטק שדורשות כישורים גדולים הוא למעשה די קטן. הפער בין הצורך בכישורים של המעסיקים לבין הכישורים של מחפשי העבודה מרגיש כאילו שהוא גדל כל הזמן. ראיון עבודה בוידאו יכול להיות כלי מצוין לחיבור עם המועמדים הטובים ביותר ולתפוס אותם לפני המתחרים שלך. בזמן ששיעור האבטלה של מחפשי העבודה נמצא סביב 7%, אחוז האבטלה עבור אנשים בתעשיית ההייטק ותחום הטכנולוגיה נמצא בסביבות ה 4%.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;קשה בשוק העבודה... אלא אם כן אתם עובדים בתחום הטכנולוגיה. לאור הביקוש הגבוה, סביר להניח שלמחפשי העבודה בתחום ההייטק יש לוח זמנים עמוס. חברתכם יכולה אולי למצוא מועמד פסיבי שיהיה מושלם עבור המשרה הפתוחה אצלכם, אבל מציאת הזמן לתזמון הראיון הוא סיפור אחר לחלוטין.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;לא רק שהמועמד הפסיבי הזה מאוד מבוקש, אלא שסביר להניח שיהיה קשה למצוא זמן בלוח הזמנים שלו לקביעת פגישה של פנים מול פנים. זאת דוגמא מצוינת לאופן שבו ראיון עבודה בוידאו יכול לעזור לחברתכם לתפוס מועמד מוביל. למועמד הפסיבי הזה אין את הזמן לנסוע למשרדכם, אבל אולי יהיה לו את הזמן להכניס ראיון עבודה בוידאו לתוך לוח הזמנים העמוס שלו. בראיון עבודה מקוון, אתם יכולים להתחבר למועמד פסיבי בזמן אמת בדיוק כמו בראיון מסורתי. עם זאת, מפני שראיונות אלו יכולים להתבצע מכל מקום, אפילו המועמד הפסיבי העמוס ביותר יכול למצוא את הזמן להתחבר באמצעות מצלמת אינטרנט. כעת אתם יכולים לקפוץ מעל פער הכישורים על ידי בידוד הכישרון וחיבור עם אותם אנשים בדרך מהירה יותר מהתהליך המסורתי.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;אתם יכולים גם להשתמש בראיונות מוקלטים שבהם מעסיקים מציגים למחפשי עבודה שאלות שהם צריכים לענות עליהם בוידאו. הם יותר מהירים ויעילים יותר ממסכי טלפון ומאפשרים לכם לראות אם קיימת סבירות כי עובד ההייטק המבוקש שלכם יעזוב את החברה בגלל אי התאמה תרבותית.&lt;/p&gt;</value>
+  </data>
+  <data name="howToAnswer" xml:space="preserve">
+    <value>כיצד לענות – שאלות פופולריות בראיון וידאו</value>
+  </data>
+  <data name="howToAnswerDescription" xml:space="preserve">
+    <value>&lt;p style="direction: rtl;"&gt;&lt;br /&gt; כיצד אתם הולכים לענות על שאלות בראיון וידאו מוקלט? אתם בהחלט רוצים לתפוס את ההזדמנות ולהראות למעסיק או למנהל הגיוס כי אתם מתאימים לעבודה ושאתם באמת מתעניינים בחברה ובתפקיד.&lt;br /&gt; למטה אתם תמצאו מספר שאלות פופולריות שמעסיקים ומנהלי גיוס שואלים בראיונות וידאו מוקלטים ויחד עם טיפים על האופן שאתם יכולים לעורר תגובה חיובית:&lt;br /&gt; מדוע אתם מעוניין בתפקיד הזה?&lt;br /&gt; קחו את ההזדמנות ודברו כיצד ניסיון העבר שלכם עזר לכם להתכונן לעבודה הזאת. אתם גם תרצו לציין כל הצלחה שחוויתם בתפקיד הקודם שתראה כי אתם המועמד המתאים.&lt;br /&gt; מה אתה יודע על החברה שלנו?&lt;br /&gt; אין סיבה שלא תוכלו לענות על השאלה הזאת. הודות לאינטרנט, אתם יכולים למצוא בקלות כל מה שאתם צריכים לדעת על החברה. המעסיק או מנהל הגיוס שואלים את זה כדי לראות אם ביצעתם את המחקר שלכם לפני הראיון ולכן תקפידו כי אתם עושים זאת. תבצעו מחקר על החברה באמצעות גלישה באתר האינטרנט שלה, קריאה של מאמרים על ההישגים של החברה ובדיקת חשבונות המדיה החברתית שלה (במידה ויש) כדי לקבל מושג על תרבות החברה שלהם. אתם לא צריכים לדקלם כל עובדה שאתם מוצאים, אבל תוודאי כי אתם מציינים לפחות חלק מהדברים הבאים:&lt;br /&gt; סוג המוצר או השירות שהחברה מוכרת&lt;br /&gt; כמה זמן החברה נמצאת בעסק&lt;br /&gt; ההישגים האחרונים של החברה&lt;br /&gt; מה תרבות החברה וכיצד זה מתקשר לערכים ולאישיות שלכם&lt;br /&gt; מה היתרונות שלך?&lt;br /&gt; התשובה צריכה להתייחס לתיאור העבודה וליכולת שלכם לבצע את המשימות שהוקצו לכם. לדוגמא, מראיינים אתכם לתפקיד שבו תובילו קבוצה גדולה של אנשים לדון על יכולות התקשורת החזקות שלכם והיכולת שלכם לעבור עם מגוון רחב של אישיויות.&lt;br /&gt; היכן אתה רואה את עצמך בעוד חמש שנים?&lt;br /&gt; אין תשובה מושלמת לשאלה הזאת מפני שהתשובות מגוונות על פי התעשייה והאדם. המעסיק או מנהל הגיוס פשוט רוצים לדעת עד כמה אתם מתכננים קדימה ואם המטרות שלכם תואמות למטרות החברה. אולם, זה חשוב להימנע מלומר כל דבר שיגרום לכם להישמע שחוקים, מעוניינים בדברים לטווח הקצר וחוסר במטרות.&lt;br /&gt; מהי סביבת העבודה האידיאלית עבורך?&lt;br /&gt; השאלה הזאת נשאלת כדי שהמעסיק או מנהל הגיוס יוכלו לקבוע אם אתם מתאימים לתרבות החברה. תהיו כנים כשאתם עונים על השאלה. אם תרצו לעבוד בבניין משרדים גדול, תגידו זאת. אם אתם מעדיפים לעבוד במשרד קטן כדי שתוכלו לשתף פעולה יותר בקלות עם העמיתים לעבודה, תסבירו מדוע זה חשוב לכם.&lt;br /&gt; תאר את מוסר העבודה שלך.&lt;br /&gt; שוב, השאלה הזאת נשאלת כדי לגלות עד כמה אתם מתאימים לתרבות החברה. תתארו כמה חשוב לכם להשלים את כל המשימות שהוקצו לכם בצורה אפקטיבית ויעילה.&lt;br /&gt; ספר לנו על עצמך.&lt;br /&gt; אל תענו על השאלה הזאת בכך שתסברו על התחביבים ועל חיות המחמד שלכם. תשתמשו בשאלה הזאת כהזדמנות נוספת לכוון את תשומת הלב של המעסיק או מנהל הגיוס לכישורים ולהישגים שלכם כדי באמת להרשים אותם. ספרו על מה שמעניין אתכם בתעשייה ומה אתם מקווים להביא לארגון.&lt;/p&gt;</value>
+  </data>
+  <data name="internetMarketingSolutions" xml:space="preserve">
+    <value>פתרונות שיווק באינטרנט: גיוס העובדים הטובים ביותר באמצעות  Live Interview</value>
+  </data>
+  <data name="internetMarketingSolutionsDescription" xml:space="preserve">
+    <value>&lt;p style="direction: rtl;"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;משמעותה הטכנולוגיה החדשה הזאת היא שגשוג של אסטרטגיות שיווקיות חדשות אשר מיושמות על ידי חברות חכמות.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;שיווק דיגיטלי, שיווק בסלולר ושיווק בהודעות טקסט כולם משחקים תפקיד בשינוי שהטכנולוגיה מעצבת את התעשייה.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;&amp;nbsp;כיצד ראיון עבודה בוידאו יכול לעזור לחברתכם למצוא את האנשים המתאימים כדי להמשיך ולקדם את מאמצי השיווק שלכם?&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;ראיון עבודה בוידאו עבור גיוס של עובד עצמאי:&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;חברות רבות יותר מנצלות את הכוח של עובדים עצמאיים כדי ליישם את האסטרטגיות השיווקיות שלהן. אולם זה יכול להיות קשה, תוודאו כי אתם מגייסים את העובדים העצמאיים הטובים ביותר.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;חלק מהם יכולים אפילו להיות עובדים וירטואליים, כלומר שהם יכולים להיות בכל מקום בעולם.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;הודות לכוחו של ראיון עבודה בוידאו, אתם יכולים להתחבר לאותם עובדים עצמאיים ברמה אישית יותר, ורק מפני שהם לא יכולים להגיע למשרדכם לפגישה אישית, זה לא אומר שאתם לא יכולים ליצור חיבור אישי.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;הודות לראיונות עבודה בוידאו, אתם יכולים לבצע ראיון של פנים מול פנים אפילו אם אתם נמצאים באזורי זמן שונים.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;ראיונות עבודה בוידאו עבור כישורים ספציפיים:&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;הנוף היום מחפש אחר סט של אסטרטגיות שיווק וכישורים.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;רוב החברות מחפשות אחר פתרונות שיווק באינטרנט, דבר האומר שהן מחפשות אחר סט כישורים מסוים.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;הודות לפער בכישורים קשה להן יותר מאי פעם למצוא מועמדים בעלי רמה גבוהה של סט כישורים שאתם צריכים לו. במקום תקשורת אינסופית במיילים, אתם יכולים לצפות בראיון עבודה מוקלט של המועמדים המובילים שלכם ולבחור להתחבר באופן אישי רק עם הטובים ביותר. זה יאפשר לכם לייעל את תהליך הגיוס ובמקביל למצוא את המועמדים עם סט הכישורים המסוים שיכול להציע פתרונות שיווק באינטרנט שחברתכם כל כך מחפשת אחריהם.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;גיוס מועמדי השיווק הטובים ביותר אינה תמיד דבר קל. אבל הודות לכוחו של ראיון עבודה בוידאו, אתם יכולים להתחבר ברמה אישית יותר, להפחית את תחלופת העובדים ולמצוא את המועמדים אשר ישגשגו בתרבות החברה שלכם. אז למה אתם מחכים?&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;.&lt;/p&gt;</value>
+  </data>
+  <data name="lookingGood" xml:space="preserve">
+    <value>איך להיראות טוב בראיון הוידאו שלכם</value>
+  </data>
+  <data name="lookingGoodDescription" xml:space="preserve">
+    <value>&lt;p style="direction: rtl;"&gt;להלן מספר טיפים שלא בהכרח תחשבו עליהם בהכנה לראיון הוידאו:&lt;br /&gt; תדאגו שהאור יהיה מולכם ולא מאחוריכם!&lt;br /&gt; זה חיוני מפני שהאור פוגע במצלמה, זה יגרום לתמונה כהה ובסופו של דבר אתם תראו כמו צל חסר פנים. תשקלו לשים שתי מנורות מסביב כל צד של הפנים כדי שבאמת תיראו טוב במצלמה.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;&lt;br /&gt; מרכזו את עצמכם&lt;br /&gt; זה חשוב שתמקמו את עצמכם במרכז של המצלמה.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;תוודאו כי ניתן לראות את הראש, הצוואר והכתפיים.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;אתם צריכים גם להיות מודעים לתנוחה שלכם.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;אם משהו מפריע לכם או מרגיש שלא בנוח, המעסיק או מנהל הגיוס שיעבור על הראיון עלול לקבל תחושה שאתם לא מעוניינים בעמדה או שאתם ביישנים, זאת בדרך כלל לא אחת התכונות שמעסיקים מחפשים.&lt;br /&gt; מה שאתם בוחרים ללבוש עבור ראיון הוידאו גם חשוב&lt;br /&gt; תבחרו את הלבוש על פי מה שהייתם לובשים אם הייתם פוגשים את המעסיק באופן אישי. בחרו בגדים שיתאימו לכם היטב, שום דבר לא שקוף או צמוד מידי. בנוסף, תתלבשו בהתאם מכף רגל ועד ראש.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;בראיון עבודה מוקלט, ככל הנראה שתשבו במהלך כל הראיון, אבל חליפה יכולה לעזור לכם להתמקד ולשמור על קור הרוח הנדרש בשביל שיהיה ראיון מוצלח.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;&lt;br /&gt; תמיד תזכרו את הדבר הבא:&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;&lt;br /&gt; הימנעו מביגוד לבן&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;&lt;br /&gt; רוב האנשים משווים בגדים לבנים עם מראה נקי ונעים.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;זה יכול לעבוד בראיון אישי, אבל במצלמה הצבע הלבן הוא לא בחירה חכמה.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;בגדים לבנים יופיעו בהירים יותר על גבי המצלמה ועלולים לגבור על הפנים שלכם, ובאופן פוטנציאלי לפגוע בקשר העין שלכם.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;במקום, בחרו צבעים כהים יותר.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;&lt;br /&gt; הימנעות מתכשיטים רבים&lt;br /&gt; בזמן שאתם חושבים כי השרשרת החדשה תתאים באופן מושלם עם הבגד שלך, מומלץ לענוד תכשיטים מינימליים בראיון הוידאו. אתם גם צריכים להתרחק מתכשיטים מבריקים במיוחד שיכולים לתפוס את האור במצלמה.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;&lt;br /&gt; אל תשכחו את הדברים הבסיסיים&lt;br /&gt; ראיון עבודה בוידאו הוא לא פחות פורמלי מאשר ראיון אישי, אז גברים, אל תחשבו שאתם לא צריכים להתגלח לפני. נשים, שמרו על איפור מינימלי ושמרני.&lt;/p&gt;</value>
+  </data>
+  <data name="staffingSolutions" xml:space="preserve">
+    <value>פתרונות גיוס: שימוש בראיון מקוון כדי לגייס את המועמדים הטובים ביותר</value>
+  </data>
+  <data name="staffingSolutionsDescription" xml:space="preserve">
+    <value>&lt;p style="direction: rtl;"&gt;&lt;br /&gt; כאנשי מקצוע בענף הגיוס, אתם יודעים כי מציאת המועמדים הטובים ביותר אינה דבר פשוט.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;בגלל המיתון הכלכלי לחברות יש פחות עמדות פנויות וזה אומר שהתחרות בין חברות כוח האדם יכולה להיות מאוד אכזרית. אתם צריכים להבטיח כי חברת כוח האדם שלכם מתעלה על כל השאר.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;ראיון עבודה מקוון יכול להיות דרך נהדרת לתת לחברת כוח האדם שלכם יתרון תחרותי ולהבטיח כי אתם מקבלים את הלקוחות שאתם צריכים כדי לשגשג. אתם צריכים להיות צעד אחד לפני המתחרים וזה אומר למצוא את המועמדים הטובים ביותר ולמצוא אותם מהר. חברות מחפשות אחר פתרונות גיוס וראיון עבודה בוידאו יכול להיות דרך מצוינת לחסוך בעלויות ובזמן ומבלי לוותר על איכות המועמד.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;&lt;br /&gt; מעסיקים לא זקוקים לכל מועמד, הם צריכים עובדים בעלי מיומנות גבוהה. את האנשים האלה באופן לא מפתיע קשה למצוא, אפילו בזמנים של שיעור אבטלה גבוה.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;ראיונות עבודה בוידאו יכולים לעזור בכך שהם מאפשרים לחברת כוח האדם שלכם להתחבר באופן אישי והרבה יותר מהר מאשר בתהליך הגיוס המסורתי. במקום תכתובות אינסופיות במיילים כדי לקבוע פגישה, אתם יכולים להיפגש בזמן אמת באמצעות ראיון עבודה בוידאו. זה יבטיח כי חברת כוח האדם שלכם לא תפסיד את המועמדים המובילים מפני שהמתחרים שלכם תפסו את העובדים המיומנים ביותר בזמן שאתם ניסיתם לקבוע פגישה אישית.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;&lt;br /&gt; פתרון גיוס זמני&lt;br /&gt; רוב החברות מסתכלות לכיוון חברות כוח אדם אחר עזרה באיוש עבודות זמניות ומחפשות לעשות את זה מהר. היתרון של ראיונות עבודה בוידאו הוא שזה עוזר לצמצם את תהליך הגיוס המסורתי ומקצר את זמן הגיוס. במקום ממוצע של 30 דקות בשיחת טלפון עם אדם שיכול להיות כלל לא מתאים לעבודה, ראיון עבודה מוקלט מאפשר לכם למיין במהירות את אפשרויות הגיוס הזמני שלכם. בדרך הזאת, אתם יכולים להתמקד רק על המועמדים הטובים ביותר ולחבר את הכישרונות הללו עם חברות המחפשות לגייס עובדים חכמים. עבור חברות המחפשות פתרונות גיוס, ראיונות עבודה בוידאו יכולים להיות המפתח להצלחה. בין אם אתם מחפשים להתחבר למועמדים בזמן אמת או לחסוך את תהליך הגיוס הזמני, הגיע הזמן לאמץ את הטכנולוגיה החדשה!&lt;/p&gt;</value>
+  </data>
+  <data name="successfulEntrepreneurs" xml:space="preserve">
+    <value>יזמים מצליחים משתמשים ב Live Interview</value>
+  </data>
+  <data name="successfulEntrepreneursDescription" xml:space="preserve">
+    <value>&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;גיוס עובדים חדשים לחברת הסטארט-אפ שלכם זה אף פעם לא דבר פשוט.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;כמייסדים של מיזם חדש, סביר להניח שתבלו את מרבית זמנכם בניסיון להבטיח מימון ולחפש אחר הזדמנויות עסקיות כדי שהחברה הצעירה שלכם תוכל לגדול.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;הגיוס עלול להיות הדבר הרחוק ביותר שנמצא בראשכם, אבל בסופו של דבר חברות סטארט-אפ מבינות שהגיע הזמן להביא עובדים. אולם, גיוס של כישרון מוביל לחברת סטארט-אפ בעלת תקציב מוגבל הוא רחוק מלהיות משימה פשוטה.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;זה יכול להיות מועמד שגיוסו עלול לקחת הרבה זמן.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;כמייסדים של סטארט-אפ, אתם עדיין צריכים להתמקד על גידול החברה והעלאת רעיונות עסקיים חכמים. אתם לא רוצים לבזבז את כל הזמן בחיפוש אחר כישרון מוביל כשאתם יכולים להגדיל את העסק שלכם.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;זה המקום שבו ראיון עבודה בוידאו יכול באמת לעזור למייסדי סטארט-אפ להפוך ליזמים מצליחים.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;על ידי צמצום תהליך הגיוס המסורתי, ראיון עבודה בוידאו יכול לעזור למייסדים להתחבר באופן אישי עם כישרון מוביל מהר יותר ולחסוך זמן וכסף במהלך התהליך.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;יזמים מצליחים יודעים שצריך יותר מרק רעיונות עסקיים נהדרים כדי לצמוח ולהפוך לחברה חזקה.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;בסופו של דבר, הצלחה תדרוש הבאה של צוות שיעזור עם התפקוד היום יומי של הסטארט-אפ החדש שלכם. תדעו מתי לגייס. אחת מהטעויות הגדולות ביותר של חברות סטארט-אפ היא קנה מידה מוקדם מידי.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;כל ההזדמנויות העסקיות בעולם לא ישנו אם תמהרו לגייס לפני שאתם מוכנים.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;לפני שאתם קופצים לתהליך הגיוס עם שתי הרגליים, שאלו את עצמם אם זה באמת הזמן להביא אנשים נוספים לחברה. אז כיצד ראיון עבודה בוידאו עוזר לחברות סטארט-אפ לגייס את הטובים ביותר מבלי לאבד הזדמנויות עסקיות חשובות? להלן מספר דרכים לעשות זאת:&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;&lt;br /&gt; ראיונות עבודה בוידאו חוסכים כסף&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;&lt;br /&gt; מובילי חברה טובים תמיד חושבים על הזדמנויות עסקיות חדשות, במיוחד שזה נוגע למימון. אתם אולי תשקיעו הרבה מזמנכם בחיפוש אחר משקיעים או בניווט בתוך הלוואות עסקיות מורכבות.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;לאחר שנושא המימון יסודר אתם בהחלט לא רוצים להפסיד כסף בתהליך הגיוס.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;וגיוס בסטארט-אפ לא חייב להיות תהליך אינסופי: ראיונות עבודה בוידאו חוסכים זמן יקר וכסף למייסדים באמצעות קיצור תהליך הגיוס המסורתי. לדוגמא, ראיון וידאו מוקלט יכול לחסוך הרבה זמן בתהליך הגיוס.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;בראיון וידאו מוקלט, שאלות שנכתבו על ידי המעסיקים נענות בוידאו על ידי המועמדים.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;&lt;br /&gt; בסביבת סטארט-אפ, זמן שווה כסף. להשקיע פחות בחיבור עם המועמדים הלא מתאימים יחסוך למייסדים הרבה כסף שהם יוכלו להשקיע בחזרה לתוך העסק.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;&lt;br /&gt; חיבור אישי והתמקדות על תרבות החברה&lt;br /&gt; תרבות החברה היא חיונית כשזה נוגע לגיוס בסטארט-אפ.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;כמייסדים, זאת העבודה שלכם ליצור את האישיות, הסביבה ואת תרבות החברה בסטארט-אפ שלכם.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;בין אם אתם רק מתחילים לגייס או שכבר התמקצעתם בתהליך הגיוס, זה חשוב לזכור את תרבות החברה כאשר מחפשים מועמדים מובילים. הידיעה של כמה יקרה יכולה להיות תחלופת עובדים, זה חשוב להתמקד על מועמדים שיכולים לגרום לתרומה חיובים לסטארט-אפ שלכם.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;ראיונות עבודה בוידאו מאפשרים לכם להתחבר מהר יותר ובאופן אישי יותר עם המועמדים המובילים שלכם. אם מישהו לא מרשים בראיון בוידאו, אתם יכולים לעבור בקלות למועמד המוביל הבא.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;&lt;br /&gt; בנוסף, ראיונות עבודה בוידאו מאפשרים לכם לעבור מרחקים אדירים ועדיין להתחבר. באמצעות ראיונות עבודה בוידאו, אתם יכולים לדבר בזמן אמת עם מועמדים מכל רחבי העולם וזה יכול לעשות למייסדי סטארט-אפים לעבור לדלג בקלות על פער הכישורים.&lt;/p&gt;</value>
+  </data>
+  <data name="takeMoreRevenueWithVideo" xml:space="preserve">
+    <value>קבלו יותר הכנסות באמצעות ראיונות וידאו עבור חברות כוח אדם</value>
+  </data>
+  <data name="takeMoreRevenueWithVideoDescription" xml:space="preserve">
+    <value>&lt;p style="direction: rtl;"&gt;&lt;br /&gt; הדרך שבה רוב חברות כוח האדם מודדות הצלחה היא באמצעות התבוננות על מספר העמדות שמועמדיהן ממלאים.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;בסופו של דבר, ההכנסה של חברת כוח אדם תגדל כפי שמספר המשרות שהם ממלאים תגדל.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;&lt;br /&gt; להלן מספר דוגמאות על האופן שבו ניתן לנצל את טכנולוגיית ראיונות העבודה בוידאו שיכולים לעזור לחברת כוח האדם שלכם לשפר את אסטרטגיות הגיוס שלה כדי להגדיל את ההכנסות:&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;&lt;br /&gt; הרחבת אזור המועמד שלכם&lt;br /&gt; זה חיוני שלאנשי כוח האדם יהיה אזור שהם יכולים למשוך ממנו מועמדים לכל עמדה מבוקשת שנפתחת בחברת הלקוח. באמצעות ראיונות עבודה בוידאו, אתם יכולים לבנות ספרייה דיגיטלית של הכישרונות כדי להשיג מטרה זו.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;אם מועמד אינו יכול לעבוד עבור לקוח אחד, ראיון העבודה שלו בוידאו נמצא על גבי קובץ שיכול למלא באופן פוטנציאלי עמדה אצל לקוח אחר.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;היכולת להסתכל על ראיונות עבודה בוידאו של מועמדים קודמים יכולה להאיץ את הזמן שלוקח לאנשי המקצוע למצוא את המועמד המתאים. אתם תבזבזו פחות זמן בניסיון לחפש הערות על מועמד מסוים ויותר זמן על הצבתם בארגון כלשהו.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;&lt;br /&gt; שיפור שיתוף הפעולה עם הלקוחות&lt;br /&gt; לאחר שמועמדים משלימים ראיון עבודה מוקלט או משתתפים בראיון עבודה מקוון, זה מאפשר לכם לשתף את ההקלטות עם הלקוחות שלכם.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;זה ישפר מאוד את שיתוף הפעולה ויוביל לכך שללקוחותיכם יהיה סיכוי לבצע החלטות גיוס טובות יותר.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;הלקוחות שלכם יוכלו לראות את המועמדים באותו אופן שאתם רואים אותם כדי לקבל תובנה טובה יותר על הצרכים והציפיות שלהם.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;&lt;br /&gt; לאחר סקירת ראיונות הוידאו המוקלטים של המועמדים, הלקוחות שלכם יכולים לציין מה הם אהבו ומה פחות אהבו בהם, דבר שיעזור לכם לספק מועמדים מובילים ולהפריד את עצמכם מהמתחרים.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;על ידי עבודה עם המועמדים בדרך זו כדי להבטיח שהם מציגים כראוי את אישיותם והכישורים שלהם ללקוחות, אתם יכולים למקם את חברת כוח האדם שלכם כאחת שמעריכה מאוד את מועמדיה ותעשה כל מה שניתן כדי למצוא להם משרות בארגונים מצוינים. המועמדים הללו עלולים להמליץ לאחרים לעבוד עם חברתכם.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;ככל שמספר גדול יותר של מועמדים עובד אתכם, כך יש לכם סיכוי טוב יותר למצוא את הפוטנציאל הטוב ביותר עבור לקוחותיכם.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;שימוש בראיונות עבודה בוידאו בחברת כוח האדם שלך תסייע לכם למסור באופן עקבי מועמדים מצוינים שהלקוח שלכם יוכל לגייס.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;זה יגביר את אמונם ואת הרצון להמשיך לעבוד עם חברת כוח האדם שלכם.&lt;/p&gt;</value>
+  </data>
+  <data name="theBenefitsOfVI" xml:space="preserve">
+    <value>היתרונות של ראיונות עבודה בוידאו</value>
+  </data>
+  <data name="theBenefitsOfVIDescription" xml:space="preserve">
+    <value>&lt;p style="direction: rtl;"&gt;סביר מאוד להניח שאתם מכירים את ראיון העבודה המסורתי שבו אתם פוגשים את המעסיק או מנהל הגיוס בפגישה פנים מול פנים במשרד שלהם.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;כיום, חברות מיישמות ראיונות עבודה בוידאו לתוך תהליך הגיוס שלהן כדי להתחבר טוב יותר ומהר יותר למועמדים.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;הראיון המוקלט במיוחד משמש הרבה לקוחות רבים בשלב מאוד מוקדם בתהליך הגיוס.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;להלן מספר תשובות לשאלות שעלולות להופיע במהלך ראיון העבודה שלכם בוידאו על מנת שתוכלו להתכונן כראוי:&lt;br /&gt; האם יהיה מישהו בקצה השני?&lt;br /&gt; בראין עבודה מוקלט רק אתם, מחפשי העבודה, נוכחים ומדברים. שאלות הראיון יוצגו לכם באמצעות טקסט או בוידאו.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;ברגע שהקלטתם ושלחתם את התשובות, המעסיק או מנהל הגיוס יסקרו את הראיון שלכם בזמנם הפנוי.&lt;br /&gt; מתי צריך להגיש את הראיון המוקלט שלי? כמה זמן יש לי להשלים אותו?&lt;br /&gt; תאריך ההגשה עבור הראיון שלך נקבע על ידי המעסיק או מנהל הגיוס שהזמין אתכם. כמות הזמן שתהיה לכם להשלמת הראיון תלויה בתאריך ובזמן שנקבע לכם על ידם להשלמת הראיון.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;אתם יכולים למצוא את המידע הזה בדף הנחיתה של ראיון הוידאו המוקלט שלכם.&lt;/p&gt;</value>
+  </data>
+  <data name="thingsToAvoid" xml:space="preserve">
+    <value>דברים שיש להימנע מהם בראיון הוידאו שלכם</value>
+  </data>
+  <data name="thingsToAvoidDescription" xml:space="preserve">
+    <value>&lt;p style="direction: rtl;"&gt;&amp;nbsp;המטרות שלכם בראיון העבודה המסורתי (שבו אתם פוגשים מגייס או מנהל גיוס פנים מול פנים במשרדם) לא צריכות להיות שונות מהמטרות שלכם בראיון עבודה בוידאו.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;אתם צריכים לכוון לכך שתציגו את עצמכם כמועמדים ראויים. להלן מספר טיפים שידריכו אתכם&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;מביצוע פוטנציאלי של טעויות בראיון העבודה המוקלט שלכם שעלולות לעלות לכם בעבודה:&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;&lt;br /&gt; קראו את ההוראות&lt;br /&gt; זה תמיד חשוב לקרוא את ההוראות שסופקו לכם, במיוחד אם אתם עומדים לעשות משהו שלא בהכרח מוכר לכם.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;אם תקראו בעיון את ההוראות שניתנו לראיון המוקלט, אתם יכולים להימנע מעיכובים בהשלמת הראיון.&lt;br /&gt; אנשים נמצאים אתכם בחדר&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;&lt;br /&gt; השתדלו למצוא את מקום שקט ופרטי כדי להקליט את הראיון שלכם.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;אם יש אנשים נוספים בחדר או בקרבת מקום, זה יכול לגרום להסחת דעת לכם ולמנהל הגיוס שעובר על הראיון שלכם.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;המיקוד צריך להיות אך ורק עליכם.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;&lt;br /&gt; הקלטה ללא אודיו&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;&lt;br /&gt; אם אתם משתמשים במחשב כדי להשלים את ההקלטה שלכם, תקפידו לבדוק את המיקרופון שאתם משתמשים בו לפני ההקלטה.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;בנוסף, אתם תמיד צריכים לנגן את התשובה המוקלטת הראשונה שלכם כדי להיות בטוחים כי האודיו והמצלמת האינטרנט עובדים כראוי.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;&lt;br /&gt; הקלטה מבלי לראות את עצמכם על המסך&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;&lt;br /&gt; אם אינם רואים את עצמכם במסך במהלך ההקלטה, זה אומר שמצלמת האינטרנט שלכם אינה מחוברת או עובדת כראוי.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;אל תעשו את הטעות ותמשיכו בהקלטה אם זה המקרה.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;&lt;br /&gt; הקלטה במרחב מבולגן&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;&lt;br /&gt; תהיו מודעים למה שהרקע של הוידאו שלכם יגיד על המועמדות שלכם.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;תקפידו שאתם מקליטים במקום שנראה נקי ומקצועי.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;&lt;br /&gt; דיבור לא ברור&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;&lt;br /&gt; אל תכריחו את המגייס או מנהל הגיוס להגביר את הקול או להתאמץ כדי לשמוע את התשובות שלכם לשאלות הראיון שלהם.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;דברו בקול רם וברור כדי שיהיה ניתן להבין אתכם. זה יהיה חבל אם הראיון המוקלט שלכם לא יעבור רק מפני שהאדם שעבר עליו לא הבין מה אמרתם.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;&lt;br /&gt; הרגשה נוחה מידי&lt;br /&gt; דבר נהדר בראיונות מוקלטים שהם נוחים גם עבור המעסיקים וגם עבור מחפשי העבודה.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;אתם יכולים להשלים ראיון מכל מקום באמצעות המכשיר הנייד או מאזור הנוחות שלכם בבית באמצעות מחשב ומצלמת אינטרנט. עם זאת, אתם עדיין צריכים להיות מקצועיים ולהתייחס לראיון המוקלט כאילו הייתם בראיון במשרד. תתלבשו בהתאם, אל תלבשו את החולצה ביחד עם מכנסי הפיג'מה והכפכפים שלכם. בנוסף, זה לא הזמן להתרווח בכורסא המועדפת עליכם. שימו לב ליציבות שלכם ותוודאו כי אתם יושבים ישר כדי להראות שאתם מלאים בטחון ומדברים ברצינות בראיון.&lt;br /&gt; חוסר מוכנות&lt;br /&gt; ההכנה שלכם לראיון המוקלט לא צריכה להיות שונה מההכנה שלכם לראיון אישי.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;תשננו את התשובות שלכם לשאלות הראיון כדי שתשמעו טבעיים וכנים כאשר אתם מוכנים להקליט.&lt;/p&gt;</value>
+  </data>
+  <data name="tipsOnBodyLanguage" xml:space="preserve">
+    <value>טיפים על שפת הגוף בראיון הוידאו שלכם</value>
+  </data>
+  <data name="tipsOnBodyLanguageDescription" xml:space="preserve">
+    <value>&lt;p style="direction: rtl;"&gt;&lt;br /&gt; יש להקפיד כי אתם נראים במיטבכם לראיון עבודה בוידאו חי או&amp;nbsp; מוקלט, אבל אתם גם צריכים לתת חשיבות שווה לשפת הגוף שלכם. עליכם להיות מודעים לשפת הגוף שלכם על מנת לוודא כי אתם מציגים את עצמכם בדרך הטובה ביותר שניתן במהלך כל הראיון. תקשורת היא 55% שפת גוף.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;אתם מתקשרים גם כאשר אתם לא אומרים אף מילה אחת. כל דבר בשפת הגוף שלכם מעביר משהו עליכם. בין אם אתם לחוצים, מלאים בטחון עצמי, גאים, מוטרדים, צנועים וכדומה.&lt;br /&gt; יצירת קשר עין&lt;br /&gt; שמירה על קשר עין בראיון עבודה בוידאו יכול להיות דבר לא פשוט ולעיתים מוזר, אבל זה אפשרי ונחוץ. כאשר אתם מקליטים את הראיון שלכם, תקפידו שאתם מסתכלים ישירות לתוך מצלמת האינטרנט &amp;ndash; אל תביטו על עצמכם בתוך המסך. תדמיינו שיש אדם שעומד מולכם ומקשיב לתשובות שלכם. כאשר אתם מביטים לתוך המצלמה, המעסיק או מנהל הגיוס שיעבור על הראיון שלכם ירגיש יותר מעורב מכיוון שזה כאילו שאתם מביטים בו.&lt;br /&gt; שבו ישר&lt;br /&gt; יציבה טובה בזמן הראיון זה דבר מאוד חשוב.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;ישיבה מרושלת או השענות אחורה בכיסא מעבירה אווירה שאתם לא תרצו להעביר כאילו שאתם לא לוקחים את הראיון ברצינות או שאתם משועממים ומרוחקים.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;יש להימנע משילוב ידיים מפני שזה נראה שאתם לא נגישים ומתגוננים.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;&lt;br /&gt; הימנעו מתזוזות מרובות&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;&lt;br /&gt; כאשר אנשים לחוצים, הם נוטים לנענע את הרגליים, להזיז את הידיים הרבה או להקיש עם אצבעותיהם על השולחן.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;נסו ככל הניתן להימנע מאותן תנועות שעלולות להראות שאתם לחוצים ועשויים להסיח את דעתו של המעסיק או מנהל הגיוס שעובר על הראיון שלכם.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;&lt;br /&gt; חייכו!&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;&lt;br /&gt; אתם אולי מרגישים עצבניים ולחוצים במהלך ראיון עבודה בוידאו, אבל זה לא חייב להתבטא על פי הפנים שלכם. חיוך יכול להסתיר את החוסר בטחון והעצבים ואתם יכולים להיראות גם יותר נגישים. תקפידו לחייך ותראו למעסיק או מנהל הגיוס כמה חברותיים ונעימים אתם.&lt;/p&gt;</value>
+  </data>
+  <data name="videoInterviewingTips" xml:space="preserve">
+    <value>טיפים לראיונות בוידאו</value>
+  </data>
+  <data name="videoInterviewingTipsDescription" xml:space="preserve">
+    <value>&lt;p style="direction: rtl;"&gt;ראיון עבודה בוידאו זה כמו להיות נוכחים בראיון אישי.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;ראיון עבודה בוידאו מאפשר למחפשי עבודה לקבל את הזמן הנדרש עם מגייסים ומנהלי גיוס.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;אז וודאו כי אתם מוציאים את המיטב מהזמן הזה באמצעות מספר טיפים פשוטים על איך להרשים בראיון העבודה שלכם.&lt;br /&gt; דיבור ברור&lt;br /&gt; דיברנו על החשיבות של כישורי תקשורת וכאן זה המקום המושלם להראות את הכישורים האלה.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;אתם אולי תהיו לחוצים, אבל כעת זה לא הזמן לתת ללחץ לעמוד בדרככם. אחרי הכל, העבודה החלומית שלכם יכולה להיות במרחק של ראיון וידאו אחד.&lt;br /&gt; הכנת במת הראיון&lt;br /&gt; במת הראיון היא חשובה עבור ראיון וירטואלי יעיל, בין אם אתם עונים על שאלות או מדברים ישירות למנהל הגיוס.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;תביטו מאחוריכם, האם הרקע שלכם מוכן? אם הרקע של הוידאו שלכם לא מסודר אז אתם שולחים את המסר הלא נכון.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;הרמזים המילוליים והלא מילוליים שלכם יכולים להיות נהדרים, אבל במת הראיון מספרת סיפור שונה. תקפידו כי אתם מוצאים מרחב מואר, מקצועי ונקי עבור הראיון שלכם.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;&lt;br /&gt; לבוש להצלחה&lt;br /&gt; האם אתם חושבים שרק מפני שהראיון מקוון אז אתם יכולים לוותר על החליפה? חשבו שנית!&lt;br /&gt; מעסיקים הולכים לשפוט אתכם בדיוק כפי שהיו שופטים אתכם אם היו פוגשים אתכם באופן אישי.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;הלבוש שלכם נותן למעסיקים מידע חשוב על מי שאתם. ליתר דיוק, הוא מספר למעסיקים בדיוק עד כמה אתם רציניים בנוגע לעבודה, לכן תתלבשו בהתאם.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;&lt;br /&gt; תתכוננו!&lt;br /&gt; החלק החשוב ביותר בכל ראיון וידאו (או בכל ראיון באופן כללי) הוא ההכנה. תחקרו על החברה ותתכוננו לענות לשאלות ראיון נפוצות. אם תתכננו לראיון, אתם תהיו בדרך הנכונה לעבודת החלומות שלכם!&lt;/p&gt;</value>
+  </data>
+  <data name="videoInterviewsForStaffing" xml:space="preserve">
+    <value>ראיונות וידאו עבור כוח אדם: ייצוג טוב יותר של המועמדים ללקוחות</value>
+  </data>
+  <data name="videoInterviewsForStaffingDescription" xml:space="preserve">
+    <value>&lt;p style="direction: rtl;"&gt;&lt;br /&gt; היתרון הברור של ראיונות עבודה בוידאו עבור חברות כוח אדם הוא שזה מאפשר למגייסים להתחבר למועמדים שבדרך כלל קשה להגיע אליהם, כמו מועמדים מרוחקים ופסיביים.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;למועמדים פסיביים בדרך כלל יש לוח זמנים עמוס ואין להם זמן לקבוע נסיעה למשרד אחר בשביל ראיון עבודה. הניסיון לקבוע ראיון אישי עם מועמד המתגורר במדינה אחרת או אפילו בעיר אחרת יכול להיות סיבה להרבה כאבי ראש.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;יש הוצאות נסיעות שצריך לקחת בחשבון באזורי זמן שונים. יתר על כן, דברים בלתי נשלטים כמו מזג האוויר ופקקים שיכולים למנוע מראיון אישי להתרחש וזה אומר שצריך לקבוע מחדש ולדחות את החלטת הגיוס.&lt;br /&gt; ראיונות עבודה בוידאו מספקים את הגמישות לעבוד סביב לוח הזמנים העמוס של המועמד.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;המועמד הפסיבי יכול להקליט את ראיון העבודה בסופו של יום עבודה ארוך בביתו באמצעות מצלמת אינטרנט או המכשיר הנייד.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;אתם יכולים להתחבר למועמדים מרוחקים בזמן אמת, פנים מול פנים בראיון מקוון.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;עבור חברות כוח אדם, היתרונות של שימוש בטכנולוגיה הזאת הם מעבר ליכולת להתחבר ביעילות למועמדים מקומיים ולא פסיביים.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;ראיון עבודה בוידאו הוא כלי רב עוצמה שיעזור לחברות כוח אדם למקם בצורה יעילה יותר מועמדים בחברות של לקוחות שבהן הם יוכלו להצטיין ולתרום רבות.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;ראיון עבודה בוידאו הוא כלי השיווק האולטימטיבי העומד לרשות חברות כוח אדם.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;הוא מספק דרך טובה יותר עבור מגייסים להציג מועמדים ללקוחותיהם כדי שיוכלו לראות בעצמם אם למישהו יש כישורי התקשורת והגישה המתאימה שתתאים לארגון שלהם.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;הלקוחות שלכם יעריכו את התובנה שהם יקבלו על מועמד על ידי צפייה בראיון העבודה בוידאו שלו. הידיעה כי הגיוס החדש שלכם לא יהיה טעות שהם יתחרטו עליה מאוחר יותר תיתן להם שקט נפשי. כמו כן, הם סומכים על חברת כוח האדם שלכם שתספק מועמדים מובילים שיצמחו בתוך הארגון. בנוסף, ראיונות וידאו הם אמצעי נוסף להערכת מועמדים שיכול להגדיל את סיכוייהם לקבל הצעת עבודה. באמצעות ראיון וידאו מוקלט, מועמד יכול לתת לחברות מבט מדויק על כמה שהוא מקצועי. על ידי ניצול ראיונות עבודה בוידאו, מגייסים מראים למועמדים כי הם מעריכים אותם והעדיפות שלהם היא להציג אותם באור החיובי בפני מעסיקים פוטנציאלים.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;ניצול ראיונות עבודה בוידאו מאפשר לחברות כוח אדם להבטיח כי בריכת הכישרונות שלהם תמיד מלאה במועמדים מצוינים שיש להם את הפוטנציאל להיות גיוסים טובים עבור לקוחותיהם. הראיונות המוקלטים יכולים לעזור לחברות כוח אדם להאיץ את הכנסתם על ידי ביסוס מערכת יחסים חזקה וארוכה עם לקוחות שיכולים להסתמך עליהם שיספקו כישרונות מובילים בעת הצורך.&lt;/p&gt;</value>
+  </data>
+  <data name="addAnswer" xml:space="preserve">
+    <value>Add answer</value>
+  </data>
+  <data name="addQuestion" xml:space="preserve">
+    <value>Add New Question</value>
+  </data>
+  <data name="answerType" xml:space="preserve">
+    <value>Choose answer type</value>
+  </data>
+  <data name="finishTest" xml:space="preserve">
+    <value>Finish Test</value>
+  </data>
+  <data name="isRight" xml:space="preserve">
+    <value>האם התשובה נכונה</value>
+  </data>
+  <data name="saveAnswer" xml:space="preserve">
+    <value>Save Answer</value>
+  </data>
+  <data name="textQuestion" xml:space="preserve">
+    <value>שאלה טקסט</value>
+  </data>
+  <data name="viewAnswers" xml:space="preserve">
+    <value>View Answers</value>
+  </data>
+  <data name="alreadyRecordedInterview" xml:space="preserve">
+    <value>ראיון זה כבר הוקלט ונשלח</value>
+  </data>
+  <data name="done" xml:space="preserve">
+    <value>בסיום התשובה לחץ כאן</value>
+  </data>
+  <data name="reRecord" xml:space="preserve">
+    <value>הקלט מחדש</value>
+  </data>
+  <data name="saveVideoAnswer" xml:space="preserve">
+    <value>שמור הקלטה ועבור לשאלה הבאה</value>
+  </data>
+  <data name="startRecord" xml:space="preserve">
+    <value>התחל ראיון מוקלט</value>
+  </data>
+  <data name="watchRecord" xml:space="preserve">
+    <value>צפה בהקלטה</value>
+  </data>
+  <data name="company" xml:space="preserve">
+    <value>חברת</value>
+  </data>
+  <data name="plsAddDateToInterview" xml:space="preserve">
+    <value>עליך לבחור תאריך לקיום הראיון</value>
+  </data>
+  <data name="sendMessageToInterviewee" xml:space="preserve">
+    <value>שלח/י הודעה למרואיין</value>
+  </data>
+  <data name="sentYou" xml:space="preserve">
+    <value>שלחה לך</value>
+  </data>
+  <data name="questionLimit" xml:space="preserve">
+    <value>גבול השאלה היא 40!</value>
+  </data>
+  <data name="photoAnswer" xml:space="preserve">
+    <value>תשובה לשאלה</value>
+  </data>
+  <data name="photoQuestion" xml:space="preserve">
+    <value>שאלה תמונה</value>
+  </data>
+  <data name="questionRequired" xml:space="preserve">
+    <value>שאלה נדרשת!</value>
+  </data>
+  <data name="textAnswer" xml:space="preserve">
+    <value>תשובה לטקסט</value>
+  </data>
+  <data name="answerLimit" xml:space="preserve">
+    <value>מגבלת התשובות היא 5!</value>
+  </data>
+  <data name="answerRequired" xml:space="preserve">
+    <value>נדרשת תשובה.</value>
+  </data>
+  <data name="haveRightAnswer" xml:space="preserve">
+    <value>אתה חייב להיות לפחות תשובה אחת נכונה!</value>
+  </data>
+  <data name="questionReady" xml:space="preserve">
+    <value>האם השאלה מוכנה?</value>
+  </data>
+  <data name="pleaseWaitForInterviewerConnect" xml:space="preserve">
+    <value>אנא המתן להתחברות המראיין</value>
+  </data>
+  <data name="plsWaitForCameraConnect" xml:space="preserve">
+    <value>אנא המתן לפתיחת המצלמה</value>
+  </data>
+  <data name="process" xml:space="preserve">
+    <value>תהליך</value>
+  </data>
+  <data name="uploadAlomostFinish" xml:space="preserve">
+    <value>העלאה כמעט הסתיימה</value>
+  </data>
+  <data name="videoUploadedSuccessfully" xml:space="preserve">
+    <value>הוידאו הועלה לשרת בהצלחה</value>
+  </data>
+  <data name="videoUploadStart" xml:space="preserve">
+    <value>העלאת הוידאו התחילה</value>
+  </data>
+  <data name="errorOccurredVideoDidntUpload" xml:space="preserve">
+    <value>אירעה שגיאה. הסרטון לא הועלה.</value>
+  </data>
+  <data name="uploadHasBeenCancel" xml:space="preserve">
+    <value>ההעלאה בוטלה.</value>
+  </data>
+  <data name="videoIsNowUploadToServer" xml:space="preserve">
+    <value>הסרטון מועלה לשרת.</value>
+  </data>
+  <data name="companyProfileNew" xml:space="preserve">
+    <value>פרופיל חברה</value>
+  </data>
+  <data name="listInvitationsMultiChoiceTest" xml:space="preserve">
+    <value>רשימת הזמנות למבחן רב-ברירה</value>
+  </data>
+  <data name="question" xml:space="preserve">
+    <value>שְׁאֵלָה</value>
+  </data>
+  <data name="rightTestAnswer" xml:space="preserve">
+    <value>תשובה נכונה</value>
+  </data>
+  <data name="selectedAnswer" xml:space="preserve">
+    <value>תשובה נבחרת</value>
+  </data>
+  <data name="timePerAnswer" xml:space="preserve">
+    <value>זמן לכל תשובה</value>
+  </data>
+  <data name="viewTest" xml:space="preserve">
+    <value>הצג בדיקה</value>
+  </data>
+  <data name="continueAndConfirm" xml:space="preserve">
+    <value>לחיצה על כפתור זה תשמור את הבחירה</value>
+  </data>
+  <data name="goBack" xml:space="preserve">
+    <value>בטל פעולה זו</value>
+  </data>
+  <data name="liveInterviewDate" xml:space="preserve">
+    <value>ראיון העבודה נקבע לתאריך</value>
+  </data>
+  <data name="sendInvitationForTest" xml:space="preserve">
+    <value>הזמנה למבחן רב-ברירה</value>
+  </data>
+  <data name="audioTroubleshooting" xml:space="preserve">
+    <value>פתרון בעיות אודיו בראיון חי או מוקלט</value>
+  </data>
+  <data name="audioTroubleshootingDescription" xml:space="preserve">
+    <value>&lt;p style="direction: rtl;"&gt;הגורמים הבאים הם החשובים ביותר שיש להביא בחשבון בעת ​​אופטימיזציה ראיון וידאו חי שלך.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;* דפדפן&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;* חיבור לאינטרנט&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;* מיקרופון ורמקולים&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;* שימוש באוזניות&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;* יישומים אחרים&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;תמיכה בדפדפן&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;אנו תומכים בגרסאות האחרונות של:&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;Mozilla Firefox&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;גוגל כרום&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;חיבור לאינטרנט&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;&amp;nbsp;חיבור לאינטרנט טוב נדרש לראיון עבודה מוצלח. מומלץ שתהיה מחובר לאינטרנט באמצעות כבל לא באמצעות WiFi. באמצעות חיבור ישיר זה יבטיח שיש לך את רוחב הפס הטוב ביותר. זה יביא תמונה טובה יותר ואיכות שמע מקסימלית.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;מיקרופון ורמקולים&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;בעת כניסה למסך הווידאו בדוק שהמיקרופון של עובד&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;שימוש באוזניות&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;דיבורית אישית או אוזניות יכולה להקטין את המשוב מהרמקולים בדרך כלל שהרמקול קרוב למיקרופון זה יכול לגרום לרעשי רקע במצב כזה עדיף להשתמש באוזניות&amp;nbsp;&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;יישומים אחרים&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;סגור את כל היישומים שאינם קשורים ל live-interview, המשתמשים במצלמת האינטרנט ובמיקרופון. יישומים אלה, כגון Skype ו- FaceTime, עלולים להפריע ליכולת של Interview Live להשתמש במצלמת האינטרנט והמיקרופון.&lt;/p&gt;</value>
+  </data>
+  <data name="videoTroubleshooting" xml:space="preserve">
+    <value>פתרון בעיות בוידאו בשידור חי או בוידאו מוקלט</value>
+  </data>
+  <data name="videoTroubleshootingDescription" xml:space="preserve">
+    <value>&lt;p style="direction: rtl;"&gt;הגורמים הבאים הם החשובים ביותר שיש להביא בחשבון בעת ​​אופטימיזציה ראיון וידאו חי שלך.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;* באת כניסה לדף הוידאו יקפוץ חלון שמבקש לאפשר מצלמה ומיקרופון בדפדפן&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;* דפדפן&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;*חיבור לאינטרנט&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;* בחירת מצלמת אינטרנט&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;* יישומים אחרים&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;תמיכה בדפדפן&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;תמכנו בגרסאות האחרונות של:&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;Mozilla Firefox&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;גוגל כרום&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;Internet Explorer (יש הרבה בעיות עם Internet Explorer ו הזרמת וידאו.אז, זה הדפדפן הכי פחות מועדף שלנו.)&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;חיבור לאינטרנט&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;&amp;nbsp;חיבור לאינטרנט טוב נדרש ראיון חיים מוצלח. מומלץ כי אתה מחובר ישירות לאינטרנט באמצעות כבל לא באמצעות WiFi. באמצעות חיבור ישיר יבטיח שיש לך את רוחב הפס הטוב ביותר האפשרי ומקטין בעיות כמיסות עד למינימום. זה יביא תמונה טובה יותר איכות השמע.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;בחירת מצלמת אינטרנט&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;&amp;nbsp;בעת בחירת מצלמת אינטרנט, ודא שאתה יכול לראות את עצמך בתצוגה מקדימה של וידאו לפני שתתחיל את הראיון שלך.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;ודא שמצלמת האינטרנט מותקנת כראוי במחשב שלך לפני שתשתתף בראיון חי.&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;יישומים אחרים&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p style="direction: rtl;"&gt;סגור את כל היישומים שאינם ראיון live-interview.com, המשתמשים במצלמת האינטרנט ובמיקרופון. יישומים אלה, כגון Skype ו- FaceTime, עלולים להפריע ליכולת של Interview Live להשתמש במצלמת האינטרנט והמיקרופון&lt;/p&gt;</value>
+  </data>
+  <data name="approveDateToInterviewRequest" xml:space="preserve">
+    <value>שלח אישור למועד המבוקש</value>
+  </data>
+  <data name="TheInterviewerAcceptDateAndTime" xml:space="preserve">
+    <value>המראיין אישר את התאריך והשעה שבחרת</value>
+  </data>
+  <data name="Completed" xml:space="preserve">
+    <value>הושלם</value>
+  </data>
+  <data name="Sent" xml:space="preserve">
+    <value>נשלח</value>
+  </data>
+  <data name="ClickToRecordChat" xml:space="preserve">
+    <value>לחץ להקלטה</value>
+  </data>
+  <data name="finishRecord" xml:space="preserve">
+    <value>סיים הקלטה</value>
+  </data>
+  <data name="iosReplaceCam" xml:space="preserve">
+    <value>עליך ללחוץ על האיקון של הספארי</value>
+  </data>
+  <data name="replaceToChrome" xml:space="preserve">
+    <value>דפדפן זה לא תומך באתר עליך להחליף לדפדפן כרום</value>
+  </data>
+  <data name="BasicIncludeFree" xml:space="preserve">
+    <value>5 הזמנות והקלטות של ראיון מוקלט או לייב צאט</value>
+  </data>
+  <data name="Free" xml:space="preserve">
+    <value>Free</value>
+  </data>
+  <data name="FreePrice" xml:space="preserve">
+    <value>0 ₪ / לחודש</value>
+  </data>
+  <data name="HEpromoHR" xml:space="preserve">
+    <value>פלטפורמה לגיוס ומיון ראשוני מבוססת וידאו בענן לחברת השמה וחברת כח אדם</value>
+  </data>
+  <data name="String1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="VideoInterviewPlatform" xml:space="preserve">
+    <value>פלטפורה לראיונות עבודה בוידאו מוקלט ווידאו צאט</value>
+  </data>
+</root>

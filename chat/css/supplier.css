@@ -1,0 +1,114 @@
+﻿.t371 {
+    margin: 4px;
+    display: table;
+    float: right;
+    padding: 10px;
+    min-height: 60px;
+    width: 26.4%;
+    margin-right: 60px;
+}
+
+    .t371 label, .t371 div, .t371 input, .t371 p {
+        color: black !important;
+    }
+
+#waitForSuppliers {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 100;
+    background-color: #003a6b;
+    text-align: center;
+    padding-top: 200px;
+    display: none;
+}
+
+#startChatLabel {
+    background-color: #f300d5;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+    max-width: 200px;
+    display: block;
+    margin: auto;
+    cursor: pointer;
+}
+
+h3 {
+    font-size: 12px !important;
+}
+
+/*.topDiv {
+			height: 70px;
+			margin-top: 30px;
+			margin-bottom: 30px;
+			padding-right: 60px;
+			padding-left: 60px;
+		}*/
+
+.header {
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+.customerTime {
+    height: 100%;
+}
+
+.clc {
+    height: 100%;
+}
+
+#panelMoneyForVacant {
+    height: 150px !important;
+}
+
+#output {
+    float: left;
+    text-align: left;
+    width: 30%;
+}
+.closeChat{
+    width:50px;
+    height:30px;
+    color:white;
+    background-color:#990000;
+    border-radius:5px;
+    margin-right:10px;
+    text-align:center;
+    line-height:30px;
+}
+#video {
+    width: 50%;
+    height: 100%;
+    position: inherit;
+}
+
+.content, .topDiv, .videoChatArea, .wrapper, #videoArea, #their-video {
+    height: 100% !important;
+}
+/* Chrome, Safari and Opera syntax */
+:-webkit-full-screen {
+    background-color: yellow;
+}
+
+/* Firefox syntax */
+:-moz-full-screen {
+    background-color: yellow;
+}
+
+/* IE/Edge syntax */
+:-ms-fullscreen {
+    background-color: yellow;
+}
+
+/* Standard syntax */
+:fullscreen {
+    background-color: yellow;
+}
+
+/* Style the button */
+button {
+    padding: 20px;
+    font-size: 20px;
+}

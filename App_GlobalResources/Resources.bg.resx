@@ -1,0 +1,2069 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="affiliateMarketing" xml:space="preserve">
+    <value>Афилиейт програма</value>
+  </data>
+  <data name="affiliateSystem" xml:space="preserve">
+    <value>Ще получите партньорска система.</value>
+  </data>
+  <data name="anotherDimension" xml:space="preserve">
+    <value>Друго измерение</value>
+  </data>
+  <data name="anotherDimensionDescription" xml:space="preserve">
+    <value>Онлайн интервютата Ви дават възможност да попаднете в друго измерение, където да се запознаете с лицето срещу вас, още преди физическа среща. </value>
+  </data>
+  <data name="bigLogo" xml:space="preserve">
+    <value>Революцията е вече тук!</value>
+  </data>
+  <data name="checkForPassword" xml:space="preserve">
+    <value>Моля, въведете парола.</value>
+  </data>
+  <data name="companyLogin" xml:space="preserve">
+    <value>Вход за фирми</value>
+  </data>
+  <data name="companyRegister" xml:space="preserve">
+    <value>Регистрация за фирми</value>
+  </data>
+  <data name="contactChat" xml:space="preserve">
+    <value>Помощ</value>
+  </data>
+  <data name="customizationOption" xml:space="preserve">
+    <value>Опция за персонализиране</value>
+  </data>
+  <data name="customizationOptionDescription" xml:space="preserve">
+    <value>Можете да персонализирате този продукт за Вашия сайт.</value>
+  </data>
+  <data name="downloadSoftware" xml:space="preserve">
+    <value>Трябва ли да свалям специален софтуер, за да изпозвам услугата?</value>
+  </data>
+  <data name="downloadSoftwareDescription" xml:space="preserve">
+    <value>Няма нужда. Нашата услуга е интернет услуга и работи чрез браузъра Google Chrome.</value>
+  </data>
+  <data name="easyForUse" xml:space="preserve">
+    <value>Лесна употреба</value>
+  </data>
+  <data name="easyForUseDescription" xml:space="preserve">
+    <value>Лесна употреба. Приложение за всички видове устройства. </value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Имейл:</value>
+  </data>
+  <data name="EmailAddressPleaseTry" xml:space="preserve">
+    <value>Невалиден имейл, моля опитайте отново.</value>
+  </data>
+  <data name="Enter" xml:space="preserve">
+    <value>Вход</value>
+  </data>
+  <data name="errorEmail" xml:space="preserve">
+    <value>Моля, въведете коректен имейл!</value>
+  </data>
+  <data name="explOfTheService" xml:space="preserve">
+    <value>Въведение в услугата</value>
+  </data>
+  <data name="faq" xml:space="preserve">
+    <value>Често задавани въпроси</value>
+  </data>
+  <data name="forgotPassword" xml:space="preserve">
+    <value>Забравена парола.</value>
+  </data>
+  <data name="fullIntegretion" xml:space="preserve">
+    <value>Пълна интеграция</value>
+  </data>
+  <data name="fullIntegretionDescription" xml:space="preserve">
+    <value>Подкрепа за взаимодействие със съществуващи продукти.</value>
+  </data>
+  <data name="fullName" xml:space="preserve">
+    <value>Име и фамилия</value>
+  </data>
+  <data name="fullSupport" xml:space="preserve">
+    <value>Пълна поддръжка</value>
+  </data>
+  <data name="fullSupportDescription" xml:space="preserve">
+    <value>Ние сме тук, за да съпътстваме вашата работа и да ви помогнем, ако е необходимо.</value>
+  </data>
+  <data name="getRidOfPaper" xml:space="preserve">
+    <value>Отърви се от бумащината</value>
+  </data>
+  <data name="getRidOfPaperDescription" xml:space="preserve">
+    <value>Целият процес на набиране на персонал се документира и архивира автоматично, без да е необходимо да пишете на хартия и да губите време и пари.</value>
+  </data>
+  <data name="Help" xml:space="preserve">
+    <value>Въпроси</value>
+  </data>
+  <data name="howItWorks" xml:space="preserve">
+    <value>Как точно работи?</value>
+  </data>
+  <data name="howItWorksDescription" xml:space="preserve">
+    <value>Започнете с бутона за регистрация по-горе. След регистрацията можете да въведете фирменото си лого, логото на видеото и друга информация. Във втория етап можете да добавите интервюиращите под компанията или просто да започнете да каните хора да отговорят на вашите видео въпросници или да бъдат интервюирани чрез видеочат.</value>
+  </data>
+  <data name="invalidService" xml:space="preserve">
+    <value>Невалидна услуга.</value>
+  </data>
+  <data name="invitationFromACompany" xml:space="preserve">
+    <value>Достигнахте тази страница, защото получихте покана от фирма.</value>
+  </data>
+  <data name="liveInterviewDown" xml:space="preserve">
+    <value>Това е иновативен сайт, който позволява на фирмите за набиране и наемане на служители да рационализират първите и най-напредналите процеси за подбиране на нови служители. Сайтът ви позволява да проведете видео интервю с помощта на предварително зададен шаблон. След това можете да извършите истинско видео интервю, като използвате чата и да запишете интервюто в облака на  нашата система. Системата ви позволява да дефинирате шаблони за предварително интервю. Също така да споделяте информацията с други служители, която не съдържа планирана система от интервюта за работа.</value>
+  </data>
+  <data name="Main" xml:space="preserve">
+    <value>Начало</value>
+  </data>
+  <data name="MsgTitle" xml:space="preserve">
+    <value>Заглавие на съобщението.</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Име</value>
+  </data>
+  <data name="navigationMenu" xml:space="preserve">
+    <value>Меню</value>
+  </data>
+  <data name="other" xml:space="preserve">
+    <value>Друго.</value>
+  </data>
+  <data name="pageTitle" xml:space="preserve">
+    <value>Онлайн видео интервюта</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Вашата парола</value>
+  </data>
+  <data name="passwordPlaceholder" xml:space="preserve">
+    <value>Парола: (латински букви и цифри 6-8 знака)</value>
+  </data>
+  <data name="payment" xml:space="preserve">
+    <value>Плащане.</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>Телефон</value>
+  </data>
+  <data name="powerfullProduct" xml:space="preserve">
+    <value>Мощен продукт</value>
+  </data>
+  <data name="powerfullProductDescription" xml:space="preserve">
+    <value>Този продукт е мощно решение за управлението и назначаването на служители.</value>
+  </data>
+  <data name="privacyPolicy" xml:space="preserve">
+    <value>Политика за поверителност</value>
+  </data>
+  <data name="Registration" xml:space="preserve">
+    <value>Регистрация</value>
+  </data>
+  <data name="saveTimeAndEffort" xml:space="preserve">
+    <value>Спести време и усилия</value>
+  </data>
+  <data name="saveTimeAndEffortDescription" xml:space="preserve">
+    <value>Спестете допълнителните разходи на кандидатите по организация на транспорт и време.</value>
+  </data>
+  <data name="serveAsAnInterviewer" xml:space="preserve">
+    <value>В помощ на интервюиращия.</value>
+  </data>
+  <data name="serviceBenefits" xml:space="preserve">
+    <value>Какви са ползите от услугата?</value>
+  </data>
+  <data name="serviceBenefitsDescription" xml:space="preserve">
+    <value>Получавате CV от кандидат, което значи много, но получавате и записано резюме, което ви позволява да разберете точно кой е този човек. Можете да видите езика на тялото и речта и да разберете повече от CV на хартия. В допълнение към това можете да получите отговори на въпроси, които сте подготвили предварително в системата. Работата с видеочат може да спести много време и пари на кандидата, и разбира се, можете да запазите записа и да го споделите с вашия екип, за да получите друго мнение.</value>
+  </data>
+  <data name="smallLogo" xml:space="preserve">
+    <value>Онлайн интервюта</value>
+  </data>
+  <data name="Support" xml:space="preserve">
+    <value>Контакти</value>
+  </data>
+  <data name="SystemMessage" xml:space="preserve">
+    <value>Системно съобщение!</value>
+  </data>
+  <data name="technicalProblems" xml:space="preserve">
+    <value>Технически проблеми.</value>
+  </data>
+  <data name="termsAndPolicies" xml:space="preserve">
+    <value>Общи условия</value>
+  </data>
+  <data name="termsOfUse" xml:space="preserve">
+    <value>Условия за ползване</value>
+  </data>
+  <data name="TypeEmail" xml:space="preserve">
+    <value>Моля, въведете имейл.</value>
+  </data>
+  <data name="unbeatablePrices" xml:space="preserve">
+    <value>Несравними цени</value>
+  </data>
+  <data name="unbeatablePricesDescription" xml:space="preserve">
+    <value>Много ниски оперативни разходи, които ще ви спестяват пари всеки месец.</value>
+  </data>
+  <data name="whatIsTheService" xml:space="preserve">
+    <value>Какво представлява услугата?</value>
+  </data>
+  <data name="whatIsTheServiceDescription" xml:space="preserve">
+    <value>Предлагаме система за онлайн помощ при набиране на персонал.
+А. Системата дава възможност на компаниите или фирмите да провеждат интервюта за потенциални служители чрез двустранни видеоразговори, насрочени чрез покана по имейл или SMS. Системата позволява да записвате видео разговори, да ги архивирате и да ги споделяте с екипа или други компании.
+Б. Системата ви позволява да въведете въпросник с Ваши въпроси и да поканите кандидатите да записват отговорите във видеото. Можете да категоризирате видеоклиповете си и да ги споделяте с екипа или други фирми.</value>
+  </data>
+  <data name="whoIsTheServiceFor" xml:space="preserve">
+    <value>За кого е предназначена услугата?</value>
+  </data>
+  <data name="whoIsTheServiceForDescription" xml:space="preserve">
+    <value>Услугата е предназначена за компании, които търсят служители и фирми за подбор на персонал.</value>
+  </data>
+  <data name="wrongDetails" xml:space="preserve">
+    <value>Грешни данни!</value>
+  </data>
+  <data name="activationToEmail" xml:space="preserve">
+    <value>Активация на имейл</value>
+  </data>
+  <data name="AddAnInterviewer" xml:space="preserve">
+    <value>Добави потребител</value>
+  </data>
+  <data name="AddAUser" xml:space="preserve">
+    <value>Добави потребител</value>
+  </data>
+  <data name="addCompany" xml:space="preserve">
+    <value>Добави компания</value>
+  </data>
+  <data name="AddQuestions" xml:space="preserve">
+    <value>Добавете въпроси към записано интервю за работа</value>
+  </data>
+  <data name="anyCompanies" xml:space="preserve">
+    <value>Твоят акаунт все още няма компании.</value>
+  </data>
+  <data name="bringDown" xml:space="preserve">
+    <value>Надолу</value>
+  </data>
+  <data name="bringUp" xml:space="preserve">
+    <value>Нагоре</value>
+  </data>
+  <data name="Chat" xml:space="preserve">
+    <value>Чат</value>
+  </data>
+  <data name="chatDropDown1" xml:space="preserve">
+    <value>Извън линия</value>
+  </data>
+  <data name="chatDropDown2" xml:space="preserve">
+    <value>Зает</value>
+  </data>
+  <data name="chatDropDown3" xml:space="preserve">
+    <value>Свободен</value>
+  </data>
+  <data name="chatDropDown4" xml:space="preserve">
+    <value>Отсъстващ</value>
+  </data>
+  <data name="chatDropDown5" xml:space="preserve">
+    <value>Подготвящ се</value>
+  </data>
+  <data name="chatDropDown6" xml:space="preserve">
+    <value>Инкогнито</value>
+  </data>
+  <data name="clientNO" xml:space="preserve">
+    <value>Потребител номер:</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>Затвори</value>
+  </data>
+  <data name="collaborative" xml:space="preserve">
+    <value>Сътрудничество</value>
+  </data>
+  <data name="companyAddress" xml:space="preserve">
+    <value>Адрес</value>
+  </data>
+  <data name="companyManagement" xml:space="preserve">
+    <value>Управление на компания</value>
+  </data>
+  <data name="companyName" xml:space="preserve">
+    <value>Име на фирма:</value>
+  </data>
+  <data name="companyProfile" xml:space="preserve">
+    <value>Информация за компанията</value>
+  </data>
+  <data name="Continue" xml:space="preserve">
+    <value>Към компанията</value>
+  </data>
+  <data name="continueToNextQuestion" xml:space="preserve">
+    <value>Запази въпрос</value>
+  </data>
+  <data name="CreateRecordedInterview" xml:space="preserve">
+    <value>Създай интервю шаблон</value>
+  </data>
+  <data name="CustomerInYourQueue" xml:space="preserve">
+    <value>Потребители на твоята опашка</value>
+  </data>
+  <data name="CustomerServiceNewMessage" xml:space="preserve">
+    <value>Ново съобщение към онлайн поддръжката.</value>
+  </data>
+  <data name="dateAdded" xml:space="preserve">
+    <value>Дата на добавяне</value>
+  </data>
+  <data name="dateForInterview" xml:space="preserve">
+    <value>Дата за интервюто</value>
+  </data>
+  <data name="DateOfEstablishment" xml:space="preserve">
+    <value>Дата</value>
+  </data>
+  <data name="DateSend" xml:space="preserve">
+    <value>Дата на изпращане</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Изтрий</value>
+  </data>
+  <data name="detailsAboutCustomer" xml:space="preserve">
+    <value>Детайли за интервюирания</value>
+  </data>
+  <data name="Director" xml:space="preserve">
+    <value>Мениджър</value>
+  </data>
+  <data name="edit" xml:space="preserve">
+    <value>Редактирай</value>
+  </data>
+  <data name="editCompanyProfile" xml:space="preserve">
+    <value>Редактирай данните на фирмата</value>
+  </data>
+  <data name="editQuestions" xml:space="preserve">
+    <value>Редактирай въпросите</value>
+  </data>
+  <data name="EmailOnly" xml:space="preserve">
+    <value>Имейл</value>
+  </data>
+  <data name="freeTextToInterview" xml:space="preserve">
+    <value>Свободен текст</value>
+  </data>
+  <data name="GlimpseIntoCustomer" xml:space="preserve">
+    <value>Поглед към интервюирания</value>
+  </data>
+  <data name="InfoAboutCustomerOnlyYouSee" xml:space="preserve">
+    <value>Допълнителна информация за клиента, която виждате само Вие</value>
+  </data>
+  <data name="InternalData" xml:space="preserve">
+    <value>Допълнителна информация:</value>
+  </data>
+  <data name="internalDataEG" xml:space="preserve">
+    <value>Допълнителна информация напр. име, професия ...</value>
+  </data>
+  <data name="InternalInfoAboutInterw" xml:space="preserve">
+    <value>Информация за интервюиращия</value>
+  </data>
+  <data name="internalInformation" xml:space="preserve">
+    <value>Допълнителна информация:</value>
+  </data>
+  <data name="Interviewer" xml:space="preserve">
+    <value>Служител</value>
+  </data>
+  <data name="InterviewerOnly" xml:space="preserve">
+    <value>Служител: само интервюиращ</value>
+  </data>
+  <data name="InterviewsInterviewedByInterviewees" xml:space="preserve">
+    <value>Интервюта, взети от интервюираните</value>
+  </data>
+  <data name="Invitations" xml:space="preserve">
+    <value>Покани</value>
+  </data>
+  <data name="invitationsSent" xml:space="preserve">
+    <value>Изпратени покани</value>
+  </data>
+  <data name="invitationToRecordCVs" xml:space="preserve">
+    <value>покана за запис на интервю</value>
+  </data>
+  <data name="invitationToVideoChat" xml:space="preserve">
+    <value>Покана за интервю чрез видеоразговор</value>
+  </data>
+  <data name="InvitationToVideoInterviewChat" xml:space="preserve">
+    <value>Покана за онлайн интервю чат</value>
+  </data>
+  <data name="listOfCompanies" xml:space="preserve">
+    <value>Списък на компаниите</value>
+  </data>
+  <data name="ListOfInvitations" xml:space="preserve">
+    <value>Списък на поканите за записани интервюта</value>
+  </data>
+  <data name="liveInterviews" xml:space="preserve">
+    <value>Интервю на живо</value>
+  </data>
+  <data name="LogOut" xml:space="preserve">
+    <value>Изход</value>
+  </data>
+  <data name="logs" xml:space="preserve">
+    <value>Известия</value>
+  </data>
+  <data name="managementCompany" xml:space="preserve">
+    <value>Управляваща компания</value>
+  </data>
+  <data name="ManagerInvitationAndDel" xml:space="preserve">
+    <value>Управител: Покана и изтриване на допълнителни интервюиращи.</value>
+  </data>
+  <data name="managingInterviews" xml:space="preserve">
+    <value>Интервю</value>
+  </data>
+  <data name="nameOfInterviewer" xml:space="preserve">
+    <value>Изпратено от</value>
+  </data>
+  <data name="NoPermissionToDelete" xml:space="preserve">
+    <value>Не може да бъде изтрито.</value>
+  </data>
+  <data name="NoRecord" xml:space="preserve">
+    <value>Няма записи</value>
+  </data>
+  <data name="numberOfCP" xml:space="preserve">
+    <value>Булстат</value>
+  </data>
+  <data name="Open" xml:space="preserve">
+    <value>Отворено</value>
+  </data>
+  <data name="Owner" xml:space="preserve">
+    <value>Собственик</value>
+  </data>
+  <data name="permissions" xml:space="preserve">
+    <value>Достъп</value>
+  </data>
+  <data name="Questionnaire" xml:space="preserve">
+    <value>Въпросник</value>
+  </data>
+  <data name="Questions" xml:space="preserve">
+    <value>Въпроси</value>
+  </data>
+  <data name="queueForCustomer" xml:space="preserve">
+    <value>Опашка за интервюирани</value>
+  </data>
+  <data name="Record" xml:space="preserve">
+    <value>Записи</value>
+  </data>
+  <data name="RecordedInterview" xml:space="preserve">
+    <value>Интервю на запис</value>
+  </data>
+  <data name="recordedInterviewers" xml:space="preserve">
+    <value>Интервю на запис</value>
+  </data>
+  <data name="RecordStatus" xml:space="preserve">
+    <value>Статус на записа</value>
+  </data>
+  <data name="registeredInterviewers" xml:space="preserve">
+    <value>Потребители</value>
+  </data>
+  <data name="registerHere" xml:space="preserve">
+    <value>Регистрирай се тук</value>
+  </data>
+  <data name="Regular" xml:space="preserve">
+    <value>нормален</value>
+  </data>
+  <data name="save" xml:space="preserve">
+    <value>Запази</value>
+  </data>
+  <data name="SaveAndContinue" xml:space="preserve">
+    <value>Запази и продължи</value>
+  </data>
+  <data name="saveDetails" xml:space="preserve">
+    <value>Запази детайлите</value>
+  </data>
+  <data name="SeeTheRecords" xml:space="preserve">
+    <value>Вижте записите</value>
+  </data>
+  <data name="Send" xml:space="preserve">
+    <value>Изпрати</value>
+  </data>
+  <data name="sendAnIvitation" xml:space="preserve">
+    <value>Изпрати покана</value>
+  </data>
+  <data name="sendInvitation" xml:space="preserve">
+    <value>Изпратете покана за интервю</value>
+  </data>
+  <data name="SendInvitationToInterviewee" xml:space="preserve">
+    <value>Изпращане на покана за интервю на потребител</value>
+  </data>
+  <data name="SendInvitationToView" xml:space="preserve">
+    <value>Изпратете покана за преглед</value>
+  </data>
+  <data name="sendToInterviewee" xml:space="preserve">
+    <value>Изпрати до интервюирания</value>
+  </data>
+  <data name="SiteCustomers" xml:space="preserve">
+    <value>Потребители на сайта</value>
+  </data>
+  <data name="statistics" xml:space="preserve">
+    <value>Статистика</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Статус</value>
+  </data>
+  <data name="templatesForRecInterview" xml:space="preserve">
+    <value>Шаблони за записване на интервю</value>
+  </data>
+  <data name="termsOfUseDescription" xml:space="preserve">
+    <value>&lt;li&gt; Като възрастен съм убеден, че имам лично право да чета, разглеждам и купувам каквото и да е съдържание. Този сайт не е обиден или неприличен и не може да се разбира като такъв &lt;/ li&gt;
+&lt;li&gt; Преглеждането, изтеглянето, четенето или използването на съдържанието на Сайта не нарушава  никакви правила под каквато и да е форма Местоживеене (държава, град, село, киббуз, moshav, град, улица и др.) или образователна институция или място на работа съм свързан с тях. &lt;/ li&gt;
+&lt;li&gt; Операторите на сайта не носят отговорност за неправилна информация, невярно, оспорвано, незаконно или безотговорно. Освен това правните последици, които тази информация може да възникне от гледането, четенето, изтеглянето или преглеждането на съдържание, се показва на този сайт. Този сайт и неговите партньори не носят отговорност за каквито и да било правни последици, които могат да възникнат в резултат на погрешно информиране или противоречие, които са били или се използват на този сайт.  &lt;/ li&gt; &lt;li&gt; Приемам и се съгласявам, че  добавянето на връзка, реклама, съдържание или информация от всякакъв вид на сайта, без разрешение от операторите на сайта предварително и писмено - е абсолютно забранена и може да доведе до нарушение на правата и в резултат на това води до съдебни производства. &lt;/ li&gt;
+&lt;li&gt; Съгласен съм, че не мога да запиша екрана / камерата / текста или друго съдържание, което се показва на сайта без писмено одобрение от операторите на сайта. &lt;/ li&gt;
+&lt;li&gt; Сайтът има изключителното право да следи / поддържа / проверява поведението между сайта на клиентите и служителите. &lt;/ li&gt;
+&lt;li&gt; Съгласен съм, че сайтът ми служи само за забавление, а не за целите на бизнес / индустриален шпионаж. &lt;/ li&gt;
+&lt;li&gt; Съгласен съм, че не може да "изнудвам" служителите / клиентите по какъвто и да е начин и ако го направя лично, ще бъда прехвърлен на съдебните органи. &lt;/ li&gt;
+&lt;li&gt; Предполагам, че нямам желание да причинявам щети, включително икономически, бизнес, търговски, морални и други щети. Оператори на сайта, служители или други потребители. &lt;/ li&gt;
+&lt;li&gt; Аз съм отговорен за всички действия, предприети с моето потребителско име и лична парола. Оператори на сайтове Препоръчваме ви да не давате личната си парола, с която се идентифицирам на сайта, или някаква информация, свързана с това как Моето влизане в сайта към която и да е друга трета страна. Ако избера да споделя тази информация с трети страни, ще нося отговорност за всички действия, предприети с моето потребителско име и лична парола. по всяка вероятност Ще загубя контрола над паролата си, ще загубя значителен контрол над моята лична информация и ще бъда подчинен За правно обвързващи действия, които трябва да бъдат предприети от мое име. Знам, че ако паролата ми не е сигурна По някаква причина трябва да я променя веднага. &lt;/ li&gt;
+&lt;li&gt; Този сайт използва индустриални стандарти, за да гарантира поверителността на личната информация, идентифицирана от мен Surfers, включително "защитни стени". Този сайт третира информацията като ресурс, който трябва да бъде защитен срещу загуба и неоторизиран достъп. Този сайт използва различни методи за сигурност, за да защити такава информация от неразрешен достъп от лица в и извън компанията. Трябва да бъде изяснено, че операторите на сайта ще действат съобразно Кои ще могат да защитят информацията, съдържаща се в базата данни, с която разполагат, без да се накърнява общият характер. Горното няма да носи отговорност за базата данни извън защитата на които са извършени. При спазване на израелското право и извън рамките на разумна защита при обстоятелствата. &lt;/ li&gt;
+&lt;li&gt; Този сайт си сътрудничи с разследванията на правоохранителните органи и други трети страни за целта Изпълнение на закони, като например: права върху интелектуална собственост, права на собственост, измами и други права. Този сайт може да предостави информация за служителите / клиентите на правоприлагащите органи и на всички органи Други правителства, при условие, че съдебно разпореждане и както се изисква от езика на Закона за защита на личните данни, 1981 г. За целите на разследването на измами, от права върху интелектуална собственост или друга незаконна дейност или такова действие Оповестете този сайт или вашите служители / клиенти на юридическа отговорност. &lt;/ li&gt;
+&lt;li&gt; Начинът на плащане, който правя покупките, трябва да бъде собственост на мен или да приемам потвърждение от собственика на платежен инструмент. &lt;/ li&gt;
+&lt;li&gt; Знам, че ако използвам методи на плащане, които не са мои (без разрешение), и собственикът на платежния инструмент / компанията Кредитът ще се отнесе към този сайт за подробности. Този уебсайт ще им предостави цялата информация, с която разполагат Тези транзакции. &lt;/ li&gt;
+&lt;li&gt; Аз се задължавам да не предлагам на служителите на сайта никаква работна оферта или да поискам друга оферта за работа. &lt;</value>
+  </data>
+  <data name="termsOfUseEnd" xml:space="preserve">
+    <value>Формулярът за политика установява правно споразумение между сайта и служителя / клиента, както и между сайта и всеки бизнес субект
+В който служителят / клиентът има интереси или юридическа или търговска отговорност към него. Ако някоя част от споразумението бъде определена
+Като неприложима от юридическия орган, останалото споразумение няма да бъде засегнато от това решение
+Споразумението е регистрирано на иврит и не може да бъде тълкувано от никоя трета страна. Не се приема тълкуване на споразумението
+Всяко искане, основано на неправилно разбиране на Правилата в резултат на превод на друг език
+Единствената компетентност по всеки въпрос и спор относно услугите на Сайта е компетентният съд
+В Лондон, който ще обсъди въпроса в съответствие със законите на Англия.
+&lt;br /&gt;</value>
+  </data>
+  <data name="termsOfUseH4" xml:space="preserve">
+    <value>Приемайки и одобрявайки горепосоченото споразумение, вие потвърждавате следното:</value>
+  </data>
+  <data name="termsOfUseH5" xml:space="preserve">
+    <value>Документът е изготвен в мъжки род само за удобство и се прилага еднакво към двата пола, всичко по-горе в мъжки род, важи и за женски. С достъпа до този сайт приемате Общите условия: Вие се съгласявате, да прочетете и одобрите следното.</value>
+  </data>
+  <data name="timeForMeet" xml:space="preserve">
+    <value>Час за срещата</value>
+  </data>
+  <data name="timeLeft" xml:space="preserve">
+    <value>Оставащо време</value>
+  </data>
+  <data name="timeZone" xml:space="preserve">
+    <value>Часова зона</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Заглавие:</value>
+  </data>
+  <data name="TitleForInterview" xml:space="preserve">
+    <value>Заглавие на интервюто</value>
+  </data>
+  <data name="typeQuestion" xml:space="preserve">
+    <value>Въпрос</value>
+  </data>
+  <data name="workersManagement" xml:space="preserve">
+    <value>Потребители</value>
+  </data>
+  <data name="writeDownaQuestion" xml:space="preserve">
+    <value>Напишете въпрос</value>
+  </data>
+  <data name="InvitationForViewResume" xml:space="preserve">
+    <value>покана за преглед на интервюто.</value>
+  </data>
+  <data name="linkInvitationAsInterviewer" xml:space="preserve">
+    <value>Покана за връзка като интервюиращ</value>
+  </data>
+  <data name="notRecordingWriteNow" xml:space="preserve">
+    <value>В момента не записва</value>
+  </data>
+  <data name="PressToActivate" xml:space="preserve">
+    <value>Натиснете за активация</value>
+  </data>
+  <data name="PressToEnter" xml:space="preserve">
+    <value>Към интервюто</value>
+  </data>
+  <data name="recordResumeToCompany" xml:space="preserve">
+    <value>Запиши интервю за компанията.</value>
+  </data>
+  <data name="recordYourResume" xml:space="preserve">
+    <value>Запиши своето интервю.</value>
+  </data>
+  <data name="startRecording" xml:space="preserve">
+    <value>Започни видео</value>
+  </data>
+  <data name="subscriptionInvitation" xml:space="preserve">
+    <value>Получихте покана за абонамент.</value>
+  </data>
+  <data name="TheOrderWasCreated" xml:space="preserve">
+    <value>Поканата е изпратена от компания</value>
+  </data>
+  <data name="ClickHereForTheAnswer" xml:space="preserve">
+    <value>Кликни тук за следващ въпрос</value>
+  </data>
+  <data name="ClickToEnterTheCard" xml:space="preserve">
+    <value>Към интервюто</value>
+  </data>
+  <data name="ClickToRestart" xml:space="preserve">
+    <value>Запиши отново</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>Дата</value>
+  </data>
+  <data name="DuringTheRecord" xml:space="preserve">
+    <value>По време на записа тук ще се появят въпросите</value>
+  </data>
+  <data name="GoToNextQuestion" xml:space="preserve">
+    <value>Започни запис</value>
+  </data>
+  <data name="InvitationToRecordVideoCVs" xml:space="preserve">
+    <value>Покана за запис на видео интервю в</value>
+  </data>
+  <data name="LinkToActivateYourAccount" xml:space="preserve">
+    <value>Линк за активация на акаунт</value>
+  </data>
+  <data name="PasteCodeFromEmail" xml:space="preserve">
+    <value>Поставете кода от имейлa:</value>
+  </data>
+  <data name="PlayAgain" xml:space="preserve">
+    <value>Пусни пак</value>
+  </data>
+  <data name="PressToActivate2" xml:space="preserve">
+    <value>За да активирате услугата, трябва да кликнете върху бутона</value>
+  </data>
+  <data name="PreviousWatchs" xml:space="preserve">
+    <value>Предишни гледания на видеото</value>
+  </data>
+  <data name="QuestionarryEnd" xml:space="preserve">
+    <value>Интервюто е завършено. Кликнете тук</value>
+  </data>
+  <data name="RecordResumeToCompanyAct" xml:space="preserve">
+    <value>Записване на видео интервю за:</value>
+  </data>
+  <data name="RestorePasswordToInterviewer" xml:space="preserve">
+    <value>Възстановете паролата на интервюиращия</value>
+  </data>
+  <data name="retriavePassword" xml:space="preserve">
+    <value>Възстановяване на паролата</value>
+  </data>
+  <data name="SaveToPC" xml:space="preserve">
+    <value>Запази на компютър</value>
+  </data>
+  <data name="SendingVideoWatchInvitation" xml:space="preserve">
+    <value>Изпращане на покана за гледане на видеоклип</value>
+  </data>
+  <data name="SendToInterviewer" xml:space="preserve">
+    <value>Изпрати</value>
+  </data>
+  <data name="SentBy" xml:space="preserve">
+    <value>Изпратено от</value>
+  </data>
+  <data name="Views" xml:space="preserve">
+    <value>Гледания</value>
+  </data>
+  <data name="WatchLiveVideo" xml:space="preserve">
+    <value>Гледайте видео на живо</value>
+  </data>
+  <data name="WatchVideo" xml:space="preserve">
+    <value>Гледай видеото</value>
+  </data>
+  <data name="WelcomeToTheSite" xml:space="preserve">
+    <value>Добре дошли в сайта</value>
+  </data>
+  <data name="YourCodeIs" xml:space="preserve">
+    <value>Вашият код е</value>
+  </data>
+  <data name="YourPasswordIs" xml:space="preserve">
+    <value>Паролата ви е</value>
+  </data>
+  <data name="AddBrand" xml:space="preserve">
+    <value>Add your brand</value>
+  </data>
+  <data name="Basic" xml:space="preserve">
+    <value>Basic</value>
+  </data>
+  <data name="BasicInclude" xml:space="preserve">
+    <value>200 записани интервюта или интервюта на живо</value>
+  </data>
+  <data name="BasicPrice" xml:space="preserve">
+    <value>$ 130 / месечно</value>
+  </data>
+  <data name="choose" xml:space="preserve">
+    <value>Избери</value>
+  </data>
+  <data name="companyLinkedIn" xml:space="preserve">
+    <value>LinkedIn</value>
+  </data>
+  <data name="companyWebSite" xml:space="preserve">
+    <value>Web Site</value>
+  </data>
+  <data name="ConfirmCreateCompany" xml:space="preserve">
+    <value>Вие потвърждавате, че сте представител на компанията</value>
+  </data>
+  <data name="media" xml:space="preserve">
+    <value>Лого</value>
+  </data>
+  <data name="Positions" xml:space="preserve">
+    <value>Неограничен брой работни места</value>
+  </data>
+  <data name="Premium" xml:space="preserve">
+    <value>Premium</value>
+  </data>
+  <data name="PremiumInclude" xml:space="preserve">
+    <value>1500 записани интервюта или интервюта на живо</value>
+  </data>
+  <data name="PremiumPrice" xml:space="preserve">
+    <value>$ 600 / месечно</value>
+  </data>
+  <data name="PricingTable" xml:space="preserve">
+    <value>Пакети</value>
+  </data>
+  <data name="Pro" xml:space="preserve">
+    <value>Pro</value>
+  </data>
+  <data name="ProInclude" xml:space="preserve">
+    <value>400 записани интервюта или интервюта на живо</value>
+  </data>
+  <data name="ProPrice" xml:space="preserve">
+    <value>$ 230 / месечно</value>
+  </data>
+  <data name="RecordStatusInactive" xml:space="preserve">
+    <value>Състояние на записа: Неактивен</value>
+  </data>
+  <data name="SocialProfile" xml:space="preserve">
+    <value>Социални профили</value>
+  </data>
+  <data name="Trial" xml:space="preserve">
+    <value>Безплатен пробен период от 30 дни</value>
+  </data>
+  <data name="UploadLogo" xml:space="preserve">
+    <value>Качи лого</value>
+  </data>
+  <data name="WeWorkWith" xml:space="preserve">
+    <value>Ние работим с всички! От малки фирми до големи предприятия. Свържи се с нас днес!</value>
+  </data>
+  <data name="Prices" xml:space="preserve">
+    <value>Пакети</value>
+  </data>
+  <data name="BuildLibrary" xml:space="preserve">
+    <value>Създайте библиотека от видеоклипове, за да можете лесно да ги използвате в бъдеще</value>
+  </data>
+  <data name="Finish" xml:space="preserve">
+    <value>Завърши</value>
+  </data>
+  <data name="Interviewee" xml:space="preserve">
+    <value>Кандидати</value>
+  </data>
+  <data name="MyCamera" xml:space="preserve">
+    <value>Моята камера</value>
+  </data>
+  <data name="Unregistered" xml:space="preserve">
+    <value>Нерегистриран</value>
+  </data>
+  <data name="UploadVideo" xml:space="preserve">
+    <value>Качи видео</value>
+  </data>
+  <data name="VideoLibrary" xml:space="preserve">
+    <value>Видео библиотека</value>
+  </data>
+  <data name="CameraMicrophoneChecking" xml:space="preserve">
+    <value>Проверка на камера и микрофон</value>
+  </data>
+  <data name="ClickToCheck" xml:space="preserve">
+    <value>Провери</value>
+  </data>
+  <data name="ContinueRecordResume" xml:space="preserve">
+    <value>Продължи</value>
+  </data>
+  <data name="ContinueToRecord" xml:space="preserve">
+    <value>Ако камерата и микрофонът работят, натиснете, за да продължите</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>Потребител</value>
+  </data>
+  <data name="ClickTheLink" xml:space="preserve">
+    <value>Прие поканата</value>
+  </data>
+  <data name="registeredInSite" xml:space="preserve">
+    <value>Регистрирани на сайта</value>
+  </data>
+  <data name="Employee" xml:space="preserve">
+    <value>Профил</value>
+  </data>
+  <data name="newVideoRecorded" xml:space="preserve">
+    <value>Нов видеозапис.</value>
+  </data>
+  <data name="CompanyInformation" xml:space="preserve">
+    <value>Информация за компанията</value>
+  </data>
+  <data name="UploadPhoto" xml:space="preserve">
+    <value>Качи снимка</value>
+  </data>
+  <data name="youGotNewMessage" xml:space="preserve">
+    <value>Ново съобщение.</value>
+  </data>
+  <data name="CreateLiveInterview" xml:space="preserve">
+    <value>Създай интервю</value>
+  </data>
+  <data name="corporateManagment" xml:space="preserve">
+    <value>Фирмено управление</value>
+  </data>
+  <data name="EmployeeName" xml:space="preserve">
+    <value>Служител</value>
+  </data>
+  <data name="Link" xml:space="preserve">
+    <value>Линк</value>
+  </data>
+  <data name="noteToWatcher" xml:space="preserve">
+    <value>Бележка:</value>
+  </data>
+  <data name="templatedForLiveInterview" xml:space="preserve">
+    <value>Шаблони за интервю на живо</value>
+  </data>
+  <data name="watcherOpinion" xml:space="preserve">
+    <value>Оценка</value>
+  </data>
+  <data name="EmployeeProfile" xml:space="preserve">
+    <value>Потребителски профил</value>
+  </data>
+  <data name="fileUploaded" xml:space="preserve">
+    <value>Файлът е изпратен успешно. Моля изчакайте интервюиращия.</value>
+  </data>
+  <data name="recordingStatusNotOn" xml:space="preserve">
+    <value>Статус на запис: Не е записва.</value>
+  </data>
+  <data name="cantDecide" xml:space="preserve">
+    <value>Не мога да преценя</value>
+  </data>
+  <data name="defineLiveInterview" xml:space="preserve">
+    <value>Определи интервю на живо</value>
+  </data>
+  <data name="Interesting" xml:space="preserve">
+    <value>Изглежда интересно</value>
+  </data>
+  <data name="notInteresting" xml:space="preserve">
+    <value>Не е интересно</value>
+  </data>
+  <data name="watchRecordedInterview" xml:space="preserve">
+    <value>Прегледай записаното интервю</value>
+  </data>
+  <data name="liveVideoInterviewTour" xml:space="preserve">
+    <value>&lt;h2 class="display-4"&gt;Live видео интервю&lt;/h2&gt;
+              &lt;p&gt;Лесно интервюирайте кандидатите в реално време, независимо от местонахождението им и запишете интервюто, за да можете да се върнете към него по-късно.&lt;br /&gt;
+- насрочи дата и час за Live интервю&lt;br /&gt;
+- интервютата се провеждат директно във Вашия браузър.&lt;br /&gt;
+- лесно изпрати интервю на друг човек за оценка &lt;/p&gt;&lt;br /&gt;</value>
+  </data>
+  <data name="oneWayVideoInterviewTour" xml:space="preserve">
+    <value>&lt;h2 class="display-4"&gt;Видео интервю&lt;/h2&gt;
+              &lt;p&gt;Опознай кандидатите в по-кратък срок, като им предоставиш възможност самостоятелно да запишат видео отговори на въпросите от интервюто.&lt;br /&gt;
+ - създай безпроблемно въпроси за видео интервю&lt;br /&gt;
+ - изпрати покана за интервю на неограничен брой кандидати&lt;br /&gt;
+ - получаваш известие за всяко записано видео&lt;br /&gt;
+ - лесно изпрати интервюто на някого за оценка&lt;/p&gt;&lt;br /&gt;</value>
+  </data>
+  <data name="quizCandidateTour" xml:space="preserve">
+    <value>&lt;h2 class="display-4"&gt;Тест за кандидати&lt;/h2&gt;
+              &lt;p&gt;Създайк свой собствен тест за оценка на кандидат за работа&lt;br /&gt;
+- напиши своите въпроси &lt;br /&gt;
+- създай възможни отговори на въпросите &lt;br /&gt;
+- изпрати теста на неограничен брой кандидати с един бутон &lt;br /&gt;&lt;/p&gt;</value>
+  </data>
+  <data name="videoLibraryTour" xml:space="preserve">
+    <value>&lt;h2 class="display-4"&gt;Видео библиотека&lt;/h2&gt;
+              &lt;p&gt;- създай видео профил на компанията.&lt;br /&gt;
+- качи видеа, които представят компанията - дейност, атмосфера, служители&lt;br /&gt;&lt;/p&gt;</value>
+  </data>
+  <data name="ChangePassword" xml:space="preserve">
+    <value>Промени паролата</value>
+  </data>
+  <data name="ConfNewPassword" xml:space="preserve">
+    <value>Потвърди новата парола</value>
+  </data>
+  <data name="NewPassword" xml:space="preserve">
+    <value>Нова парола</value>
+  </data>
+  <data name="OldPassword" xml:space="preserve">
+    <value>Текуща парола</value>
+  </data>
+  <data name="features" xml:space="preserve">
+    <value>Функционалности</value>
+  </data>
+  <data name="featuresTitle" xml:space="preserve">
+    <value>Всичко, от което се нуждаете за интервю за работа, на едно място!</value>
+  </data>
+  <data name="Canceled" xml:space="preserve">
+    <value>Отменено</value>
+  </data>
+  <data name="Confirmed" xml:space="preserve">
+    <value>Потвърдено</value>
+  </data>
+  <data name="Reservation" xml:space="preserve">
+    <value>Запазено</value>
+  </data>
+  <data name="GoToLiveVideo" xml:space="preserve">
+    <value>Към интервю на живо</value>
+  </data>
+  <data name="changeDeadline" xml:space="preserve">
+    <value>Промени крайния срок</value>
+  </data>
+  <data name="clickCancel" xml:space="preserve">
+    <value>Отмени</value>
+  </data>
+  <data name="clickConfirmation" xml:space="preserve">
+    <value>Потвърди</value>
+  </data>
+  <data name="compatibleWith" xml:space="preserve">
+    <value>Съвместимо с:</value>
+  </data>
+  <data name="coordinateTo" xml:space="preserve">
+    <value>Бих искал да променя датата на:</value>
+  </data>
+  <data name="goToLiveInterview" xml:space="preserve">
+    <value>Премини към интервюто</value>
+  </data>
+  <data name="SendMessageInterviewer" xml:space="preserve">
+    <value>Свободен текст</value>
+  </data>
+  <data name="createTemplateLiveInterview" xml:space="preserve">
+    <value>Създай шаблон за интервю на живо</value>
+  </data>
+  <data name="enterChat" xml:space="preserve">
+    <value>Премини към видео чат</value>
+  </data>
+  <data name="invalidEmail" xml:space="preserve">
+    <value>Невалиден имейл.</value>
+  </data>
+  <data name="interviewData" xml:space="preserve">
+    <value>Текст:</value>
+  </data>
+  <data name="accountNeed" xml:space="preserve">
+    <value>&lt;p&gt;&lt;strong&gt;Имам ли нужда от профил? &lt;/strong&gt;&lt;/p&gt;</value>
+  </data>
+  <data name="accountNeedDescription" xml:space="preserve">
+    <value>&lt;p&gt;Кандидатите не трябва да създават профил, за да записват видео интервю. Всичко, което е необходимо, за да завършите интервюто, е да кликнете върху връзката в поканата за интервю, изпратена до имейла Ви.&lt;/p&gt;</value>
+  </data>
+  <data name="doIhaveToPay" xml:space="preserve">
+    <value>&lt;p&gt;&lt;strong&gt;Бях поканен от компания за интервю в Live-interview. Трябва ли да платя, за да го използвам?&lt;/strong&gt;&lt;/p&gt;</value>
+  </data>
+  <data name="doIhaveToPayDescription" xml:space="preserve">
+    <value>&lt;p&gt;Не, платформата е абсолютно безплатна за кандидатите.&lt;/p&gt;</value>
+  </data>
+  <data name="facCand" xml:space="preserve">
+    <value>Често задавани въпроси от кандидати</value>
+  </data>
+  <data name="howToDoInterview" xml:space="preserve">
+    <value>&lt;p&gt;&lt;strong&gt;Как да направя интервюто си? &lt;/strong&gt;&lt;/p&gt;</value>
+  </data>
+  <data name="howToDoInterviewDescription" xml:space="preserve">
+    <value>&lt;p&gt;&lt;strong&gt;Live-interview е лесна за използване. Ще получите покана по имейл с подробни указания как да запишете интервюто. За да завършите видео интервюто си, ще Ви е необходима уеб камера - на вашия компютър / лаптоп или чрез смартфон. Можете да започнете, като кликнете върху връзката, изпратена в имейла. Видео интервюто обикновено се състои от редица въпроси, които компаниите задават по отношение на работата. Това е предварително записано интервю, което означава, че никой друг няма да Ви задава въпроси от другата страна.&lt;/p&gt;</value>
+  </data>
+  <data name="recordAgain" xml:space="preserve">
+    <value>&lt;p&gt;&lt;strong&gt;Какво ще стане, ако объркам отговорите, ще мога ли отново да запиша Live-interview?&lt;/strong&gt;&lt;/p&gt;</value>
+  </data>
+  <data name="recordAgainDescription" xml:space="preserve">
+    <value>&lt;p&gt;Да, след като отговорите на всички въпроси, ще имате възможност да прегледате целия видеоклип и ако не сте доволни, можете да запишете нов на неговото място. След като бъде завършен и изпратен до работодателя, не могат да се правят промени в интервюто.&lt;/p&gt;</value>
+  </data>
+  <data name="whatIsTheLiveInterview" xml:space="preserve">
+    <value>&lt;p&gt;&lt;strong&gt;Какво представлява Live-interview? &lt;/strong&gt;&lt;/p&gt;</value>
+  </data>
+  <data name="whatIsTheLiveInterviewDescription" xml:space="preserve">
+    <value>&lt;p&gt;&lt;strong&gt;Live-interview&lt;/strong&gt; е автоматична видео платформа за набиране на персонал, която дава на кандидатите възможност да проведат лично видео интервю.&lt;/p&gt;
+&lt;p&gt;Вие можете да кандидатствате за работа в удобно за Вас време и от уюта на собствения Ви дом. Покажете на работодателите вашата личност, уникалност и ги впечатлете, преди още да сте пристъпили през прага им. Спестете си време и пари за телефонни разговори, пътуването до работното място и дългото чакане с &lt;strong&gt;Live-interview&lt;/strong&gt;. Вашето време е ценно, така че, когато Ви поканят на следващия етап, ще знаете, че се срещате с работодатели, които вече сте впечатлили не само с автобиографията си.&lt;/p&gt;</value>
+  </data>
+  <data name="whatNext" xml:space="preserve">
+    <value>&lt;p&gt;&lt;strong&gt;Завърших и изпратих видео интервюто си. Сега какво? &lt;/strong&gt;&lt;/p&gt;</value>
+  </data>
+  <data name="whatNextDescription" xml:space="preserve">
+    <value>Поздравления. Сега трябва да бъдете уведомени от работодателите дали преминавате към следващата стъпка или не. Не забравяйте да проверявате имейла си за бъдеща комуникация от Live-interview или компанията. Желаем Ви успех!</value>
+  </data>
+  <data name="whereInterviewGo" xml:space="preserve">
+    <value>&lt;p&gt;&lt;strong&gt;Къде отива моят Live-interview видео запис?&lt;/strong&gt;&lt;/p&gt;</value>
+  </data>
+  <data name="whereInterviewGoDescription" xml:space="preserve">
+    <value>&lt;p&gt;Вашето &lt;strong&gt;Live-interview&lt;/strong&gt; видео интервю ще бъде изпратено до упълномощените лица в компанията, за която сте кандидатствали за позиция.&lt;/p&gt;</value>
+  </data>
+  <data name="interviewerInTheRoom" xml:space="preserve">
+    <value>Интервюиращият е в стаята.</value>
+  </data>
+  <data name="notUsingHeadset" xml:space="preserve">
+    <value>Ако не използвате слушалки, ще чуете звук по време на теста. Този звук няма да присъства по време на видеото.</value>
+  </data>
+  <data name="scheduledDate" xml:space="preserve">
+    <value>Дата:</value>
+  </data>
+  <data name="startConversation" xml:space="preserve">
+    <value>Започни разговор</value>
+  </data>
+  <data name="writeHere" xml:space="preserve">
+    <value>Пишете тук</value>
+  </data>
+  <data name="partFive" xml:space="preserve">
+    <value>&lt;p&gt;&lt;strong&gt;Част 5: &lt;/strong&gt;&lt;strong&gt;Предимства за фирмите за подбор на персонал&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
+  </data>
+  <data name="partFiveDescription" xml:space="preserve">
+    <value>&lt;a href="https://www.live-interview.com/en-US/main/partFive.aspx"  class="greyLetters"&gt;Видео интервюта за подбор на персонала: по-добро представяне на кандидатите пред клиентите&lt;br&gt;
+Вземете повече предимства с видео интервю за персонал&lt;br&gt;
+Решения за персонала: използване на Live Interview за наемане на най-добрите кандидати&lt;br&gt;&lt;/a&gt;</value>
+  </data>
+  <data name="partFour" xml:space="preserve">
+    <value>&lt;p&gt;&lt;strong&gt;Част 4: Индустрии и работни места за видео&lt;/strong&gt;&lt;strong&gt; итервюта&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
+  </data>
+  <data name="partFourDescription" xml:space="preserve">
+    <value>&lt;a href="partFour.aspx"  class="greyLetters"  &gt;Наемане на страхотни служители в областта на технологията с Live Interview&lt;br&gt;
+Наемане на големи търговски представители с Live Interview&lt;br&gt;
+Наемане на изпълнителен мениджър: три съвета за видео интервю&lt;br&gt;
+Работа на свободна практика чрез Live Interview&lt;br&gt;
+Успешните предприемачи използват Live Interview&lt;br&gt;
+Наемане на финансови и счетоводни услуги с Live Interview&lt;br&gt;
+Административни специалисти: Наемане на най-добрите чрез Live Interview&lt;br&gt;
+Решения за интернет маркетинг: Наемане на най-добрите чрез Live Interview&lt;br&gt;
+Намиране на по-добри служители от бранша на дребно с Live Interview&lt;br&gt;
+Избягване на оборота на служителите с Live Interview&lt;br&gt;&lt;/a&gt;</value>
+  </data>
+  <data name="partOne" xml:space="preserve">
+    <value>&lt;p&gt;&lt;strong&gt;Част 1: Уводно ръководство за видеоразговори&lt;/strong&gt;&lt;/p&gt;</value>
+  </data>
+  <data name="partOneDescription" xml:space="preserve">
+    <value>&lt;a href="partOne.aspx"  class="greyLetters"  &gt; Уводно  ръководство за видеоразговори&lt;br&gt; 
+ Защо видео интервютата в интернет са бъдещето&lt;br&gt;
+Използвайте видео интервю, за да преодолеете разликите&lt;br&gt;
+Ползата от видео интервютата&lt;br&gt;
+В кой случай видео интервюто е най-доброто решение&lt;br&gt;
+Видео интервю за HR&lt;br&gt;
+Live Interview - най-добри практики за наемане на професионалисти&lt;br&gt;
+Видео интервю – често задавани въпроси&lt;br&gt;&lt;/a&gt;</value>
+  </data>
+  <data name="partSix" xml:space="preserve">
+    <value>&lt;p&gt;&lt;strong&gt;Част 6: За кандидатите&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
+  </data>
+  <data name="partSixDescription" xml:space="preserve">
+    <value>&lt;a href="partSix.aspx"  class="greyLetters"&gt;Видео интервю съвети&lt;br&gt;
+Неща, които трябва да избягвате във видео интервюто&lt;br&gt;
+Как да отговоря - популярни въпроси при видео интервю&lt;br&gt;
+Съвети за езика на тялото при видео интервюто&lt;br&gt;
+Добър външен вид  във видео интервюто&lt;br&gt;
+Ползите от видео интервютата&lt;br&gt;&lt;/a&gt;</value>
+  </data>
+  <data name="partThree" xml:space="preserve">
+    <value>&lt;p&gt;&lt;strong&gt;Част 3:&lt;/strong&gt;&lt;strong&gt; П&lt;/strong&gt;&lt;strong&gt;опулярни видео и чат точки&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
+  </data>
+  <data name="partThreeDescription" xml:space="preserve">
+    <value>&lt;a href="partThree.aspx"  class="greyLetters"  &gt; Как да представите вашата марка във видео интервю&lt;br&gt;
+Как наистина се чувстват кандидатите за видео интервюта? &lt;br&gt;
+Подобряване на позицията Ви в социалните медии със силата на видео интервютата&lt;br&gt;
+Трудни въпроси за успех  при видеоразговори&lt;br&gt;
+Организиране и подбор с видео интервюта&lt;br&gt;&lt;/a&gt;</value>
+  </data>
+  <data name="partTwo" xml:space="preserve">
+    <value>&lt;p&gt;&lt;strong&gt;Част 2: Видове видеоразговори&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
+  </data>
+  <data name="partTwoDescription" xml:space="preserve">
+    <value>&lt;a href="partTwo.aspx"  class="greyLetters"  &gt; Записани видео интервюта: кой е най-добрият начин да проверите кандидатите? &lt;br&gt;
+Видео интервюта на живо: най-доброто решение за бързо назначаване&lt;br&gt;
+Видео интервюта на живо за по-добро сътрудничество при наемане&lt;br&gt;&lt;/a&gt;</value>
+  </data>
+  <data name="videoInfoRes" xml:space="preserve">
+    <value>Информация за видео интервю</value>
+  </data>
+  <data name="introductoryGuide" xml:space="preserve">
+    <value>&lt;p&gt;&lt;strong&gt;Уводно ръководство за видеоразговори&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
+  </data>
+  <data name="introductoryGuideDescription" xml:space="preserve">
+    <value>&lt;p&gt;Тук ще научите повече за видео интервютата. Какво точно представлява видео интервю? Как се различава от видео чата? И как можете да използвате видео интервюта, за да вземете най-добрите решения за наемане?&lt;/p&gt;
+&lt;p&gt;Какво представляват &amp;nbsp;видеоразговорите?&lt;/p&gt;
+&lt;p&gt;Видео интервюто използва онлайн видео технология, за да позволи на търсещите работа и на работодателите да се свържат по-бързо и лесно. Видео разговорите премахват бариерата на разстоянията и използват видео технологията като средство за комуникация. Тъй като толкова много комуникация се случва на невербално ниво, да видиш и да бъдеш видян е изключително важно. Видео интервютата дават на хората по-добър начин да се представят, както устно, така и невербално.&lt;/p&gt;
+&lt;p&gt;Видео интервюта срещу видеочат&lt;/p&gt;
+&lt;p&gt;Видео интервютата са почти едно и също нещо като видео чата, нали? Грешка. Платформите за видеочат бяха създадени само за това: за чат. Платформите за видео интервю, от друга страна, са предназначени специално за процеса на интервю, от подбора &amp;nbsp;на кандидатите до сътрудничество при вземането на решение за наемане.&lt;/p&gt;
+&lt;p&gt;Видове видео интервюта&lt;/p&gt;
+&lt;p&gt;Не всички видео интервюта са еднакви. Има двата основни вида онлайн интервюта:&lt;/p&gt;
+&lt;p&gt;Видео разговори на живо&lt;/p&gt;
+&lt;p&gt;Не искаш да отделяш време и пари по време на целия процес за набиране на нов служител? Вашето решение е интервю онлайн в реално време. Тези интервюта работят точно като традиционните "лице в лице", минус пътните разходи и цялото време, което е необходимо, за да организирате срещите.&lt;/p&gt;
+&lt;p&gt;Сега, без инсталиране на обемист софтуер за настолни компютри, работодателите и търсещите работа могат да се свържат винаги и навсякъде. Съвместната &amp;nbsp;работа с видео интервюта е лесна и достъпна.&lt;/p&gt;
+&lt;p&gt;Записани видео интервюта&lt;/p&gt;
+&lt;p&gt;Какво представлява записаното видео интервю? Тази форма на интервюиране позволява да се създаде поредица от въпроси и кандидатите за работа след това записват техните отговори на видео.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Кандидатите за работа използват формата на видеозаписа, за да отговорят на въпроси от интервюто, докато демонстрират впечатляващите си комуникационни умения, личност и професионализъм. Нещо повече, тази форма на виртуално интервюиране дава на компаниите възможността да преценят колко време за размисъл е необходимо на кандидатите, преди да дадат отговор.&lt;/p&gt;
+&lt;p&gt;Как можете да използвате видео интервюта, за да вземате най-добрите решения за наемане?&lt;/p&gt;
+&lt;p&gt;Намирането на перфектната работа не винаги е лесно. Намирането на човек, който може да се впише в уникалната култура на Вашата компания, може да бъде още по-трудно. Live Interview &amp;nbsp;може да Ви помогне да наемете професионалисти и да вземете по-добри решения за наемане. Ето как:&lt;/p&gt;
+&lt;p&gt;Спестете ценно време и пари.&lt;/p&gt;
+&lt;p&gt;Проверката на кандидатите за работа може да отнеме огромно количество от Вашето време и пари. Видео интервютата правят процеса много лесен, като Ви дават възможност да се свържете с кандидатите лице в лице без да се налага да ги посрещнете. Когато става въпрос за подбор на кандидати, спестете време със записани видео интервюта.&lt;/p&gt;
+&lt;p&gt;Получете по-добра представа в началото.&lt;/p&gt;
+&lt;p&gt;Всеки може да звучи добре в телефонно интервю или автобиография. Видео интервютата обаче ви позволяват да получите и визуални знаци, които могат да повлияят на вашето решение. Вижте много повече от кандидата по-рано в процеса на наемане, от изразите на лицето и езика на тялото до тяхната личност и професионализъм. Никога не се изненадвайте отново в лично интервю!&lt;/p&gt;
+&lt;p&gt;Сътрудничество с колеги.&lt;/p&gt;
+&lt;p&gt;Когато настъпи моментът да се покажат кандидатите или да се включат във финално интервю за наемане, не всеки, който е необходим, винаги може да присъства. А бележките и спомените за интервюта не са точно представяне на кандидат за работа. С Live Interview интервюираните записи могат да се споделят с колеги. Освен това те могат да коментират и оценяват кандидатите, така че всички да стигнете до по-добро решение за наемане.&lt;/p&gt;</value>
+  </data>
+  <data name="whyOnlineInterviewFuture" xml:space="preserve">
+    <value>&lt;p&gt;Защо видео интервютата в интернет са бъдещето&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
+  </data>
+  <data name="whyOnlineInterviewFutureDescription" xml:space="preserve">
+    <value>&lt;p&gt;Гъвкавост&lt;/p&gt;
+&lt;p&gt;Кой иска да бъде свързан с график през цялото време? Видео разговорите ви позволяват да наемете или интервюирате в движение! Например, Live Interview предлага удобно видео интервю за мобилно приложение, което позволява на търсещите работа да записват интервюта, независимо къде се намират. Сега можете да видите вашите топ кандидати от заседателната зала, влак, кола или дори край басейна!&lt;/p&gt;
+&lt;p&gt;Намаляване на разходите&lt;/p&gt;
+&lt;p&gt;Онлайн видео интервютата са чудесен начин да спестите пари. Те освобождават повече време, като правят и най-трудните за достигане, пасивни кандидати, достъпни с натискане на един бутон. Те също така намаляват пътните разходи с до 67%!&lt;/p&gt;
+&lt;p&gt;Възприемане на визуализации&lt;/p&gt;
+&lt;p&gt;Визуалната медия е вълната на бъдещето. В крайна сметка една картина струва хиляда думи, дори онлайн. Използването на виртуални интервюта ви позволява да виждате и чувате кандидатите си по-бързо и съответно по-бързо да прецените дали кандидатът е подходящ за тази позиция.&lt;/p&gt;
+&lt;p&gt;За търсещите работа, онлайн интервюирането е изключително удобен вариант. То им позволява да демонстрират с лекота важни комуникативни умения. Сега можете да поставите цялото си желание, амбиция и личност на дисплея, по-рано в процеса на наемане.&lt;/p&gt;
+&lt;p&gt;Като работодател, видео интервютата изграждат по-бърз мост между публикуването на обява за работа и намирането на перфектен кандидат.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
+  </data>
+  <data name="Disconnect" xml:space="preserve">
+    <value>Приключи интервю.</value>
+  </data>
+  <data name="enhancingSocialMediaPosition" xml:space="preserve">
+    <value>&lt;p&gt;&lt;strong&gt;Подобряване на позицията &lt;/strong&gt;&lt;strong&gt;Ви в&lt;/strong&gt;&lt;strong&gt; социалните медии със силата на видео интервютата&lt;/strong&gt;&lt;/p&gt;</value>
+  </data>
+  <data name="enhancingSocialMediaPositionDescription" xml:space="preserve">
+    <value>&lt;p&gt;Социалните медийни платформи дават възможност на Вашата компания да споделя информация за Вашата организация и нейното послание. Можете също така да предоставяте информация за Вашите открити позиции пред заинтересовани лица, търсещи работа. Важно е да обмислите установяването на присъствие на няколко социални канала, за да сте сигурни, че Вашите позиции достигат до възможно най-широката аудитория. Първо обаче трябва да определите какви са нуждите Ви за наемане и да определите видовете работни места, които ще трябва да попълните. От там решете кои сайтове за социални медии да използвате, за да се изправите пред целевите си кандидати. Ако сте в търговията на дребно, може да потърсите и в по-непрофесионални сайтове като Facebook, за потенциални служители. Ако търсите да наемете директор продажби или маркетинг специалист, LinkedIn може да бъде начинът да ги откриете.&lt;/p&gt;
+&lt;p&gt;Вашата марка на работодател е важен фактор за създаване на положително мнение и привличане на подходящите хора във Вашата компания. Технологиите за социални медии и видео интервюиране предоставят на компаниите повече възможности да подобрят, поддържат или да се придържат към последователното брандиране. В действителност проучванията сочат, че използването на социалните медии прави марките на работодателите по-привлекателни за потенциалните кандидати.&lt;/p&gt;
+&lt;p&gt;Важно е Вашата компания да е последователна във всичките си платформи за социални медии и видео интервюта. Независимо дали става дума за Вашия акаунт в Twitter или център за видео разговори, всички те трябва да разказват една и съща история и да бъдат незабавно разпознаваеми, така че кандидатите да не са объркани от множество послания.&lt;/p&gt;
+&lt;p&gt;Създайте профил, която е не само информативен, но и забавен и привлекателен. Споделяйте снимки от Вашия офис и фирмени излети. Не се страхувайте да покажете на най-добрите си хора, като подчертаете способността на служителите си. Live Interview Ви позволява да персонализирате своя профил с фирмени цветове и лога, плюс видеоклипове за популяризиране на Вашата марка.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Компаниите трябва да се възползват от социалните медийни платформи, тъй като там ще имат достъп до публичните профили на кандидатите, и ще могат да преценят професионализма и лидерските им умения. Това е чудесен начин да се разделят водещите кандидати от проблемните такива.&lt;/p&gt;
+&lt;p&gt;Видео интервюирането е удобен, ефикасен и достъпен начин да се свържете лично с кандидатите. Съчетайте това с вашите социално медийни стратегии и ще бъдете на път да привлечете водещи кандидати във Вашата компания. Вече няма да преценявате даден кандидат единствено въз основа на автобиографията му, която няма да Ви представи пълната информация. С комбинирането на социални медии и видео интервюта ще имате по-пълен и по-изчерпателен портрет на този кандидат.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Чрез ангажиране с кандидатите в социалните медии, като говорите за теми в отрасъла и отговаряте на въпроси, можете да създадете лична връзка преди кандидатстване или интервю. Ето защо една трета от мениджърите от HR &amp;nbsp;и работодателите казват, че присъствието в социални медии ускорява процеса на наемане.&lt;/p&gt;
+&lt;p&gt;Използването на живо или записано видео интервю в Live Interview ще Ви позволи да се свържете с желаните кандидатите на по-лично ниво, без да губите време, когато говорите с грешните хора.&lt;/p&gt;
+&lt;p&gt;Има голям брой хора, които използват ежедневно социалните медии, за да споделят и да получават своята информация, поради което не е чудно, че повече компании осъзнават ползите от използването на тази технология за набиране, свързване и оценка на обещаващи кандидати. Прилагането на комбинация от стратегии за социални медии и видео интервю за Вашия процес на набиране ще доведе до по-добри кандидати, които ще допринесат значително за Вашата организация, за да можете лесно да направите по-успешни решения за наемане.&lt;/p&gt;</value>
+  </data>
+  <data name="howDoCandidatesReallyFeel" xml:space="preserve">
+    <value>&lt;p&gt;&lt;strong&gt;Как наистина се чувстват кандидатите за видео интервюта?&lt;/strong&gt;&lt;/p&gt;</value>
+  </data>
+  <data name="howDoCandidatesReallyFeelDescription" xml:space="preserve">
+    <value>&lt;p&gt;За да получите по-добро разбиране за мнението на кандидатите за видео интервютата, ето някои прости обяснения на някои от днешните широко задавани въпроси:&lt;/p&gt;
+&lt;p&gt;Харесват ли кандидати видео интервюта?&lt;/p&gt;
+&lt;p&gt;Краткият отговор е "Да". Според скорошно проучване сред 400 търсещи работа, почти половината от запитаните вече са имали опит с предишно видео интервюто и дори ги предпочитат пред другите видове. Това говори много, като се има предвид, че видео интервютата все още се разглеждат като относително нов вид интервю.&lt;/p&gt;
+&lt;p&gt;И така, какво точно казват кандидатите за видео интервюта?&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Те са удобни&lt;/p&gt;
+&lt;p&gt;Най-вече видео интервютата са удобни за всички участници. Те не само премахват необходимостта от планиране на интервюто около няколко графици, но също така ги улесняват да могат да кандидатстват за работа от всяко място, на всяко устройство и по всяко време - дори когато са в движение.&lt;/p&gt;
+&lt;p&gt;Чрез по-гъвкавия процес на интервюиране, кандидатите могат да спестят време и пътни разходи, свързани с традиционните методи за интервю.&lt;/p&gt;
+&lt;p&gt;Те са лесни за използване&lt;/p&gt;
+&lt;p&gt;Видеоклипът пое няколко аспекта от нашия личен и професионален живот, от това как осъществяваме контакт с близките си, до това как интервюираме кандидатите за свободни позиции. И тъй като платформите за видео чат играят толкова важна роля в живота ни, кандидатите често се чувстват комфортно по време на интервюто. Най-новото поколение търсещи работа е запознато с технологията и се чувстват удобно пред камерата.&lt;/p&gt;
+&lt;p&gt;Що се отнася до по-възрастните поколения, които може и да не са толкова запознати с видео технологиите, видео интервютата са проектирани да бъдат много удобни за потребителя. Ако успявате да възпроизвеждате и записвате видеоклипове в YouTube или да осъществите разговор чрез Skype с приятел, то можете да се справите и с видео интервю.&lt;/p&gt;
+&lt;p&gt;Те създават повече възможности&lt;/p&gt;
+&lt;p&gt;Това важи особено за кандидатите за работа на дълги разстояния. Видео интервютата на живо правят интервюта лице в лице с далечни кандидати възможни, като по този начин привличат глобални кандидати. Както интервютата на живо, така и записаните видеоклипове Ви позволяват да се свържете визуално с кандидати, с които иначе няма да имате възможност да се срещнете лично.&lt;/p&gt;
+&lt;p&gt;Как се отразяват видео интервютата на компанията?&lt;/p&gt;
+&lt;p&gt;Проверката на кандидатите за работа и провеждането на интервюта за работа чрез видеоклип се отразява добре на всяка компания. За начало, когато става въпрос за опита на кандидата, видео интервютата показват компаниите като иновативни, актуални и високотехнологични. В резултат на това, професионалистите по наемане могат да очакват привличане на също толкова креативни и технологично развити кандидати.&lt;/p&gt;
+&lt;p&gt;Освен това, повече опции означават повече кандидати. Даването на възможност за интервю чрез видео платформа улеснява кандидатите на дълги разстояния да участват в процеса на интервю, което може да помогне за повишаване на рейтинга на компанията.&lt;/p&gt;
+&lt;p&gt;Видео интервютата помагат ли или накърняват опита на кандидата?&lt;/p&gt;
+&lt;p&gt;В крайна сметка, опитът на кандидата е толкова добър, колкото го постигне. Но видео интервютата могат да помогнат да се открои кандидата за работа. Те са удобни, лесни и вълнуващи за кандидатите и за работодателите. Въпреки това, неправилно използваните видео интервюта могат да доведат до негативен опит в процеса на интервю.&lt;/p&gt;
+&lt;p&gt;Ключът към създаването на положителен опит за кандидати с видео интервюта е борбата с опасенията на кандидатите в началото. С помощта на платформа, специално разработена за видео интервюта, при наемането на професионалисти можете да бъдете сигурни, че кандидатите няма да изпитват &amp;nbsp;проблеми с връзката или с аудио качеството.&lt;/p&gt;</value>
+  </data>
+  <data name="howToRepresentYorBrand" xml:space="preserve">
+    <value>&lt;p&gt;&lt;strong&gt;Как да представите вашата марка във видео интервю&lt;/strong&gt;&lt;/p&gt;</value>
+  </data>
+  <data name="howToRepresentYorBrandDescription" xml:space="preserve">
+    <value>&lt;p&gt;Вашата марка - вашата репутация като работодател - може да повлияе на &amp;nbsp;решението на кандидата да се присъедини към вашия екип. Докато атрактивната марка на работодателя може да доведе до повече кандидати за работа, отколкото можете да се справите, то една не толкова привлекателна марка може да остави празни работните ви места за седмици или месеци.&lt;/p&gt;
+&lt;p&gt;Интервюто служи като перфектната платформа за представяне на вашата уникална работодателска марка. Лесно е да покажете марката си на работодателя си по време на традиционно интервю с обиколка на офиса, запознанства с екипа и други подобни, но как да представите марката си, когато интервюто се провежда във виртуална среда?&lt;/p&gt;
+&lt;p&gt;Независимо дали кандидатите участват в записано или в живо видео интервю, едно от предимствата на видео интервюта&amp;nbsp; е способността да се очертае цялостното преживяване. Live Interview, например, дава възможност на компаниите да качват своето фирмено лого и видео.&lt;/p&gt;
+&lt;p&gt;Тези опции за персонализиране поставят Вашата компания и марка в центъра на вниманието по време на действителното интервю, което служи като ценно напомняне за кандидатите по време на видео интервюто.&lt;/p&gt;
+&lt;p&gt;Включването на въвеждащ видеоклип, преди кандидатите да започнат видео разговорите им, е чудесен начин да покажете Вашата фирмена култура и марка на работодател.&lt;/p&gt;
+&lt;p&gt;Видеоклипът може да разгледа "един ден в живота" на служителите на компанията, да включва обиколка на офиса или да представи препоръки от хората, които познават най-добре вашият работодател - Вашите служители.&lt;/p&gt;
+&lt;p&gt;Важно е да се постави марката на работодателя на дисплея за кандидатите, участващи във видео интервюто, тъй като те все още не могат физически да обиколят офиса или да се запознаят със служителите.&lt;/p&gt;</value>
+  </data>
+  <data name="liBestForSpeedy" xml:space="preserve">
+    <value>&lt;p&gt;&lt;strong&gt;Видео интервюта на живо: най-доброто решение за бързо назначаване&lt;/strong&gt;&lt;/p&gt;</value>
+  </data>
+  <data name="liBestForSpeedyDescription" xml:space="preserve">
+    <value>&lt;p&gt;Ефективният процес на наемане е от решаващо значение, ако искате да избягвате празни позиции в продължение на седмици или дори само за няколко дни. Според Дружеството за управление на човешките ресурси обикновено отнема между 29 и 43 дни, за да наеме нов служител. Това е твърде дълго, особено ако имате нужда от талантлив служител веднага, за да помогнете на Вашата компания да расте. Постигането на ефикасен процес на наемане означава прибягване до традиционните методи за наемане, които губят време и усложняват съвместната работа на екипа за наемане, така че решенията за кандидат да не могат да се вземат по-бързо.&lt;/p&gt;
+&lt;p&gt;Видео интервютата, особено интервюто на живо, са мощни технологични решения, които позволяват на компаниите бързо да достигнат до решение за наемане. Когато откриете подходящ кандидат, трябва да се движите бързо, преди някой от конкуренцията да го открадне от вас.&lt;/p&gt;
+&lt;p&gt;Вероятно сте използвали други платформи за видео чат на живо - независимо дали е Google Hangouts, Skype или Facetime, така че вече сте запознати с концепцията. Основната разлика между чатове на живо и живите видео интервюта е, че платформата на видео интервютата е специално предназначена за процеса на набиране или наемане.&lt;/p&gt;</value>
+  </data>
+  <data name="liBestPractice" xml:space="preserve">
+    <value>&lt;p&gt;&lt;strong&gt;Live Interview - най-добри практики за наемане на професионалисти&lt;/strong&gt;&lt;/p&gt;</value>
+  </data>
+  <data name="liBestPracticeDescription" xml:space="preserve">
+    <value>&lt;p&gt;За да се възползвате максимално от използването на видео интервюто, първо трябва да установите своя план за действие, като идентифицирате целите си за наемане. Какви са видовете работни места, които трябва да запълните в следващите няколко месеца или година? След като определите това, можете да се възползвате от следните съвети в стратегията си за интервюиране на видеоклипове, за да привлечете най-добрия кандидат &amp;nbsp;да се присъедини към Вашия екип.&lt;/p&gt;
+&lt;p&gt;Бъдете прозрачни относно процеса на наемане на кандидати&lt;/p&gt;
+&lt;p&gt;Въпреки че популярността на видео интервютата се е увеличила значително през последните няколко години, все още има фирми, които не използват тази технология. Ето защо има хора, търсещи работа, които може да не са запознати с този метод на интервюиране. Трябва да отделите време, за да информирате кандидатите си за ролята на видео интервюто във Вашия процес на наемане.&lt;/p&gt;
+&lt;p&gt;Започнете процеса като попитате кандидата, дали някога е кандидатствал чрез видео. Ако за пръв път го интервюират по този начин, отделете време, за да обясните всичко за процеса и какво да очаква.&lt;/p&gt;
+&lt;p&gt;Записаното интервю предлага на кандидатите много гъвкавост, тъй като те са тези, които решават кога да го направят в рамките на определен срок. Препоръчваме Ви да дадете на кандидатите между 5 и 7 дни, за да запишат отговорите си. Това е достатъчно време, за да се запознаят с платформата за видео интервю и да изпробват оборудването си.&lt;/p&gt;
+&lt;p&gt;Възползвайте се от възможностите за брандинг&lt;/p&gt;
+&lt;p&gt;Тъй като се стремите да наемете първокласни служители, важно е да създадете положителен облик за Вашата компания като работодател. Не забравяйте да не игнорирате възможностите за брандиране при видео разговори. Така кандидатите ще виждат Вашето лого през цялото време на интервюто.&lt;/p&gt;
+&lt;p&gt;Освен това, видео интервютата могат да бъдат един от компонентите на цялостната фирмена марка, която да прави иновативно впечатление на потенциалните служители и може значително да помогне за привличането на големи таланти. Инициативата за видео инервюта незабавно показва на кандидатите, че вашата компания е модерна, адаптивна и готова да приеме новите технологии.&lt;/p&gt;
+&lt;p&gt;Най-добри практики за провеждане на живо интервю:&lt;/p&gt;
+&lt;p&gt;Проверете вашата интернет връзка и оборудване&lt;/p&gt;
+&lt;p&gt;Точно както бихте очаквали кандидатът да се подготви за интервю на живо, така трябва и вие. Важно е да проверите предварително връзката си с интернет, уеб камерата и микрофона, за да избегнете всякакви злополуки в средата на интервюто.&lt;/p&gt;
+&lt;p&gt;Наистина, можете да осъществите успешно интервю на живо и чез безжичен интернет, но ние препоръчваме да се свържете с интернет чрез кабел за по-добра работа. Вие също така трябва да затворите всички програми и уеб браузъри, които няма да ви трябват, по време на видео интервюто, тъй като те могат да отнемат ресурси и да забавят устройството ви.&lt;/p&gt;
+&lt;p&gt;Вашата уеб камера е очевидно важна част от успешното видео интервю. Уверете се, че е свързана към компютъра и затворете всички програми, които може да използват камера (например Skype или FaceTime). Повечето уеб камери са с вграден микрофон, но ако решите да използвате самостоятелен микрофон или слушалки, проверете дали микрофона е свързан към компютъра. Отново затворете всички програми, които може да използват микрофона преди интервюто.&lt;/p&gt;
+&lt;p&gt;Внимавайте около шума, фона и осветлението&lt;/p&gt;
+&lt;p&gt;Когато решите да проведете видео интервюто е много важно къде ще се проведе. Видео интервюто може да се направи навсякъде, но трябва да имате предвид обкръжението, какво се вижда на заден фон и страничните шумове.&lt;/p&gt;</value>
+  </data>
+  <data name="liBetterHiring" xml:space="preserve">
+    <value>&lt;p&gt;&lt;strong&gt;Видео интервюта на живо за по-добро сътрудничество при наемане&lt;/strong&gt;&lt;/p&gt;</value>
+  </data>
+  <data name="liBetterHiringDescription" xml:space="preserve">
+    <value>&lt;p&gt;Обикновено на компаниите им отнема поне един месец, за да наемат нов служител. Принуждаването на кандидатите да чакат толкова дълго за решение може да остави лошо впечатление за Вашата компания и те могат да решат да търсят работа другаде. За да могат компаниите да постигат по-бързо решения за наемане, е необходимо просто да се подобри сътрудничеството между екипите за назначаване.&lt;/p&gt;
+&lt;p&gt;За да бъде взето решение за наемане, може да се наложи вписването на други колеги. Въпреки това, трябва да жонглирате с графиците на много хора, когато организирането на интервю с кандидат може да бъде много трудно, ако не и невъзможно. Освен това може да има случаи, когато нещо се появява в последната минута и колега или двама не могат да присъстват за насрочено интервю за кандидат. Чрез записаните интервюта с живи видеоклипове колегите Ви ще могат да се запознаят с кандидатите в удобно за тях време.&lt;/p&gt;
+&lt;p&gt;Видео интервютата на живо работят точно като техните триизмерни колеги, само че без разходите за пътуване и трудностите при планирането на традиционно интервю лице в лице. Освен това, записаното интервю може лесно да бъде споделено с Вашите колеги и да се възпроизвежда по всяко време. Ако колега не може да присъства лично, но е необходим за вземането на решение, чрез записаните интервюта, все пак ще може да се запознае с потенциала и квалификацията на кандидата и да прецени дали да продължите напред с тях или не.&lt;/p&gt;
+&lt;p&gt;По-доброто сътрудничество на екипа за наемане също означава, че можете да гарантирате, че всеки път ще се взема интелигентно решение за наемане. Лошото решение за наемане може да струва значително на Вашата компания. Ако сте в състояние да си сътрудничите по-лесно, ще можете да го направите и по-бързо. Това означава, че важни решения за наемане могат да бъдат постигнати бързо, което Ви позволява да привлечете повече талантливи кандидати, преди други компании да могат да стигнат до тях.&lt;/p&gt;</value>
+  </data>
+  <data name="organizationAndSelection" xml:space="preserve">
+    <value>&lt;p&gt;&lt;strong&gt;Организиране и подбор с видео интервюта&lt;/strong&gt;&lt;/p&gt;</value>
+  </data>
+  <data name="organizationAndSelectionDescription" xml:space="preserve">
+    <value>&lt;p&gt;Постигането на отлична организационна структура е интелигентен начин не само да се ангажират и мотивират служителите, но и да се стигне до начин да се привлекат водещи кандидати. Кандидатите, които искате да се насочите към стратегията си за набиране на персонал, са едни и същи хора, които търсят компании с големи бонуси. Не разбирате все още колко важна е добрата организационна култура за набиране на топ таланти? Ето някои причини, поради които не можете да си позволите да игнорирате фирмената култура:&lt;/p&gt;
+&lt;p&gt;Видео интервюто може да ви даде по-ясна представа за личността, амбицията и кариерата на кандидата. С помощта на видео интервюто трябва да прецените дали даден кандидат ще се помести като ръкавица в текущата ви култура. Задавайте въпроси за това как работят в екип и каква би била тяхната идеална офис среда.&lt;/p&gt;
+&lt;p&gt;Реалната полза от видео интервюто обаче е възможността да получите по-скоро личен поглед върху кандидатите по-лесно, отколкото в традиционния процес на набиране на персонал. Като гледате отговорите на интервю за видеозаписи на търсещия работа, можете да отсеете недобросъвестните и неподходящи кандидати от купчината кандидатури и да се съсредоточите само върху кандидатите, които ще бъдат добро попадение за Вашата организация. Това Ви помага да намалите кандидатите, които няма да се впишат във Вашата организация и ще напуснат компанията при първите признаци за по-добра оферта.&lt;/p&gt;
+&lt;p&gt;Използването на видео разговори Ви помага да обозначите фирмата си като организация, използваща новите технологии. Показвате, че компанията е възприемчива към нови идеи и нови начини за намиране на общи проблеми. Това помага на марката и на фирмената Ви култура като на място, отворено за нови концепции и иновации. На свой ред с добра марка фирмата ще има по-голяма вероятност да привлече интелигентни кандидати с големи идеи, за това как да разширявате и развивате своята организация.&lt;/p&gt;</value>
+  </data>
+  <data name="recordedVideoInterview" xml:space="preserve">
+    <value>&lt;p&gt;&lt;strong&gt;Записани видео интервюта: кой е най-добрият начин да проверите кандидатите?&lt;/strong&gt;&lt;/p&gt;</value>
+  </data>
+  <data name="recordedVideoInterviewDescription" xml:space="preserve">
+    <value>&lt;p&gt;Имате изключително голям обем кандидати за работа и искате да стесните броя на кандидатите и да определите възможно най-добрата кандидатура? Ще трябва да проверите всеки квалифициран кандидат.&lt;/p&gt;
+&lt;p&gt;Проверката на кандидатите, преди да бъдат поканени да участват в официално интервю, е особено необходимо, когато се има предвид факта, че за всяко отваряне на корпоративни работни места се получават около 250 автобиографии. При записаните видео интервюта, в които кандидатите записват отговорите си на серия текстови въпроси в предварително определен период от време, подбора не трябва да бъде досаден или отнемащ време.&lt;/p&gt;
+&lt;p&gt;Свързване с кандидатите&lt;/p&gt;
+&lt;p&gt;Както записаните видео интервюта, така и телефонните интервюта ви дават възможност да задавате въпроси и да придобивате повече представа за способността на кандидата да изпълнява задълженията си на определена длъжност. Но там свършват сходствата. За разлика от телефонните интервюта, видео интервютата Ви дават по-пълна представа за кандидата. Вместо да разчитате на тона на гласа на кандидата, за да прецените техния интерес, личност и професионализъм, записаните видео интервюта Ви дават възможност да извлечете важни визуални знаци, като изражения на лицето и езикът на тялото, които потенциално могат да повлияят на решението за наемане. Със записаните видео интервюта ще имате представа какво да очаквате още преди кандидатът да стъпи в офиса.&lt;/p&gt;
+&lt;p&gt;Планиране на първоначално интервю&lt;/p&gt;
+&lt;p&gt;Характерът на записаните видео интервюта почти не изисква допълнително планиране. В действителност отнема много малко време за преглеждане на кандидатите чрез видео. Създайте списък с въпросите на интервюто, на които искате да се отговори, изпратете линк към платформата за интервю и гледайте записите в удобно за Вас време и място.&lt;/p&gt;
+&lt;p&gt;Оценяване на кандидатите&lt;/p&gt;
+&lt;p&gt;Със записаните видео интервюта можете да се уверите, че всички кандидати се запитват точно за едно и също нещо и им се дава същото време, за да подготвят и да дадат своите отговори и по този начин всички получават &amp;bdquo;равен старт&amp;rdquo;. Нещо повече, записите от интервюта могат да бъдат поставени на пауза и да се възпроизвеждат толкова пъти, колкото е необходимо, което прави по-лесно справедливото оценяване на кандидатите.&lt;/p&gt;
+&lt;p&gt;Съдействие при вземането на решения за наемане&lt;/p&gt;
+&lt;p&gt;Ако има и други хора, които е необходимо да одобрят даден кандидат, вместо да разчитате на записки от интервюта или словесни опити за пресъздаване на кандидатите, записите с видео интервюта могат да бъдат споделени, и по този начин да получите безпристрастни решения и съдействие при вземането на решение за наемане.&lt;/p&gt;</value>
+  </data>
+  <data name="theBenefit" xml:space="preserve">
+    <value>Ползата от видео интервютата</value>
+  </data>
+  <data name="theBenefitDescription" xml:space="preserve">
+    <value>&lt;p&gt;Каква е ползата от използването на онлайн видео интервю? Има много причини, поради които виртуалното интервю може да ускори процеса на наемане. Всички знаем, че традиционният процес на наемане може понякога да е твърде бавен и трудоемък. Видео интервюирането помага да се премахне част от бъркотията в процеса, което прави общите усилия за набиране на персонал по-ефективни.&lt;/p&gt;
+&lt;p&gt;Преди да говорим за това как да подобрим ефективността на наемането чрез използването на видео интервюта, нека най-напред да погледнем зад завесата за наемане. Начинът, по който нещата се правят понастоящем в процеса на набиране на персонал, кара компаниите и работодателите да изразходват ценно време и пари.&lt;/p&gt;
+&lt;p&gt;Двата най-големи разходи в процеса на наемане са за време и пътуване. В зависимост от работата и кандидата, някои компании са готови да платят и самолетните билети на определен кандидат за позицията. Това може да доведе до големи разходи, без гаранция, че кандидатът ще се превърне в служител.&lt;/p&gt;
+&lt;p&gt;Пътуването не е единствената част от традиционния процес, който изчерпва вашите сметки. Фирмите за подбор на персонал &amp;nbsp;и наемащите мениджъри (Човешки ресурси) прекарват много ценно време, опитвайки се да намерят най-добрите хора за работа. Средно са необходими около 15 часа седмично за пресяване на кандидатите.&lt;/p&gt;
+&lt;p&gt;Получете повече ефективност с видео интервюта&lt;/p&gt;
+&lt;p&gt;Онлайн интервюта могат да ви помогнат да намалите традиционния процес на наемане и да спестите време и пари за фирмата си. Как помага онлайн интервюирането? От една страна, опростява процеса на наемане.&lt;/p&gt;
+&lt;p&gt;Например, работодателите могат да гледат кандидатите да отговарят на въпросите им където и когато пожелаят. Осъзнали сте, че кандидатът не е подходящ за позицията още в началото? Сега не сте в капана на реалното интервю, можете веднага да се прехвърлите към следващия кандидат. Това е една от основните причини, поради които много от работодателите предпочитат &amp;nbsp;видео интервюта.&lt;/p&gt;
+&lt;p&gt;Интервюирането чрез видео на живо е чудесно за кандидати, които са далеч или са пасивни (работещи). Сега можете да спестите 100% от вашите пътни разходи, като просто стартирате уеб камерата си. Освен това, планирането на интервюта с пасивни кандидати често е трудно. Искате най-добрите кандидати при Вас, но те често пъти са заети, ако в момента са наети. Сега както наемащите мениджъри, така и кандидатите могат да насрочат интервю лице в лице, без да са безкрайните уточнения и планирания преди срещата.&lt;/p&gt;
+&lt;p&gt;Да бъдем честни, живеем в дигитална ера. Потребителите се обръщат към интернет за всичко, от съвети и забавления до книги и продукти. В действителност няма нищо, което да не можете да намерите онлайн. Защо не се възползвате от новите предложения за онлайн набиране на персонал?&lt;/p&gt;
+&lt;p&gt;Използването на онлайн видео интервю показва потенциала наема вашата компания разбира онлайн пазара. Ако възприемете нововъзникващите технологии и нови начини за приближаване към процеса на наемане, ще привлечете и кандидати с подобни ценности.&lt;/p&gt;</value>
+  </data>
+  <data name="trickyQuestionsForVideo" xml:space="preserve">
+    <value>&lt;p&gt;&lt;strong&gt;Трудни въпроси за успех при видеоразговори&lt;/strong&gt;&lt;/p&gt;</value>
+  </data>
+  <data name="trickyQuestionsForVideoDescription" xml:space="preserve">
+    <value>&lt;p&gt;Когато става въпрос за намиране на перфектен кандидат за отворените позиции на Вашата компания, интервюто е от съществено значение за откриването на това, кой е подходящ и кой не. Видео разговорът не се различава от срещата на живо. Важно е да зададете правилните въпроси на интервю, за да разберете дали вашият кандидат е добър в действителност.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Поставянето на трудни интервю въпроси във видео интервюто ви позволява да видите как кандидатите реагират и мислят. Ако се свързвате в интервю за видео на живо, можете да видите как реагират кандидатите в реално време и да оценяват невербалните комуникационни знаци.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;При записаните интервюта кандидатът има повече време да подготви или да презапише отговорите си и е необходимо да се зададат такива въпроси, които да Ви помогнат да отсеете най-добрите кандидати от останалите.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Надяваме се, че тези съвети за интервю ще ви помогнат да размишлявате върху вашите специфични за фирмата въпроси, така че да можете да намерите перфектния кандидат за Вашата компания.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Разкажете ми за себе си.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Това е един от най-стандартните интервю въпроси и за това си има причина. Търсещият работа, който отговаря на този въпрос, може да ви разкаже изненадващо количество информация за себе си и за целите си.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;ol start="2"&gt;
+&lt;li&gt;Защо да ви наемем?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Друг един от стандартните интервю въпроси. Този Ви помага да оцените способностите на кандидата за доверие и умение с позицията. Ако докато гледате кандидатите на видеоклип, те изглеждат объркани как да отговорят защо са абсолютно най-добрият човек за тази работа, може би това е, защото не са.&lt;/p&gt;
+&lt;ol start="3"&gt;
+&lt;li&gt;Кой е най-големият Ви успех в кариерата?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Ситуационните интервю въпроси карат кандидатите да използват примери от реалния живот, от собствения си опит, за да демонстрират стойност. Това Ви дава по-добра представа за това как техните умения работят в действие.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;ol start="4"&gt;
+&lt;li&gt;Кажете ми за голяма Ваша грешка - как сте се справили с нея и какво научихте от този случай.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;За пореден път ситуационните интервю въпроси могат да ви разкажат много за това, как кандидатите действително действат и реагират в реална работна среда. Поставянето на въпроси за интервюто за постиженията е определено важно, за да може да се видят кандидатите по най-добрия начин. Но помнете, никой човек не е в най-добрата си форма през цялото време.&lt;/p&gt;
+&lt;p&gt;Грешките се случват, така че е важно също така да се използват ситуационни интервю въпроси, за да се оцени как реагират кандидатите, когато са направили грешка. Грешката, отговорът и наученият урок могат да Ви разкажат много за това, как кандидатът се отнася към неуспехите и как се справя със ситуации с висок стрес.&lt;/p&gt;
+&lt;ol start="5"&gt;
+&lt;li&gt;Защо искате тази работа?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Друг от стандартните интервю въпроси, като отговорът на този може да Ви помогне да оцените амбициите на кандидата. Търси работа просто за заплащане или наистина се интересува от Вашата компания и съответната индустрия? Докато отговарят, потърсете истината.&lt;/p&gt;
+&lt;ol start="6"&gt;
+&lt;li&gt;Къде виждате себе си след пет години?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Това е още едно от стандартните въпроси, свързани с интервюто, който има за цел да оцени амбициите на кандидата. Искате кандидат, който желае да се задържи във Вашата организация, тъй като оборотът на служителите е толкова скъп. Но повече от това, Вие искате някой, който всъщност да е ангажиран и мотивиран от Вашата позиция или индустрия. Ако кандидатът се види в цяла нова индустрия или компания пет години по-късно, вероятно не е точно за вас.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;ol start="7"&gt;
+&lt;li&gt;Какъв тип работна среда предпочитате?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Този въпрос е съсредоточен върху фирмената култура, тъй като 46% от новопостъпилите в малки фирми се провалят през първите 18 месеца. Причината? В 89% от случаите се дължи на несъответствие с фирмената култура. Винаги можете да повишите своите умения или квалификация, но намирането на някой, който да се вписва във Вашата фирмена култура, е много по-сложно. Нека кандидатът да Ви каже в каква фирмена култура би предпочел да работи, за да можете да видите дали идеалът им отговаря на реалността на Вашата компания.&lt;/p&gt;
+&lt;ol start="8"&gt;
+&lt;li&gt;Какви са най-големите ви слабости?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Това е наистина труден въпрос, който да зададете в интервюто, но като ситуационния въпрос за най-големите грешки, той наистина може да ви каже как кандидатът се справя с проблемите. Потърсете кандидати, които не Ви дават репетиран отговор и вместо това изберете слабостта, от която се обръщат и се учат.&lt;/p&gt;
+&lt;ol start="9"&gt;
+&lt;li&gt;Разкажете ми за случай, при който се е наложило да работите извънредно, за да си свършите работата.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Отговорът на този въпрос Ви разказва две важни неща. Първо, това е още една възможност кандидатът да направи страхотно впечатление, като Ви покаже нещо наистина впечатляващо. На второ място, тя Ви казва какво смята даден кандидат за допълнителния труд. Ако примерът не е толкова впечатляващ, може би това е така, защото кандидатът е служител, който точно в 5 ч. си тръгва и прави само това, което се изисква.&lt;/p&gt;
+&lt;ol start="10"&gt;
+&lt;li&gt;Как оценявате успеха?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Въпреки че не е един от стандартните интервю въпроси, вероятно трябва да бъде. Отговорът &amp;nbsp;Ви дава добра представа за това, което кандидатът търси в своята работа и кариера. Търсят ли предизвикателна работа, повече отговорности или просто по-голяма заплата? Обърнете внимание на това как кандидатите отговарят, за да разберете какво смятат за важно.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Използването на някои от тези въпроси и съвети за интервюта може да ви помогне да използвате видео интервюто, за да намерите най-добрия талант за Вашата компания.&lt;/p&gt;</value>
+  </data>
+  <data name="useVideoInterviewing" xml:space="preserve">
+    <value>&lt;p&gt;&lt;strong&gt;Използвайте видео интервю, за да преодолеете разликите&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
+  </data>
+  <data name="useVideoInterviewingDescription" xml:space="preserve">
+    <value>&lt;p&gt;Традиционният процес на наемане може да бъде &amp;bdquo;дълъг път&amp;rdquo;. Видео интервютата изграждат по-добър мост, за да заобиколят всички традиционни пътни препятствия. Например има безкрайни автобиографии за преглед, едно обаждане по телефона отнема средно 15 минути на повикване и в този момент дори не сте намерили най-добрите си кандидати. След като го направите, трябва да планирате тези интервюта с кандидати лично. Страхотно! Сега имате големи затруднения с работния график!. Нищо чудно, че запълването на една позиция отнема средно 30 дни. Чудно е, че не отнема повече време!&lt;/p&gt;
+&lt;p&gt;За търсещите работа, процесът на интервюиране може да бъде не по-малко болезнен. Често ще имате безкрайни телефонни и лични интервюта. Това означава график, пътуване и дори дневен отпуск от работа (в случай, че работите).&lt;/p&gt;
+&lt;p&gt;Онлайн интервюирането е чудесен начин да съкратите този процес. Вместо да плувате през безкрайния поток от автобиографии и интервюта: &amp;nbsp;изградете мост!&lt;/p&gt;
+&lt;p&gt;Виртуалните интервюта могат да помогнат за скъсяването на процеса от сортирането на резюметата до вземането на решение за наемане. Например записаните &amp;nbsp;интервюта са чудесен начин да се ограничи времето за подбор на кандидатите.&lt;/p&gt;
+&lt;p&gt;Кандидатите &amp;nbsp;могат да записват отговорите на въпроси, поставени от работодателите, демонстрирайки своите комуникативни умения, харизма и квалификации. Те могат да записват тези интервюта в избрано от тях време, дори и от мобилните си устройства. След това работодателите могат да гледат тези записани видео интервюта, когато техният график позволява.&lt;/p&gt;
+&lt;p&gt;Видео интервюирането позволява на търсещите работа и на работодателите да спестят време, така че те трябва само да се съсредоточат върху най-добрите възможности. Вместо да имате десетки квалифицирани кандидати за интервюта на живо, то чрез видео интервюто можете да прескочите първоначалния етап и да се срещнете само с най-добрите и перспективни кандидати.&lt;/p&gt;
+&lt;p&gt;Видео интервютата могат да работят и като начин за ефективно съкращаване на процеса на наемане както за търсещите работа, така и за работодателите. Работодателите ще изразходват по-малко време за набиране на кандидати и повече време, фокусирайки се върху работата си. Търсещите работа могат да използват видеозаписи за интервю за работни места, както в близост, така и далеч, без да се натъкват на всички трудности при пътуване и график. Онлайн видеоклиповете изграждат по-добър мост между заявлението за работа и намирането на перфектната оферта.&lt;/p&gt;</value>
+  </data>
+  <data name="videoInterviewForHR" xml:space="preserve">
+    <value>&lt;p&gt;&lt;strong&gt;Видео интервю за HR&lt;/strong&gt;&lt;/p&gt;</value>
+  </data>
+  <data name="videoInterviewForHRDescription" xml:space="preserve">
+    <value>&lt;p&gt;Чувствате ли, че Вашият процес на наемане е малко ... остарял? Неефикасен? Безличен? Ако е така, може би е време да се потърси новаторско и ефективно решение като Live Interview.&lt;/p&gt;
+&lt;p&gt;Не е лесно да се оценява, като се преценява кандидатът с това, което е написано на лист хартия. Можете ли да прецените личността, ентусиазма или професионализма на кандидата?&lt;/p&gt;
+&lt;p&gt;Като вижда кандидатите чрез видео интервюта за мениджърът от Човешки Ресурси (HR) е по-лесно да направи връзка с резюмето.&lt;/p&gt;
+&lt;p&gt;Видео интервюирането за HR позволява да &amp;bdquo;поставите лице&amp;rdquo; на името от автобиографията. В края на краищата, как се предполага, че наемащите мениджъри "виждат" професионализма и потенциала на хартия? Чрез подобряването на резюмето, видео интервюирането се използва, за да помогне за оценка на потребностите от наемане, да се изберат правилните кандидати и да се помогне да се запази най-високата им стойност.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Видео интервюирането за HR като форма на ранно проучване е далеч по-ефективно и позволява на работодателите да получат повече информация за кандидатите. Освен това, с възможността да споделяте видео интервюта с членовете на екипа, вътрешното сътрудничество никога не е било по-лесно с коментарите и рейтинговата система на Live Interview. С тези инструменти HR може по-добре да утвърждава решението за наемане. Видео интервютата внасят живот в процеса на подбор, така че да доведе до по-добри решения за наемане, за да запази служителите си в дългосрочен план.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;В известен смисъл, видео интервютата позволяват на управителите да "чуят" какво не се казва при разглеждането на текстовите отговори. Видео интервюирането за HR съчетава ползите от интервю по телефона и личното интервю за по-нататъшно оценяване на уменията, нагласите и личностите на кандидата.&lt;/p&gt;</value>
+  </data>
+  <data name="whichCaseVideoIsBest" xml:space="preserve">
+    <value>&lt;p&gt;&lt;strong&gt;В кои случаи видео интервюто е най-доброто решение?&lt;/strong&gt;&lt;/p&gt;</value>
+  </data>
+  <data name="whichCaseVideoIsBestDescription" xml:space="preserve">
+    <value>&lt;p&gt;Накратко, видео интервютата създават удобен, иновативен и интересен начин за работодателите да се свързват с търсещите работа. Но най-важното е, че видео интервютата се отнасят до уникални традиции в интервютата за работа, при които телефонните обаждания или срещите лице в лице просто няма да работят.&lt;/p&gt;
+&lt;p&gt;Когато имате голям брой кандидати за позицията.&lt;/p&gt;
+&lt;p&gt;За специалистите по наемане на работа, времето необходимо за подбор на кандидати е неотменна част от процеса на наемане, особено когато има голям брой кандидати за преглед.&lt;/p&gt;
+&lt;p&gt;Когато имате голям брой кандидати, губенето на ценни 30 минути за свързване по телефона със всеки кандидат &amp;nbsp;не е ефективно използване на времето. Не и когато можете да видите 10 записани видео интервюта за същото време, което е необходимо за провеждането на един телефонен разговор.&lt;/p&gt;
+&lt;p&gt;Записаните видео интервюта, в които кандидатите записват своите отговори на поредица от предварително зададени въпроси, дават съвсем ново значение на процеса за подбор. Те не само ви дават възможност да се свържете с кандидатите визуално, но и &amp;nbsp;са удобни. Вместо да отделите време за насрочване на телефонни обаждания около натоварените разписания на всички, записаните видео интервюта могат да бъдат&amp;nbsp; преглеждани в удобно за Вас време.&lt;/p&gt;
+&lt;p&gt;Когато се налага да интервюирате кандидати за далечни разстояния.&lt;/p&gt;
+&lt;p&gt;Когато става въпрос за търсене на топ талант, понякога е необходимо да преминете отвъд границите на собствения си &amp;bdquo;заден двор&amp;rdquo;. Но привличането и свързването с далечни кандидати може да бъде трудно, поради географските бариери и бариерите в часовите зони. Това е мястото, където се появяват видео интервюта, за да ви помогнат.&lt;/p&gt;
+&lt;p&gt;Когато предлагате и опции за видео интервю Вие премахвате границите, можете да разширите търсенето на кандидати за работа в целия свят и да привлечете кандидати, които иначе не биха могли да кандидатстват.&lt;/p&gt;
+&lt;p&gt;Когато искате да привлечете повече пасивни (работещи) кандидати.&lt;/p&gt;
+&lt;p&gt;Пасивните кандидати много търсени. Те се търсят компаниите, защото демонстрират своите умения и опит, като процъфтяват в подобни позиции.&lt;/p&gt;
+&lt;p&gt;Знаете ли, че огромните 75% от професионалистите се категоризират като "пасивни" кандидати? С други думи, три четвърти от професионалистите не търсят активно нова позиция, но това не означава, че не са отворени за други възможности, които биха могли да се появят. Свързването с пасивния кандидат за работна възможност може да бъде сложно поради натоварения му график.&lt;/p&gt;
+&lt;p&gt;За щастие видео разговорите улесняват привличането на пасивни кандидати. За начало пасивните кандидати може да не искат да се ангажират с пътуване &amp;nbsp;за лично интервю за работа, но може да са склонни да отделят няколко минути за участие в видео интервю. Предвид натоварените им графици, пасивните кандидати ще оценят удобствата и спестяващите време фактори при видео разговори.&lt;/p&gt;
+&lt;p&gt;Когато трябва да си сътрудничите при вземането на решения за наемане.&lt;/p&gt;
+&lt;p&gt;Естеството на видео интервютата прави наемането на служители по-лесно от всякога, тъй като никой не трябва да присъства физически по време на интервюто. Началниците и клиентите могат да получат видеозаписи, които да видят и оценят. Тези видеозаписи улесняват съвместната работа, което гарантира, че вземате по-информирани решения за наемане. По-доброто сътрудничество означава по-добър избор.&lt;/p&gt;</value>
+  </data>
+  <data name="connectChat" xml:space="preserve">
+    <value>Започни интервю</value>
+  </data>
+  <data name="facebook" xml:space="preserve">
+    <value>Facebook</value>
+  </data>
+  <data name="logo" xml:space="preserve">
+    <value>Лого</value>
+  </data>
+  <data name="vatNum" xml:space="preserve">
+    <value>ДДС номер</value>
+  </data>
+  <data name="createMultiChoiceTemplate" xml:space="preserve">
+    <value>Създай тест шаблон</value>
+  </data>
+  <data name="multiChoiceTemplate" xml:space="preserve">
+    <value>Тестови шаблони</value>
+  </data>
+  <data name="multiChoiceTest" xml:space="preserve">
+    <value>Тест</value>
+  </data>
+  <data name="customerInRoom" xml:space="preserve">
+    <value>Интервюираният е на линия. Кликнете за започване на интервю.</value>
+  </data>
+  <data name="answer" xml:space="preserve">
+    <value>Отговор</value>
+  </data>
+  <data name="answer2" xml:space="preserve">
+    <value>Отговор 2</value>
+  </data>
+  <data name="answer3" xml:space="preserve">
+    <value>Отговор 3</value>
+  </data>
+  <data name="answer4" xml:space="preserve">
+    <value>Отговор 4</value>
+  </data>
+  <data name="multiChoiceQandA" xml:space="preserve">
+    <value>Добави въпроси и възможни отговори.</value>
+  </data>
+  <data name="writeDownaAnswer" xml:space="preserve">
+    <value>Напиши отговор</value>
+  </data>
+  <data name="questionType" xml:space="preserve">
+    <value>Избери тип въпрос</value>
+  </data>
+  <data name="rightAnswer" xml:space="preserve">
+    <value>Избери правилен отговор</value>
+  </data>
+  <data name="timePerQuestion" xml:space="preserve">
+    <value>Време за въпрос</value>
+  </data>
+  <data name="timePerQuestionDescrp" xml:space="preserve">
+    <value>Напиши времето в секунди</value>
+  </data>
+  <data name="administrativeProfessionals" xml:space="preserve">
+    <value>&lt;p&gt;&lt;strong&gt;Административни специалисти: Наемане на най-добрите чрез Live Interview&lt;/strong&gt;&lt;/p&gt;</value>
+  </data>
+  <data name="administrativeProfessionalsDescription" xml:space="preserve">
+    <value>&lt;p&gt;Добрите административни специалисти поддържат работата във Вашата компания безпроблемна. Независимо дали наемате административен асистент, мениджър човешки ресурси или специалист по трудови отношения, трябва да сте сигурни, че Вашата компания е наела най-подходящия човек. Тези специалисти поддържат вашия офис в движение.&lt;/p&gt;
+&lt;p&gt;Много компании пренебрегват тези необходими позиции в стремежа си да наемат най-квалифицираните служители. Ако Вашата организация се отказва от наемането на големи административни специалисти, може скоро да се окажете надолу в класациите. От административната поддръжка на ниво администратор до човешки ресурси на мениджъри, това са служителите, които поддържат вашата организация и я карат да работи с пълна скорост.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Не можете да пренебрегвате важността да наемете някого с подходящата личност за тази работа. Добрият административен асистент ще се вмества във Вашата фирмена култура с лекота, но по-важното е, че личността им ще се свързва с ръководителите или мениджърите, които подпомагат. Ако съкратите процеса на интервю, може да се окажете с квалифициран кандидат, който вашите ръководители просто не харесват или не могат да работят. Трябва да намерите както първокласни умения, така и голяма личност, когато става въпрос за наемане на подходящ личен асистент.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Live Interview може да помогне в това търсене, като ви свързва по-бързо и по-лесно с големи кандидати за административни асистенти, без да губите прекалено много време да говорите с грешните хора. Благодарение на записаното видео интервю, компаниите могат да наблюдават потенциални административни специалисти отговарящи на писмените въпроси чрез видео.&lt;/p&gt;
+&lt;p&gt;По този начин само кандидатите с подходяща личност и умения стигат до следващото ниво на процеса на интервюиране. Това позволява на ръководителите и мениджърите да губят по-малко време и да се свързват само с най-добрите кандидати.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Видео интервюто може да ви помогне лесно да видите кои от вашите кандидати имат правилните технологични умения за нашия все по-дигитален свят. Кандидатите, които могат да интегрират видео клип с резюме в профилите си в социалните медии, например, вероятно са по-добре запознати с технологиите, отколкото тези, които изпращат същите стари прикачени файлове към електронната поща. И тези кандидати, които не се притесняват да организират фона в тяхното видео интервю, показват, че мислят в перспектива с внимание към всеки детайл.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Намирането на правилната административна поддръжка не винаги е лесно, независимо дали търсите първокласен административен асистент или HR. Използването на видео интервю може да Ви помогне да се свържете по-бързо и да оценявате уменията по-лесно, което води до възможно най-добрите решения за наемане.&lt;/p&gt;</value>
+  </data>
+  <data name="avoidingEmployeeTurnover" xml:space="preserve">
+    <value>&lt;p&gt;&lt;strong&gt;Избягване на оборота на служителите с Live Interview&lt;/strong&gt;&lt;/p&gt;</value>
+  </data>
+  <data name="avoidingEmployeeTurnoverDescription" xml:space="preserve">
+    <value>&lt;p&gt;Ако прекарвате цялото си време в търсене на нови служители, то със сигурност губите ценно време и пари, които биха били по-добре изразходвани другаде. Трябва да намерите страхотни служители, които да се вписват във Вашата корпоративна култура и да бъдат развълнувани да се развиват заедно с компанията.&lt;/p&gt;
+&lt;p&gt;Използвайки видео интервюто, HR мениджъри в сектора на хранителните услуги открили, че откриват по-лесно служители, които са склонни да се задържат с по-малко загубено време. Това е добра новина не само за Вашите крайни резултати, но и за Вашето обслужване и морал на служителите.&lt;/p&gt;
+&lt;p&gt;Какви предизвикателства пред наемането на служители в ресторантьорската индустрия?&lt;/p&gt;
+&lt;p&gt;Наемането на страхотни мениджъри, готвачи, сервитьори и друг персонал за Вашия ресторант не винаги е лесно. По-трудната част обаче е запазването на добрите служители, след като ги имате. Използването на видео интервю може да бъде по-добър начин да се свържете със заинтересованите кандидати, без да губите време за интервюиране на кандидати, които просто не са подходящи за тази работа.&lt;/p&gt;
+&lt;p&gt;Записаното видео интервю позволява да виждате кандидатите, преди да прекрачат прага Ви. Една от основните причини за високия оборот на служителите в сектора на хранителните услуги е, защото работодателите търсят само умения, пренебрегвайки корпоративната култура и работата в екип.&lt;/p&gt;
+&lt;p&gt;Вместо да губите време да разговаряте с кандидати, които просто няма да се впишат, използването на записано видео интервю е бърз начин да кажете веднага дали кандидатът е подходящ за Вашата компания. В записаното интервю работодателите представят писмени въпроси на кандидатите и те отговарят на видео. Ако още в началото на записа разберете, че потенциалният сервитьор или мениджър е неподходящ за работата, можете да кликнете на следващия, без да сте губили ценно време за интервю лице в лице. Плюс това, ако просто нямате време да имате поток от кандидати в ресторанта си, можете да се свържете с кандидатите в реално време, като използвате интервюта с живи видеоклипове.&lt;/p&gt;</value>
+  </data>
+  <data name="executiveManagementHiring" xml:space="preserve">
+    <value>Наемане на изпълнителен мениджър: три съвета за видео интервю</value>
+  </data>
+  <data name="executiveManagementHiringDescription" xml:space="preserve">
+    <value>&lt;p&gt;Изпълнителните мениджъри могат наистина да направят &amp;bdquo;Голямата разлика&amp;rdquo; във Вашата организация, Вашата фирмена култура и да определят нивото на Вашата компания. Тези ръководители ще карат фирмата Ви напред, така че трябва да наемете най-добрите.&lt;/p&gt;
+&lt;p&gt;Нуждаете се от по-ефективен начин за намиране на кандидати за ръководни длъжности, за щастие, видео интервюто може да бъде Вашето решение, като Ви помага да се свържете лично с ръководителите, да намерите подходящите умения и да съкратите процеса.&lt;/p&gt;
+&lt;p&gt;Ето три съвета за използването на видео интервюто за наемане на ръководни кадри, от които Вашата фирма се нуждае, и за намаляване на оборота на служителите:&lt;/p&gt;
+&lt;p&gt;Свържете се лично&lt;/p&gt;
+&lt;p&gt;Когато става въпрос за наемане на правилните изпълнители за Вашата компания, намирането на подходящата личност е изключително важно. Отвъд уменията трябва да намерите някой, който да се стреми към постигането на целите на Вашата фирма, някой с правилното виждане, с ясни идеи &amp;nbsp;и решимост за работата и някой, който може да подобри фирмената Ви култура и да придвижи Вашата организация напред. Така че, има смисъл да се опитате да се свържете лично с тези кандидати по-рано в процеса. Видео интервюто ви позволява да направите се свържете лично още в първите моменти на процеса. Независимо дали се свързвате чрез живи или записани видео интервюта, този нов подход улеснява оценката на личността, комуникативните умения и квалификацията и цялостната визия на кандидата.&lt;/p&gt;
+&lt;p&gt;Намерете правилните умения&lt;/p&gt;
+&lt;p&gt;Набирането на кандидат за висш управленски персонал или главен изпълнителен директор изисква много специален набор от умения. Тези умения невинаги ще бъдат лесни за намиране, а кандидатите с подходящите квалификации могат да се намират извън географската зоната на комфорт на Вашата компания.&lt;/p&gt;
+&lt;p&gt;С видео интервю, можете да се свържете с тези далечни кандидати просто, ефективно и евтино. Вместо да харчите пари за самолетни билети и хотели, можете да се свържете лице в лице в интервю на живо. По този начин можете да намерите ръководители, кандидати за главни изпълнителни директори и талант за висше управление, от които се нуждаете, като спестявате пари.&lt;/p&gt;
+&lt;p&gt;По-лесна координация&lt;/p&gt;
+&lt;p&gt;Независимо дали наемате CEO или изпълнителен директор, координацията и комуникацията са от ключово значение. Важно е както за назначените мениджъри, така и за персонала да се координират с вътрешния мениджърски екип, за да вземат най-доброто решение.&lt;/p&gt;
+&lt;p&gt;Видео интервюирането може да помогне за комуникацията дори с най-натоварения мениджърски екип. Например, записаните видео интервюта дават на кандидатите възможност да отговорят на зададените въпроси във видеоклипа. Тези отговори на видеоклипа могат да бъдат разглеждани по всяко време от персонала или от вътрешен екип за управление.&lt;/p&gt;
+&lt;p&gt;Набирането на първокласни таланти за управление не винаги е лесно. Но ако искате да избегнете оборот на служителите, да наемете страхотни хора и да намерите нови лидери, за да придвижите фирмата си напред, трябва да потърсите нови решения. Live Interview може да бъде ключът, който Ви помага да координирате усилията си, да намерите подходящите хора и да се свържете лично с най-добрите.&lt;/p&gt;</value>
+  </data>
+  <data name="financialAccountingServices" xml:space="preserve">
+    <value>&lt;p&gt;&lt;strong&gt;Наемане на финансови и счетоводни услуги с Live Interview&lt;/strong&gt;&lt;/p&gt;</value>
+  </data>
+  <data name="financialAccountingServicesDescription" xml:space="preserve">
+    <value>&lt;p&gt;Независимо дали търсите да наемете някой, който да се занимава със счетоводни услуги или финансова сигурност, истината е, че много компании са взели най-доброто от рецесията. Това означава, че вероятно имате нужда от тези професионалисти в областта на финансовите услуги повече от всякога, като същевременно се борите с по-малък бюджет за наемане.&lt;/p&gt;
+&lt;p&gt;Видео интервютата помагат на работодателите да се свързват с професионалисти в областта на финансовите и счетоводните услуги по-бързо и по-лично от всякога. Също така помага на работодателите да преодолеят големи разстояния, като помагат на компаниите да се фокусират върху наемането на най-добрите хора.&lt;/p&gt;
+&lt;p&gt;Интервю на живо: Решение за индустрията за финансови услуги&lt;/p&gt;
+&lt;p&gt;Благодарение на силата на видео интервюирането, работодателите откриват, че е по-лесно да се свържат с най-добрите кандидати. Независимо дали дадена компания търси служители, отговарящи за спазването на изискванията, специалисти по инвестиционни услуги или някой, който да следи финансовата сигурност на компанията, възможно е да го открият чрез видео интервю.&lt;/p&gt;
+&lt;p&gt;Наемане на стажанти на ниво работа&lt;/p&gt;
+&lt;p&gt;Благодарение на записаното видео интервю, студентите дори не трябва да отделят време от лекциите си, за да отговорят на Вашите писмени интервю въпроси. Можете да&amp;nbsp; се съсредоточите върху най-доброто, за да запълнете работните си места, в удобно за Вас време.&lt;/p&gt;
+&lt;p&gt;Световната финансова криза може да е затруднила компаниите да намерят най-добрите служители, но благодарение на силата на видео интервютата, фирмата Ви може да избегне бъркотията, да намали оборота на служителите и да наеме най-добрите специалисти по финансови и счетоводни услуги.&lt;/p&gt;</value>
+  </data>
+  <data name="findingBetterRetail" xml:space="preserve">
+    <value>&lt;p&gt;&lt;strong&gt;Намиране на по-добри служители от бранша на дребно с Live Interview&lt;/strong&gt;&lt;/p&gt;</value>
+  </data>
+  <data name="findingBetterRetailDescription" xml:space="preserve">
+    <value>&lt;p&gt;В сектора на търговията на дребно оборотът на служителите е наистина основен проблем. Всички знаем, че лоялни служители са трудни за намиране, така че може да бъде още по-тежко, когато напуснат Вашата търговска организация.&lt;/p&gt;
+&lt;p&gt;Независимо дали става дума за трудолюбив служител в магазин, мениджър или касиер, Вашата организация за търговия на дребно се нуждае от добри служители. Наемането на работници, които са подходящи за работата, е трудно, затова повече фирми се обръщат към Live Interview.&lt;/p&gt;
+&lt;p&gt;Всъщност шест от десет компании в момента използват видео интервюто в практиките си за наемане на хора, за да намерят подходящите служители. И така, какви са основните притеснения, пред които е изправена търговията на дребно и как може видео интервюто да помогне на Вашата компания да придобие водещи таланти, заинтересовани от дългогодишна работа във Вашата организация? Нека да разгледаме някои от тези притеснения.&lt;/p&gt;
+&lt;p&gt;Предизвикателствата в търговията на дребно и наемането:&lt;/p&gt;
+&lt;p&gt;Преди да разгледаме как видео интервюто може да предостави решения за намаляване на оборота на служителите, първо трябва да разгледаме проблемите, свързани с наемането на дребно. Тъй като много от заетите в търговията на дребно работят на непълно работно време, оборотът на служители е сериозен проблем.&lt;/p&gt;
+&lt;p&gt;Тези служители не се чувстват като част от организационното семейство и често напускат, когато им се представят по-добри възможности. Много служители на дребно не търсят издигане в кариерата, а само работни места, за да могат да си плащат сметките в момента. Така че, вместо да се стремят към дълга кариера в организацията и изкачване нагоре по корпоративната стълбица, тези служители не се интересуват от нищо повече от следващата им заплата.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Едно от основните предимства на видео интервюирането е възможността да видите повече търсещи работа в по-кратък период от време. Например, в записано виртуално интервю, работодателите представят писмени въпроси на търсещите работа, след което те отговарят на видео. Тези видео отговори дават на работодателите лично усещане за кандидата, като същевременно позволяват процесът на интервю да бъде по-преносим.&lt;/p&gt;
+&lt;p&gt;Тъй като работодателите могат да прегледат отговорите на кандидатите по всяко време, тези интервюта могат да бъдат обработени дори и по най-натоварените графици. Плюс това, можете да гледате 10 видео итервюта в рамките на времето, необходимо за извършване на един разговор по телефона! За индустрия с голям оборот, като например търговията на дребно, това е чудесен начин да спестите време при наемане.&lt;/p&gt;
+&lt;p&gt;Търсещите работа, които се вписват във вашата корпоративна култура, ще бъдат по-склонни да се задържат, отколкото тези, които просто не са в добра форма. Във видео интервюто поставяйте интервю въпроси, за да разберете как би изглеждала идеалната корпоративна култура на кандидата Ви. Уверете се, че сте много, много честен за това, каква е Вашата корпоративна култура и търговска организация.&lt;/p&gt;
+&lt;p&gt;Не забравяйте, че винаги можете да придобиете нови умения, но е много по-трудно да се поберат &amp;bdquo;квадратни&amp;rdquo; кандидати в &amp;bdquo;кръглата&amp;rdquo; дупка на Вашата корпоративна култура. Тези, които се вписват във Вашата организационна среда, ще са по-склонни да се задържат и да намалят оборота на вашите служители.&lt;/p&gt;
+&lt;p&gt;Много от служителите на дребно напускат работата си и секторът, защото просто не виждат възможности за развитие. Те не тръгват за високи заплати, те напускат за по-големи професионални възможности. Така че, ако искате да запазите повече от най-добрите си изпълнители наоколо, предлагайте възможности за развитие.&lt;/p&gt;
+&lt;p&gt;Използвайте възможността за интервюиране, за да изразите точно как кандидатът може да се превърне от служител на непълно работно време или почасово в организационна звезда. Предлагането на ясна кариера директно във видео интервюто, за разлика от само една работа, ще увеличи вероятността да задържите Вашите служители по-дълго.&lt;/p&gt;
+&lt;p&gt;Оборотът на служителите може да бъде много скъп в търговията на дребно, поради което трябва да наемате работници, които ще имат силите и желанието да растат с Вашата компания.&lt;/p&gt;</value>
+  </data>
+  <data name="freelanceJobs" xml:space="preserve">
+    <value>&lt;p&gt;&lt;strong&gt;Работа на свободна практика чрез Live Interview&lt;/strong&gt;&lt;/p&gt;</value>
+  </data>
+  <data name="freelanceJobsDescription" xml:space="preserve">
+    <value>&lt;p&gt;Икономиката на свободна практика става все по-силна, и все повече професионалисти преминават към нетрадиционни работни графици. Повечето от тях бяха отхвърлени от слабата икономика, принуждавайки кандидатите да станат по-креативни и да мислят &amp;bdquo;извън кутията&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;За работодателите, привлекателността на наемането на някого за работа на свободна практика е доста очевидна. Това са квалифицирани професионалисти, които могат да помогнат на Вашата компания да расте и да се развива. Ако имате периодична или еднократна нужда от &amp;nbsp;някой, който да пише статии, отзиви или да организира маркетинг кампания, ще е много по-ефективно да наемете специалист на свободна практика, отколкото да възложите изпълнението някой Ваш служител, без необходимите знания и умения.&lt;/p&gt;
+&lt;p&gt;Наемането на страхотни кандидати за работа на свободна практика също е чудесен начин да се създаде списък на кандидатите, които може да искате да наемете за дългосрочна заетост. Вместо да се доверявате на справки от автобиографията им или на работата в портфолиото им, можете да видите на какво са наистина способни, като оценявате проектите, с които се занимават като служители на свободна практика.&lt;/p&gt;
+&lt;p&gt;Така че как да намерите най-добрите кандидати за вашите свободни работни места? Live Interview може да бъде чудесен начин за попълване на вашите свободни работни места с талантливи и квалифицирани кандидати.&lt;/p&gt;
+&lt;p&gt;Едно от най-хубавите неща за видео интервютата е възможността да се свържете лично с кандидатите. Независимо дали търсите човек, който на свободна практика, ще искате да се свържете предварително, точно както бихте направили с всеки друг кандидат, който бихте наели в компанията. Само защото един кандидат е на свободна практика, в края на краищата не означава, че вече не е важно да се впише в цялостната фирмена култура.&lt;/p&gt;
+&lt;p&gt;Кандидатите на свободна практика също ще представляват Вашата компания, дори да сте ги наели на свободна практика да извършат нещо съвсем дребно и незначително за компанията. Нуждаете се от някой, който разбира компанията и, което е по-важно, от някой, на когото се доверявате, за да получите най-качествена работа.&lt;/p&gt;
+&lt;p&gt;Споменахме по-рано, че някои компании използват работа на свободна практика като основа за оценяване на кандидатите, които биха искали да наемат на пълно работно време. Така че е важно да се уверите, че кандидатът се вписва във фирмената култура още при процеса на наемане.&lt;/p&gt;
+&lt;p&gt;С помощта на видео интервюта можете да се свържете лично с най-добрите и най-ярките кандидати. В интервю на живо можете да се свържете лице в лице по същия личен начин, както ако сте седнали на бюрото. Най-доброто от всичко е, че можете да споделите и да получите мнения за най-добрите кандидати с всички заинтересувани лица.&lt;/p&gt;</value>
+  </data>
+  <data name="hiringGreatSales" xml:space="preserve">
+    <value>&lt;p&gt;&lt;strong&gt;Наемане на големи търговски представители с Live Interview&lt;/strong&gt;&lt;/p&gt;</value>
+  </data>
+  <data name="hiringGreatSalesDescription" xml:space="preserve">
+    <value>&lt;p&gt;Очевидно е, че наемането на най-добрия възможен специалист по продажбите е важно. Неотдавнашно проучване в бизнес средите, разкрива че уменията на търговския представител е най-влиятелният фактор, когато става дума за вземане на решение за покупка. Добрият търговски представител може буквално да издигне или срине бизнеса Ви.&lt;/p&gt;
+&lt;p&gt;64% от търговските представители се провалят, защото просто не са подходящи за тази работа. Наемането на специалист по продажбите е от съществено значение, когато става въпрос за изграждането на силен екип по продажбите за Вашата организация, а Live Interview може да бъде правилният инструмент, за да сте сигурни, че наемате само най-талантливите кандидати.&lt;/p&gt;
+&lt;p&gt;Тези работни места изискват отлични комуникативни умения, а видео интервюто ще ви позволи да оценявате тези умения по-бързо и с по-малко шум. Например, вместо да провеждате безкрайни телефонни интервюта, за да прецените комуникационните умения на кандидатите, можете вместо това да съставите списък с въпроси и да изпратите списъка на всички кандидати. След това те трябва да отговорят на тези въпроси във видеозапис, т.е &amp;nbsp;записано интервю.&lt;/p&gt;
+&lt;p&gt;Тези отговори на видео интервютата могат да бъдат разглеждани по всяко време от Вашия екип за наемане. Сега можете да съдите личностни и комуникационни умения, без да губите време с грешния кандидат. Когато стане време да изберете кандидати за видео интервю онлайн в реално време, можете да изберете само кандидатите с подходящи умения, квалификация и увереност, необходими за всеки търговски представител.&lt;/p&gt;
+&lt;p&gt;Ето някои от трудните интервю въпроси, които трябва да зададете по време на записано или онлайн интервю, за да намерите най-подходящите кандидати:&lt;/p&gt;
+&lt;p&gt;Какво бихте предпочели - дълъг или кратък цикъл на продажбите? Обосновете се.&lt;/p&gt;
+&lt;p&gt;Какво най-малко Ви харесва в продажбите?&lt;/p&gt;
+&lt;p&gt;Какво Ви прави добър търговски представител?&lt;/p&gt;
+&lt;p&gt;Кажете ми за целите на кариерата Ви.&lt;/p&gt;
+&lt;p&gt;Тези въпроси ще Ви позволят да научите повече Вашият кандидат за продажби, за знанията и уменията му, както и за това как ще се приспособи към Вашите методи на робота и фирмена политика. Като се съсредоточите върху целите на кандидата и амбициите му в кариерата, ще можете да откриете колко сериозен и подходящ е този кандидат в областта на продажбите.&lt;/p&gt;
+&lt;p&gt;Live Interview може да бъде чудесен начин за намиране на най-добрия кандидат, който Ви е необходим за Вашия търговски екип, без да губите време и енергия в процеса на наемане.&lt;/p&gt;</value>
+  </data>
+  <data name="hiringGreatTechnology" xml:space="preserve">
+    <value>&lt;p&gt;&lt;strong&gt;Наемане на страхотни служители в &lt;/strong&gt;&lt;strong&gt;областта на &lt;/strong&gt;&lt;strong&gt;технологията &lt;/strong&gt;&lt;strong&gt;с &lt;/strong&gt;&lt;strong&gt;Live Interview&lt;/strong&gt;&lt;/p&gt;</value>
+  </data>
+  <data name="hiringGreatTechnologyDescription" xml:space="preserve">
+    <value>&lt;p&gt;Поради недостига на технически работници и липсата на умения и квалификация, е по-трудно от всякога да намерите подходящите хора, от които се нуждаете за Вашите свободни позиции. Въпреки високата безработица, намирането на подходящите хора за работни места в технологичния сектор все още е истинско предизвикателство.&lt;/p&gt;
+&lt;p&gt;Това е така, защото, макар безработните, търсещи работа лица, да са големям брой, тези, които могат да отоговят на изискванията за висококвалифицирани работни места, са всъщност доста малко. Разликата в уменията и квалификациите, които са необходими на работодателите и квалификациите на търсещите работа е все по-голяма.&lt;/p&gt;
+&lt;p&gt;Видео интервюто може да бъде чудесно средство за свързване с най-добрите кандидати, за да ги наемете преди конкуренцията.&lt;/p&gt;
+&lt;p&gt;Докато процентът на безработица за всички търсещи работа е около 7%, равнището на безработица за хората от ИТ индустрията и технологичните области е по-малко от 4%.&lt;/p&gt;
+&lt;p&gt;Благодарение на голямото търсене, най-добрите търсещи работа в ИТ индустрията вероятно ще имат много натоварени графици. Вашата компания може да намери страхотен пасивен кандидат, който би бил идеален за Вашата свободна позиция, но намирането на време за насрочване на традиционно интервю е друга история.&lt;/p&gt;
+&lt;p&gt;Това е чудесен пример за това как Live Interview може да помогне на Вашата компания да намери топ кандидат. Този пасивен кандидат, който няма време за лична среща в офиса, може да намери време за видео интервю в своя пълен график.&lt;/p&gt;
+&lt;p&gt;В интервюто на живо можете да се свържете с пасивния кандидат в реално време, точно както в традиционното интервю. Тъй като тези интервюта могат да се извършват отвсякъде, дори най-натовареният пасивен кандидат може да намери време да се свърже чрез уеб камера.&lt;/p&gt;
+&lt;p&gt;Можете също така да използвате записани интервюта, където работодателите записват предварително своите въпроси към кандидатите, а те отговарят чрез видео запис. Те са много по-бързи и по-ефективни от телефонните интервюта и ще ви позволят да видите кандидата, да се запознаете с техническата му спецификация, а вероятно и да прецените доколко ще се впише във фирмената Ви култура.&lt;/p&gt;</value>
+  </data>
+  <data name="howToAnswer" xml:space="preserve">
+    <value>&lt;p&gt;&lt;strong&gt;Как да отговоря - популярни въпроси &lt;/strong&gt;&lt;strong&gt;при&lt;/strong&gt;&lt;strong&gt; видео интервю&lt;/strong&gt;&lt;/p&gt;</value>
+  </data>
+  <data name="howToAnswerDescription" xml:space="preserve">
+    <value>&lt;p&gt;Как да отговорите на записаните въпроси в интервюто? Определено искате да се възползвате от тази възможност, за да покажете на работодателя или HR мениджъра, че сте подходящ за тази работа и че искрено се интересувате от компанията и позицията.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;По-долу ще намерите няколко от най-популярните въпроси, които работодателите и HR &amp;nbsp;мениджъри задават в записани интервюта, както и съвети за това как можете да дадете чудесни отговори:&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Защо се интересувате от тази позиция?&lt;/p&gt;
+&lt;p&gt;Възползвайте се от тази възможност, за да разкажете как предишните ви преживявания са ви помогнали да ви подготвим за тази работа. Трябва също така да споменете всеки успех, който сте изпитали в предишна позиция, която ще покаже, че сте правилният кандидат. &amp;lt;br&amp;gt;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Какво знаете за нашата компания?&lt;/p&gt;
+&lt;p&gt;Няма причина да не можете да отговорите на този въпрос. Благодарение на интернет можете лесно да намерите всичко, което трябва да знаете за една компания. Работодателят или мениджърът на наемане иска това да види дали сте извършили изследването си преди интервюто, затова се уверете, че го направите. Проучете компанията, като разглеждате уебсайта си, четете статии за постиженията им и проверявате социалните медийни сметки (ако има такива), за да получите представа за тяхната фирмена култура. Не е нужно да цитирате всеки факт, който намирате, но не забравяйте да споменавате поне някои от следните неща:&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Типът продукт или услуга, които компанията продава&lt;/p&gt;
+&lt;p&gt;Колко време фирмата е в бизнеса&lt;/p&gt;
+&lt;p&gt;Неотдавнашните постижения на компанията&lt;/p&gt;
+&lt;p&gt;Каква е фирмата култура и как тя се отнася до вашите ценности и личност&lt;/p&gt;
+&lt;p&gt;Какви са силните ти страни?&lt;/p&gt;
+&lt;p&gt;Отговорът ви трябва да е свързан с описанието на длъжността и способността Ви да изпълнява задачите, които ви са възложени. Например, ако сте интервюирани за позиция, в която ще ръководите голяма група хора, обсъдете вашите силни комуникативни умения и способност да работите с различни хора и личности.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Къде се виждате след 5 години?&lt;/p&gt;
+&lt;p&gt;Няма перфектен отговор на този въпрос, тъй като отговорите ще варират в зависимост от отрасъла и индивида. Работодател или наемател просто иска да разбере колко добре планирате напред и дали целите ви съвпадат с тези на компанията. Важно е обаче да избягвате да казвате нещо, което ви кара да изглеждате абразивно, краткосрочно, или да нямате цели.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Каква е вашата идеална работна среда?&lt;/p&gt;
+&lt;p&gt;Този въпрос е зададен, така че работодателят или HR мениджъра да може да определи дали бихте се вписали добре в компанията. Бъдете честни в отговора си. Ако работите добре в голям, оживен офис, кажете го. Ако предпочитате да работите в малък офис, за да можете лесно да си сътрудничите с колеги, обяснете защо това е важно за вас.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Опишете работната Ви етика.&lt;/p&gt;
+&lt;p&gt;Отново, този въпрос е зададен, за да се разбере колко добре можете да се впишете в една компания. Опишете колко важно е за Вас да изпълнявате ефективно и ефикасно всички задачи, които са Ви възложени.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Разкажете ми за себе си.&lt;/p&gt;
+&lt;p&gt;Не отговаряйте на този въпрос, като разкажете за Вашите хобита и домашни любимци. Използвайте това като друга възможност да насочите вниманието на работодателя или HR мениджъра към Вашите умения и постижения, за да ги впечатлите наистина. Говорете какво Ви интересува за индустрията и с какво се надявате да допринесете към тяхната организация.&lt;/p&gt;</value>
+  </data>
+  <data name="internetMarketingSolutions" xml:space="preserve">
+    <value>&lt;p&gt;&lt;strong&gt;Решения за интернет маркетинг: Наемане на най-добрите чрез Live Interview&lt;/strong&gt;&lt;/p&gt;</value>
+  </data>
+  <data name="internetMarketingSolutionsDescription" xml:space="preserve">
+    <value>&lt;p&gt;Новите технологии означават разпространение на нови маркетингови стратегии, които се използват от интелигентните компании. Цифровият маркетинг, мобилният маркетинг и дори маркетингът на текстови съобщения са в сила, тъй като технологията променя формата на индустрията.&lt;/p&gt;
+&lt;p&gt;Как може видео интервюто да помогне на вашата компания да се възползва от момента и да намери подходящите хора, които да продължат напред рекламните Ви усилия?&lt;/p&gt;
+&lt;p&gt;Видео интервюиране за наемане на свободна практика: повече компании използват силата на свободните професии, за да реализират своите маркетингови стратегии. Може да е трудно, обаче ще сте сигурни, че наемате най-добрите свободни работници. Някои от вашите свободни служители може дори да са виртуални служители, което означава, че те могат да бъдат разположени навсякъде по земното кълбо.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Благодарение на силата на видео интервюто можете да се свържете с тези хора на свободна практика на по-лично ниво, само защото не могат да влязат в офиса за среща, не означава, че не можете да създадете лична връзка. Благодарение на интервютата с живи видеоклипове, можете да имате интервю лице в лице, дори ако сте в изключително различни часови зони.&lt;/p&gt;
+&lt;p&gt;Видео интервю за конкретни умения: Днешният пейзаж изисква различен набор от маркетингови стратегии и умения. Повечето компании търсят решения за интернет маркетинг, което означава, че те търсят кандидати със специфични умения. Благодарение на различията в уменията, е по-трудно от всякога да намерите кандидати с уменията на най-високо ниво, от които се нуждаете.&lt;/p&gt;
+&lt;p&gt;Вместо безкрайни имейли назад и напред, можете да гледате видеозаписи на водещите кандидати и да изберете да се свържете лично само с най-добрите. Това ще ви позволи да рационализирате процеса на набиране на персонал, като същевременно ще намерите кандидатите с конкретните умения и интернет маркетинговите решения, които Вашата компания желае.&lt;/p&gt;
+&lt;p&gt;Наемането на най-добрите кандидати за маркетинг не винаги е лесно. Но благодарение на силата на видео интервюто можете да се свържете на по-лично ниво, да намалите оборота на служителите и да намерите кандидати, които ще процъфтяват във Вашата фирмена култура. И така, какво чакате?&lt;/p&gt;</value>
+  </data>
+  <data name="lookingGood" xml:space="preserve">
+    <value>&lt;p&gt;&lt;strong&gt;Добър външен вид във видео интервюто&lt;/strong&gt;&lt;/p&gt;</value>
+  </data>
+  <data name="lookingGoodDescription" xml:space="preserve">
+    <value>&lt;p&gt;Ето няколко съвета, които може да не Ви идват веднага на ум, но е добре да имате предвид при подготовка за видео интервю.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Насочете светлина към вас - не зад вас!&lt;/p&gt;
+&lt;p&gt;Това е необходимо, защото когато светлината е насочена директно към уеб камерата, тя ще компенсира, като затъмнява образа и Вие ще изглеждате като безлична сянка. Помислете дали да имате две лампи, които да разположите от двете страни на лицето си, за да изглеждате по-добре на камерата.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Застани в центъра на екрана&lt;/p&gt;
+&lt;p&gt;Важно е да се позиционирате в центъра на уеб камерата. Уверете се, че цялата глава, врата и раменете Ви могат да се видят. Трябва да сте наясно и с позата си. Ако нещо Ви притеснява или се чувствате неудобно, това ще проличи чрез езика на тялото Ви, но HR мениджърът или работодателя, който преглежда интервюто ви, може да остане с впечатлението, че не сте много заинтересовани от позицията или че сте страхлив човек; това обикновено не са черти, които хора търсят в служителите.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Това, което решите да носите за видео интервю също е важно&lt;/p&gt;
+&lt;p&gt;Отидете да вземете костюм така, както бихте го направили, ако се срещнете лично с работодател. Изберете дрехи, които ви прилягат добре; нищо претрупано или прекалено стегнато. Освен това не забравяйте да се обличате правилно от главата до петите. В записано интервю, най-вероятно ще бъдете седнали през цялото време, но носенето на пълна екипировка може да Ви помогне да се съсредоточите и поддържате състоянието на увереност, необходимо за успешното интервю.&lt;/p&gt;
+&lt;p&gt;Също така имайте предвид следното:&lt;/p&gt;
+&lt;p&gt;Избягвайте бялото&lt;/p&gt;
+&lt;p&gt;Повечето хора ще приравнят белите дрехи с изчистени и много представящи се. Това може да работи за лични интервюта, но на камерата бялото не е мъдър избор. Бялото облекло ще изглежда по-светло на камерата и може да надвиши лицето ви, което може да направи контакт с очите трудно. Вместо това изберете по-тъмни цветове като тъмно синьо и избягвайте карета.&lt;/p&gt;
+&lt;p&gt;Избягвайте прекалено много / блестящи бижута&lt;/p&gt;
+&lt;p&gt;Сигурно мислите, че, че новата Ви огърлица ще върви идеално с жилетката Ви, но най-добре е да носите минимални бижута за видео интервю. Вие също трябва да избягвате особено лъскави бижута, които могат да хвана светлината на камерата.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Не забравяйте основните неща&lt;/p&gt;
+&lt;p&gt;Видео интервюто е не по-малко формално от традиционното интервю, така че скъпи господа, не мислете, че не трябва да бъдете с чисто лице и гладко избръснати. И дамите - поддържайте грима си минимален и консервативен.&lt;/p&gt;</value>
+  </data>
+  <data name="staffingSolutions" xml:space="preserve">
+    <value>&lt;p&gt;&lt;strong&gt;Решения за фирмите за подбор на персонала: използване на Live Interview за наемане на най-добрите кандидати&lt;/strong&gt;&lt;/p&gt;</value>
+  </data>
+  <data name="staffingSolutionsDescription" xml:space="preserve">
+    <value>&lt;p&gt;Като професионален персонал, Вие знаете, че намирането на най-добрите кандидати не е лесно. След икономическата рецесия компаниите имат по-малко свободни позиции, което означава, че конкуренцията между агенциите за персонал може да бъде направо ожесточена. Трябва да гарантирате, че компанията Ви ще се издигне над останалите.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Интервюто на живо може да бъде чудесен начин да дадете на фирмата си конкурентно предимство и да осигурите на клиентите, кандидатите които очакват. Трябва да сте в крак с конкуренцията и това означава да намерите най-добрите кандидати и да ги намерите бързо. Фирмите търсят решения за персонала и видео интервюто може да бъде чудесен начин за намаляване на разходите и съкращаване на времето, без да се отказвате от качеството на кандидата.&lt;/p&gt;
+&lt;p&gt;Работодателите не просто се нуждаят от кандидат, те се нуждаят от висококвалифицирани работници. Тези хора, неочаквано, трудно се намират дори във времена на висока безработица. Видео разговорите могат да Ви помогнат, като Ви позволяват да се свържете с кандидатите лично много по-бързо, отколкото в традиционния процес на наемане. Вместо безкрайно изпращане на имейли, опитвайки се да насрочите среща, можете да се срещнете в реално време с интервю за видео на живо.&lt;/p&gt;
+&lt;p&gt;Това ще гарантира, че Вашата агенция за персонал няма да загуби най-добрите кандидати, защото ще сте натрупали фонд с най-висококвалифицираните работници, докато вашите конкуренти все още се опитват да планират лична среща.&lt;/p&gt;
+&lt;p&gt;Временно решение за персонала&lt;/p&gt;
+&lt;p&gt;Повечето компании, които търсят агенции за персонал за помощ при попълване на временни работни места, искат да направят това бързо. Ползата от видео разговорите е, че помагат да се намали времето за интервюиране, съответно съкращават и времето за наемане.&lt;/p&gt;
+&lt;p&gt;Вместо пилеете средно по 30 минути на телефона с някой, който може да не е подходящ за работата, записаното видео интервю Ви позволява бързо да сортирате Вашите временни възможности за набиране на персонал. По този начин можете да подберете само най-добрите кандидати и да получите този талант, свързващ се с фирми, които желаят да наемат интелигентни работници.&lt;/p&gt;
+&lt;p&gt;За компаниите за подбор на персонала, Live Interview може да бъде ключът към успеха. Независимо дали искате да се свържете с кандидатите в реално време или да намалите времето за набиране на персонал, е време да се възползвате от новите технологии и да поведете компанията си уверено напред!&lt;/p&gt;</value>
+  </data>
+  <data name="successfulEntrepreneurs" xml:space="preserve">
+    <value>&lt;p&gt;&lt;strong&gt;Успешните предприемачи използват Live Interview&lt;/strong&gt;&lt;/p&gt;</value>
+  </data>
+  <data name="successfulEntrepreneursDescription" xml:space="preserve">
+    <value>&lt;p&gt;Наемането на нови служители за стартиращата Ви компания никога не е лесно. Като основател на ново начинание, най-вероятно прекарвате повечето от времето си, като се опитвате да осигурите финансиране и търсите възможности за бизнес, за да може Вашата нововъзникваща компания да расте. Наемането може да е най-отдалеченото нещо от ума Ви, но в крайна сметка всички стартиращи компании осъзнават, че е време да привлекат служители.&lt;/p&gt;
+&lt;p&gt;Въпреки това, наемането на водещи таланти със строг стартов бюджет далеч не е просто задача. Това може да бъде и отнемаща време перспектива. Като основател на компанията, все още трябва да се съсредоточите върху разрастването на компанията и разработването на интелигентни бизнес идеи. Не искате да прекарате цялото си време в търсене на подходящ кандидат, когато можете да използвате това време за развитието на бизнеса си.&lt;/p&gt;
+&lt;p&gt;Тук е мястото и времето, където Live Interview наистина може да помогне на стартиращите основатели да станат успешни предприемачи. Видео интервюто може да помогне на работодателите да се свържат лично с най-добрите кандидати по-бързо и лесно, като дори ще спестят време и пари в процеса.&lt;/p&gt;
+&lt;p&gt;Успешните предприемачи знаят, че имате нужда от големи бизнес идеи, за да се превърнете в силна компания. В крайна сметка, успехът ще изисква екипът да Ви помогне с ежедневните функции на новото Ви начинание.&lt;/p&gt;
+&lt;p&gt;Знайте кога да наемете. Една от най-големите грешки, допуснати от стартиращите компании, е преждевременното мащабиране. Всички бизнес възможности в света няма да имат значение, ако бързате да наемете, преди да сте готови. Преди да скочите в процеса на наемане с двата крака, попитайте се дали наистина е време да вкарате повече хора в компанията.&lt;/p&gt;
+&lt;p&gt;Как може видео интервюто да помогне на стартиращите компании да наемат най-доброто, без да изпускат важни бизнес възможности? Ето няколко начина:&lt;/p&gt;
+&lt;p&gt;Видео интервютата спестяват пари&lt;/p&gt;
+&lt;p&gt;Добрите лидери на компании винаги търсят нови бизнес възможности, особено когато става дума за финансиране. Може да се окажете, че прекарвате голяма част от времето си в търсене на инвеститори или да навигирате сложни заеми за започване на бизнес и със сигурност не искате да губите пари в процеса на наемане. Самият процес по наемане на персонал не трябва да бъде безкраен процес: видео разговорите пестят ценно време и пари, като съкращават традиционния процес.&lt;/p&gt;
+&lt;p&gt;Например, записаните видео интервюта могат да спестят много време в процеса на набиране на персонал. В записаните видео интервюта, на писмените въпроси, поставени от работодателите, кандидатите отговарят на видеоклип.&lt;/p&gt;
+&lt;p&gt;В началото времето е пари. По-бързото пресяване на неподходящите кандидати, ще Ви спести много пари, които можете да инвестирате обратно в бизнеса си.&lt;/p&gt;
+&lt;p&gt;Свържете се лично и фокусирайте се върху фирмената култура&lt;/p&gt;
+&lt;p&gt;Културата на фирмата е от съществено значение, когато става дума за стартиране на набирането. Като предприемач, Вашата работа е да създадете среда и фирмена култура на компанията. Независимо дали току-що сте започнали да наемате или вече сте наели, важно е да имате предвид културата на компанията, като гледате най-добрите перспективи. Знаейки колко скъп е оборотът на служителите, важно е да се съсредоточите само върху кандидатите, които могат да дадат положителен принос за компанията.&lt;/p&gt;
+&lt;p&gt;Видео интервютата Ви позволяват да се свързвате по-бързо и по-лично със страхотни кандидати. Ако някой не впечатли в записаното видео интервю, лесно можете да се преместите на следващия талантлив кандидат.&lt;/p&gt;
+&lt;p&gt;Плюс това, видео интервютата ви позволяват да прекосявате големи разстояния и да се свързвате. С живи видео интервюта можете да говорите в реално време с кандидати от цял ​​свят.&lt;/p&gt;</value>
+  </data>
+  <data name="takeMoreRevenueWithVideo" xml:space="preserve">
+    <value>&lt;p&gt;&lt;strong&gt;Вземете повече предимства с видео интервю за фирмите за персонал&lt;/strong&gt;&lt;/p&gt;</value>
+  </data>
+  <data name="takeMoreRevenueWithVideoDescription" xml:space="preserve">
+    <value>&lt;p&gt;Начинът, по който повечето фирмите за персонал измерват успеха си, е чрез разглеждане на броя на кандидатурите, които получават. В крайна сметка, приходите ще се увеличават, когато броят им се увеличава.&lt;/p&gt;
+&lt;p&gt;По-долу са дадени примери за това как използването на технологията за интервюиране чрез видеоклипове ще помогне на фирмите за подбор да подобри стратегиите си за набиране на персонал, за да стимулира повече приходи:&lt;/p&gt;
+&lt;p&gt;Разширете Вашата кандидатска област&lt;/p&gt;
+&lt;p&gt;От решаващо значение е фирмите за подбор на персонал да имат текуща кандидатска област, от която те могат да изтеглят кандидати за която и да е позиция, която се открива в компанията на клиент. С видео интервюта можете да създадете цифрова библиотека от кандидати, за да постигнете това. Ако даден кандидат не е работил за един клиент, ще имате готово видео интервю в архив, който потенциално може да запълни позицията на друг клиент.&lt;/p&gt;
+&lt;p&gt;Възможността за преглед на предишни видео интервюта на кандидатите за работа може да ускори времето, необходимо на служителите да намерят и да поставят правилния кандидат. Ще Ви е необходимо много по-малко време, опитвайки се да извлечете бележки за определен кандидат.&lt;/p&gt;
+&lt;p&gt;Подобряване на сътрудничеството с клиентите&lt;/p&gt;
+&lt;p&gt;Когато кандидатите завършат записаните интервюта имате възможност да споделяте записите с клиентите си, за да ги прегледат. Това значително ще подобри сътрудничеството, което ще доведе до възможността вашите клиенти да вземат по-добри решения за наемане. Вашите клиенти ще могат да видят кандидатите по начина, по който ги виждате, така че да можете да получите повече информация за техните нужди и очаквания.&lt;/p&gt;
+&lt;p&gt;След като прегледат записаните интервюта на кандидатите, вашите клиенти могат да очертаят точно това, което харесват и не харесват за тях, което ще Ви помогне да осигурите най-добър кандидат и освен това да се откроите от конкурентите си.&lt;/p&gt;
+&lt;p&gt;Като работите с кандидатите и ги упътвате как да демонстрират правилно своите индивидуалности и умения на клиентите, можете да позиционирате фирмата си за подбор на персонал, като фирма, която високо оценява своите кандидати и ще направи всичко възможно да ги постави на най-високи позиции. Тези кандидати могат да препоръчат на други да работят с Вашата фирма. Повече кандидати, работещи с Вашата фирма, по-голям шанс да намерите най-добрите потенциални служители за Вашите клиенти.&lt;/p&gt;
+&lt;p&gt;Използването на видео интервюта във фирмите за персонал ще помогне постоянно да предлагате на клиентите си страхотни кандидати за наемане. Това ще увеличи доверието и желанието им да продължат да работят с Вашата компания.&lt;/p&gt;</value>
+  </data>
+  <data name="theBenefitsOfVI" xml:space="preserve">
+    <value>&lt;p&gt;&lt;strong&gt;Ползите от видео интервютата&lt;/strong&gt;&lt;/p&gt;</value>
+  </data>
+  <data name="theBenefitsOfVIDescription" xml:space="preserve">
+    <value>&lt;p&gt;Вие най-вероятно сте запознати с традиционното интервю за работа, където се срещате с работодател или мениджър в офиса им. Днес компаниите използват &amp;nbsp;видео интервюта в процеса на наемане, за да се свържат по-лесно и бързо с кандидатите. Записаното интервю, по-специално, се използва от много от клиентите на Live Interview за ранния стадий на техния подбор.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;По-долу са дадени отговори на въпросите, които може да имате във връзка с видео интервюто, за да можете напълно да подготвите:&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Ще има ли някой друг в другия край?&lt;/p&gt;
+&lt;p&gt;В записано видео интервю само вас, търсещият работа, присъствате и правите всичко, което говорите. Въпросите за интервюто ще ви бъдат представени в текстова или видео форма. След като запишете и изпратите отговорите си, работодателят или управителят на наемателите ще прегледа интервюто ви по свое собствено време.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Кога е записано моето интервю? Колко време трябва да го завърша?&lt;/p&gt;
+&lt;p&gt;Срокът за Вашето еднопосочно интервю е определен от работодателя или управителя на наемателите, който ви покани. Количеството време, което трябва да изпълните, зависи от датата и часа, които са избрали за интервюто, което трябва да бъде завършено. Можете да намерите тази информация на целевата страница за записаното интервю.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Къде трябва да направя интервюто си?&lt;/p&gt;
+&lt;p&gt;В идеалния случай трябва да записвате записаното си интервю в тих район, на който няма хора наоколо. Работодател или управител на наемане няма да разбере, че сте разсеяни от хора, които идват и излизат от стаята, в която сте записали. Компанията иска да знае повече за вас, поради което трябва да бъде единственият фокус на видео интервюто. Също така е важно да се уверите, че мястото, което записвате, изглежда чиста и професионална.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Ами ако нямам уеб камера? Мога ли да използвам телефона си?&lt;/p&gt;
+&lt;p&gt;Ако нямате достъп до компютър и уеб камера, можете удобно да завършите записаното интервю, като използвате мобилното си устройство. Просто изтеглете мобилното приложение и сте готови да отидете! Мобилното приложение поддържа iOS или устройства с Android.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Колко въпроса има? Виждам ли въпросите преди време? Колко време трябва да отговоря?&lt;/p&gt;
+&lt;p&gt;Броят на въпросите за записаното интервю се определя от работодателя или мениджъра по наемане. След като започнете интервюто, ще ви бъде даден броят на въпросите, които ще трябва да отговорите. Въпросите ще ви бъдат представени едно по едно, така че ще имате възможност да обмислите реакцията си преди записа.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Колко пъти мога да записвам интервюто си?&lt;/p&gt;
+&lt;p&gt;Всичко може да се случи. Може кучето Ви изведнъж скочи в скута Ви, докато записвате своя отговор. Или изведнъж да блокирате, сякаш са Ви вързали езика. Какъвто и да е случая, ще имате възможност да запишете отново своето интервю. Обаче, не се вманиачавайте в опити да запишете отлично вашите отговори и имайте предвид, че новите отговори автоматично ще изтрият предишния запис.&lt;/p&gt;</value>
+  </data>
+  <data name="thingsToAvoid" xml:space="preserve">
+    <value>&lt;p&gt;&lt;strong&gt;Неща, които трябва да избягвате във видео интервюто&lt;/strong&gt;&lt;/p&gt;</value>
+  </data>
+  <data name="thingsToAvoidDescription" xml:space="preserve">
+    <value>&lt;p&gt;Вашите цели за традиционно интервю (където се срещате с работодател или мениджър&amp;nbsp; лице в лице в офиса) не трябва да се различават от Вашите цели за видео интервю. Трябва да се стремите да представите себе си като желан кандидат. Ето някои съвети, които ще Ви помогнат да избегнете основните грешки в записаното интервю, които биха ви стрували работата:&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Прочети инструкциите&lt;/p&gt;
+&lt;p&gt;Винаги е важно да прочетете внимателно инструкциите, които са Ви предоставени, особено ако сте на път да направите нещо, с което не сте напълно запознати. Ако внимателно прочетете записаните инструкции за интервю, можете да избегнете закъснения или прекъсвания по време на интервюто.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Да има хора в стаята с теб&lt;/p&gt;
+&lt;p&gt;Опитайте се да намерите спокойна и уединена част, за да запишете интервюто си. Ако има други хора в стаята или наблизо, това може да е разсейващо за Вас и за наемащия мениджър, който преглежда интервюто ви. Фокусът трябва да бъде единствено върху Вас.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Запис без аудио&lt;/p&gt;
+&lt;p&gt;Ако използвате компютър, за да завършите записа си, уверете се, че сте проверили микрофона, който използвате преди записването. Освен това винаги трябва да възпроизвеждате първия си записан отговор, за да сте сигурни, че вашата аудио система и уеб камера работят правилно.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Записвате, без да се виждате на екрана&lt;/p&gt;
+&lt;p&gt;Ако не виждате себе си на екрана при запис, това означава, че Вашата уеб камера не е правилно свързана или проверена. Не правете грешката да продължите да записвате, ако това е така.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Записване в разхвърляно пространство&lt;/p&gt;
+&lt;p&gt;Бъдете наясно , че задния фон на Вашето видео ще каже много за Вашата кандидатура. Уверете се, че записвате в област, която изглежда чиста и професионална.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Не говорите ясно&lt;/p&gt;
+&lt;p&gt;Не принуждавайте работодателят да увеличи силата на звука или да напряга слуха си, за да чуе отговорите на интервюираните въпроси. Говорете силно и ясно, за да можете да бъдете разбрани. Би било жалко Вашето записаното интервю да бъде отхвърлено само защото човекът, който го преглежда няма представа какво казвате.&lt;/p&gt;
+&lt;p&gt;Настанили сте се прекалено удобно&lt;/p&gt;
+&lt;p&gt;Едно от основните предимства на записаните интервюта е, че те са удобни както за работодателите, така и за търсещите работа. Можете да завършите своето записано интервю от всяко място чрез мобилния си телефон или от уюта на собствения си дом, като използвате компютър и уеб камера. Все пак, Вие трябва да сте професионалисти и да се отнасяте към записаното интервю, сякаш това е традиционно интервю в офиса. Облечете се правилно от главата до петите; не обличайте рокля или блейзер върху пижама и чехли. Също така, сега не е време да се настаните уютно в любимото си кресло. Бъдете наясно с позата си и се уверете, че сте се изправили направо, за да покажете, че сте уверени и че сте сериозен кандидат.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Да бъдеш неподготвен&lt;/p&gt;
+&lt;p&gt;Вашата подготовка за записано интервю не трябва да се различава от начина, по който се подготвяте за традиционно интервю в офис. Репетирайте отговорите си на въпросите на интервюто, за да звучите естествено и искрено, когато сте готови да запишете&lt;/p&gt;</value>
+  </data>
+  <data name="tipsOnBodyLanguage" xml:space="preserve">
+    <value>&lt;p&gt;&lt;strong&gt;Съвети за езика на тялото при видео интервюто&lt;/strong&gt;&lt;/p&gt;</value>
+  </data>
+  <data name="tipsOnBodyLanguageDescription" xml:space="preserve">
+    <value>&lt;p&gt;Необходимо е да сте сигурни, че сте се подготвили и ще се представите по най-добрия начин във Вашето видео интервю, но също така трябва да отдадете същото значение и на езика на тялото. Трябва да сте наясно с езика на тялото, за да сте сигурни, че се представяте по най-добрия възможен начин през цялото интервю.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;55% &amp;nbsp;от комуникацията се осъществява чрез езика на тялото. Дори и да не говорите нито една дума, вие комуникирате. Всичко, което чувствате се изразява чрез езика на тялото; независимо дали сте нервни, уверени, горди, раздразнени, смирени и т.н.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Установете контакт с очите&lt;/p&gt;
+&lt;p&gt;Поддържането на контакт с очи във видео интервю може да изглежда трудно и дори неудобно, но е възможно и необходимо. Когато записвате Вашето видео интервю, не забравяйте да погледнете направо в уеб камерата - не гледайте себе си на екрана. Представете си, че има човек, който седи отсреща, докато давате отговорите си. Когато погледнете в уеб камерата, HR мениджърът или работодателя, който ще прегледа интервюто ви, ще се почувства по-ангажиран, защото ще има чувството, сякаш го гледате.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Седни изправен&lt;/p&gt;
+&lt;p&gt;Добрата позиция на тялото в интервюто е много важна. Прегърбването или наклонът назад ще внуши, че не приемате сериозно интервюто или сте отегчени и безразлични. Кръстосването на ръцете&amp;nbsp; също трябва да се избягва, защото ще изглеждате недостъпни и отблъскващи.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Избягвайте да се движите твърде много&lt;/p&gt;
+&lt;p&gt;Когато хората имат много нервна енергия, те са склонни да разклатят краката си, да сжестикумлират оживено или да тактуват с пръстите си по масата. Опитайте се да избегнете движения, които биха могли да доведат усещане за нервност и да отвлекат вниманието на работодателя / HR мениджъра, който преглежда интервюто Ви.&lt;/p&gt;
+&lt;p&gt;Усмивка!&lt;/p&gt;
+&lt;p&gt;Възможно е да се почувствате нервни или стресирани по време на Вашето видео интервю, но това не трябва да се показва в лицето Ви. Усмивката може да скрие несигурността и нервите Ви, но и да Ви накара да изглеждате достъпни. Не забравяйте да се усмихнете и да покажете на работодателя / HR мениджъра колко общителен и приятен човек сте.&lt;/p&gt;</value>
+  </data>
+  <data name="videoInterviewingTips" xml:space="preserve">
+    <value>&lt;p&gt;&lt;strong&gt;Видео интервю съвети&lt;/strong&gt;&lt;/p&gt;</value>
+  </data>
+  <data name="videoInterviewingTipsDescription" xml:space="preserve">
+    <value>&lt;p&gt;Видео интервюирането прилича на личното интервю. Видео интервюто позволява на търсещите работа да получат необходимото време с работодателите. Така че не забравяйте да извлечете максимума от това време с някои прости съвета как да впечатлите във видео интервюто си.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Говори ясно&lt;/p&gt;
+&lt;p&gt;Говорихме за важността на комуникационните умения и тук е идеалното място да покажем тези умения. Може да сте нервни, но сега не е време да оставяте нервите да ви попречат. Вашата мечтана работа може да бъде само на едно &amp;bdquo;видео интервю&amp;rdquo; разстояние, в края на краищата.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Помислете за фона около и зад Вас&lt;/p&gt;
+&lt;p&gt;Задаването на подходящ заден фон е важно за ефективното виртуално интервю, независимо дали отговаряте на въпроси или говорите на живо с мениджър по наемане. Ако фонът на видеоклипа Ви е претрупан,разхвърлян и като цяло непрофесионален, то със сигурност ще изпратите грешно съобщение. Вашите словесни и невербални забележки биха могли да бъдат страхотни, но вашето &amp;bdquo;обкръжение&amp;rdquo; разказва друга история. Не забравяйте да намерите добре осветено, професионално и чисто пространство за интервюто.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Облечи се за успех&lt;/p&gt;
+&lt;p&gt;Мислите си, че просто защото това е онлайн интервю можете да пропуснете костюма? Помисли отново! Работодателите ще Ви преценяват точно както биха Ви преценявали, ако ги срещнете лично. Това, което носите, разказва на работодателите важна информация за това кой сте. По-конкретно, тя казва на работодателите колко сте сериозни за работата, така че постарайте се да се облечете професионално.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Подгответе се!&lt;/p&gt;
+&lt;p&gt;Най-важната част от всяко видео интервю (или интервю като цяло) е подготовката. Проучете фирмата и тренирайте отговори на общи интервю въпроси. Ако се подготвите за интервюто си, ще бъдете на правилния път за достигане на мечтата си!&lt;/p&gt;</value>
+  </data>
+  <data name="videoInterviewsForStaffing" xml:space="preserve">
+    <value>&lt;p&gt;&lt;strong&gt;Видео интервюта за подбор на персонала: по-добро представяне на кандидатите пред клиентите&lt;/strong&gt;&lt;/p&gt;</value>
+  </data>
+  <data name="videoInterviewsForStaffingDescription" xml:space="preserve">
+    <value>&lt;p&gt;Очевидната полза от видео интервютата за фирмите за подбор на персонал е, че те позволяват на работодателите да се свързват с обикновено труднодостъпни кандидати, като не-местни и пасивни (работещи). Пасивните кандидати обикновено вече имат работа на пълно работно време и нямат време в своя график да се явят на интервю. Да &amp;nbsp;насрочите интервю с кандидат, който живее в друга държава или дори в съседния град, може да се окаже доста сложно. Има разходи за пътуване, които трябва да се разгледат заедно с различни времеви зони. Освен това, неконтролируеми неща като времето и трафика могат да попречат , което означава, че срещата трябва да пренасрочи и съответно това ще забави вземането на решение за наемане.&lt;/p&gt;
+&lt;p&gt;Видео интервютата осигуряват гъвкавостта да работят около натоварената програма на кандидата. Този пасивен кандидат може да запише интервюто си в края на дълъг работен ден, в уюта на дома си, като използва уеб камера или мобилно устройство. Можете да се свържете с далечни кандидати в реално време, лице в лице с интервюто на живо.&lt;/p&gt;
+&lt;p&gt;За фирмите за подбор на персонал предимствата на използването на тази технология са извън възможностите за ефективно свързване с местни и непасивни кандидати. Видео интервюирането е мощен инструмент, който ще помогне на фирмите за персонал по-ефективно да поставят кандидати на вниманието на клиентите, където те могат да придобият по-ясна представа за уменията, визията и адаптивността на кандидата.&lt;/p&gt;
+&lt;p&gt;Видео интервюирането е най-добрият маркетингов инструмент, с който разполагат фирмите за персонал. То осигурява по-добър начин за подбор на персонал, представя кандидатите пред &amp;nbsp;клиентите, така че да могат да се видят сами за себе си, ако някой има правилните комуникативни умения и отношение, за да се впише в тяхната организация. Вашите клиенти ще оценят колко прозрение ще спечелят от един кандидат, като гледат техните видео интервюта. Те ще имат спокойствие, знаейки, че новото им наемане няма да бъде голяма грешка, за която ще съжаляват по-късно. Освен това, тяхното доверие във вашата компания за подбор на персонал ще нараства.&lt;/p&gt;
+&lt;p&gt;Освен това, видео интервютата представляват стойност за кандидатите, които могат да увеличат шансовете си за получаване на работно предложение. Чрез записаните видео интервюта, кандидатът може да даде на компаниите точен поглед върху техния професионализъм. Чрез използването на видео интервюта служителите за набиране на персонал показват на кандидатите си, че ги оценяват и че техният приоритет е да ги позиционират в най-добрата светлина пред потенциалните работодатели.&lt;/p&gt;
+&lt;p&gt;Използването на видео интервюта дава възможност на фирмите за персонал да гарантират, че техният фонд за таланти винаги е пълен с добри кандидати, които имат потенциал да бъдат огромен плюс за всеки работодател. По-конкретно, записаните интервюта могат да помогнат на фирмите за персонал да установят силни и дълготрайни отношения с клиентите си, които могат да разчитат на тях, за да им препоръчат точните кандидати, когато е необходимо.&lt;/p&gt;</value>
+  </data>
+  <data name="addAnswer" xml:space="preserve">
+    <value>Добави отговор</value>
+  </data>
+  <data name="addQuestion" xml:space="preserve">
+    <value>Добави нов въпрос</value>
+  </data>
+  <data name="answerType" xml:space="preserve">
+    <value>Избери вид на въпроса</value>
+  </data>
+  <data name="finishTest" xml:space="preserve">
+    <value>Завърши теста</value>
+  </data>
+  <data name="isRight" xml:space="preserve">
+    <value>Отговорът правилен ли е?</value>
+  </data>
+  <data name="saveAnswer" xml:space="preserve">
+    <value>Запази отговор</value>
+  </data>
+  <data name="textQuestion" xml:space="preserve">
+    <value>Въпрос - текст</value>
+  </data>
+  <data name="viewAnswers" xml:space="preserve">
+    <value>Виж отговорите</value>
+  </data>
+  <data name="audioTroubleshooting" xml:space="preserve">
+    <value>&lt;p&gt;&lt;strong&gt;Отстраняване на аудио неизправности при интервю на живо или в записано интервю &lt;/strong&gt;&lt;/p&gt;</value>
+  </data>
+  <data name="audioTroubleshootingDescription" xml:space="preserve">
+    <value>&lt;p&gt;Следните фактори са най-важните, които трябва да имате предвид при оптимизирането на интервюто ви на живо.&lt;/p&gt;
+&lt;p&gt;* Браузър&lt;/p&gt;
+&lt;p&gt;* Интернет връзка&lt;/p&gt;
+&lt;p&gt;* Микрофон и високоговорители&lt;/p&gt;
+&lt;p&gt;* Използване на слушалки&lt;/p&gt;
+&lt;p&gt;* Други приложения&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Браузър&lt;/p&gt;
+&lt;p&gt;Подкрепяме последните версии на:&lt;/p&gt;
+&lt;p&gt;Mozilla Firefox&lt;/p&gt;
+&lt;p&gt;Google Chrome&lt;/p&gt;
+&lt;p&gt;Safari&lt;/p&gt;
+&lt;p&gt;Internet Explorer (Има много проблеми с Internet Explorer и видео стрийминг, и този е най-малко предпочитаният ни браузър.)&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Интернет връзка&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;За успешното интервю на живо е необходима добра интернет връзка. Препоръчваме да сте директно свързани към интернет чрез кабел, а не чрез Wi-Fi. Използването на директна връзка ще гарантира, че имате възможно най-добрата връзка и ще намалите до минимум проблемите. Това ще доведе до по-добро качество на картината и аудиото&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Микрофон и високоговорители&lt;/p&gt;
+&lt;p&gt;Когато започнете интервюто си на живо, може да Ви бъде от полза да проверите силата на звука на микрофона си и да го коригирате, след като сте влезли в интервюто. Също така е полезно нивото на звука на високоговорителите да е ниско, когато започнете за първи път, и да го коригирате след като влезете в интервюто.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Използване на слушалки&lt;/p&gt;
+&lt;p&gt;Ако имате много ехо, въпреки че сте настроили входа на микрофона и изхода на високоговорителите, друга алтернатива е да използвате слушалки. Това може да подобри качеството на звука в някои ситуации.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Други приложения&lt;/p&gt;
+&lt;p&gt;Затворете всички приложения, различни от Live Interview, които използват Вашата уеб камера и микрофон. Приложения като Skype и FaceTime могат да възпрепятстват способността на Live Interview да използва уеб камерата и микрофона Ви.&lt;/p&gt;</value>
+  </data>
+  <data name="videoTroubleshooting" xml:space="preserve">
+    <value>&lt;p&gt;&lt;strong&gt;Отстраняване на неизправности при видеозаписи на живо или записано интервю&lt;/strong&gt;&lt;/p&gt;</value>
+  </data>
+  <data name="videoTroubleshootingDescription" xml:space="preserve">
+    <value>&lt;p&gt;Следните фактори са най-важните, които трябва да имате предвид при оптимизирането на интервюто ви на живо.&lt;/p&gt;
+&lt;p&gt;* Браузър&lt;/p&gt;
+&lt;p&gt;* Интернет връзка&lt;/p&gt;
+&lt;p&gt;* Избиране на уеб камера&lt;/p&gt;
+&lt;p&gt;* Други приложения&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Браузър&lt;/p&gt;
+&lt;p&gt;Подкрепяме последните версии на:&lt;/p&gt;
+&lt;p&gt;Mozilla Firefox&lt;/p&gt;
+&lt;p&gt;Google Chrome&lt;/p&gt;
+&lt;p&gt;Safari&lt;/p&gt;
+&lt;p&gt;Internet Explorer (Има много проблеми с Internet Explorer и видео стрийминг, и този е най-малко предпочитаният ни браузър.)&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Интернет връзка&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;За успешното интервю на живо е необходима добра интернет връзка. Препоръчваме да сте директно свързани към интернет чрез кабел, а не чрез Wi-Fi. Използването на директна връзка ще гарантира, че имате възможно най-добрата връзка и ще намалите до минимум проблемите. Това ще доведе до по-добро качество на картината и аудиото.&lt;/p&gt;
+&lt;p&gt;Избиране на уеб камера&lt;/p&gt;
+&lt;p&gt;Когато избирате уеб камера, уверете се, че можете да видите себе си във видео визуализацията преди да влезете в Live Interview.&lt;/p&gt;
+&lt;p&gt;Уверете се, че уеб камерата Ви е инсталирана правилно на компютъра, преди да участвате в интервю за живо.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Други приложения&lt;/p&gt;
+&lt;p&gt;Затворете всички приложения, различни от Live Interview, които използват вашата уеб камера и микрофон. Приложения като Skype и FaceTime могат да възпрепятстват способността на Live Interview да използва уеб камерата и микрофона Ви.&lt;/p&gt;</value>
+  </data>
+  <data name="alreadyRecordedInterview" xml:space="preserve">
+    <value>Това интервю вече е записано и изпратено.</value>
+  </data>
+  <data name="done" xml:space="preserve">
+    <value>Готово</value>
+  </data>
+  <data name="reRecord" xml:space="preserve">
+    <value>Запиши отново</value>
+  </data>
+  <data name="saveVideoAnswer" xml:space="preserve">
+    <value>Запази отговор и премини към следващия въпрос</value>
+  </data>
+  <data name="startRecord" xml:space="preserve">
+    <value>Започни запис</value>
+  </data>
+  <data name="watchRecord" xml:space="preserve">
+    <value>Гледай запис</value>
+  </data>
+  <data name="company" xml:space="preserve">
+    <value>Компания</value>
+  </data>
+  <data name="plsAddDateToInterview" xml:space="preserve">
+    <value>Моля добавете дата за интервю.</value>
+  </data>
+  <data name="sendMessageToInterviewee" xml:space="preserve">
+    <value>Моля въведете текст.</value>
+  </data>
+  <data name="sentYou" xml:space="preserve">
+    <value>Ви изпрати</value>
+  </data>
+  <data name="photoAnswer" xml:space="preserve">
+    <value>Отговор - снимка</value>
+  </data>
+  <data name="photoQuestion" xml:space="preserve">
+    <value>Въпрос - снимка</value>
+  </data>
+  <data name="questionLimit" xml:space="preserve">
+    <value>Може да въведете до 40 въпроса!</value>
+  </data>
+  <data name="questionRequired" xml:space="preserve">
+    <value>Въпросът е задължителен!</value>
+  </data>
+  <data name="textAnswer" xml:space="preserve">
+    <value>Отговор - текст</value>
+  </data>
+  <data name="answerLimit" xml:space="preserve">
+    <value>Може да въведете до 5 отговора!</value>
+  </data>
+  <data name="answerRequired" xml:space="preserve">
+    <value>Моля въведете отговор.</value>
+  </data>
+  <data name="haveRightAnswer" xml:space="preserve">
+    <value>Въпросът трябва да съдържа поне един верен отговор!</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>Не</value>
+  </data>
+  <data name="questionReady" xml:space="preserve">
+    <value>Въпросът завършен ли е?</value>
+  </data>
+  <data name="pleaseWaitForInterviewerConnect" xml:space="preserve">
+    <value>Моля изчакайте интервюиращият да се свърже.</value>
+  </data>
+  <data name="plsWaitForCameraConnect" xml:space="preserve">
+    <value>Моля изчакайте интервюиращият да се свърже.</value>
+  </data>
+  <data name="process" xml:space="preserve">
+    <value>process</value>
+  </data>
+  <data name="uploadAlomostFinish" xml:space="preserve">
+    <value>Качването е почти завършено.</value>
+  </data>
+  <data name="videoUploadedSuccessfully" xml:space="preserve">
+    <value>Видео е качено успешно.</value>
+  </data>
+  <data name="videoUploadStart" xml:space="preserve">
+    <value>Качването на видеото започна.</value>
+  </data>
+  <data name="errorOccurredVideoDidntUpload" xml:space="preserve">
+    <value>Възникна грешка. Видеото не е качено.</value>
+  </data>
+  <data name="uploadHasBeenCancel" xml:space="preserve">
+    <value>Качването е прекъснато.</value>
+  </data>
+  <data name="videoIsNowUploadToServer" xml:space="preserve">
+    <value>Видеото е качено.</value>
+  </data>
+  <data name="companyProfileNew" xml:space="preserve">
+    <value>Профил на компанията</value>
+  </data>
+  <data name="listInvitationsMultiChoiceTest" xml:space="preserve">
+    <value>Списък на поканите за тест</value>
+  </data>
+  <data name="question" xml:space="preserve">
+    <value>Въпрос</value>
+  </data>
+  <data name="rightTestAnswer" xml:space="preserve">
+    <value>Верен отговор</value>
+  </data>
+  <data name="selectedAnswer" xml:space="preserve">
+    <value>Избран отговор</value>
+  </data>
+  <data name="timePerAnswer" xml:space="preserve">
+    <value>Време за отговор</value>
+  </data>
+  <data name="viewTest" xml:space="preserve">
+    <value>Статус на теста</value>
+  </data>
+  <data name="search" xml:space="preserve">
+    <value>Търсене</value>
+  </data>
+  <data name="continueAndConfirm" xml:space="preserve">
+    <value>Потвърди и продължи</value>
+  </data>
+  <data name="goBack" xml:space="preserve">
+    <value>Върни се обратно</value>
+  </data>
+  <data name="liveInterviewDate" xml:space="preserve">
+    <value>Дата за интервю</value>
+  </data>
+  <data name="sendInvitationForTest" xml:space="preserve">
+    <value>Изпратете покана за тест</value>
+  </data>
+  <data name="approveDateToInterviewRequest" xml:space="preserve">
+    <value>Потвърдете дата за интервю.</value>
+  </data>
+  <data name="TheInterviewerAcceptDateAndTime" xml:space="preserve">
+    <value>TheInterviewerAcceptDateAndTime</value>
+  </data>
+  <data name="Completed" xml:space="preserve">
+    <value>Завършен</value>
+  </data>
+  <data name="Sent" xml:space="preserve">
+    <value>Изпратен</value>
+  </data>
+  <data name="ClickToRecordChat" xml:space="preserve">
+    <value>Започни запис</value>
+  </data>
+  <data name="finishRecord" xml:space="preserve">
+    <value>Приключи записа.</value>
+  </data>
+  <data name="iosReplaceCam" xml:space="preserve">
+    <value>Click the Safari icon</value>
+  </data>
+  <data name="replaceToChrome" xml:space="preserve">
+    <value>replaceToChrome</value>
+  </data>
+  <data name="Free" xml:space="preserve">
+    <value>Free</value>
+  </data>
+  <data name="FreePrice" xml:space="preserve">
+    <value>$ 0 / месечно</value>
+  </data>
+  <data name="HEpromoHR" xml:space="preserve">
+    <value>HEpromoHR</value>
+  </data>
+  <data name="VideoInterviewPlatform" xml:space="preserve">
+    <value>Video Interview software Platform</value>
+  </data>
+</root>

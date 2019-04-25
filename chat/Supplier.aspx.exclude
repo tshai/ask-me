@@ -1,0 +1,127 @@
+﻿<%@ Page Language="VB" Title="מסך הצ'ט" Theme="" EnableViewState="false" %>
+
+<%@ Import Namespace="Entities" %>
+<%@ Import Namespace="System.Linq" %>
+<%@ Register Src="supplier.ascx" TagName="chatSLeora" TagPrefix="uc2" %>
+<script language="vbscript" runat="server">
+	Dim user As New Users()
+	Dim usingApp As Integer
+	Sub Page_Load(ByVal sender As Object, ByVal args As EventArgs) Handles MyBase.Load
+		Response.Expires = 0
+		Response.ExpiresAbsolute = DateAdd("m", 1, "31-Jan-00")
+		Response.AddHeader("pragma", "no-cache")
+		Response.AddHeader("cache-control", "private")
+		Response.CacheControl = ("no-cache")
+		Dim girlGuid = Guid.Parse(Request("girlGuid"))
+		Using db As New AskMeEntities()
+			user = (From a In db.Users Where a.MainModelGuid = girlGuid Select a).FirstOrDefault()
+			Session("GirlNum_worker") = user.UserNum
+			Session("girl_login") = 1
+		End Using
+		If Session("GirlNum_worker") Is Nothing Or Session("girl_login") = 0 Then Response.End()
+		Dim sqltime As DateTime = userClass.get_sql_time()
+	End Sub
+</script>
+
+<html>
+
+<head runat="server">
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/camSupplier.css" rel="stylesheet" />
+    <link href="css/supplier.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="https://www.nifgashot.com/pjs3/Scripts/jquery-3.1.1.js"></script>
+    <script src="js/fullScreen.js"></script>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <script src="https://www.nifgashot.com/pjs3/Scripts/jquery.signalR-2.2.2.js"></script>
+    <script src="https://www.nifgashot.com/pjs3/signalr/hubs"></script>
+    <script src="sfc.js"></script>
+    <script src="/ws/adapter.js?v-1"></script>
+    <script type="text/javascript">
+        var supplierGuid = '<%=user.MainModelGuid %>'
+        var GirlNum = '<%=HttpContext.Current.Session("GirlNum_worker") %>';
+        function startChat() {//remove for test 26/1/19
+            //connectChat();//remove 26-1-19
+            //sendConnectToUser();
+            $.ajax({
+                async: false,
+                url: "camSupplierBackground.aspx?qType=17", success: function (result) {
+                    if (result == "true") {
+                        connectChat();//remove 26-1-19
+                        sendConnectToUser();
+                    }
+
+                }
+            })
+        }
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="supplier.js?var=1"></script>
+    <script type="text/javascript">
+
+        function closeChat() {
+            $.ajax({
+                async: false,
+                url: "chatApiForApp.aspx?qType=4&girlGuid=" + supplierGuid, success: function (result) {
+                    if (result == "true") {
+                        window.close();
+                    }
+                    else {
+                        alert("error");
+                    }
+                }
+            });
+        }
+        setInterval(function () {
+            $.ajax({
+                async: false,
+                url: "chatApiForApp.aspx?qType=7&girlGuid=" + supplierGuid, success: function (result) {
+                    if (result != "1") {
+                        window.close();
+                    }
+
+                }
+            });
+            myTimer();
+        }, 3000);
+    </script>
+</head>
+<body>
+
+    <form runat="server" id="my_form">
+        <div id="preloader" style="margin: auto; width: 800px; display: none;">
+            <img src="/media/images/preloader.gif" />
+        </div>
+
+        <div class="content">
+
+            <div class="topDiv header">
+                <div class="customerTime">
+
+
+                    <div class="cl cl-left">
+                        <span>זמן שנשאר</span>
+                        <input type="text" class="time-left" id="clientTimeTxt" readonly="readonly">
+                    </div>
+                    <div class="cl cl-right">
+                        <span>מס' לקוח</span>
+                        <input type="text" class="client-no" id="clientNumTxt" readonly="readonly">
+                    </div>
+
+
+                </div>
+                <div class="closeChat" onclick="closeChat()">נתקי</div>
+
+            </div>
+            <div class="topDiv">
+                <uc2:chatSLeora ID="chatSLeora1" runat="server" />
+            </div>
+
+
+        </div>
+
+    </form>
+
+
+</body>
+</html>
