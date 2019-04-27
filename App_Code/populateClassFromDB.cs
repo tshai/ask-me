@@ -23,7 +23,15 @@ public class populateClassFromDB
                     select a).FirstOrDefault();
         }
     }
-
+    public static Users getUsersByGuid(Guid UserGuid)
+    {
+        using (var db = new Entities.Entities())
+        {
+            return (from a in db.Users
+                    where a.MainModelGuid == UserGuid
+                    select a).FirstOrDefault();
+        }
+    }
     public static OnlineUsers getOnlineUsers(int SupplierID)
     {
         using (var db = new Entities.Entities())

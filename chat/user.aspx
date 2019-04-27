@@ -5,20 +5,32 @@
 <%@ Import Namespace="System.IO" %>
 <%@ Register Src="user.ascx" TagName="chatUser" TagPrefix="uc1" %>
 <script runat="server">
+    Public RndNum As String
+    Public UserID As Integer
+    Public SupplierID As Integer
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs)
-        Dim checkAccess
-        Dim OnlineUsers_ As OnlineUsers = populateClassFromDB.getOnlineUsers(Session("SupplierID"))
-        If Session("RndNum").ToString() <> OnlineUsers_.RndNumber.ToString() Then
-            Response.Redirect("outCamera.aspx")
-        End If
-        If String.IsNullOrEmpty(CType(Session("UserID"), String)) Or String.IsNullOrEmpty(CType(Session("login"), String)) = True Then Response.Redirect("/Default.aspx")
-        If Session("time_balance") < 3 Then
-            populateClassFromDB.addWindowsServiceLogs(Session("SupplierID"), Session("UserID"), Session("RndNum"), "chatC.aspx-page_load_time_balance<3", 1)
-            Session("login") = 1
-            Response.Redirect("/users/chat/outCamera.aspx")
+        UserID = populateClassFromDB.getUsersByGuid(Guid.Parse(Request("UserGuid"))).ID                                                                   )
+        Dim checkAccess = New WaitingList(UserID, Request("SupplierID")).RunClass()
+        If checkAccess <> 1 Then
             Response.End()
         End If
-        Dim girlGuidAsString = databaseCon.scalerSql("select MainModelGuid from MainModels where SupplierID=" & Session("SupplierID"))
+        SupplierID = Request("SupplierID")
+        RndNum = userClass.insertUserToCamera(UserID, SupplierID).ToString()
+
+        If RndNum = "99" Or RndNum = "98" Then
+            Tools.addWindowsServiceLogs(SupplierID, UserID, RndNum, "user/MainModelsAPI.aspxqType=33-RndNum=" + RndNum + "", 1)
+            Response.End()
+        End If
+        Try
+            inChat.SendNotification((SupplierAPI.getMainModelsByNum(SupplierID).MainModelGuid).ToString(), "startCall")
+        Catch ex As Exception
+            errors.addErrorString(ex.InnerException.ToString())
+        End Try
+        Dim OnlineUsers_ As OnlineUsers = populateClassFromDB.getOnlineUsers(SupplierID)
+        If RndNum <> OnlineUsers_.RndNumber.ToString() Then
+            Response.Redirect("outCamera.aspx")
+        End If
+        Dim girlGuidAsString = databaseCon.scalerSql("select MainModelGuid from MainModels where SupplierID=" & SupplierID)
         Try
             Call inChat.SendNotification(girlGuidAsString, "startCall")
         Catch ex As Exception
@@ -36,9 +48,9 @@
 	<link href="/users/chat/css/styleC.css" rel="stylesheet" />
 	<link href="/users/chat/css/bootstrap.css" rel="stylesheet" />
 	<link href="css/userCam.css" rel="stylesheet" />
-	<script src="https://www.nifgashot.com/pjs3/Scripts/jquery-3.1.1.js"></script>
-	<script src="https://www.nifgashot.com/pjs3/Scripts/jquery.signalR-2.2.2.js"></script>
-	<script src="https://www.nifgashot.com/pjs3/signalr/hubs"></script>
+	<script src="/Core/Scripts/jquery-3.1.1.js"></script>
+	<script src="/Core/Scripts/jquery.signalR-2.2.2.js"></script>
+	<script src="/Core/signalr/hubs"></script>
 	<script src="/ws/adapter.js?v=1.01"></script>
 	<script src="sfc.js?v=1.1"></script>
 	<link href="/users/chat/css/chatC2018.css" rel="stylesheet" />
@@ -72,9 +84,9 @@
 		<label onclick="disconnectChat()" id="disconnectChat">להתנתקות לחץ כאן / To quit click here</label><br />
 	</div>
 	<script>
-		var RndNumber = '<%=Session("RndNum")%>';
-		var UserID = '<%=Session("UserID")%>'
-		var SupplierID = '<%=Session("SupplierID")%>'
+		var RndNumber = '<%=RndNum%>';
+		var UserID = '<%=UserID%>'
+		var SupplierID = '<%=SupplierID%>'
 	</script>
 	<script src="user.js?v=1.01"></script>
 	<script type="text/javascript">
