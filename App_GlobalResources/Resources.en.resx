@@ -779,7 +779,7 @@ Exclusive jurisdiction in all matters and disputes regarding services on the sit
   <data name="GirlGetMsgForTip" xml:space="preserve">
     <value>&amp;nbsp;The girl will get message with your user number once the transfer is complete.&lt;br&gt;</value>
   </data>
-  <data name="GirlNumDidntReceived" xml:space="preserve">
+  <data name="SupplierIDDidntReceived" xml:space="preserve">
     <value>The girl number didn't received</value>
   </data>
   <data name="Important" xml:space="preserve">

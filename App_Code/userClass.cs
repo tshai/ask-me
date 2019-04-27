@@ -48,26 +48,26 @@ public class userClass
 		return userIp;
 	}
 
-	public static Guid insertUserToCamera(int UserID, int GetUserID)
+	public static Guid insertUserToCamera(int UserID, int SupplierID)
 	{
 		using (var con = databaseCon.create_sql_con())
 		{
 			SqlCommand cmd = new SqlCommand("insertUserToCameraEntity", con);
 			cmd.CommandType = CommandType.StoredProcedure;
 			cmd.Parameters.Add("@UserID", SqlDbType.Int).Value = UserID;
-			cmd.Parameters.Add("@GetUserID", SqlDbType.Int).Value = GetUserID;
+			cmd.Parameters.Add("@SupplierID", SqlDbType.Int).Value = SupplierID;
 			return Guid.Parse(cmd.ExecuteScalar().ToString());
 		}
 	}
 
-	public static void userEndSession(int event1, string endError, int SendUserID, int GetUserID, Guid RndNum)
+	public static void userEndSession(int event1, string endError, int CustomerID, int SupplierID, Guid RndNum)
 	{
 		using (var con = databaseCon.create_sql_con())
 		{
 			SqlCommand cmd = new SqlCommand("userEndSession2019", con);
 			cmd.CommandType = CommandType.StoredProcedure;
-			cmd.Parameters.Add("@UserID", SqlDbType.Int).Value = SendUserID;
-			cmd.Parameters.Add("@GetUserID", SqlDbType.Int).Value = GetUserID;
+			cmd.Parameters.Add("@UserID", SqlDbType.Int).Value = CustomerID;
+			cmd.Parameters.Add("@SupplierID", SqlDbType.Int).Value = SupplierID;
 			cmd.Parameters.Add("@girl_RndNumber", SqlDbType.UniqueIdentifier).Value = RndNum;
 			cmd.Parameters.Add("@EndError", SqlDbType.VarChar).Value = endError;
 			cmd.Parameters.Add("@event", SqlDbType.Int).Value = event1;

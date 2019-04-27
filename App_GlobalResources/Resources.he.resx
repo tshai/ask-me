@@ -679,7 +679,7 @@
   <data name="GirlGetMsgForTip" xml:space="preserve">
     <value>הבחורה תקבל הודעה עם המספר חבר שלך ברגע שהטיפ יועבר&lt;br&gt;</value>
   </data>
-  <data name="GirlNumDidntReceived" xml:space="preserve">
+  <data name="SupplierIDDidntReceived" xml:space="preserve">
     <value>לא נקלט מספר הבחורה</value>
   </data>
   <data name="Important" xml:space="preserve">

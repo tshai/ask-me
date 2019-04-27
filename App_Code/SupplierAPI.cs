@@ -113,12 +113,12 @@ public class SupplierAPI
 		}
 	}
 
-	public static Users getMainModelsByNum(int GetUserID)
+	public static Users getMainModelsByNum(int SupplierID)
 	{
 		using (Entities.Entities db = new Entities.Entities())
 		{
 			return (from a in db.Users
-					where a.ID == GetUserID
+					where a.ID == SupplierID
 					select a).FirstOrDefault();
 		}
 	}
@@ -142,7 +142,7 @@ public class SupplierAPI
 		{
 			SqlCommand cmd = new SqlCommand("admin1", con);
 			cmd.CommandType = CommandType.StoredProcedure;
-			cmd.Parameters.Add("@GetUserID", SqlDbType.Int).Value = getMainModelsByGuid(MainModelGuid).ID;
+			cmd.Parameters.Add("@SupplierID", SqlDbType.Int).Value = getMainModelsByGuid(MainModelGuid).ID;
 			cmd.Parameters.Add("@q_type", SqlDbType.Int).Value = 42;
 			try
 			{

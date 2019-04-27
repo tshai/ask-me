@@ -1,4 +1,4 @@
-﻿<%@ Page AspCompat="true" Theme="" Language="vb" Title="נפגשות במצלמה" %>
+﻿<%@ Page  Theme="" Language="vb" Title="נפגשות במצלמה" %>
 
 <%@ Import Namespace="Entities" %>
 <%@ Import Namespace="Math" %>
@@ -6,23 +6,19 @@
 <%@ Register Src="user.ascx" TagName="chatUser" TagPrefix="uc1" %>
 <script runat="server">
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs)
-        Response.Expires = 0
-        Response.ExpiresAbsolute = DateAdd("m", 1, "31-Jan-00")
-        Response.AddHeader("pragma", "no-cache")
-        Response.AddHeader("cache-control", "private")
-        Response.CacheControl = ("no-cache")
-        Dim OnlineUsers_ As OnlineUsers = populateClassFromDB.getOnlineUsers(Session("GetUserID"))
+        Dim checkAccess
+        Dim OnlineUsers_ As OnlineUsers = populateClassFromDB.getOnlineUsers(Session("SupplierID"))
         If Session("RndNum").ToString() <> OnlineUsers_.RndNumber.ToString() Then
             Response.Redirect("outCamera.aspx")
         End If
         If String.IsNullOrEmpty(CType(Session("UserID"), String)) Or String.IsNullOrEmpty(CType(Session("login"), String)) = True Then Response.Redirect("/Default.aspx")
         If Session("time_balance") < 3 Then
-            populateClassFromDB.addWindowsServiceLogs(Session("GetUserID"), Session("UserID"), Session("RndNum"), "chatC.aspx-page_load_time_balance<3", 1)
+            populateClassFromDB.addWindowsServiceLogs(Session("SupplierID"), Session("UserID"), Session("RndNum"), "chatC.aspx-page_load_time_balance<3", 1)
             Session("login") = 1
             Response.Redirect("/users/chat/outCamera.aspx")
             Response.End()
         End If
-        Dim girlGuidAsString = databaseCon.scalerSql("select MainModelGuid from MainModels where GetUserID=" & Session("GetUserID"))
+        Dim girlGuidAsString = databaseCon.scalerSql("select MainModelGuid from MainModels where SupplierID=" & Session("SupplierID"))
         Try
             Call inChat.SendNotification(girlGuidAsString, "startCall")
         Catch ex As Exception
@@ -78,7 +74,7 @@
 	<script>
 		var RndNumber = '<%=Session("RndNum")%>';
 		var UserID = '<%=Session("UserID")%>'
-		var GetUserID = '<%=Session("GetUserID")%>'
+		var SupplierID = '<%=Session("SupplierID")%>'
 	</script>
 	<script src="user.js?v=1.01"></script>
 	<script type="text/javascript">
@@ -94,7 +90,7 @@
 				<li>&nbsp;
 				</li>
 				<li>צ'אט עם
-            <%=populateClassFromDB.getUsers(HttpContext.Current.Session("GetUserID")).Name%></li>
+            <%=populateClassFromDB.getUsers(HttpContext.Current.Session("SupplierID")).Name%></li>
 				<li>
 					<div id="disconnectDiv3">
 						<label onclick="disconnectUser()" class="buttonRed">ניתוק</label>

@@ -4,7 +4,7 @@ var yourConn;
 var stream;
 var name = 'בחור';
 var chat = $.connection.chatHub2019;
-$.connection.hub.qs = 'name=' + name + '&RndNumber=' + RndNumber.trim() + '&customerID=' + UserID.trim() + '&supplierID=' + GetUserID.trim() + '&whoSend=0&gid=1&guid=1';
+$.connection.hub.qs = 'name=' + name + '&RndNumber=' + RndNumber.trim() + '&customerID=' + UserID.trim() + '&supplierID=' + SupplierID.trim() + '&whoSend=0&gid=1&guid=1';
 $(document).ready(function () {
     localVideo = document.querySelector("video#my-video");
     remoteVideo = document.querySelector('#their-video');

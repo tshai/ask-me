@@ -24,12 +24,12 @@ public class populateClassFromDB
         }
     }
 
-    public static OnlineUsers getOnlineUsers(int GetUserID)
+    public static OnlineUsers getOnlineUsers(int SupplierID)
     {
         using (var db = new Entities.Entities())
         {
             return (from a in db.OnlineUsers
-                    where a.GetUserID == GetUserID
+                    where a.SupplierID == SupplierID
                     select a).FirstOrDefault();
         }
     }
@@ -101,8 +101,8 @@ public class populateClassFromDB
         }
         return DomainsList_;
     }
-    public static void addWindowsServiceLogs(int GirlNum, int UserID, string RndNumber, string eventDesc, int isError)
+    public static void addWindowsServiceLogs(int SupplierID, int UserID, string RndNumber, string eventDesc, int isError)
     {
-        databaseCon.ExecuteNonQuerySql("INSERT INTO windowsServiceLogs(GirlNum, UserID, eventDesc, RndNumber, isError) VALUES (" + GirlNum + " ," + UserID + ",'" + eventDesc + "','" + RndNumber + "'," + isError + ")");
+        databaseCon.ExecuteNonQuerySql("INSERT INTO windowsServiceLogs(SupplierID, UserID, eventDesc, RndNumber, isError) VALUES (" + SupplierID + " ," + UserID + ",'" + eventDesc + "','" + RndNumber + "'," + isError + ")");
     }
 }

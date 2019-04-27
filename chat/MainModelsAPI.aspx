@@ -30,8 +30,8 @@
             {
                 public string Message { get; set; }
                 public string DateIn { get; set; }
-                public int SendUserID { get; set; }
-                public int GetUserID { get; set; }
+                public int CustomerID { get; set; }
+                public int SupplierID { get; set; }
                 public int MessageRead { get; set; }
                 public int SendUserDelete { get; set; }
                 public int GetUserDelete { get; set; }
@@ -53,7 +53,7 @@
                 public string Curency { get; set; }
                 public string City { get; set; }
                 public string Pic1 { get; set; }
-                public int GirlNum { get; set; }
+                public int SupplierID { get; set; }
                 public string GeneratedNumber { get; set; }
             }
 
@@ -74,7 +74,7 @@
 
             public partial class ContactListUser
             {
-                public int GirlNum { get; set; }
+                public int SupplierID { get; set; }
                 public string Name { get; set; }
                 public string Pic1 { get; set; }
                 public string GeneratedNumber { get; set; }
@@ -103,14 +103,14 @@
                 public int TimeUse { get; set; }
                 public string DateIn { get; set; }
                 public string Dateout { get; set; }
-                public int GetUserID { get; set; }
-                public int SendUserID { get; set; }
+                public int SupplierID { get; set; }
+                public int CustomerID { get; set; }
                 public bool IsAnswer { get; set; }
             }
 
             public Users user;
             public Guid MainModelGuid;
-            public int ToGirlNum;
+            public int ToSupplierID;
             protected void Page_Load(object sender, EventArgs e)
             {
                 //requestt
@@ -172,7 +172,7 @@
                 //}
                 else if (Request["qType"] == "4") // hang up call
                 {
-                    databaseCon.ExecuteNonQuerySql("update onlineUsers set ID=1,Online=2,RndNumber='" + Guid.NewGuid() + "' where GetUserID=" + user.ID);
+                    databaseCon.ExecuteNonQuerySql("update onlineUsers set ID=1,Online=2,RndNumber='" + Guid.NewGuid() + "' where SupplierID=" + user.ID);
                     //databaseCon.ExecuteNonQuerySql("update ChatTimeUse set TimeUse=0,TheChatWasActive=2 where SessionStatus=1 and TheChatWasActive=0 and datediff(second,DateIn,dateout)>29");
                     Response.Write("true");
                     Response.End();
@@ -199,7 +199,7 @@
                     using (var db = new Entities())
                     {
                         onlineUser = user.OnlineUsers;
-                        //Session["GirlNum_worker"] = onlineUser.GirlNum;
+                        //Session["SupplierID_worker"] = onlineUser.SupplierID;
                     }
 
                     switch (status)
@@ -219,7 +219,7 @@
                     {
                         onlineUser.Online = statusAsInteger;
                         onlineUser.RndNumber = Guid.NewGuid();
-                        onlineUser.SendUserID = 1;
+                        onlineUser.CustomerID = 1;
                         db.Entry(onlineUser).State = System.Data.Entity.EntityState.Modified;
                         db.SaveChanges();
                     }
@@ -231,7 +231,7 @@
                 {
                     using (var con = databaseCon.create_sql_con())
                     {
-                        var cmd = new SqlCommand("select Online from OnlineUsers inner join Users on OnlineUsers.GetUserID=Users.ID where MainModelGuid=@MainModelGuid", con);
+                        var cmd = new SqlCommand("select Online from OnlineUsers inner join Users on OnlineUsers.SupplierID=Users.ID where MainModelGuid=@MainModelGuid", con);
                         cmd.Parameters.Add("@MainModelGuid", SqlDbType.UniqueIdentifier).Value = MainModelGuid;
                         var result = cmd.ExecuteScalar();
                         Response.Write(result);
@@ -241,18 +241,18 @@
                 else if (Request["qType"] == "8") // get users messages
                 {
                     //var MainModelGuid = Request["MainModelGuid"];
-                    //var GirlNum = 0;
+                    //var SupplierID = 0;
                     //using (var con = databaseCon.create_sql_con())
                     //{
-                    //    var cmd = new SqlCommand("select GirlNum from MainModels where MainModelGuid=@MainModelGuid", con);
+                    //    var cmd = new SqlCommand("select SupplierID from MainModels where MainModelGuid=@MainModelGuid", con);
                     //    cmd.Parameters.Add("@MainModelGuid", SqlDbType.UniqueIdentifier).Value = MainModelGuid;
-                    //    GirlNum = int.Parse(cmd.ExecuteScalar().ToString());
+                    //    SupplierID = int.Parse(cmd.ExecuteScalar().ToString());
                     //}
                     using (var con = databaseCon.create_sql_con())
                     {
                         var girlMessages = new List<GirlMessages>();
-                        var cmd = new SqlCommand("select ID, max(message_id) as messageId from [messages] where GirlNum=@GirlNum and girl_delete=0 and who_send=0 group by  ID order by max(message_id) desc", con);
-                        cmd.Parameters.Add("@GirlNum", SqlDbType.Int).Value = user.ID;
+                        var cmd = new SqlCommand("select ID, max(message_id) as messageId from [messages] where SupplierID=@SupplierID and girl_delete=0 and who_send=0 group by  ID order by max(message_id) desc", con);
+                        cmd.Parameters.Add("@SupplierID", SqlDbType.Int).Value = user.ID;
                         var reader = cmd.ExecuteReader();
                         while (reader.Read())
                         {
@@ -276,8 +276,8 @@
                 //    var userNum = int.Parse(Request["userNum"]);
                 //    using (var con = databaseCon.create_sql_con())
                 //    {
-                //        var cmd = new SqlCommand("select * from messages where GirlNum=@GirlNum and girl_delete=0 and UserNum=@UserNum order by DateIn", con);
-                //        cmd.Parameters.Add("@GirlNum", SqlDbType.Int).Value = user.UserNum;
+                //        var cmd = new SqlCommand("select * from messages where SupplierID=@SupplierID and girl_delete=0 and UserNum=@UserNum order by DateIn", con);
+                //        cmd.Parameters.Add("@SupplierID", SqlDbType.Int).Value = user.UserNum;
                 //        cmd.Parameters.Add("@UserNum", SqlDbType.Int).Value = userNum;
                 //        var reader = cmd.ExecuteReader();
                 //        var girlMessages = new List<GirlMessagesToUser>();
@@ -320,14 +320,14 @@
                         {
                             DateIn = DateTime.Now,
                             GetUserDelete = 0,
-                            GetUserID = UserNum,
+                            SupplierID = UserNum,
                             MessageRead = 0,
                             MessageText = message,
                             MessageType = type,
                             MustRead = 0,
                             SenderDeleteForAll = 0,
                             SendUserDelete = 0,
-                            SendUserID = user.ID,
+                            CustomerID = user.ID,
                             MessageGuid = messageGuid
                         };
                         db.UsersToUsersMessages.Add(userMessage);
@@ -351,13 +351,13 @@
                     {
                         using (var con = databaseCon.create_sql_con())
                         {
-                            var command = new SqlCommand("update TOP (1) UsersToUsersMessages set MessageRead=0 where SendUserID=" + UserNum + " and GetUserID=" + user.ID + " and GetUserDelete=0 and SenderDeleteForAll=0 and ID in(select top(1) ID from UsersToUsersMessages where SendUserID=" + UserNum + " and GetUserID=" + user.ID + " and GetUserDelete=0 and SenderDeleteForAll=0 order by ID desc)", con);
+                            var command = new SqlCommand("update TOP (1) UsersToUsersMessages set MessageRead=0 where CustomerID=" + UserNum + " and SupplierID=" + user.ID + " and GetUserDelete=0 and SenderDeleteForAll=0 and ID in(select top(1) ID from UsersToUsersMessages where CustomerID=" + UserNum + " and SupplierID=" + user.ID + " and GetUserDelete=0 and SenderDeleteForAll=0 order by ID desc)", con);
                             command.ExecuteNonQuery();
                         }
                     }
                     using (var con = databaseCon.create_sql_con())
                     {
-                        var command = new SqlCommand("update UsersToUsersMessages set MessageRead=1 where SendUserID=" + UserNum + " and GetUserID=" + user.ID + " and GetUserDelete=0 and SenderDeleteForAll=0", con);
+                        var command = new SqlCommand("update UsersToUsersMessages set MessageRead=1 where CustomerID=" + UserNum + " and SupplierID=" + user.ID + " and GetUserDelete=0 and SenderDeleteForAll=0", con);
                         command.ExecuteNonQuery();
                     }
                 }
@@ -367,16 +367,16 @@
                     var UserNum = int.Parse(Request["UserNum"]);
                     using (var con = databaseCon.create_sql_con())
                     {
-                        var cmd = new SqlCommand("update UsersToUsersMessages set SendUserDelete=1 where (SendUserID=@GirlNum and GetUserID=@UserNum)", con);
+                        var cmd = new SqlCommand("update UsersToUsersMessages set SendUserDelete=1 where (CustomerID=@SupplierID and SupplierID=@UserNum)", con);
                         cmd.Parameters.Add("@UserNum", SqlDbType.Int).Value = UserNum;
-                        cmd.Parameters.Add("@GirlNum", SqlDbType.Int).Value = user.ID;
+                        cmd.Parameters.Add("@SupplierID", SqlDbType.Int).Value = user.ID;
                         cmd.ExecuteNonQuery();
                     }
                     using (var con = databaseCon.create_sql_con())
                     {
-                        var cmd = new SqlCommand("update UsersToUsersMessages set GetUserDelete=1 where (GetUserID=@GirlNum and SendUserID=@UserNum)", con);
+                        var cmd = new SqlCommand("update UsersToUsersMessages set GetUserDelete=1 where (SupplierID=@SupplierID and CustomerID=@UserNum)", con);
                         cmd.Parameters.Add("@UserNum", SqlDbType.Int).Value = UserNum;
-                        cmd.Parameters.Add("@GirlNum", SqlDbType.Int).Value = user.ID;
+                        cmd.Parameters.Add("@SupplierID", SqlDbType.Int).Value = user.ID;
                         cmd.ExecuteNonQuery();
                     }
                 }
@@ -384,8 +384,8 @@
                 {
                     using (var con = databaseCon.create_sql_con())
                     {
-                        var cmd = new SqlCommand("select top(1) * from UsersToUsersMessages where GetUserID=@GirlNum and MessageRead=0 and SenderDeleteForAll=0 order by DateIn desc", con);
-                        cmd.Parameters.Add("@GirlNum", SqlDbType.Int).Value = user.ID;
+                        var cmd = new SqlCommand("select top(1) * from UsersToUsersMessages where SupplierID=@SupplierID and MessageRead=0 and SenderDeleteForAll=0 order by DateIn desc", con);
+                        cmd.Parameters.Add("@SupplierID", SqlDbType.Int).Value = user.ID;
                         var reader = cmd.ExecuteReader();
                         if (!reader.HasRows)
                         {
@@ -398,14 +398,14 @@
                             var girlMessage = new GirlMessagesToUser();
                             girlMessage.DateIn = DateTime.Parse(reader["DateIn"].ToString()).ToString("yyyy/MM/dd HH:mm:ss");
                             girlMessage.GetUserDelete = int.Parse(reader["GetUserDelete"].ToString());
-                            girlMessage.GetUserID = int.Parse(reader["GetUserID"].ToString());
+                            girlMessage.SupplierID = int.Parse(reader["SupplierID"].ToString());
                             girlMessage.IsSavedInServer = true;
                             girlMessage.Message = reader["MessageText"].ToString();
                             girlMessage.MessageRead = int.Parse(reader["MessageRead"].ToString());
                             girlMessage.MessageType = int.Parse(reader["MessageType"].ToString());
                             girlMessage.SenderDeleteForAll = int.Parse(reader["SenderDeleteForAll"].ToString());
                             girlMessage.SendUserDelete = int.Parse(reader["SendUserDelete"].ToString());
-                            girlMessage.SendUserID = int.Parse(reader["SendUserID"].ToString());
+                            girlMessage.CustomerID = int.Parse(reader["CustomerID"].ToString());
                             girlMessage.VideoImage = reader["videoImage"].ToString();
                             girlMessage.MessageGuid = reader["MessageGuid"].ToString();
                             girlMessages.Add(girlMessage);
@@ -417,8 +417,8 @@
 
                 else if (Request["qType"] == "16") // log out from the app
                 {
-                    //var GirlNum = 0;
-                    databaseCon.ExecuteNonQuerySql("update OnlineUsers set Online=0 where GetUserID=(select top 1 ID from Users where MainModelGuid='" + MainModelGuid + "')");
+                    //var SupplierID = 0;
+                    databaseCon.ExecuteNonQuerySql("update OnlineUsers set Online=0 where SupplierID=(select top 1 ID from Users where MainModelGuid='" + MainModelGuid + "')");
                 }
                 else if (Request["qType"] == "17") // send sms
                 {
@@ -485,7 +485,7 @@
                         PayPerMinute = checkIfNull(user.PricePerMinute),
                         City = checkIfNull(user.City),
                         Pic1 = checkIfNull(user.Pic1),
-                        GirlNum = user.ID,
+                        SupplierID = user.ID,
                         GeneratedNumber = user.GenerateNumber
                     };
 
@@ -550,7 +550,7 @@
 
                     using (var con = databaseCon.create_sql_con())
                     {
-                        var command = new SqlCommand("select TimeUse, PricePerMinute from ChatTimeUse where GetUserID=" + user.ID + " and DateIn>='" + startDate + "' and DateIn <=DATEADD(day,1, '" + endDate + "') and TimeUse>0", con);
+                        var command = new SqlCommand("select TimeUse, PricePerMinute from ChatTimeUse where SupplierID=" + user.ID + " and DateIn>='" + startDate + "' and DateIn <=DATEADD(day,1, '" + endDate + "') and TimeUse>0", con);
                         var reader = command.ExecuteReader();
 
                         while (reader.Read())
@@ -572,13 +572,13 @@
                 }
                 else if (Request["qType"] == "26")  //get girl chats for period
                 {
-                    //var girlNum = SupplierAPI.getMainModelsByGuid(Guid.Parse(Request["MainModelGuid"])).GirlNum;
+                    //var SupplierID = SupplierAPI.getMainModelsByGuid(Guid.Parse(Request["MainModelGuid"])).SupplierID;
                     var startDate = DateTime.Parse(Request["startDate"]);
                     var endDate = DateTime.Parse(Request["endDate"]);
                     var girlChats = new List<GirlChat>();
                     using (var con = databaseCon.create_sql_con())
                     {
-                        var command = new SqlCommand("select TimeUse, DateIn, SendUserID, SendMessage from ChatTimeUse where GetUserID=" + user.ID + " and DateIn>='" + startDate + "' and DateIn <=DATEADD(day,1, '" + endDate + "') and TimeUse>0 order by ID desc", con);
+                        var command = new SqlCommand("select TimeUse, DateIn, CustomerID, SendMessage from ChatTimeUse where SupplierID=" + user.ID + " and DateIn>='" + startDate + "' and DateIn <=DATEADD(day,1, '" + endDate + "') and TimeUse>0 order by ID desc", con);
                         var reader = command.ExecuteReader();
 
                         while (reader.Read())
@@ -588,7 +588,7 @@
                                 ChatType = reader["SendMessage"].ToString(),
                                 Seconds = reader["TimeUse"].ToString(),
                                 TimeIn = DateTime.Parse(reader["DateIn"].ToString()).ToString("MM/dd/yy"),
-                                UserNum = reader["SendUserID"].ToString()
+                                UserNum = reader["CustomerID"].ToString()
                             };
                             girlChats.Add(girlChat);
                         }
@@ -625,7 +625,7 @@
                 {
                     try
                     {
-                        //var girlNum = SupplierAPI.getMainModelsByGuid(Guid.Parse(Request["MainModelGuid"])).GirlNum;
+                        //var SupplierID = SupplierAPI.getMainModelsByGuid(Guid.Parse(Request["MainModelGuid"])).SupplierID;
                         var userNum = int.Parse(Request["userNum"].ToString());
                         var messageType = Request["messageType"];
                         var messageGuid = Request["messageGuid"];
@@ -651,7 +651,7 @@
                                 var message = new UsersToUsersMessages();
                                 using (var db = new Entities())
                                 {
-                                    message = (from a in db.UsersToUsersMessages where a.GetUserID == userNum && a.SendUserID == user.ID && a.MessageGuid == messageGuid select a).FirstOrDefault();
+                                    message = (from a in db.UsersToUsersMessages where a.SupplierID == userNum && a.CustomerID == user.ID && a.MessageGuid == messageGuid select a).FirstOrDefault();
                                 }
                                 path = AppDomain.CurrentDomain.BaseDirectory + "/media/appMessageChat/videos/images";
                                 var fileImage = Request.Files[upload];
@@ -677,14 +677,14 @@
                             {
                                 DateIn = DateTime.Now,
                                 GetUserDelete = 0,
-                                GetUserID = userNum,
+                                SupplierID = userNum,
                                 MessageRead = 0,
                                 MessageText = fileName,
                                 MessageType = byte.Parse(messageType),
                                 MustRead = 0,
                                 SenderDeleteForAll = 0,
                                 SendUserDelete = 0,
-                                SendUserID = user.ID,
+                                CustomerID = user.ID,
                                 MessageGuid = messageGuid
                             };
                             db.UsersToUsersMessages.Add(newMessage);
@@ -729,13 +729,13 @@
 
                         var onlineUser = new OnlineUsers
                         {
-                            GetUserID = user.ID,
+                            SupplierID = user.ID,
                             RndNumber = Guid.NewGuid(),
                             Lastvisit = DateTime.Now,
                             Ulastvisit = DateTime.Now,
                             LastStatusChange = DateTime.Now,
                             TimeTheChatStart = DateTime.Now,
-                            SendUserID = 1
+                            CustomerID = 1
                         };
                         db.OnlineUsers.Add(onlineUser);
                         db.SaveChanges();
@@ -751,7 +751,7 @@
                         {
                             var contactUser = new ContactListUser
                             {
-                                GirlNum = users[i].ID,
+                                SupplierID = users[i].ID,
                                 Name = users[i].Name,
                                 Pic1 = users[i].Pic1
                             };
@@ -761,7 +761,7 @@
                         Response.End();
                     }
                 }
-                else if (Request["qType"] == "31") //get girlnum from guid
+                else if (Request["qType"] == "31") //get SupplierID from guid
                 {
                     Response.Write(new { user.ID, user.GenerateNumber, user.NeedUpdate, user.IsSupplier });
                     Response.End();
@@ -805,8 +805,8 @@
                     {
 
                         var q = (from a1 in db.UsersToUsers
-                                 join a2 in db.Users on a1.GetUserID equals a2.ID
-                                 where a1.SendUserID == user.ID
+                                 join a2 in db.Users on a1.SupplierID equals a2.ID
+                                 where a1.CustomerID == user.ID
                                  select new { a2.ID, a2.Pic1, a2.Name, a2.City, a2.GenerateNumber }).ToList();
                         if (q.Any())
                         {
@@ -815,7 +815,7 @@
                             {
                                 var contactUser = new ContactListUser
                                 {
-                                    GirlNum = q[i].ID,
+                                    SupplierID = q[i].ID,
                                     Name = q[i].Name,
                                     Pic1 = q[i].Pic1,
                                     GeneratedNumber = q[i].GenerateNumber,
@@ -837,7 +837,7 @@
                         var mainModel = (from a in db.Users where a.ID == mainModelNumber select a).FirstOrDefault();
                         var model = new GirlProfile
                         {
-                            GirlNum = mainModel.ID,
+                            SupplierID = mainModel.ID,
                             Name = mainModel.Name,
                             Pic1 = mainModel.Pic1,
                             City = mainModel.City,
@@ -849,18 +849,18 @@
                 }
                 else if (Request["qType"] == "35") //incamera
                 {
-                    ToGirlNum = int.Parse(Request["ToGirlNum"]);
-                    string RndNum = userClass.insertUserToCamera(user.ID, ToGirlNum).ToString();
+                    ToSupplierID = int.Parse(Request["ToSupplierID"]);
+                    string RndNum = userClass.insertUserToCamera(user.ID, ToSupplierID).ToString();
 
                     if (RndNum == "99" || RndNum == "98")
                     {
-                        Tools.addWindowsServiceLogs(ToGirlNum, user.ID, RndNum, "user/MainModelsAPI.aspxqType=33-RndNum=" + RndNum + "", 1);
+                        Tools.addWindowsServiceLogs(ToSupplierID, user.ID, RndNum, "user/MainModelsAPI.aspxqType=33-RndNum=" + RndNum + "", 1);
                         Response.End();
                     }
                     try
                     {
-                        inChat.SendNotification((SupplierAPI.getMainModelsByNum(ToGirlNum).MainModelGuid).ToString(), "startCall");
-                        //Response.Write((populateClassFromDB.getMainModels(ToGirlNum).MainModelGuid).ToString());
+                        inChat.SendNotification((SupplierAPI.getMainModelsByNum(ToSupplierID).MainModelGuid).ToString(), "startCall");
+                        //Response.Write((populateClassFromDB.getMainModels(ToSupplierID).MainModelGuid).ToString());
                     }
                     catch (Exception ex)
                     {
@@ -871,14 +871,14 @@
                 }
                 else if (Request["qType"] == "36") // delete user message
                 {
-                    var sendUserID = int.Parse(Request["SendUserID"]);
-                    var getUserID = int.Parse(Request["GetUserID"]);
+                    var CustomerID = int.Parse(Request["CustomerID"]);
+                    var SupplierID = int.Parse(Request["SupplierID"]);
                     var whoDelete = int.Parse(Request["WhoDelete"]);
                     var messageGuid = Request["MessageGuid"];
 
                     using (var db = new Entities())
                     {
-                        var message = (from a in db.UsersToUsersMessages where a.SendUserID == sendUserID && a.GetUserID == getUserID && a.MessageGuid == messageGuid select a).FirstOrDefault();
+                        var message = (from a in db.UsersToUsersMessages where a.CustomerID == CustomerID && a.SupplierID == SupplierID && a.MessageGuid == messageGuid select a).FirstOrDefault();
                         if (whoDelete == 0) // getUserDelete
                         {
                             message.GetUserDelete = 1;
@@ -890,7 +890,7 @@
                         else if (whoDelete == 2) // sendUserDeleteForBoth
                         {
                             message.SenderDeleteForAll = 1;
-                            inChat.SendNotification((SupplierAPI.getMainModelsByNum(getUserID).MainModelGuid).ToString(), "deleteMessage:" + sendUserID + ":" + messageGuid);
+                            inChat.SendNotification((SupplierAPI.getMainModelsByNum(SupplierID).MainModelGuid).ToString(), "deleteMessage:" + CustomerID + ":" + messageGuid);
                         }
                         db.Entry(message).State = EntityState.Modified;
                         db.SaveChanges();
@@ -901,7 +901,7 @@
                     var text = Request["text"];
                     using (var db = new Entities())
                     {
-                        var usersInContactList = db.UsersToUsers.Where(u => u.SendUserID == user.ID).Select(u => u.GetUserID);
+                        var usersInContactList = db.UsersToUsers.Where(u => u.CustomerID == user.ID).Select(u => u.SupplierID);
                         var users = db.Users.Where(a => a.GenerateNumber.Contains(text)).Where(a => a.ID != user.ID)
                             .Where(a => !usersInContactList.Contains(a.ID)).ToList();
                         if (users.Any())
@@ -911,7 +911,7 @@
                             {
                                 var contactUser = new ContactListUser
                                 {
-                                    GirlNum = users[i].ID,
+                                    SupplierID = users[i].ID,
                                     Name = users[i].Name,
                                     Pic1 = users[i].Pic1,
                                     GeneratedNumber = users[i].GenerateNumber,
@@ -931,8 +931,8 @@
                     var userToUser = new UsersToUsers
                     {
                         DateIn = DateTime.Now,
-                        GetUserID = userNum,
-                        SendUserID = user.ID
+                        SupplierID = userNum,
+                        CustomerID = user.ID
                     };
 
                     using (var db = new Entities())
@@ -945,8 +945,8 @@
                 {
                     using (var con = databaseCon.create_sql_con())
                     {
-                        var cmd = new SqlCommand("select * from UsersToUsersMessages where (SendUserID=@GirlNum and SendUserDelete=0 and SenderDeleteForAll=0) or (GetUserID=@GirlNum and GetUserDelete=0 and SenderDeleteForAll=0)", con);
-                        cmd.Parameters.Add("@GirlNum", SqlDbType.Int).Value = user.ID;
+                        var cmd = new SqlCommand("select * from UsersToUsersMessages where (CustomerID=@SupplierID and SendUserDelete=0 and SenderDeleteForAll=0) or (SupplierID=@SupplierID and GetUserDelete=0 and SenderDeleteForAll=0)", con);
+                        cmd.Parameters.Add("@SupplierID", SqlDbType.Int).Value = user.ID;
                         var reader = cmd.ExecuteReader();
                         if (!reader.HasRows)
                         {
@@ -959,14 +959,14 @@
                             var girlMessage = new GirlMessagesToUser();
                             girlMessage.DateIn = DateTime.Parse(reader["DateIn"].ToString()).ToString("yyyy/MM/dd HH:mm:ss");
                             girlMessage.GetUserDelete = int.Parse(reader["GetUserDelete"].ToString());
-                            girlMessage.GetUserID = int.Parse(reader["GetUserID"].ToString());
+                            girlMessage.SupplierID = int.Parse(reader["SupplierID"].ToString());
                             girlMessage.IsSavedInServer = true;
                             girlMessage.Message = reader["MessageText"].ToString();
                             girlMessage.MessageRead = int.Parse(reader["MessageRead"].ToString());
                             girlMessage.MessageType = int.Parse(reader["MessageType"].ToString());
                             girlMessage.SenderDeleteForAll = int.Parse(reader["SenderDeleteForAll"].ToString());
                             girlMessage.SendUserDelete = int.Parse(reader["SendUserDelete"].ToString());
-                            girlMessage.SendUserID = int.Parse(reader["SendUserID"].ToString());
+                            girlMessage.CustomerID = int.Parse(reader["CustomerID"].ToString());
                             girlMessage.VideoImage = reader["videoImage"].ToString();
                             girlMessage.MessageGuid = reader["MessageGuid"].ToString();
                             girlMessages.Add(girlMessage);
@@ -979,8 +979,8 @@
                 {
                     using (var con = databaseCon.create_sql_con())
                     {
-                        var cmd = new SqlCommand("select * from Users where ID in (select distinct GetUserID from UsersToUsersMessages where SendUserID=@GirlNum) or ID in (select distinct SendUserID from UsersToUsersMessages where GetUserID=@GirlNum) or ID in (select distinct SendUserID from ChatTimeUse where GetUserID=@GirlNum) or ID in (select distinct GetUserID from ChatTimeUse where SendUserID=@GirlNum) and ID<>@GirlNum and ID not in (select GetUserID from UsersToUsers where SendUserID=@GirlNum)", con);
-                        cmd.Parameters.Add("@GirlNum", SqlDbType.Int).Value = user.ID;
+                        var cmd = new SqlCommand("select * from Users where ID in (select distinct SupplierID from UsersToUsersMessages where CustomerID=@SupplierID) or ID in (select distinct CustomerID from UsersToUsersMessages where SupplierID=@SupplierID) or ID in (select distinct CustomerID from ChatTimeUse where SupplierID=@SupplierID) or ID in (select distinct SupplierID from ChatTimeUse where CustomerID=@SupplierID) and ID<>@SupplierID and ID not in (select SupplierID from UsersToUsers where CustomerID=@SupplierID)", con);
+                        cmd.Parameters.Add("@SupplierID", SqlDbType.Int).Value = user.ID;
                         var reader = cmd.ExecuteReader();
                         if (!reader.HasRows)
                         {
@@ -992,7 +992,7 @@
                         {
                             var contactUser = new ContactListUser
                             {
-                                GirlNum = int.Parse(reader["ID"].ToString()),
+                                SupplierID = int.Parse(reader["ID"].ToString()),
                                 Name = reader["Name"].ToString(),
                                 Pic1 = reader["Pic1"].ToString(),
                                 GeneratedNumber = reader["GenerateNumber"].ToString(),
@@ -1036,9 +1036,9 @@
                             {
                                 DateIn = DateTime.Parse(reader["DateIn"].ToString()).ToString("yyyy/MM/dd HH:mm:ss"),
                                 Dateout = DateTime.Parse(reader["Dateout"].ToString()).ToString("yyyy/MM/dd HH:mm:ss"),
-                                GetUserID = int.Parse(reader["GetUserID"].ToString()),
+                                SupplierID = int.Parse(reader["SupplierID"].ToString()),
                                 IsAnswer = true,
-                                SendUserID = int.Parse(reader["SendUserID"].ToString()),
+                                CustomerID = int.Parse(reader["CustomerID"].ToString()),
                                 TimeUse = int.Parse(reader["TimeUse"].ToString())
                             };
     Response.Write(JsonConvert.SerializeObject(chat, Formatting.Indented));
@@ -1047,8 +1047,8 @@
                 }
                 else
                 {
-                    var cmd = new SqlCommand("select * from ChatTimeUse where (SendUserID=@GirlNum) or (GetUserID=@GirlNum)", con);
-    cmd.Parameters.Add("@GirlNum", SqlDbType.Int).Value = user.ID;
+                    var cmd = new SqlCommand("select * from ChatTimeUse where (CustomerID=@SupplierID) or (SupplierID=@SupplierID)", con);
+    cmd.Parameters.Add("@SupplierID", SqlDbType.Int).Value = user.ID;
                     var reader = cmd.ExecuteReader();
                     if (!reader.HasRows)
                     {
@@ -1063,9 +1063,9 @@
                         {
                             DateIn = DateTime.Parse(reader["DateIn"].ToString()).ToString("yyyy/MM/dd HH:mm:ss"),
                             Dateout = DateTime.Parse(reader["Dateout"].ToString()).ToString("yyyy/MM/dd HH:mm:ss"),
-                            GetUserID = int.Parse(reader["GetUserID"].ToString()),
+                            SupplierID = int.Parse(reader["SupplierID"].ToString()),
                             IsAnswer = true,
-                            SendUserID = int.Parse(reader["SendUserID"].ToString()),
+                            CustomerID = int.Parse(reader["CustomerID"].ToString()),
                             TimeUse = int.Parse(reader["TimeUse"].ToString())
                         };
     chats.Add(chat);
@@ -1152,14 +1152,14 @@
         }
     }
 
-    private string GetGirlNameFromNumber(int girlNum)
+    private string GetGirlNameFromNumber(int SupplierID)
     {
         string girlName = "";
 
         using (var con = databaseCon.create_sql_con())
         {
-            var cmd = new SqlCommand("select Name from MainModels where GirlNum=@GirlNum", con);
-            cmd.Parameters.Add("@GirlNum", SqlDbType.Int).Value = girlNum;
+            var cmd = new SqlCommand("select Name from MainModels where SupplierID=@SupplierID", con);
+            cmd.Parameters.Add("@SupplierID", SqlDbType.Int).Value = SupplierID;
             girlName = cmd.ExecuteScalar().ToString();
         }
         return girlName;
@@ -1171,7 +1171,7 @@
         {
             using (var con = databaseCon.create_sql_con())
             {
-                var cmd = new SqlCommand("select distinct MainModelGuid as girl_guid from MainModels inner join messages on MainModels.GirlNum = messages.GirlNum  where who_send=0 and isMessageReadInApp=0 and girl_delete = 0 ", con);
+                var cmd = new SqlCommand("select distinct MainModelGuid as girl_guid from MainModels inner join messages on MainModels.SupplierID = messages.SupplierID  where who_send=0 and isMessageReadInApp=0 and girl_delete = 0 ", con);
                 var reader = cmd.ExecuteReader();
                 var girlMessages = new List<string>();
                 while (reader.Read())

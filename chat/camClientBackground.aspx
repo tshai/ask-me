@@ -15,12 +15,12 @@
         If Session("UserID") Is Nothing Then Response.End()
         If Request("qType") = 10 Then
             'databaseCon.ExecuteNonQuerySql("INSERT INTO LogLastVisit (userID,gender)VALUES(" & Session("UserID") & ",3)")
-            'databaseCon.ExecuteNonQuerySql("update NewModels set ulastvisit=getdate() where GetUserID=" & Session("GetUserID") & " and UserID=" & Session("UserID") & " and Online=1")
+            'databaseCon.ExecuteNonQuerySql("update NewModels set ulastvisit=getdate() where SupplierID=" & Session("SupplierID") & " and UserID=" & Session("UserID") & " and Online=1")
         ElseIf Request("qType") = 11 Then 'user close chat
             'If databaseCon.
-            userClass.userEndSession("1", "userClickOut", Session("UserID"), Session("GetUserID"), Session("RndNum"))
+            userClass.userEndSession("1", "userClickOut", Session("UserID"), Session("SupplierID"), Session("RndNum"))
             'databaseCon.ExecuteNonQuerySql("update NewModels set UserID=1,Online=2,RndNumber='" & Guid.NewGuid().ToString() & "' where RndNumber='" & Request("RndNumber").ToString() & "')")
-            Dim girlGuid = databaseCon.scalerSql("select MainModelGuid from MainModels where GetUserID=" & Session("GetUserID"))
+            Dim girlGuid = databaseCon.scalerSql("select MainModelGuid from MainModels where SupplierID=" & Session("SupplierID"))
             Call inChat.SendNotification(girlGuid, "endCall")
             Response.Write("true")
             Response.End()

@@ -1,6 +1,6 @@
 ﻿var name = 'בחורה';
 var chat = $.connection.chatHub2019;
-$.connection.hub.qs = 'name=' + name + '&RndNumber=5BF05FF5-A8AF-46A9-9B1C-D075F02B1FC3&customerID=0&supplierID=' + GetUserID.trim() + '&whoSend=749&gid=' + supplierGuid.trim() + '&guid=' + supplierGuid.trim() + '';
+$.connection.hub.qs = 'name=' + name + '&RndNumber=5BF05FF5-A8AF-46A9-9B1C-D075F02B1FC3&customerID=0&supplierID=' + SupplierID.trim() + '&whoSend=749&gid=' + supplierGuid.trim() + '&guid=' + supplierGuid.trim() + '';
 var localVideo;
 var remoteVideo;
 var yourConn;

@@ -108,9 +108,9 @@ public class Tools
         return JsonConvert.DeserializeObject<countryData>(jsonString);
     }
 
-    public static void addWindowsServiceLogs(int GetUserID, int SendUserID, string RndNumber, string eventDesc, int isError)
+    public static void addWindowsServiceLogs(int SupplierID, int CustomerID, string RndNumber, string eventDesc, int isError)
 	{
-		databaseCon.ExecuteNonQuerySql("INSERT INTO windowsServiceLogs(GetUserID, SendUserID, eventDesc, RndNumber, isError) VALUES (" + GetUserID + " ," + SendUserID + ",'" + eventDesc + "','" + RndNumber + "'," + isError + ")");
+		databaseCon.ExecuteNonQuerySql("INSERT INTO windowsServiceLogs(SupplierID, CustomerID, eventDesc, RndNumber, isError) VALUES (" + SupplierID + " ," + CustomerID + ",'" + eventDesc + "','" + RndNumber + "'," + isError + ")");
 	}
     public static void InitializeCulture(DomainsList domainList_)
     {
