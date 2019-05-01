@@ -22,7 +22,7 @@
         'i remove the old no cache
 
         Dim DateIn As Date = userClass.get_sql_time
-        Session("RndNum") = main_funct.insertUserToCamera(Session("UserNum"), Session("GirlNum"))
+        Session("RndNum") = MainFunct.insertUserToCamera(Session("UserNum"), Session("GirlNum"))
 
         If Session("RndNum").ToString() = "99" Or Session("RndNum").ToString() = "98" Then
             populateClassFromDB.addWindowsServiceLogs(Session("GirlNum"), Session("UserNum"), Session("RndNum").ToString(), "user/in_camera.aspx-RndNum=" & Session("RndNum").ToString() & "", 1)
@@ -31,7 +31,7 @@
             Response.End()
         End If
 
-        Call main_funct.SaveUserComputer(Session("UserNum"), Session("GirlNum"), Session("RndNum"))
+        Call MainFunct.SaveUserComputer(Session("UserNum"), Session("GirlNum"), Session("RndNum"))
         Session("login") = 3
         Session("time_balance") = main_funct.sumUserTime(Session("UserNum"))
         populateClassFromDB.addWindowsServiceLogs(Trim(Request("GirlNum")), Session("UserNum"), "0", "insert camera 94", 0)

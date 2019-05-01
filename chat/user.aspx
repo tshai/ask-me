@@ -9,7 +9,7 @@
     Public UserID As Integer
     Public SupplierID As Integer
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs)
-        UserID = populateClassFromDB.getUsersByGuid(Guid.Parse(Request("UserGuid"))).ID                                                                   )
+        UserID = populateClassFromDB.getUsersByGuid(Guid.Parse(Request("UserGuid"))).ID
         Dim checkAccess = New WaitingList(UserID, Request("SupplierID")).RunClass()
         If checkAccess <> 1 Then
             Response.End()
