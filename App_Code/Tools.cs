@@ -37,19 +37,42 @@ public class Tools
         string authToken = "1641146cb18443438e32fbe9d35959e1";
 
         TwilioClient.Init(accountSid, authToken);
-        var message="";
+        //var message = "";
         try
         {
-             message = MessageResource.Create(body: "test", from: new Twilio.Types.PhoneNumber("+14024036329"), to: new Twilio.Types.PhoneNumber("+972502263423")).ToString();
+            var message = MessageResource.Create(
+           body: "McAvoy or Stewart? These timelines can get so confusing.",
+           from: new Twilio.Types.PhoneNumber("+14024036329"),
+           statusCallback: new Uri("https://www.ask-me.app/dd.aspx"),
+           to: new Twilio.Types.PhoneNumber("+972502263423")
+       );
+
+
+            //var from1 = new Twilio.Types.PhoneNumber("+14024036329");
+            //var to1 = new Twilio.Types.PhoneNumber("+972502263423");
+            //message = MessageResource.Create(body: "test", from: from1, to: to1).ToString() ;
         }
-        catch(Exception ex)
+        catch (Exception ex)
         {
-            
-            HttpContext.Current.Response.Write(ex.StackTrace+ex.Message+ex.InnerException);
+
+            HttpContext.Current.Response.Write(ex.StackTrace + ex.Message + ex.InnerException);
         }
+        return "2";
+        //const string accountSid = "AC74811f637555481f520ae752557c96a0";
+        //const string authToken = "your_auth_token";
+
+        //TwilioClient.Init(accountSid, authToken);
+
+        //var message = MessageResource.Create(
+        //    body: "Join Earth's mightiest heroes. Like Kevin Bacon.",
+        //    from: new Twilio.Types.PhoneNumber("+14024036329"),
+        //    to: new Twilio.Types.PhoneNumber("+972502263423")
+        //);
+
+
         HttpContext.Current.Response.End();
         //var message = MessageResource.Create(body: body1, from: new Twilio.Types.PhoneNumber("+14024036329"), to: new Twilio.Types.PhoneNumber("+" + PhoneNumber));
-        return message.ToString();
+        //return message.ToString();
     }
 
     public static string webRequest(string mystring)
