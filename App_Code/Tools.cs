@@ -77,7 +77,7 @@ public class Tools
         //);
 
 
-        HttpContext.Current.Response.End();
+        //HttpContext.Current.Response.End();
         //var message = MessageResource.Create(body: body1, from: new Twilio.Types.PhoneNumber("+14024036329"), to: new Twilio.Types.PhoneNumber("+" + PhoneNumber));
         //return message.ToString();
     }
