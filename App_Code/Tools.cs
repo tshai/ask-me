@@ -10,6 +10,7 @@ using System.Net;
 using System.Threading;
 using System.Web;
 using Twilio;
+using Twilio.Http;
 using Twilio.Rest.Api.V2010.Account;
 
 /// <summary>
@@ -17,18 +18,18 @@ using Twilio.Rest.Api.V2010.Account;
 /// </summary>
 public class Tools
 {
-	public Tools()
-	{
-		//
-		// TODO: Add constructor logic here
-		//
-	}
+    public Tools()
+    {
+        //
+        // TODO: Add constructor logic here
+        //
+    }
 
-	public static int RandomNumber(int min, int max)
-	{
-		Random random = new Random();
-		return random.Next(min, max);
-	}
+    public static int RandomNumber(int min, int max)
+    {
+        Random random = new Random();
+        return random.Next(min, max);
+    }
 
     public static string twiloSms(string PhoneNumber, string body1)
     {
@@ -37,41 +38,70 @@ public class Tools
         string authToken = "1641146cb18443438e32fbe9d35959e1";
 
         TwilioClient.Init(accountSid, authToken);
-        var message="";
+        var answer = "";
         try
         {
-             message = MessageResource.Create(body: "test", from: new Twilio.Types.PhoneNumber("+14024036329"), to: new Twilio.Types.PhoneNumber("+972502263423")).ToString();
+            ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls
+                                                | SecurityProtocolType.Tls11
+                                                | SecurityProtocolType.Tls12
+                                                | SecurityProtocolType.Ssl3;
+            var message = MessageResource.Create(
+            body: body1,
+            from: new Twilio.Types.PhoneNumber("+14024036329"),
+            //statusCallback: new Uri("https://www.ask-me.app/dd.aspx"),
+            to: new Twilio.Types.PhoneNumber("+" + PhoneNumber)
+        );
+
+            answer = "2";
+
+            //var from1 = new Twilio.Types.PhoneNumber("+14024036329");
+            //var to1 = new Twilio.Types.PhoneNumber("+972502263423");
+            //message = MessageResource.Create(body: "test", from: from1, to: to1).ToString() ;
         }
-        catch(Exception ex)
+        catch (Exception ex)
         {
-            
-            HttpContext.Current.Response.Write(ex.StackTrace+ex.Message+ex.InnerException);
+
+            HttpContext.Current.Response.Write(ex.StackTrace + ex.Message + ex.InnerException);
+            answer = ex.Message;
         }
+        return answer;
+        //const string accountSid = "AC74811f637555481f520ae752557c96a0";
+        //const string authToken = "your_auth_token";
+
+        //TwilioClient.Init(accountSid, authToken);
+
+        //var message = MessageResource.Create(
+        //    body: "Join Earth's mightiest heroes. Like Kevin Bacon.",
+        //    from: new Twilio.Types.PhoneNumber("+14024036329"),
+        //    to: new Twilio.Types.PhoneNumber("+972502263423")
+        //);
+
+
         HttpContext.Current.Response.End();
         //var message = MessageResource.Create(body: body1, from: new Twilio.Types.PhoneNumber("+14024036329"), to: new Twilio.Types.PhoneNumber("+" + PhoneNumber));
-        return message.ToString();
+        //return message.ToString();
     }
 
     public static string webRequest(string mystring)
-	{
-		try
-		{
-			Uri uri = new Uri(mystring);
-			HttpWebRequest request1 = (HttpWebRequest)HttpWebRequest.Create(uri);
-			request1.ContentType = "application/x-www-form-urlencoded";
-			request1.Method = WebRequestMethods.Http.Get;
-			HttpWebResponse response1 = (HttpWebResponse)request1.GetResponse();
-			StreamReader reader = new StreamReader(response1.GetResponseStream());
-			string ans = reader.ReadToEnd();
-			response1.Close();
-			return ans;
-		}
-		catch (Exception ex)
-		{
-			errors.insertErrors(ex);
-			return ex.Message;
-		}
-	}
+    {
+        try
+        {
+            Uri uri = new Uri(mystring);
+            HttpWebRequest request1 = (HttpWebRequest)HttpWebRequest.Create(uri);
+            request1.ContentType = "application/x-www-form-urlencoded";
+            request1.Method = WebRequestMethods.Http.Get;
+            HttpWebResponse response1 = (HttpWebResponse)request1.GetResponse();
+            StreamReader reader = new StreamReader(response1.GetResponseStream());
+            string ans = reader.ReadToEnd();
+            response1.Close();
+            return ans;
+        }
+        catch (Exception ex)
+        {
+            errors.insertErrors(ex);
+            return ex.Message;
+        }
+    }
     public static string extractUserIp()
     {
         string userIp = "";
@@ -109,15 +139,15 @@ public class Tools
     }
 
     public static void addWindowsServiceLogs(int SupplierID, int CustomerID, string RndNumber, string eventDesc, int isError)
-	{
-		databaseCon.ExecuteNonQuerySql("INSERT INTO windowsServiceLogs(SupplierID, CustomerID, eventDesc, RndNumber, isError) VALUES (" + SupplierID + " ," + CustomerID + ",'" + eventDesc + "','" + RndNumber + "'," + isError + ")");
-	}
+    {
+        databaseCon.ExecuteNonQuerySql("INSERT INTO windowsServiceLogs(SupplierID, CustomerID, eventDesc, RndNumber, isError) VALUES (" + SupplierID + " ," + CustomerID + ",'" + eventDesc + "','" + RndNumber + "'," + isError + ")");
+    }
     public static void InitializeCulture(DomainsList domainList_)
     {
         CountryList countryList = populateClassFromDB.populateCountryList(domainList_.MainCountryID);
         if (HttpContext.Current.Session["MainCountryID"] == null)
             //HttpContext.Current.Session["country_code"] = getCountry().CountryCode.ToString().ToLower();
-        HttpContext.Current.Session["MainCountryID"] = domainList_.MainCountryID;
+            HttpContext.Current.Session["MainCountryID"] = domainList_.MainCountryID;
         HttpContext.Current.Session["ImageSize"] = domainList_.ImageSize;
 
         HttpContext.Current.Session["Direction"] = domainList_.Direction;

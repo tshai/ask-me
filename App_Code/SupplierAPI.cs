@@ -38,7 +38,7 @@ public class SupplierAPI
 				user.Name = "Empty";
 				user.ExtraDetails = "";
 				user.YearBirth = 2000;
-				user.Gender = 4;
+				user.Gender = 1;
 				user.MinSessionLength = 0;
 				user.PricePerMinute = 0;
 				user.CurrencyID = 1;

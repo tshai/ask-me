@@ -9,7 +9,7 @@
     Public UserID As Integer
     Public SupplierID As Integer
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs)
-        UserID = populateClassFromDB.getUsersByGuid(Guid.Parse(Request("UserGuid"))).ID
+        UserID = populateClassFromDB.getUsersByGuid(Guid.Parse(Request("UserGuid"))).ID                                                                   )
         Dim checkAccess = New WaitingList(UserID, Request("SupplierID")).RunClass()
         If checkAccess <> 1 Then
             Response.End()
@@ -18,7 +18,7 @@
         RndNum = userClass.insertUserToCamera(UserID, SupplierID).ToString()
 
         If RndNum = "99" Or RndNum = "98" Then
-            Tools.addWindowsServiceLogs(SupplierID, UserID, RndNum, "user/MainModelsAPI.aspxqType=33-RndNum=" + RndNum + "", 1)
+            Tools.addWindowsServiceLogs(SupplierID, UserID, RndNum, "chat/MainModelsAPI.aspxqType=33-RndNum=" + RndNum + "", 1)
             Response.End()
         End If
         Try
@@ -63,7 +63,7 @@
 		$(window).on('beforeunload', function () {
 			$.ajax({
 				async: true,
-				url: "camClientBackground.aspx?qtype=11&RndNumber=" + "<%=Session("RndNum")%>", success: function (result) {
+				url: "camClientBackground.aspx?qtype=11&RndNumber=" + "<%=RndNum%>", success: function (result) {
 				}
 			});
 		});
