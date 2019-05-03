@@ -54,7 +54,7 @@ public class userClass
 		{
 			SqlCommand cmd = new SqlCommand("insertUserToCameraEntity", con);
 			cmd.CommandType = CommandType.StoredProcedure;
-			cmd.Parameters.Add("@UserID", SqlDbType.Int).Value = UserID;
+			cmd.Parameters.Add("@CustomerID", SqlDbType.Int).Value = UserID;
 			cmd.Parameters.Add("@SupplierID", SqlDbType.Int).Value = SupplierID;
 			return Guid.Parse(cmd.ExecuteScalar().ToString());
 		}

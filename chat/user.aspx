@@ -9,9 +9,10 @@
     Public UserID As Integer
     Public SupplierID As Integer
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs)
-        UserID = populateClassFromDB.getUsersByGuid(Guid.Parse(Request("UserGuid"))).ID                                                                   )
+        UserID = populateClassFromDB.getUsersByGuid(Guid.Parse(Request("UserGuid"))).ID
         Dim checkAccess = New WaitingList(UserID, Request("SupplierID")).RunClass()
         If checkAccess <> 1 Then
+            Response.Write(checkAccess)
             Response.End()
         End If
         SupplierID = Request("SupplierID")
@@ -30,7 +31,7 @@
         If RndNum <> OnlineUsers_.RndNumber.ToString() Then
             Response.Redirect("outCamera.aspx")
         End If
-        Dim girlGuidAsString = databaseCon.scalerSql("select MainModelGuid from MainModels where SupplierID=" & SupplierID)
+        Dim girlGuidAsString = databaseCon.scalerSql("select MainModelGuid from Users where ID=" & SupplierID)
         Try
             Call inChat.SendNotification(girlGuidAsString, "startCall")
         Catch ex As Exception
@@ -102,7 +103,7 @@
 				<li>&nbsp;
 				</li>
 				<li>צ'אט עם
-            <%=populateClassFromDB.getUsers(HttpContext.Current.Session("SupplierID")).Name%></li>
+            <%=populateClassFromDB.getUsers(Request("SupplierID"))%></li>
 				<li>
 					<div id="disconnectDiv3">
 						<label onclick="disconnectUser()" class="buttonRed">ניתוק</label>

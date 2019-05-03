@@ -62,7 +62,7 @@ public class WaitingList
         {
             SqlCommand cmd = new SqlCommand("buildWaitingListEntity", con);
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.AddWithValue("@UserID", UserID);
+            cmd.Parameters.AddWithValue("@CustomerID", UserID);
             // cmd.Parameters.AddWithValue("@q_type", 18)
             cmd.Parameters.AddWithValue("@SupplierID", SupplierID);
             return int.Parse(cmd.ExecuteScalar().ToString());
