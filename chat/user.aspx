@@ -46,15 +46,15 @@
 <head runat="server">
 	<title></title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
-	<link href="/users/chat/css/styleC.css" rel="stylesheet" />
-	<link href="/users/chat/css/bootstrap.css" rel="stylesheet" />
-	<link href="css/userCam.css" rel="stylesheet" />
-	<script src="/Core/Scripts/jquery-3.1.1.js"></script>
-	<script src="/Core/Scripts/jquery.signalR-2.2.2.js"></script>
-	<script src="/Core/signalr/hubs"></script>
-	<script src="/ws/adapter.js?v=1.01"></script>
-	<script src="sfc.js?v=1.1"></script>
-	<link href="/users/chat/css/chatC2018.css" rel="stylesheet" />
+	<link href="/chat/css/styleC.css" rel="stylesheet" />
+	<link href="/chat/css/bootstrap.css" rel="stylesheet" />
+	<link href="/chat/css/userCam.css" rel="stylesheet" />
+	<script src="/Scripts/jquery-3.1.1.js"></script>
+	<script src="/Scripts/jquery.signalR-2.2.2.js"></script>
+	<script src="/Core/ChatHub2019V2"></script>
+	<script src="/chat/js/adapter.js?v=1.01"></script>
+	<script src="/chat/js/sfc.js?v=1.1"></script>
+	<link href="/chat/css/chatC2018.css" rel="stylesheet" />
 	<script>
 		function disconnectChat() {
 			//userDontWantToWaitForSupplier();

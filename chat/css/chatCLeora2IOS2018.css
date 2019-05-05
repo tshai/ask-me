@@ -1,0 +1,78 @@
+﻿    #closeMedia {
+        display: none;
+    }
+
+    #my-video {
+        /*width:160px;*/
+        height: 80px;
+        display: inline-block;
+    }
+
+    #video-container {
+        position: absolute;
+        top: 22px;
+        display: table;
+        /*display:none;*/
+        z-index: 100;
+
+    }
+
+    .videoTagNew {
+        width: 100% !important;
+    }
+
+    .openCam {
+        position: relative;
+        top: -72px;
+        right: 10px;
+        width: 25px;
+    }
+
+
+    .chooseCam {
+        display: block;
+        border: 1px solid #676060;
+        padding:7px;
+    }
+
+    .chooseCameraUL {
+        list-style-type: none;
+        width: 100%;
+        display: table;
+        margin:0;
+    }
+
+        .chooseCameraUL li {
+            float: right;
+            float: right;
+            height: 30px;
+            border: 1px solid #999;
+            background-color: #02121b;
+            padding: 3px;
+            width:33%;
+            text-align: center;
+
+
+        }
+
+    .button2 {
+        background-color: #037992;
+        color: white;
+        text-decoration: none;
+        display: table;
+        text-align: center;
+        margin-right: 0px;
+        padding: 0 10px;
+    }
+
+    #videoSource {
+        width: 100px;
+    }
+
+    @media screen and (min-width:1000px) {
+        #closeChat {
+            display: block;
+        }
+
+
+    }

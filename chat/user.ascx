@@ -8,7 +8,7 @@
         width:49% !important;
     }
 </style>
-<link href="/users/chat/css/chatCLeora2IOS2018.css" rel="stylesheet" />
+<link href="/chat/css/chatCLeora2IOS2018.css" rel="stylesheet" />
 <div id="mainDiv" style="display: block" class="videoTagNew">
 
     <div id="videoArea">

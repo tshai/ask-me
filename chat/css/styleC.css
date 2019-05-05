@@ -1,0 +1,678 @@
+﻿html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+html {
+    min-height: 100%;
+    background: -moz-linear-gradient(linear, 31% 53%, 34% 81%, from(#570B0B), to(#3B000C));
+    background: -webkit-gradient(linear, 31% 53%, 34% 81%, from(#570B0B), to(#3B000C));
+    background: -o-linear-gradient(linear, 31% 53%, 34% 81%, from(#570B0B), to(#3B000C));
+    background: -ms-linear-gradient(linear, 31% 53%, 34% 81%, from(#570B0B), to(#3B000C));
+    background: linear-gradient(linear, 31% 53%, 34% 81%, from(#570B0B), to(#3B000C));
+}
+
+body {
+    line-height: 1;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100%;
+    direction: rtl;
+    text-align: right;
+    width: 100%;
+    background-color: #000 !important;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+    nav ul {
+        list-style: none;
+    }
+
+blockquote, q {
+    quotes: none;
+}
+
+    blockquote:before, blockquote:after, q:before, q:after {
+        content: '';
+        content: none;
+    }
+
+.panel-primary > .panel-heading {
+    color: #ffffff;
+    background-color: #428bca !important;
+    border-color: #428bca !important;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    display: none;
+}
+
+.not-on-mobile {
+    display: none;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+ins {
+    background-color: #ff9;
+    color: #000;
+    text-decoration: none;
+}
+
+mark {
+    background-color: #ff9;
+    color: #000;
+    font-style: italic;
+    font-weight: bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #cccccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+input, select {
+    vertical-align: middle;
+}
+
+.main {
+    width:1000px;
+    margin: 0 auto;
+    /*min-height: 850px;
+    height: 100%;*/
+    border: 1px solid #999;
+    background-color: #111;
+}
+
+#videoChatArea, #customerData {
+    width: 100%;
+    float: right;
+    background-color: #525252;
+}
+
+#customerData {
+    width: 50%;
+    float: right;
+    background-color: #525252;
+}
+
+.chat {
+    float: right;
+    width: 50%;
+    background-color: #525252;
+}
+
+.customerTime {
+    float: right;
+    width: 60%;
+    background-color: #525252;
+}
+
+#statuses {
+    width: 40%;
+    background-color: #525252;
+    ;
+    float: left;
+}
+#preloader {
+    margin: auto;
+    width:640px;
+}
+@media screen and (max-width:650px) {
+    .main {
+        width: 100%;
+        margin: 0 auto;
+        min-height: 850px;
+        height: 100%;
+    }
+
+    #videoChatArea {
+        width: 100%;
+    }
+
+    #Button1 {
+        width: 100% !important;
+    }
+    #preloader {
+        margin: auto;
+        width: 100%;
+    }
+
+}
+
+
+.wrapper > * {
+    background: #000;
+}
+
+.main-left {
+    height: 100%;
+    width: 100%;
+    float: left;
+}
+
+    .main-left > .wrapper {
+        width: 100%;
+        /*height: 400px;*/
+        float: left;
+        margin: 1%;
+        position: relative;
+    }
+
+.camera {
+    position: relative;
+    background: #fafafa;
+    height: 300px;
+}
+
+    .camera .take-pic {
+        width: 50px;
+        height: 50px;
+        overflow: hidden;
+        bottom: 0;
+        color: #fff;
+        position: absolute;
+    }
+
+        .camera .take-pic > .take-triangle {
+            display: block;
+            height: 100%;
+            opacity: 0.8;
+            background-color: #000;
+            transform-origin: bottom left;
+            cursor: pointer;
+        }
+
+    .camera .take-left > .take-triangle {
+        transform: skewX(45deg);
+    }
+
+    .camera .take-left .f-icon {
+        position: absolute;
+        bottom: 0;
+        margin-left: 9px;
+        margin-bottom: 7px;
+        cursor: pointer;
+        color: #fff;
+    }
+
+    .camera .take-right {
+        right: 0;
+    }
+
+        .camera .take-right > .take-triangle {
+            transform: skewX(-45deg);
+        }
+
+        .camera .take-right .f-icon {
+            position: absolute;
+            bottom: 0;
+            margin-left: 26px;
+            margin-bottom: 7px;
+            cursor: pointer;
+        }
+
+.chat {
+    /*margin: 0 auto;
+    background: #000;
+    border: 1px solid #000;
+    height: 95%;
+    padding: 10px;
+    border-radius: 15px 15px 15px 15px;
+    -moz-border-radius: 15px 15px 15px 15px;
+    -webkit-border-radius: 15px 15px 15px 15px;*/
+}
+
+#chatbox {
+    text-align: left;
+    margin: 0 auto;
+    margin-bottom: 0;
+    /* padding: 10px; */
+    background: #fff;
+    /* height: 59%; */
+    border: 1px solid #E5EAF0;
+}
+
+#submitmsg {
+    float: left;
+}
+
+#submit {
+    width: 60px;
+}
+
+#menu {
+    padding: 12.5px 25px 12.5px 25px;
+}
+
+.welcome {
+    float: left;
+}
+
+input[type=submit] {
+    padding: 5px 15px;
+    background: #fafafa;
+    border: 0 none;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    outline: none;
+    float: left;
+    color: #000;
+}
+
+.client {
+    border: 1px solid #000;
+    /*padding: 10px;*/
+}
+
+/*.client-header {
+    height: 50px;
+}*/
+.client-header span {
+    text-align: center;
+    display: block;
+    line-height: 30px;
+    color: #fff;
+    background-color: #333;
+    display: none;
+}
+
+.client-details {
+    height: 230px;
+    border: 1px solid greenyellow;
+    text-align: left;
+    margin: 0 auto;
+    /*padding: 10px;*/
+    background: #fff;
+    border: 1px solid #E5EAF0;
+    overflow: auto;
+}
+
+.clientcam-header {
+    height: 33px;
+}
+
+label {
+    margin-bottom: 0px !important;
+}
+
+.clientcam-sec {
+    height: 250px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #E5EAF0;
+    overflow: auto;
+}
+
+    .clientcam-sec .client-camera {
+        width: 75%;
+        height: 75%;
+        margin: 0 auto;
+        background: black;
+        vertical-align: middle;
+        margin-top: 30px;
+    }
+
+.cl-left {
+    float: left;
+    width: 50%;
+    /*line-height: 50px;*/
+    text-align: center;
+}
+
+.cl-right {
+    float: left;
+    width: 50%;
+    text-align: center;
+    /*line-height: 50px;*/
+}
+
+.cl input[type=text] {
+    width: 30px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #ACD8F0;
+    padding: 3px;
+    margin-left: 5px;
+}
+
+.clc {
+    border: 1px solid #000;
+    padding-top: 2px;
+    /* border-radius: 15px 15px 15px 15px; */
+    /*-moz-border-radius: 15px 15px 15px 15px;*/
+    /* -webkit-border-radius: 15px 15px 15px 15px; */
+}
+
+.main-right {
+    width: 100%;
+    float: left;
+    height: 40px;
+    margin-top: 20px;
+}
+
+#stop-sound {
+    width: 50px;
+    height: 50px;
+    background-color: #fafafa;
+    margin-left: 10px;
+}
+
+#unStop-sound {
+    width: 50px;
+    height: 50px;
+    background-color: #fafafa;
+}
+
+#audioSource {
+    width: 130px;
+}
+
+#audioOutput {
+    width: 130px;
+}
+
+#videoSource {
+    width: 130px;
+}
+
+#clientOutAudio {
+    width: 130px;
+}
+
+.right-panel {
+    border: double;
+    width: 130px;
+    padding: 25px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: -moz-linear-gradient(45deg, rgba(217, 217, 217, 1) 0%, rgba(51, 51, 51, 1) 100%);
+    /* ff3.6+ */
+    background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(217, 217, 217, 1)), color-stop(100%, rgba(51, 51, 51, 1)));
+    /* safari4+,chrome */
+    background: -webkit-linear-gradient(45deg, rgba(217, 217, 217, 1) 0%, rgba(51, 51, 51, 1) 100%);
+    /* safari5.1+,chrome10+ */
+    background: -o-linear-gradient(45deg, rgba(217, 217, 217, 1) 0%, rgba(51, 51, 51, 1) 100%);
+    /* opera 11.10+ */
+    background: -ms-linear-gradient(45deg, rgba(217, 217, 217, 1) 0%, rgba(51, 51, 51, 1) 100%);
+    /* ie10+ */
+    background: linear-gradient(45deg, rgba(217, 217, 217, 1) 0%, rgba(51, 51, 51, 1) 100%);
+    /* w3c */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#333333', endColorstr='#D9D9D9', GradientType=1);
+    /* ie6-9 */
+}
+
+    .right-panel label {
+        text-align: center;
+        display: block;
+    }
+
+#statuses {
+    text-align: center;
+    height: 37px;
+    /* line-height: 62px; */
+    /* vertical-align: middle; */
+    padding: 2px;
+}
+
+.cl-wt {
+    width: 30px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #ACD8F0;
+    padding: 3px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 5px;
+}
+
+.send-st {
+    color: #fff;
+    padding: 3px;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+
+.camera-outer {
+    width: 100%;
+}
+
+    .camera-outer header {
+        height: 50px;
+    }
+
+label, span, div, p {
+    color: #fff;
+}
+
+.clc footer {
+    height: 25px;
+}
+
+.usermsg {
+    width: 81%;
+    border: 1px solid #ACD8F0;
+    padding: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    margin-left: 9px;
+}
+
+.right-footer {
+    border: double;
+    width: 130px;
+    padding: 25px;
+    margin-top: 39px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: -moz-linear-gradient(45deg, rgba(217, 217, 217, 1) 0%, rgba(51, 51, 51, 1) 100%);
+    /* ff3.6+ */
+    background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(217, 217, 217, 1)), color-stop(100%, rgba(51, 51, 51, 1)));
+    /* safari4+,chrome */
+    background: -webkit-linear-gradient(45deg, rgba(217, 217, 217, 1) 0%, rgba(51, 51, 51, 1) 100%);
+    /* safari5.1+,chrome10+ */
+    background: -o-linear-gradient(45deg, rgba(217, 217, 217, 1) 0%, rgba(51, 51, 51, 1) 100%);
+    /* opera 11.10+ */
+    background: -ms-linear-gradient(45deg, rgba(217, 217, 217, 1) 0%, rgba(51, 51, 51, 1) 100%);
+    /* ie10+ */
+    background: linear-gradient(45deg, rgba(217, 217, 217, 1) 0%, rgba(51, 51, 51, 1) 100%);
+    /* w3c */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#333333', endColorstr='#D9D9D9', GradientType=1);
+    /* ie6-9 */
+}
+
+.s-msg {
+    border: 1px solid #ACD8F0;
+    padding: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    margin-left: 9px;
+    resize: none;
+    margin-bottom: 10px;
+}
+
+.s-msg-sbmt {
+    margin-top: -5px;
+}
+
+#textArea {
+    width: 100%;
+    display: table;
+}
+
+/*#displayChatText {
+            width: 100%;
+            display: table;
+            background-color: white;
+            margin-top: 10px;
+            height: 100px;
+            overflow-y: scroll;
+            width: calc(100% - 4px);
+            margin: 2px;
+        }*/
+
+#conversation {
+    color: Red;
+    font-size: 12px;
+    height: 25px;
+    width: calc(100% - 4px);
+    margin: 2px;
+}
+
+.txtMessage {
+    width: 100%;
+    height: 40px;
+}
+
+#video-local {
+    width:200px !important;
+    height:150px !important;
+}
+
+.cmdSend {
+    width: 100%;
+    /* background-color: green; */
+    color: white;
+    background: #428bca;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9dd53a', endColorstr='#7cbc0a',GradientType=0 );
+    height: 40px;
+    border: none;
+    display: block;
+    text-align: center;
+    line-height: 40px;
+}
+
+#addTextDiv {
+    box-sizing: border-box;
+}
+
+.topDiv {
+    display: table;
+    border: 1px solid #999;
+    width: 100%;
+}
+
+#local-video {
+    width: 100px;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.media-content {
+    padding: 0;
+}
+
+.col-md-12, .col-md-6 {
+    padding: 0 !important;
+}
+
+@media (min-width: 768px) {
+    .container .row {
+        margin: 0 !important;
+    }
+}
+
+.panel {
+    margin-bottom: 0 !important;
+    border-radius: 0 !important;
+    -webkit-box-shadow: 0 !important;
+    box-shadow: 0 !important;
+    border: none !important;
+}
+
+.panel-heading {
+    padding: 10px 15px;
+    background-color: #f5f5f5;
+    border: none;
+    border-radius: 0 !important;
+}
+
+.col-md-6 {
+    width: 50%;
+}
+
+/*.remote-element-video {
+    width: 320px;
+    height: 240px !important;
+    background-color: black;
+}*/
+
+#peekStat {
+    width: 50%;
+    float: left;
+}
+
+#clientLine {
+    width: 50%;
+    float: right;
+}
+
+[id^="remote-video"] {
+    width: 100% !important;
+    max-height:75vw !important;
+}
+
+#chatMessages {
+    overflow-y: scroll;
+    height: 200px;
+    box-sizing: border-box;
+}
+@media screen and (min-width:1000px) {
+    #chatMessages {
+         height: 371px;
+
+    }
+
+}
+#RadioButtonList1 {
+    width: 100%;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+  select,
+  textarea,
+  input {
+    font-size: 16px;
+  }
+}
+#info-message{
+    color:#111;
+}
+.panel-footer{
+    display:none;
+}

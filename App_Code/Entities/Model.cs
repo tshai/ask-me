@@ -651,7 +651,7 @@ namespace Entities
         public int CustomerID { get; set; }
         public System.Guid RndNumber { get; set; }
         public int GetUserGettingSendUser { get; set; }
-        public int LastUserNum { get; set; }
+        public int LastCustomerID { get; set; }
         public System.DateTime LastStatusChange { get; set; }
         public byte AdminAlert { get; set; }
         public byte FreeChat { get; set; }

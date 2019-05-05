@@ -447,7 +447,7 @@
           <Property Name="CustomerID" Type="int" Nullable="false" />
           <Property Name="RndNumber" Type="uniqueidentifier" Nullable="false" />
           <Property Name="GetUserGettingSendUser" Type="int" Nullable="false" />
-          <Property Name="LastUserNum" Type="int" Nullable="false" />
+          <Property Name="LastCustomerID" Type="int" Nullable="false" />
           <Property Name="LastStatusChange" Type="datetime" Nullable="false" />
           <Property Name="AdminAlert" Type="tinyint" Nullable="false" />
           <Property Name="FreeChat" Type="tinyint" Nullable="false" />
@@ -2138,7 +2138,7 @@
           <Property Name="CustomerID" Type="Int32" Nullable="false" />
           <Property Name="RndNumber" Type="Guid" Nullable="false" />
           <Property Name="GetUserGettingSendUser" Type="Int32" Nullable="false" />
-          <Property Name="LastUserNum" Type="Int32" Nullable="false" />
+          <Property Name="LastCustomerID" Type="Int32" Nullable="false" />
           <Property Name="LastStatusChange" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="AdminAlert" Type="Byte" Nullable="false" />
           <Property Name="FreeChat" Type="Byte" Nullable="false" />
@@ -3893,7 +3893,7 @@
                 <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
                 <ScalarProperty Name="RndNumber" ColumnName="RndNumber" />
                 <ScalarProperty Name="GetUserGettingSendUser" ColumnName="GetUserGettingSendUser" />
-                <ScalarProperty Name="LastUserNum" ColumnName="LastUserNum" />
+                <ScalarProperty Name="LastCustomerID" ColumnName="LastUserNum" />
                 <ScalarProperty Name="LastStatusChange" ColumnName="LastStatusChange" />
                 <ScalarProperty Name="AdminAlert" ColumnName="AdminAlert" />
                 <ScalarProperty Name="FreeChat" ColumnName="FreeChat" />
