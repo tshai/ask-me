@@ -49,8 +49,9 @@
 	<link href="/chat/css/styleC.css" rel="stylesheet" />
 	<link href="/chat/css/bootstrap.css" rel="stylesheet" />
 	<link href="/chat/css/userCam.css" rel="stylesheet" />
-	<script src="/Scripts/jquery-3.1.1.js"></script>
-	<script src="/Scripts/jquery.signalR-2.2.2.js"></script>
+<%--	<script src="/Scripts/jquery-3.1.1.js"></script>
+	<script src="/Scripts/jquery.signalR-2.2.2.js"></script>--%>
+    <script src="/Core/lib/signalr/dist/browser/signalr.js"></script>
 	<script src="/Core/ChatHub2019V2"></script>
 	<script src="/chat/js/adapter.js?v=1.01"></script>
 	<script src="/chat/js/sfc.js?v=1.1"></script>
