@@ -3893,7 +3893,7 @@
                 <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
                 <ScalarProperty Name="RndNumber" ColumnName="RndNumber" />
                 <ScalarProperty Name="GetUserGettingSendUser" ColumnName="GetUserGettingSendUser" />
-                <ScalarProperty Name="LastCustomerID" ColumnName="LastUserNum" />
+                <ScalarProperty Name="LastCustomerID" ColumnName="LastCustomerID" />
                 <ScalarProperty Name="LastStatusChange" ColumnName="LastStatusChange" />
                 <ScalarProperty Name="AdminAlert" ColumnName="AdminAlert" />
                 <ScalarProperty Name="FreeChat" ColumnName="FreeChat" />
