@@ -3,8 +3,10 @@ var remoteVideo;
 var yourConn;
 var stream;
 var name = 'בחור';
-var chat = $.connection.chatHub2019;
-$.connection.hub.qs = 'name=' + name + '&RndNumber=' + RndNumber.trim() + '&customerID=' + UserID.trim() + '&supplierID=' + SupplierID.trim() + '&whoSend=0&gid=1&guid=1';
+var connection = new signalR.HubConnectionBuilder().withUrl("/Core/ChatHub2019V2").build();
+//var chat = $.connection.ChatHub2019V2;
+//connection.hub.querySelector = 'name=' + name + '&RndNumber=' + RndNumber.trim() + '&customerID=' + UserID.trim() + '&supplierID=' + SupplierID.trim() + '&whoSend=0&gid=1&guid=1';
+var chat = $.connection;
 $(document).ready(function () {
     localVideo = document.querySelector("video#my-video");
     remoteVideo = document.querySelector('#their-video');

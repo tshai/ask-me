@@ -1,6 +1,6 @@
 ﻿<%@ Page  Theme="" Language="vb" Title="נפגשות במצלמה" %>
 
-<%@ Import Namespace="Entities" %>
+<%@ Import Namespace="entitie" %>
 <%@ Import Namespace="Math" %>
 <%@ Import Namespace="System.IO" %>
 <%@ Register Src="user.ascx" TagName="chatUser" TagPrefix="uc1" %>
@@ -49,11 +49,9 @@
 	<link href="/chat/css/styleC.css" rel="stylesheet" />
 	<link href="/chat/css/bootstrap.css" rel="stylesheet" />
 	<link href="/chat/css/userCam.css" rel="stylesheet" />
-<%--	<script src="/Scripts/jquery-3.1.1.js"></script>
-	<script src="/Scripts/jquery.signalR-2.2.2.js"></script>--%>
-    <script src="/Core/lib/signalr/dist/browser/signalr.js"></script>
-	<script src="/Core/ChatHub2019V2"></script>
-	<script src="/chat/js/adapter.js?v=1.01"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://www.ask-me.app/Core/lib/signalr/dist/browser/signalr.js"></script>
+	<script src="/chat/js/adapter-latest.js?v=1.01"></script>
 	<script src="/chat/js/sfc.js?v=1.1"></script>
 	<link href="/chat/css/chatC2018.css" rel="stylesheet" />
 	<script>
@@ -62,41 +60,50 @@
 			disconnectUser();
 		}
 
-		$(window).on('beforeunload', function () {
+		<%--$(window).on('beforeunload', function () {
 			$.ajax({
 				async: true,
-				url: "camClientBackground.aspx?qtype=11&RndNumber=" + "<%=RndNum%>", success: function (result) {
+				url: "camClientBackground.aspx?qtype=11&RndNumber=" + "<%=Session("RndNum")%>", success: function (result) {
 				}
 			});
-		});
+		});--%>
 	</script>
 </head>
 <body style="margin: 0 0" class="userBody">
+    <audio controls id="ringTone" style="display:none" >
+  <source src="phone-calling-1.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
 	<img src="/media/images/ajax-loader-purple.gif" style="width: 200px; margin-bottom: 20px; z-index: 100; position: fixed; top: 100px; display: none; left: 50%; transform: translate(-50%, -50%);" id="disconnectGif" />
-	<div id="waitForSuppliers" style="z-index: 1500">
+	<div id="waitForSuppliers" style="z-index: 1500;display:block">
 		<img src="/media/images/ajax-loader-purple.gif" style="width: 200px; margin-bottom: 20px;" />
 		<br />
 		<p>
 			נא המתן להתחברות הבחורה
-		<br />
-			כל עוד הבחורה לא התחברה אתה לא מחוייב
+
 		</p>
 		<br />
 
 		<label onclick="disconnectChat()" id="disconnectChat">להתנתקות לחץ כאן / To quit click here</label><br />
 	</div>
 	<script>
-		var RndNumber = '<%=RndNum%>';
-		var UserID = '<%=UserID%>'
-		var SupplierID = '<%=SupplierID%>'
+        var RndNumber = '<%=RndNum%>';
+        var UserID = '<%=UserID%>'
+        var CustomerID = UserID;
+        var SupplierID = '<%=SupplierID%>'
+<%--		var RndNumber = '<%=Session("RndNum")%>';
+        var CustomerGuid = '<%=populateClassFromDB.getMainModels(HttpContext.Current.Session("UserID")).MainModelGuid%>'
+        var CustomerID='<%=Session("UserID")%>'
+		var supplierID = '<%=Session("GirlNum")%>'--%>
 	</script>
-	<script src="user.js?v=1.01"></script>
+	<script src="/chat/js/customerCore28-2-19.js?v=1.01"></script>
 	<script type="text/javascript">
 
 		function disconnectUser() {
 			$("#disconnectGif").show();
 			window.location.assign("/users/chat/outCamera.aspx?ios=11");
-		}
+        }
+        $("#ringTone")[0].play();
 	</script>
 	<div class="main" style="display: block">
 		<div class="performerName">
@@ -104,7 +111,7 @@
 				<li>&nbsp;
 				</li>
 				<li>צ'אט עם
-            <%=populateClassFromDB.getUsers(Request("SupplierID"))%></li>
+            <%=populateClassFromDB.getUsers(SupplierID).Name%></li>
 				<li>
 					<div id="disconnectDiv3">
 						<label onclick="disconnectUser()" class="buttonRed">ניתוק</label>
