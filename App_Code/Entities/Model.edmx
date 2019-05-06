@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="AskMeModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="AskMeModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="AdminPages">
           <Key>
             <PropertyRef Name="ID" />
@@ -253,6 +253,7 @@
           <Property Name="PerformerDiscount" Type="float" Nullable="false" />
           <Property Name="TheChatWasActive" Type="tinyint" />
           <Property Name="TheChatWasActiveDateIn" Type="datetime" />
+          <Property Name="ChatTimeUseGuid" Type="uniqueidentifier" Nullable="false" />
         </EntityType>
         <EntityType Name="Countries">
           <Key>
@@ -745,6 +746,7 @@
           <Property Name="IsSupplier" Type="tinyint" />
           <Property Name="GenerateNumber" Type="varchar" MaxLength="20" />
           <Property Name="NeedUpdate" Type="tinyint" Nullable="false" />
+          <Property Name="UserChatGuid" Type="uniqueidentifier" Nullable="false" />
         </EntityType>
         <EntityType Name="UsersLoggedIn">
           <Key>
@@ -1122,7 +1124,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK_performers_photos_MainModels">
+        <Association Name="FK_PerformersPhotos_Users">
           <End Role="Users" Type="Self.Users" Multiplicity="1" />
           <End Role="PerformersPhotos" Type="Self.PerformersPhotos" Multiplicity="*" />
           <ReferentialConstraint>
@@ -1564,7 +1566,7 @@
             <End Role="Users" EntitySet="Users" />
             <End Role="OnlineUsers" EntitySet="OnlineUsers" />
           </AssociationSet>
-          <AssociationSet Name="FK_performers_photos_MainModels" Association="Self.FK_performers_photos_MainModels">
+          <AssociationSet Name="FK_PerformersPhotos_Users" Association="Self.FK_PerformersPhotos_Users">
             <End Role="Users" EntitySet="Users" />
             <End Role="PerformersPhotos" EntitySet="PerformersPhotos" />
           </AssociationSet>
@@ -1661,8 +1663,7 @@
             <End Role="WindowsServiceLogs" EntitySet="WindowsServiceLogs" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="AskMeModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -1931,6 +1932,7 @@
           <Property Name="TheChatWasActiveDateIn" Type="DateTime" Precision="3" />
           <NavigationProperty Name="Users" Relationship="Self.FK_ChatTimeUse_Users" FromRole="ChatTimeUse" ToRole="Users" />
           <NavigationProperty Name="Users1" Relationship="Self.FK_ChatTimeUse_Users1" FromRole="ChatTimeUse" ToRole="Users" />
+          <Property Name="ChatTimeUseGuid" Type="Guid" Nullable="false" />
         </EntityType>
         <EntityType Name="Countries">
           <Key>
@@ -2495,6 +2497,7 @@
           <NavigationProperty Name="UsersToUsers1" Relationship="Self.FK_UsersToUsers_MainModels1" FromRole="Users" ToRole="UsersToUsers" />
           <NavigationProperty Name="WindowsServiceLogs" Relationship="Self.FK_WindowsServiceLogs_Users" FromRole="Users" ToRole="WindowsServiceLogs" />
           <NavigationProperty Name="WindowsServiceLogs1" Relationship="Self.FK_WindowsServiceLogs_Users1" FromRole="Users" ToRole="WindowsServiceLogs" />
+          <Property Name="UserChatGuid" Type="Guid" Nullable="false" />
         </EntityType>
         <EntityType Name="UsersLoggedIn">
           <Key>
@@ -3659,6 +3662,7 @@
           <EntitySetMapping Name="ChatTimeUse">
             <EntityTypeMapping TypeName="AskMeModel.ChatTimeUse">
               <MappingFragment StoreEntitySet="ChatTimeUse">
+                <ScalarProperty Name="ChatTimeUseGuid" ColumnName="ChatTimeUseGuid" />
                 <ScalarProperty Name="TimeUse" ColumnName="TimeUse" />
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="DateIn" ColumnName="DateIn" />
@@ -4169,6 +4173,7 @@
           <EntitySetMapping Name="Users">
             <EntityTypeMapping TypeName="AskMeModel.Users">
               <MappingFragment StoreEntitySet="Users">
+                <ScalarProperty Name="UserChatGuid" ColumnName="UserChatGuid" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
                 <ScalarProperty Name="DateIn" ColumnName="DateIn" />
                 <ScalarProperty Name="Password" ColumnName="Password" />

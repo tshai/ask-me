@@ -352,6 +352,7 @@ namespace Entities
         public double PerformerDiscount { get; set; }
         public Nullable<byte> TheChatWasActive { get; set; }
         public Nullable<System.DateTime> TheChatWasActiveDateIn { get; set; }
+        public System.Guid ChatTimeUseGuid { get; set; }
     
         public virtual Users Users { get; set; }
         public virtual Users Users1 { get; set; }
@@ -1125,6 +1126,7 @@ namespace Entities
         public Nullable<byte> IsSupplier { get; set; }
         public string GenerateNumber { get; set; }
         public byte NeedUpdate { get; set; }
+        public System.Guid UserChatGuid { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<AntiFraudLog> AntiFraudLog { get; set; }

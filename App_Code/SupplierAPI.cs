@@ -42,13 +42,15 @@ public class SupplierAPI
 				user.MinSessionLength = 0;
 				user.PricePerMinute = 0;
 				user.CurrencyID = 1;
+                
 
 
-				user.SmsCode = Tools.RandomNumber(111111, 999999);
+                user.SmsCode = Tools.RandomNumber(111111, 999999);
 				user.CountryCode = countryCode;
 				user.MainModelGuid = Guid.NewGuid();
 				user.Password = user.SmsCode.ToString();
                 user.GenerateNumber = generateNumber;
+                user.UserChatGuid = Guid.NewGuid();
                 db.Users.Add(user);
 			}
 			else
