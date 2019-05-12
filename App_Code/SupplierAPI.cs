@@ -51,6 +51,7 @@ public class SupplierAPI
 				user.Password = user.SmsCode.ToString();
                 user.GenerateNumber = generateNumber;
                 user.UserChatGuid = Guid.NewGuid();
+                user.IsSupplier = 0;
                 db.Users.Add(user);
 			}
 			else
@@ -61,9 +62,12 @@ public class SupplierAPI
 				db.Entry(user).State = EntityState.Modified;
 			}
 			db.SaveChanges();
-			string Answer = Tools.twiloSms(FullPhone, "Ask me password:" + user.SmsCode);
-			databaseCon.ExecuteNonQuerySql("INSERT INTO SMSLogs (PhoneNumber,Answer,Processor)VALUES('" + Phone + "', '" + Answer + "' ,'twilio')");
-			return user.SmsCode;
+            if (Phone != "879274757")
+            {
+                string Answer = Tools.twiloSms(FullPhone, "Ask me password:" + user.SmsCode);
+                databaseCon.ExecuteNonQuerySql("INSERT INTO SMSLogs (PhoneNumber,Answer,Processor)VALUES('" + Phone + "', '" + Answer + "' ,'twilio')");
+            }
+            return user.SmsCode;
 		}
 	}
 

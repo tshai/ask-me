@@ -30,7 +30,12 @@ public class Tools
         Random random = new Random();
         return random.Next(min, max);
     }
-
+    public static string GetHash(string input)
+    {
+        byte[] bytes = System.Text.Encoding.ASCII.GetBytes(input);
+        var hashed = System.Security.Cryptography.SHA256.Create().ComputeHash(bytes);
+        return Convert.ToBase64String(hashed);
+    }
     public static string twiloSms(string PhoneNumber, string body1)
     {
         // Find your Account Sid And Token at twilio.com/console

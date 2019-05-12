@@ -185,18 +185,18 @@
             <div class="header">
 
                 <ul id="topMenu" runat="server" visible="true">
-                    <li><a id="A1" href="/<%=Session("DomainName")%>/"><%=populateClassFromDB.GetSiteMessagesByKey("Main")%>
+                    <li><a id="A1" href="/"><%=populateClassFromDB.GetSiteMessagesByKey("Main")%>
                     </a></li>
-                    <li><a href="/<%=Session("DomainName")%>/companies/companySignUp.aspx"
+                    <li><a href="/companies/companySignUp.aspx"
                         rel="nofollow">
                         <%=populateClassFromDB.GetSiteMessagesByKey("Registration")%></a></li>
-                    <li><a id="A2" href="/<%=Session("DomainName")%>/companies/companyLogin.aspx" rel="nofollow">
+                    <li><a id="A2" href="/companies/companyLogin.aspx" rel="nofollow">
                         <%=populateClassFromDB.GetSiteMessagesByKey("Enter")%></a></li>
-                    <li><a id="A3" href="/<%=Session("DomainName")%>/main/faq.aspx" rel="nofollow">
+                    <li><a id="A3" href="/main/faq.aspx" rel="nofollow">
                         <%=populateClassFromDB.GetSiteMessagesByKey("faqHome")%></a></li>
-                    <li><a id="A4" href="/<%=Session("DomainName")%>/main/features.aspx" rel="nofollow">
+                    <li><a id="A4" href="/main/features.aspx" rel="nofollow">
                         <%=populateClassFromDB.GetSiteMessagesByKey("features")%></a></li>
-                    <li id="pricing" runat="server"><a href="/<%=Session("DomainName")%>/main/pricingTable.aspx" rel="nofollow">
+                    <li id="pricing" runat="server"><a href="/main/pricingTable.aspx" rel="nofollow">
                         <%=populateClassFromDB.GetSiteMessagesByKey("PricingTable")%></a></li>
 
                 </ul>

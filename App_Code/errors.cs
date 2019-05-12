@@ -20,6 +20,8 @@ public class errors
 
 
 
+
+
 	public static void addErrorString(string desc)
 	{
 		string connection = ConfigurationManager.ConnectionStrings["errorReports"].ConnectionString;
