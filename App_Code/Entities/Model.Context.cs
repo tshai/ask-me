@@ -39,10 +39,9 @@ namespace Entities
         public virtual DbSet<CCData> CCData { get; set; }
         public virtual DbSet<CcDetails> CcDetails { get; set; }
         public virtual DbSet<ChatTimeUse> ChatTimeUse { get; set; }
-        public virtual DbSet<Countries> Countries { get; set; }
         public virtual DbSet<CountryList> CountryList { get; set; }
         public virtual DbSet<Currencies> Currencies { get; set; }
-        public virtual DbSet<DomainsList> DomainsList { get; set; }
+        public virtual DbSet<DomainIDToUsers> DomainIDToUsers { get; set; }
         public virtual DbSet<EmployeeManageLevels> EmployeeManageLevels { get; set; }
         public virtual DbSet<Employees> Employees { get; set; }
         public virtual DbSet<Languages> Languages { get; set; }
@@ -53,7 +52,10 @@ namespace Entities
         public virtual DbSet<NotsAboutCustomers> NotsAboutCustomers { get; set; }
         public virtual DbSet<OnlineUsers> OnlineUsers { get; set; }
         public virtual DbSet<PaymentStatus> PaymentStatus { get; set; }
-        public virtual DbSet<PerformersPhotos> PerformersPhotos { get; set; }
+        public virtual DbSet<PaymentStrings> PaymentStrings { get; set; }
+        public virtual DbSet<Planes> Planes { get; set; }
+        public virtual DbSet<PlanProperties> PlanProperties { get; set; }
+        public virtual DbSet<PlanToPlanproperties> PlanToPlanproperties { get; set; }
         public virtual DbSet<PrepaidBin> PrepaidBin { get; set; }
         public virtual DbSet<Prices> Prices { get; set; }
         public virtual DbSet<RoomConversation> RoomConversation { get; set; }
@@ -64,19 +66,28 @@ namespace Entities
         public virtual DbSet<SMSLogs> SMSLogs { get; set; }
         public virtual DbSet<Studios> Studios { get; set; }
         public virtual DbSet<StudiosToGirls> StudiosToGirls { get; set; }
+        public virtual DbSet<SupplierToServicePrice> SupplierToServicePrice { get; set; }
         public virtual DbSet<SupportChat> SupportChat { get; set; }
         public virtual DbSet<SupportCorrespondence> SupportCorrespondence { get; set; }
         public virtual DbSet<SupportImages> SupportImages { get; set; }
         public virtual DbSet<SupportNew> SupportNew { get; set; }
+        public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
         public virtual DbSet<TicketViewDates> TicketViewDates { get; set; }
         public virtual DbSet<UserChangeStatus> UserChangeStatus { get; set; }
         public virtual DbSet<UserComputer> UserComputer { get; set; }
-        public virtual DbSet<Users> Users { get; set; }
         public virtual DbSet<UsersLoggedIn> UsersLoggedIn { get; set; }
+        public virtual DbSet<UsersPhotos> UsersPhotos { get; set; }
+        public virtual DbSet<UsersProperties> UsersProperties { get; set; }
         public virtual DbSet<UsersReview> UsersReview { get; set; }
         public virtual DbSet<UsersScore> UsersScore { get; set; }
         public virtual DbSet<UsersToUsers> UsersToUsers { get; set; }
         public virtual DbSet<UsersToUsersMessages> UsersToUsersMessages { get; set; }
+        public virtual DbSet<UsersToUsersServicesPayments> UsersToUsersServicesPayments { get; set; }
+        public virtual DbSet<Versions> Versions { get; set; }
         public virtual DbSet<WindowsServiceLogs> WindowsServiceLogs { get; set; }
+        public virtual DbSet<SupplierToLanguages> SupplierToLanguages { get; set; }
+        public virtual DbSet<Users> Users { get; set; }
+        public virtual DbSet<DomainProperties> DomainProperties { get; set; }
+        public virtual DbSet<DomainsList> DomainsList { get; set; }
     }
 }

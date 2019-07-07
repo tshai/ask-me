@@ -190,8 +190,8 @@
             <div class="featuresDivLeft">
 
                 <a href="videoInterviewSoftwarePlatform.aspx" id="featureLink" runat="server"><video class="img-fluid rounded-circle" autoplay loop class="embed-responsive-item">
-                      <img src="../media/images/voiceSupport.jpg" />
-<%--                    <source src="../media/videos/video-features.mp4" type="video/mp4">--%>
+                  <%--    <img src="../media/images/voiceSupport.jpg" />--%>
+                    <source src="../media/videos/video-features.mp4" type="video/mp4">
                   </video></a>
             </div>
             <div class="featuresDivRight">
@@ -203,8 +203,9 @@
         <div class="featuresDiv">
             <div class="featuresDivLeft">
 
-                <a href="videoInterviewFeature.aspx" id="featureLink1" runat="server"><video class="img-fluid rounded-circle" autoplay loop class="embed-responsive-item">
-                      <source src="../media/videos/Fotolia_184897490_V_S.mp4" type="video/mp4">
+                <a href="videoInterviewFeature.aspx" id="featureLink1" runat="server">
+                    <video class="img-fluid rounded-circle" autoplay loop class="embed-responsive-item">
+                      <source src="  /media/videos/Fotolia_128733355_V_S.mp4" type="video/mp4">
                   </video></a>
             </div>
             <div class="featuresDivRight">

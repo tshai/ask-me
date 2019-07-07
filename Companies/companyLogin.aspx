@@ -17,11 +17,10 @@
             Response.Write("errors in details")
             Response.End()
         End If
-
-
+        Dim phoneNumber = Phone.Text.Where(Function(c) Char.IsDigit(c)).ToArray()
         Dim passwordHashed As String = Tools.GetHash(password.Text.Trim.ToString())
         Using db = New Entities.Entities()
-            Dim q = (From a In db.Users Where a.Phone.ToLower() = Phone.Text.Trim.ToLower() And a.Password.ToLower() = password.Text.Trim.ToString() Select a).FirstOrDefault()
+            Dim q = (From a In db.Users Where a.Phone = phoneNumber And a.Password = password.Text.Trim.ToString() Select a).FirstOrDefault()
             If IsNothing(q) = True Then
                 listCurrentUrl.Add(New KeyValuePair(Of String, String)("message", "22"))
                 'Response.Redirect(removeVaraiableFromURL2.Class1.removeDuplicateVaraiableFromUrl(Request.RawUrl, listCurrentUrl, Request.Url.DnsSafeHost))
@@ -94,13 +93,14 @@
         .span9 span {
             color: #bd0707;
         }
-        input{
-            color:#333 !important;
+
+        input {
+            color: #333 !important;
         }
     </style>
-      <link rel="stylesheet" href="build/css/intlTelInput.css">
-  <link rel="stylesheet" href="build/css/demo.css">
-
+    <link rel="stylesheet" href="build/css/intlTelInput.css">
+    <link rel="stylesheet" href="build/css/demo.css">
+    <script src="https://rawgit.com/RobinHerbots/jquery.inputmask/3.x/dist/jquery.inputmask.bundle.js"></script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
     <div id="topCompanySignIn">
@@ -119,7 +119,7 @@
                         </div>
                     </div>
                     <div class="block-fluid">
-                        <div class="row-form" style="display:none">
+                        <div class="row-form" style="display: none">
                             <div id="companySignupLoginDiv">
                                 <ul id="companySignupLogin">
                                     <li class="leftSide"><a href="companySignUp.aspx"><%=populateClassFromDB.GetSiteMessagesByKey("companyRegister")%></a></li>
@@ -135,8 +135,8 @@
                             <%--                        <div class="span3">
                             :</div>--%>
                             <div class="span9">
-                                <asp:TextBox type="tel" ID="Phone" runat="server" ></asp:TextBox><span>
-<%--                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="Phone"
+                                <asp:TextBox type="tel" ID="Phone" runat="server"></asp:TextBox><span>
+                                    <%--                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="Phone"
                                         Display="Dynamic" SetFocusOnError="true" />
                                     <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="Phone"
                                         Display="Dynamic" SetFocusOnError="true" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" />--%>
@@ -176,35 +176,39 @@
     </div>
     <div runat="server" id="googleVerfication" visible="false">
 
-         <script>
-        window.location.href = 'default.aspx';
-    </script>
+        <script>
+            window.location.href = 'default.aspx';
+        </script>
     </div>
-        <script src="build/js/intlTelInput.js"></script>
+    <script src="build/js/intlTelInput.js"></script>
     <script>
-    var input = document.querySelector("#ContentPlaceHolder1_Phone");
-    window.intlTelInput(input, {
-      // allowDropdown: false,
-      // autoHideDialCode: false,
-      // autoPlaceholder: "off",
-      // dropdownContainer: document.body,
-      // excludeCountries: ["us"],
-      // formatOnDisplay: false,
-      // geoIpLookup: function(callback) {
-      //   $.get("http://ipinfo.io", function() {}, "jsonp").always(function(resp) {
-      //     var countryCode = (resp && resp.country) ? resp.country : "";
-      //     callback(countryCode);
-      //   });
-      // },
-      // hiddenInput: "full_number",
-      // initialCountry: "auto",
-      // localizedCountries: { 'de': 'Deutschland' },
-      // nationalMode: false,
-      // onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
-      // placeholderNumberType: "MOBILE",
-      // preferredCountries: ['cn', 'jp'],
-      // separateDialCode: true,
-      utilsScript: "build/js/utils.js",
-    });
+
+        $('#ContentPlaceHolder1_Phone').inputmask("+(999) 999 99 99 99");
+        //var input = document.querySelector("#ContentPlaceHolder1_Phone");
+        //window.intlTelInput(input, {
+        //    // allowDropdown: false,
+        //    // autoHideDialCode: false,
+        //    // autoPlaceholder: "off",
+        //    // dropdownContainer: document.body,
+        //    // excludeCountries: ["us"],
+        //    // formatOnDisplay: false,
+        //    // geoIpLookup: function(callback) {
+        //    //   $.get("http://ipinfo.io", function() {}, "jsonp").always(function(resp) {
+        //    //     var countryCode = (resp && resp.country) ? resp.country : "";
+        //    //     callback(countryCode);
+        //    //   });
+        //    // },
+        //    // hiddenInput: "full_number",
+        //    // initialCountry: "auto",
+        //    // localizedCountries: { 'de': 'Deutschland' },
+        //    // nationalMode: false,
+        //    // onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
+        //    // placeholderNumberType: "MOBILE",
+        //    // preferredCountries: ['cn', 'jp'],
+        //    // separateDialCode: true,
+        //    utilsScript: "build/js/utils.js",
+        //});
+
+
   </script>
 </asp:Content>

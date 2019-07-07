@@ -16,17 +16,17 @@ public class MainFunct
         // TODO: Add constructor logic here
         //
     }
-    public static Guid InsertUserToCamera(int CustomerID, int SupplierID)
-    {
-        using (var con = databaseCon.create_sql_con())
-        {
-            SqlCommand cmd = new SqlCommand("insertUserToCameraEntity", con);
-            cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.Add("@CustomerID", SqlDbType.Int).Value = CustomerID;
-            cmd.Parameters.Add("@SupplierID", SqlDbType.Int).Value = SupplierID;
-            return Guid.Parse(cmd.ExecuteScalar().ToString());
-        }
-    }
+    //public static Guid InsertUserToCamera(int CustomerID, int SupplierID)
+    //{
+    //    using (var con = databaseCon.create_sql_con())
+    //    {
+    //        SqlCommand cmd = new SqlCommand("insertUserToCameraEntity", con);
+    //        cmd.CommandType = CommandType.StoredProcedure;
+    //        cmd.Parameters.Add("@CustomerID", SqlDbType.Int).Value = CustomerID;
+    //        cmd.Parameters.Add("@SupplierID", SqlDbType.Int).Value = SupplierID;
+    //        return Guid.Parse(cmd.ExecuteScalar().ToString());
+    //    }
+    //}
     public static void SaveUserComputer(int CustomerID, int SupplierID, Guid fatal)
     {
         using (var con = databaseCon.create_sql_con())

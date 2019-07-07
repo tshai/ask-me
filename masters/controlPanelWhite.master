@@ -1,0 +1,238 @@
+﻿<%@ Master Language="VB" %>
+
+<%@ Import Namespace="System.Data" %>
+<%@ Import Namespace="System.Data.SqlClient" %>
+<%@ Import Namespace="System.Data.Entity.SqlServer" %>
+<%@ Import Namespace="System.Data.Entity" %>
+
+<%@ Register Src="/webcontrol/popMessage.ascx" TagName="popMessage" TagPrefix="uc1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<script runat="server">
+
+
+    Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs)
+
+    End Sub
+
+    Protected Sub Page_Init(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Init
+
+    End Sub
+
+
+
+</script>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="live support, online help, support with video chat, help desk, " />
+    <meta name="description" content="live support with video chat for your website" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link href="/media/css/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet" />
+    <link runat="server" rel="shortcut icon" href="~/favicon.ico" type="image/x-icon" />
+    <link runat="server" rel="icon" href="~/favicon.ico" type="image/ico" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" />
+    </script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <script>
+        $(document).ready(function () {
+            $("#blackScreen").click(function () {
+                $("#blackScreen").hide();
+                $("*").removeClass("frontClass");
+
+            })
+            $("#cssmenu2 > ul > li >  label").mouseover(
+                function () {
+                    $(".ul2").hide();
+                    $(this).next().fadeIn(200).css('display', 'table');;
+                }
+            );
+            $("#cssmenu2 > ul > li >  label").click(
+                function () {
+                    $(".ul2").hide();
+
+
+                    $(this).next().fadeIn(200).css('display', 'table');;
+                }
+            );
+            //$('[data-toggle="tooltip"]').tooltip();
+            $("body").click(
+                function () {
+                    $(".ul2").hide();
+                }
+            );
+        });
+
+        function myFunction(m) {
+
+            $(m).val($(m).val().replace(/\s/g, ""));
+        }
+    </script>
+    <!-- Hotjar Tracking Code for https://www.live-interview.com -->
+</head>
+<body style="direction: ltr">
+    <asp:Panel runat="server" ID="iconnevigarion" Visible="false">
+        <style>
+            .fa-angle-double-left {
+                transform: rotate(180deg);
+            }
+        </style>
+    </asp:Panel>
+    <link href='/companies/build/css/controlPanelWhiteCss.aspx' rel="stylesheet" />
+    <style>
+        #DropDownList1 {
+            height: 25px;
+            font-size: 12px;
+            padding: 0px;
+        }
+
+
+
+        .frontClass {
+            z-index: 100;
+            position: relative;
+        }
+    </style>
+    <script>
+        function openMenu() {
+            $(".contentLeft").slideToggle("slow")
+        }
+        function showSiteMessage(message, action) {
+            $("#SiteMessage").css("display", "table");
+            if (action == "false") {
+                $("#SiteMessage").css("background-color", "red");
+            }
+            $("#SiteMessage label").html(message);
+        }
+        function openMenuIconComputer() {
+            if ($("#leftArea").is(":visible") == false) {
+                $("#leftArea").show();
+                $("#rightArea").css('width', '100%').css('width', '-=230px');
+            }
+            else {
+                $("#leftArea").hide();
+                $("#rightArea").css("width", "100%");
+            }
+
+
+        }
+        if (navigator.userAgent.toLowerCase().includes("iphone") || navigator.userAgent.toLowerCase().includes("ipad") || navigator.userAgent.toLowerCase().includes("edge")) {
+            $(document).ready(function () {
+                $("#rightArea").click(function () {
+                    $(".contentLeft").hide()
+                })
+            })
+        }
+
+        function showNotifications(showNotification) {
+            var pops = document.getElementsByClassName("popover__wrapper");
+            for (var i = 0; i < pops.length; i++) {
+                $(pops[i]).hover(function () {
+                    if (showNotification == '0') {
+                        this.lastElementChild.style.display = "none";
+                    }
+                    else {
+                        this.lastElementChild.style.display = "block";
+                    }
+                })
+            }
+        };
+    </script>
+    <form id="form1" runat="server">
+        <center>
+            <div class="mainDiv">
+                <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+                <div class="topLineAboveAll">
+                    <i class="fa fa-bars" aria-hidden="true" onclick="openMenuIconComputer()" id="openMenuIconComputer"></i>
+                </div>
+                <div id="leftArea">
+                    <i class="fa fa-bars" aria-hidden="true" onclick="openMenu()" id="openMenuIcon"></i>
+                    <div class="contentLeft">
+                        <div id="cssmenu2">
+                            <ul id="companyUl" runat="server">
+                                <li>
+                                    <i class="fa fa-home" aria-hidden="true"></i>
+                                    <label>
+                                        <a id="A11" href="/companies/default.aspx" class="but"><%=populateClassFromDB.GetSiteMessagesByKey("Main") %>
+                                        </a>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="rightArea">
+                    <div class="topLine">
+                        <div id="companyDiv" runat="server" style="width: 100%; margin: auto; height: 50px">
+                            <div id="profileImage">
+                                <a href="/<%=Session("domainName")%>/companies/editEmployeeProfile.aspx"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="mainArea">
+                        <div class="SiteMessage" id="SiteMessage">
+                            <i class="material-icons" style="display: inline-block; vertical-align: middle; line-height: initial;">error_outline</i>
+                        </div>
+
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+
+
+                    </div>
+                </div>
+                <script type="text/javascript">
+</script>
+                <uc1:popMessage ID="popMessage1" runat="server" />
+            </div>
+        </center>
+    </form>
+    <div class="footer">
+        <div class="footerDiv1">
+            <div class="footerBox">
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        _linkedin_data_partner_id = "274460";
+    </script>
+    <script type="text/javascript">
+        (function () {
+            var s = document.getElementsByTagName("script")[0];
+            var b = document.createElement("script");
+            b.type = "text/javascript"; b.async = true;
+            b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+            s.parentNode.insertBefore(b, s);
+        })();
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display: none;" alt="" src="https://dc.ads.linkedin.com/collect/?pid=274460&fmt=gif" />
+    </noscript>
+    <div id="messageBottom">
+        <div id="top5">
+            <div class="top5left"><%=populateClassFromDB.GetSiteMessagesByKey("SystemMessage") %></div>
+            <div class="top5Right"><i class='fa fa-times' aria-hidden='true' id="closeIcon5" onclick="closeMessageBottom()"></i></div>
+        </div>
+        <div id="body5"></div>
+        <div id="body7"></div>
+        <div id="body6"></div>
+        <div style="width: 100%; text-align: center">
+            <div class="smallButton" id="linkToOpen5" style="margin: auto !important; float: initial !important; text-align: center !important; width: 50% !important; padding: 0">
+            </div>
+        </div>
+    </div>
+    <%--  <script type="text/javascript">
+        window._mfq = window._mfq || [];
+        (function () {
+            var mf = document.createElement("script");
+            mf.type = "text/javascript"; mf.async = true;
+            mf.src = "//cdn.mouseflow.com/projects/042e489d-c7ca-463e-9853-c28dea6b2ff5.js";
+            document.getElementsByTagName("head")[0].appendChild(mf);
+        })();
+    </script>--%>
+    <div id="blackScreen"></div>
+</body>
+</html>

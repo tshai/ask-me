@@ -1,0 +1,192 @@
+﻿<%@ Master Language="VB" %>
+
+<%@ Register Src="/webcontrol/popMessage.ascx" TagName="popMessage" TagPrefix="uc1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<script runat="server">
+
+    Protected Sub Page_Init(ByVal sender As Object, ByVal e As System.EventArgs)
+
+    End Sub
+
+    Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
+        If String.IsNullOrEmpty(Request("message")) = False Then
+            Dim message = populateClassFromDB.GetSiteMessages(Request.QueryString("message").ToString())
+            admin.popUp(Page, message)
+        End If
+    End Sub
+
+</script>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138081008-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-138081008-1');
+    </script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-54714629-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-54714629-1');
+    </script>
+
+    <title></title>
+    <meta name="google-site-verification" content="BYTZiBdb5gIcoalE41VqxwSvKaB2wRc-OL2G1CTz8qo" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="verify-v1" content="IYIZvxo8h+wr0ex/GVadOMMxZDixzirxWx5BOCS/dqk=" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <meta name="google-site-verification" content="BYTZiBdb5gIcoalE41VqxwSvKaB2wRc-OL2G1CTz8qo" />
+</head>
+<body>
+    <form runat="server">
+        <div id="wrapper">
+            <div class="top">
+                <div class="logo">
+                    <a href="/default.aspx">
+                        <img src="/App_Themes/main/images/nifgashot.png" /></a>
+                </div>
+                <ul class="topUl" id="topMenu">
+                    <li class="topLi"><a href="/nifgashot/nifgashot.aspx"><%= populateClassFromDB.GetSiteMessagesByKey("Main")%></a></li>
+                    <li class="topLi" style="display: none"><a href="/nifgashot/register.aspx"><%= populateClassFromDB.GetSiteMessagesByKey("newEmployee") %></a></li>
+                    <li class="topLi" style="display: none"><a href="/nifgashot/login.aspx"><%= populateClassFromDB.GetSiteMessagesByKey("login") %></a></li>
+                    <li class="topLi"><a href="/nifgashot/help.aspx"><%= populateClassFromDB.GetSiteMessagesByKey("faq") %></a></li>
+                </ul>
+                <div class="dropdown">
+                    <div id="mobileMenu" class="dropbtn" onclick="myFunction()"><i class="fas fa-bars"></i></div>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="/nifgashot/nifgashot.aspx"><%= populateClassFromDB.GetSiteMessagesByKey("Main") %></a>
+                        <a href="/nifgashot/register.aspx"><%=  populateClassFromDB.GetSiteMessagesByKey("newEmployee") %></a>
+                        <a href="/nifgashot/login.aspx"><%= populateClassFromDB.GetSiteMessagesByKey("login") %></a>
+                        <a href="/nifgashot/help.aspx"><%= populateClassFromDB.GetSiteMessagesByKey("faq")%></a>
+                    </div>
+                </div>
+            </div>
+            <div class="header2">
+                <div class="signUp">
+                    <div class="signUpForm">
+                        <asp:ScriptManager ID="ScriptManager1" runat="server">
+                        </asp:ScriptManager>
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer">
+            <div class="footerBox">
+                <ul>
+                    <li><a href="/nifgashot/nifgashot.aspx"><%=  populateClassFromDB.GetSiteMessagesByKey("Main")  %></a></li>
+                    <li><a href="/nifgashot/login.aspx"><%=populateClassFromDB.GetSiteMessagesByKey("login") %></a></li>
+                    <li><a href="/nifgashot/register.aspx"><%=populateClassFromDB.GetSiteMessagesByKey("newEmployee") %></a></li>
+                </ul>
+            </div>
+            <div class="footerBox">
+                <ul>
+                    <li><a href="/nifgashot/contact.aspx"><%= populateClassFromDB.GetSiteMessagesByKey("supportCenter")%></a></li>
+                    <li><a href="/nifgashot/help.aspx"><%= populateClassFromDB.GetSiteMessagesByKey("faq")  %></a></li>
+                    <li><a href="/nifgashot/terms.aspx"><%=populateClassFromDB.GetSiteMessagesByKey("termsOfUse") %></a></li>
+                    <li><a href="/nifgashot/privacyPolicy.aspx"><%=populateClassFromDB.GetSiteMessagesByKey("privacyPolicy") %></a></li>
+                </ul>
+            </div>
+            <%--<div class="footerBox">
+					<img id="Img4" src="/App_Themes/main/images/visalogo.png" runat="server" alt="visa logo" style="width: 101px; height: 39px" />
+				</div>--%>
+        </div>
+    </form>
+    <uc1:popMessage ID="popMessage1" runat="server" />
+    <script type="text/javascript">
+
+        function myFunction() {
+            $("#myDropdown").addClass("show");
+        }
+
+        $(document).ready(function () {
+            if (screen.width < 999) {
+                $('#topMenu').css("display", "none");
+                $('#mobileMenu').css("display", "block");
+            }
+
+            $(window).click(function () {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            });
+
+            $('#mobileMenu').click(function (event) {
+                event.stopPropagation();
+            });
+        });
+    </script>
+    <div runat="server" id="israliot" visible="false">
+
+        <script type="text/javascript">
+
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-19106250-1']);
+            _gaq.push(['_trackPageview']);
+
+            (function () {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+
+        </script>
+        <%--	<%= Resources.Resources.israliotdiv %>--%>
+    </div>
+
+    <%--    <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/58d91111f7bbaa72709c2a32/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->--%>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-54714629-1');
+    </script>
+    <!-- Hotjar Tracking Code for www.nifgashot.com -->
+    <script>
+        (function (h, o, t, j, a, r) {
+            h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+            h._hjSettings = { hjid: 1281163, hjsv: 6 };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script'); r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
+</body>
+</html>

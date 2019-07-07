@@ -4,110 +4,138 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="5a2ea51208fb461cbd7c91ac4838e55b" Name="Diagram1">
-        <EntityTypeShape EntityType="AskMeModel.AdminPages" Width="1.5" PointX="7.75" PointY="5.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="AskMeModel.Admins" Width="1.5" PointX="3" PointY="124" IsExpanded="true" />
-        <EntityTypeShape EntityType="AskMeModel.AdminsLogins" Width="1.5" PointX="5.25" PointY="124" IsExpanded="true" />
-        <EntityTypeShape EntityType="AskMeModel.AdminToUsersNews" Width="1.5" PointX="7.75" PointY="8.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="AskMeModel.AntiFraudLog" Width="1.5" PointX="3" PointY="11.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="AskMeModel.AppLogs" Width="1.5" PointX="3" PointY="17" IsExpanded="true" />
-        <EntityTypeShape EntityType="AskMeModel.BlackList" Width="1.5" PointX="3" PointY="20" IsExpanded="true" />
-        <EntityTypeShape EntityType="AskMeModel.BlockedUserNum" Width="1.5" PointX="3" PointY="22.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="AskMeModel.BlockIdNumber" Width="1.5" PointX="3" PointY="26.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="AskMeModel.BlockIp" Width="1.5" PointX="3" PointY="30.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="AskMeModel.CardCam" Width="1.5" PointX="5.25" PointY="55" IsExpanded="true" />
-        <EntityTypeShape EntityType="AskMeModel.CCData" Width="1.5" PointX="3" PointY="34.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="AskMeModel.CcDetails" Width="1.5" PointX="3" PointY="49" IsExpanded="true" />
-        <EntityTypeShape EntityType="AskMeModel.ChatTimeUse" Width="1.5" PointX="3" PointY="55.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="AskMeModel.Countries" Width="1.5" PointX="9.75" PointY="5.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="AskMeModel.CountryList" Width="1.5" PointX="8" PointY="1" IsExpanded="true" />
-        <EntityTypeShape EntityType="AskMeModel.Currencies" Width="1.5" PointX="5.75" PointY="1.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="AskMeModel.DomainsList" Width="1.5" PointX="9.75" PointY="8.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="AskMeModel.EmployeeManageLevels" Width="1.5" PointX="0.75" PointY="127.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="AskMeModel.Employees" Width="1.5" PointX="3" PointY="127.125" IsExpanded="true" />
+      <Diagram DiagramId="f096015d0cb44b1fb71a368c35d190d3" Name="Diagram1">
+        <EntityTypeShape EntityType="AskMeModel.AdminPages" Width="1.5" PointX="10.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AskMeModel.Admins" Width="1.5" PointX="5.75" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="AskMeModel.AdminsLogins" Width="1.5" PointX="8" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="AskMeModel.AdminToUsersNews" Width="1.5" PointX="12.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AskMeModel.AntiFraudLog" Width="1.5" PointX="12.5" PointY="17.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="AskMeModel.AppLogs" Width="1.5" PointX="12.5" PointY="23.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="AskMeModel.BlackList" Width="1.5" PointX="12.5" PointY="26.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="AskMeModel.BlockedUserNum" Width="1.5" PointX="12.5" PointY="29" IsExpanded="true" />
+        <EntityTypeShape EntityType="AskMeModel.BlockIdNumber" Width="1.5" PointX="12.5" PointY="32.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="AskMeModel.BlockIp" Width="1.5" PointX="12.5" PointY="36.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="AskMeModel.CardCam" Width="1.5" PointX="14.75" PointY="61.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="AskMeModel.CCData" Width="1.5" PointX="12.5" PointY="47.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="AskMeModel.CcDetails" Width="1.5" PointX="12.5" PointY="51.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="AskMeModel.ChatTimeUse" Width="1.5" PointX="12.5" PointY="57.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="AskMeModel.CountryList" Width="1.5" PointX="3" PointY="63.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="AskMeModel.Currencies" Width="1.5" PointX="0.75" PointY="65.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="AskMeModel.DomainIDToUsers" Width="1.5" PointX="7.5" PointY="64.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="AskMeModel.EmployeeManageLevels" Width="1.5" PointX="7.75" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="AskMeModel.Employees" Width="1.5" PointX="10" PointY="7" IsExpanded="true" />
         <EntityTypeShape EntityType="AskMeModel.Languages" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
-        <EntityTypeShape EntityType="AskMeModel.LogCcFaild" Width="1.5" PointX="3" PointY="62.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="AskMeModel.LogChatTimeUse" Width="1.5" PointX="3" PointY="70.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="AskMeModel.LogLastVisit" Width="1.5" PointX="3" PointY="67.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="AskMeModel.LogRtc" Width="1.5" PointX="10.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="AskMeModel.NotsAboutCustomers" Width="1.5" PointX="3" PointY="76.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="AskMeModel.OnlineUsers" Width="1.5" PointX="3" PointY="80.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="AskMeModel.PaymentStatus" Width="1.5" PointX="11.75" PointY="3.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="AskMeModel.PerformersPhotos" Width="1.5" PointX="3" PointY="86" IsExpanded="true" />
-        <EntityTypeShape EntityType="AskMeModel.PrepaidBin" Width="1.5" PointX="5.75" PointY="11.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="AskMeModel.Prices" Width="1.5" PointX="11.75" PointY="7.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="AskMeModel.RoomConversation" Width="1.5" PointX="3" PointY="88.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="AskMeModel.SendUsersWriteAboutGetUsers" Width="1.5" PointX="3" PointY="92.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="AskMeModel.Setting" Width="1.5" PointX="11.75" PointY="11.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="AskMeModel.SiteMessages" Width="1.5" PointX="0.75" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="AskMeModel.LogCcFaild" Width="1.5" PointX="12.5" PointY="63.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="AskMeModel.LogChatTimeUse" Width="1.5" PointX="12.5" PointY="71.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="AskMeModel.LogLastVisit" Width="1.5" PointX="12.5" PointY="68.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="AskMeModel.LogRtc" Width="1.5" PointX="12.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AskMeModel.NotsAboutCustomers" Width="1.5" PointX="12.5" PointY="77.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="AskMeModel.OnlineUsers" Width="1.5" PointX="12.5" PointY="81.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="AskMeModel.PaymentStatus" Width="1.5" PointX="12.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AskMeModel.PaymentStrings" Width="1.5" PointX="12.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AskMeModel.Planes" Width="1.5" PointX="3" PointY="69.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AskMeModel.PlanProperties" Width="1.5" PointX="3" PointY="73.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="AskMeModel.PlanToPlanproperties" Width="1.5" PointX="5.25" PointY="70" IsExpanded="true" />
+        <EntityTypeShape EntityType="AskMeModel.PrepaidBin" Width="1.5" PointX="0.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AskMeModel.Prices" Width="1.5" PointX="3" PointY="10" IsExpanded="true" />
+        <EntityTypeShape EntityType="AskMeModel.RoomConversation" Width="1.5" PointX="12.5" PointY="86.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="AskMeModel.SendUsersWriteAboutGetUsers" Width="1.5" PointX="12.5" PointY="90.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="AskMeModel.Setting" Width="1.5" PointX="5" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="AskMeModel.SiteMessages" Width="1.5" PointX="0.75" PointY="5" IsExpanded="true" />
         <EntityTypeShape EntityType="AskMeModel.SiteMessagesToLanguages" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
-        <EntityTypeShape EntityType="AskMeModel.SMSLogs" Width="1.5" PointX="12.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="AskMeModel.Studios" Width="1.5" PointX="2.75" PointY="5" IsExpanded="true" />
-        <EntityTypeShape EntityType="AskMeModel.StudiosToGirls" Width="1.5" PointX="13.75" PointY="3.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="AskMeModel.SupportChat" Width="1.5" PointX="5" PointY="6" IsExpanded="true" />
-        <EntityTypeShape EntityType="AskMeModel.SupportCorrespondence" Width="1.5" PointX="5.25" PointY="96.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="AskMeModel.SupportImages" Width="1.5" PointX="13.75" PointY="6.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="AskMeModel.SupportNew" Width="1.5" PointX="3" PointY="96" IsExpanded="true" />
-        <EntityTypeShape EntityType="AskMeModel.TicketViewDates" Width="1.5" PointX="5.25" PointY="102.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="AskMeModel.UserChangeStatus" Width="1.5" PointX="13.75" PointY="9.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="AskMeModel.UserComputer" Width="1.5" PointX="3" PointY="102.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="AskMeModel.Users" Width="1.5" PointX="0.75" PointY="54" IsExpanded="true" />
-        <EntityTypeShape EntityType="AskMeModel.UsersLoggedIn" Width="1.5" PointX="3" PointY="106.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="AskMeModel.UsersReview" Width="1.5" PointX="3" PointY="110.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="AskMeModel.UsersScore" Width="1.5" PointX="3" PointY="113.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="AskMeModel.UsersToUsers" Width="1.5" PointX="3" PointY="117.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="AskMeModel.UsersToUsersMessages" Width="1.5" PointX="5.75" PointY="14.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="AskMeModel.WindowsServiceLogs" Width="1.5" PointX="3" PointY="120" IsExpanded="true" />
+        <EntityTypeShape EntityType="AskMeModel.SMSLogs" Width="1.5" PointX="2.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AskMeModel.Studios" Width="1.5" PointX="7.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="AskMeModel.StudiosToGirls" Width="1.5" PointX="14.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AskMeModel.SupplierToServicePrice" Width="1.5" PointX="8" PointY="67.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="AskMeModel.SupportChat" Width="1.5" PointX="10" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="AskMeModel.SupportCorrespondence" Width="1.5" PointX="14.75" PointY="93.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="AskMeModel.SupportImages" Width="1.5" PointX="14.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AskMeModel.SupportNew" Width="1.5" PointX="12.5" PointY="93.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="AskMeModel.sysdiagrams" Width="1.5" PointX="4.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AskMeModel.TicketViewDates" Width="1.5" PointX="14.75" PointY="97.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="AskMeModel.UserChangeStatus" Width="1.5" PointX="14.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AskMeModel.UserComputer" Width="1.5" PointX="12.5" PointY="100" IsExpanded="true" />
+        <EntityTypeShape EntityType="AskMeModel.UsersLoggedIn" Width="1.5" PointX="12.5" PointY="104.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="AskMeModel.UsersPhotos" Width="1.5" PointX="12.5" PointY="108" IsExpanded="true" />
+        <EntityTypeShape EntityType="AskMeModel.UsersProperties" Width="1.5" PointX="12.5" PointY="110.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="AskMeModel.UsersReview" Width="1.5" PointX="12.5" PointY="113.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="AskMeModel.UsersScore" Width="1.5" PointX="12.5" PointY="117.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="AskMeModel.UsersToUsers" Width="1.5" PointX="12.5" PointY="120.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="AskMeModel.UsersToUsersMessages" Width="1.5" PointX="15.5" PointY="68.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="AskMeModel.UsersToUsersServicesPayments" Width="1.5" PointX="17.75" PointY="63.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AskMeModel.Versions" Width="1.5" PointX="2.75" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="AskMeModel.WindowsServiceLogs" Width="1.5" PointX="12.5" PointY="123.375" IsExpanded="true" />
         <AssociationConnector Association="AskMeModel.FK_adminsLogins_admins" ManuallyRouted="false" />
-        <AssociationConnector Association="AskMeModel.FK_supportCorrespondence_admins" ManuallyRouted="false" />
-        <AssociationConnector Association="AskMeModel.FK_AntiFraudLog_Users" ManuallyRouted="false" />
-        <AssociationConnector Association="AskMeModel.FK_AppLogs_MainModels" ManuallyRouted="false" />
-        <AssociationConnector Association="AskMeModel.FK_BlackList_Users" ManuallyRouted="false" />
-        <AssociationConnector Association="AskMeModel.FK_BlackList_Users1" ManuallyRouted="false" />
-        <AssociationConnector Association="AskMeModel.FK_BlockedUserNum_Users" ManuallyRouted="false" />
-        <AssociationConnector Association="AskMeModel.FK_BlockIdNumber_Users" ManuallyRouted="false" />
-        <AssociationConnector Association="AskMeModel.FK_BlockIp_Users" ManuallyRouted="false" />
         <AssociationConnector Association="AskMeModel.FK_CardCam_CcDetails" ManuallyRouted="false" />
-        <AssociationConnector Association="AskMeModel.FK_CardCam_Users" ManuallyRouted="false" />
-        <AssociationConnector Association="AskMeModel.FK_CCData_Users" ManuallyRouted="false" />
-        <AssociationConnector Association="AskMeModel.FK_CcDetails_Users" ManuallyRouted="false" />
-        <AssociationConnector Association="AskMeModel.FK_ChatTimeUse_Users" ManuallyRouted="false" />
-        <AssociationConnector Association="AskMeModel.FK_ChatTimeUse_Users1" ManuallyRouted="false" />
+        <AssociationConnector Association="AskMeModel.FK_UsersToUsersServicesPayments_ChatTimeUse" ManuallyRouted="false" />
         <AssociationConnector Association="AskMeModel.FK_CountryList_Currencies" ManuallyRouted="false" />
+        <AssociationConnector Association="AskMeModel.FK_Planes_Currencies" ManuallyRouted="false" />
+        <AssociationConnector Association="AskMeModel.FK_SupplierToMessagePrice_Currencies" ManuallyRouted="false" />
         <AssociationConnector Association="AskMeModel.FK_employees_EmployeeManageLevels" ManuallyRouted="false" />
-        <AssociationConnector Association="AskMeModel.FK_supportCorrespondence_employees" ManuallyRouted="false" />
         <AssociationConnector Association="AskMeModel.FK_Languages_Languages" ManuallyRouted="false" />
         <AssociationConnector Association="AskMeModel.FK_SiteMessagesToLanguages_Languages" ManuallyRouted="false" />
-        <AssociationConnector Association="AskMeModel.FK_LogCcFaild_Users" ManuallyRouted="false" />
-        <AssociationConnector Association="AskMeModel.FK_LogChatTimeUse_Users" ManuallyRouted="false" />
-        <AssociationConnector Association="AskMeModel.FK_LogChatTimeUse_Users1" ManuallyRouted="false" />
-        <AssociationConnector Association="AskMeModel.FK_LogLastVisit_Users" ManuallyRouted="false" />
-        <AssociationConnector Association="AskMeModel.FK_NotsAboutCustomers_Users" ManuallyRouted="false" />
-        <AssociationConnector Association="AskMeModel.FK_OnlineUsers_Users" ManuallyRouted="false" />
-        <AssociationConnector Association="AskMeModel.FK_OnlineUsers_Users1" ManuallyRouted="false" />
-        <AssociationConnector Association="AskMeModel.FK_performers_photos_MainModels" ManuallyRouted="false" />
-        <AssociationConnector Association="AskMeModel.FK_RoomConversation_Users" ManuallyRouted="false" />
-        <AssociationConnector Association="AskMeModel.FK_RoomConversation_Users1" ManuallyRouted="false" />
-        <AssociationConnector Association="AskMeModel.FK_SendUsersWriteAboutGetUsers_Users" ManuallyRouted="false" />
-        <AssociationConnector Association="AskMeModel.FK_SendUsersWriteAboutGetUsers_Users1" ManuallyRouted="false" />
+        <AssociationConnector Association="AskMeModel.FK_PlanToPlanproperties_Planes" ManuallyRouted="false" />
+        <AssociationConnector Association="AskMeModel.FK_PlanToPlanproperties_PlanProperties" ManuallyRouted="false" />
+        <AssociationConnector Association="AskMeModel.FK_Prices_SiteMessages" ManuallyRouted="false" />
+        <AssociationConnector Association="AskMeModel.FK_Setting_Versions" ManuallyRouted="false" />
         <AssociationConnector Association="AskMeModel.FK_SiteMessagesToLanguages_SiteMessages" ManuallyRouted="false" />
         <AssociationConnector Association="AskMeModel.FK_SupportChat_studios" ManuallyRouted="false" />
         <AssociationConnector Association="AskMeModel.FK_supportCorrespondence_support" ManuallyRouted="false" />
-        <AssociationConnector Association="AskMeModel.FK_SupportNew_Users" ManuallyRouted="false" />
         <AssociationConnector Association="AskMeModel.FK_TicketViewDates_supportNew" ManuallyRouted="false" />
-        <AssociationConnector Association="AskMeModel.FK_UserComputer_Users" ManuallyRouted="false" />
-        <AssociationConnector Association="AskMeModel.FK_UserComputer_Users1" ManuallyRouted="false" />
-        <AssociationConnector Association="AskMeModel.FK_MainModels_MainModels" ManuallyRouted="false" />
-        <AssociationConnector Association="AskMeModel.FK_UsersLoggedIn_Users" ManuallyRouted="false" />
-        <AssociationConnector Association="AskMeModel.FK_UsersReview_Users" ManuallyRouted="false" />
-        <AssociationConnector Association="AskMeModel.FK_UsersReview_Users1" ManuallyRouted="false" />
-        <AssociationConnector Association="AskMeModel.FK_UsersScore_Users" ManuallyRouted="false" />
-        <AssociationConnector Association="AskMeModel.FK_UsersScore_Users1" ManuallyRouted="false" />
-        <AssociationConnector Association="AskMeModel.FK_UsersToUsers_MainModels" ManuallyRouted="false" />
-        <AssociationConnector Association="AskMeModel.FK_UsersToUsers_MainModels1" ManuallyRouted="false" />
-        <AssociationConnector Association="AskMeModel.FK_WindowsServiceLogs_Users" ManuallyRouted="false" />
-        <AssociationConnector Association="AskMeModel.FK_WindowsServiceLogs_Users1" ManuallyRouted="false" />
-      </Diagram>
+        <AssociationConnector Association="AskMeModel.FK_UsersToUsersServicesPayments_UsersToUsersMessages" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="AskMeModel.SupplierToLanguages" Width="1.5" PointX="12.5" PointY="41.25" />
+        <AssociationConnector Association="AskMeModel.FK_SupplierToLanguages_Languages" />
+        <EntityTypeShape EntityType="AskMeModel.Users" Width="1.5" PointX="10.25" PointY="60.125" />
+        <AssociationConnector Association="AskMeModel.FK_AntiFraudLog_Users" />
+        <AssociationConnector Association="AskMeModel.FK_AppLogs_MainModels" />
+        <AssociationConnector Association="AskMeModel.FK_BlackList_Users" />
+        <AssociationConnector Association="AskMeModel.FK_BlackList_Users1" />
+        <AssociationConnector Association="AskMeModel.FK_BlockedUserNum_Users" />
+        <AssociationConnector Association="AskMeModel.FK_BlockIdNumber_Users" />
+        <AssociationConnector Association="AskMeModel.FK_BlockIp_Users" />
+        <AssociationConnector Association="AskMeModel.FK_CardCam_Users" />
+        <AssociationConnector Association="AskMeModel.FK_CCData_Users" />
+        <AssociationConnector Association="AskMeModel.FK_CcDetails_Users" />
+        <AssociationConnector Association="AskMeModel.FK_ChatTimeUse_Users" />
+        <AssociationConnector Association="AskMeModel.FK_ChatTimeUse_Users1" />
+        <AssociationConnector Association="AskMeModel.FK_DomainIDToUsers_Users" />
+        <AssociationConnector Association="AskMeModel.FK_LogCcFaild_Users" />
+        <AssociationConnector Association="AskMeModel.FK_LogChatTimeUse_Users" />
+        <AssociationConnector Association="AskMeModel.FK_LogChatTimeUse_Users1" />
+        <AssociationConnector Association="AskMeModel.FK_LogLastVisit_Users" />
+        <AssociationConnector Association="AskMeModel.FK_NotsAboutCustomers_Users" />
+        <AssociationConnector Association="AskMeModel.FK_OnlineUsers_Users" />
+        <AssociationConnector Association="AskMeModel.FK_OnlineUsers_Users1" />
+        <AssociationConnector Association="AskMeModel.FK_RoomConversation_Users" />
+        <AssociationConnector Association="AskMeModel.FK_RoomConversation_Users1" />
+        <AssociationConnector Association="AskMeModel.FK_SendUsersWriteAboutGetUsers_Users" />
+        <AssociationConnector Association="AskMeModel.FK_SendUsersWriteAboutGetUsers_Users1" />
+        <AssociationConnector Association="AskMeModel.FK_SupplierToLanguages_Users" />
+        <AssociationConnector Association="AskMeModel.FK_SupplierToMessagePrice_Users" />
+        <AssociationConnector Association="AskMeModel.FK_Users_SupplierToServicePrice" />
+        <AssociationConnector Association="AskMeModel.FK_SupportNew_Users" />
+        <AssociationConnector Association="AskMeModel.FK_UserComputer_Users" />
+        <AssociationConnector Association="AskMeModel.FK_UserComputer_Users1" />
+        <AssociationConnector Association="AskMeModel.FK_MainModels_MainModels" />
+        <AssociationConnector Association="AskMeModel.FK_PerformersPhotos_Users" />
+        <AssociationConnector Association="AskMeModel.FK_UsersLoggedIn_Users" />
+        <AssociationConnector Association="AskMeModel.FK_UsersProperties_Users" />
+        <AssociationConnector Association="AskMeModel.FK_UsersReview_Users" />
+        <AssociationConnector Association="AskMeModel.FK_UsersReview_Users1" />
+        <AssociationConnector Association="AskMeModel.FK_UsersScore_Users" />
+        <AssociationConnector Association="AskMeModel.FK_UsersScore_Users1" />
+        <AssociationConnector Association="AskMeModel.FK_UsersToUsers_MainModels" />
+        <AssociationConnector Association="AskMeModel.FK_UsersToUsers_MainModels1" />
+        <AssociationConnector Association="AskMeModel.FK_UsersToUsersServicesPayments_SupplierToServicePrice" />
+        <AssociationConnector Association="AskMeModel.FK_UsersToUsersServicesPayments_Users" />
+        <AssociationConnector Association="AskMeModel.FK_WindowsServiceLogs_Users" />
+        <AssociationConnector Association="AskMeModel.FK_WindowsServiceLogs_Users1" />
+        <EntityTypeShape EntityType="AskMeModel.DomainProperties" Width="1.5" PointX="7.5" PointY="57.375" />
+        <EntityTypeShape EntityType="AskMeModel.DomainsList" Width="1.5" PointX="5.25" PointY="55.125" />
+        <AssociationConnector Association="AskMeModel.FK_DomainsList_CountryList" />
+        <AssociationConnector Association="AskMeModel.FK_DomainIDToUsers_DomainsList" />
+        <AssociationConnector Association="AskMeModel.FK_DomainProperties_DomainsList" />
+        </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
 </edmx:Edmx>

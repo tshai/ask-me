@@ -33,8 +33,8 @@ public class errors
 			cmd.CommandType = CommandType.StoredProcedure;
 			cmd.Parameters.Add("shortName", SqlDbType.VarChar).Value = checkErrorLenght(desc);
 			cmd.Parameters.Add("longName", SqlDbType.NVarChar).Value = "";
-			cmd.Parameters.Add("userIP", SqlDbType.NVarChar).Value = HttpContext.Current.Request.UserHostAddress;
-			cmd.Parameters.Add("website", SqlDbType.NVarChar).Value = HttpContext.Current.Request.Url.GetLeftPart(UriPartial.Authority) + HttpContext.Current.Request.ApplicationPath; // website.Remove(website.IndexOf("/"))
+			cmd.Parameters.Add("userIP", SqlDbType.NVarChar).Value = userClass.extractUserIp();
+            cmd.Parameters.Add("website", SqlDbType.NVarChar).Value = HttpContext.Current.Request.Url.GetLeftPart(UriPartial.Authority) + HttpContext.Current.Request.ApplicationPath; // website.Remove(website.IndexOf("/"))
 			cmd.Parameters.Add("webpage", SqlDbType.NVarChar).Value = HttpContext.Current.Request.Url.ToString().Split('?')[0];
 			try
 			{

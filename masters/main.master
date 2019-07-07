@@ -215,7 +215,7 @@
                 </div>
                 <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:AskMe %>" SelectCommand="SELECT * FROM [Languages]"></asp:SqlDataSource>
                 <a href="/<%=Session("DomainName")%>/" id="logo_img">
-                    <img src="/media/images/logo.png" alt="logo" />
+                    <img src="/media/ask-me1.png" alt="logo" style="width:110px" />
                 </a>
             </div>
             <div class="content" id="mainDiv">
@@ -256,14 +256,14 @@
                             <li><a id="A8" href="~/" runat="server" rel="nofollow">
                                 <%=populateClassFromDB.GetSiteMessagesByKey("Main")%></a></li>
 
-                            <li><a href="/<%=Session("DomainName")%>/companies/companyLogin.aspx"><%=populateClassFromDB.GetSiteMessagesByKey("companyLogin")%></a></li>
-                            <li><a href="/<%=Session("DomainName")%>/companies/companySignUp.aspx"><%=populateClassFromDB.GetSiteMessagesByKey("companyRegister")%></a></li>
+                            <li><a href="/companies/companyLogin.aspx"><%=populateClassFromDB.GetSiteMessagesByKey("companyLogin")%></a></li>
+                            <li><a href="/companies/companySignUp.aspx"><%=populateClassFromDB.GetSiteMessagesByKey("companyRegister")%></a></li>
                             <%--                            <li><a href="/<%=Session("DomainName")%>/customers/customerSignUp.aspx"><%=populateClassFromDB.GetSiteMessagesByKey("candidateSignup")%></a></li>
-                            <li><a href="/<%=Session("DomainName")%>/customers/customerLogin.aspx"><%=populateClassFromDB.GetSiteMessagesByKey("candidateLogin")%></a></li>--%>
-                            <li><a href="/<%=Session("DomainName")%>/main/features.aspx"><%=populateClassFromDB.GetSiteMessagesByKey("features")%></a></li>
-                            <li><a href="/<%=Session("DomainName")%>/main/faq.aspx"><%=populateClassFromDB.GetSiteMessagesByKey("faq")%></a></li>
+                            <li><a href="/customers/customerLogin.aspx"><%=populateClassFromDB.GetSiteMessagesByKey("candidateLogin")%></a></li>--%>
+                            <li><a href="/main/features.aspx"><%=populateClassFromDB.GetSiteMessagesByKey("features")%></a></li>
+                            <li><a href="/main/faq.aspx"><%=populateClassFromDB.GetSiteMessagesByKey("faq")%></a></li>
                             <%--<li><a href="/<%=Session("DomainName")%>/main/faqCandidats.aspx"><%=populateClassFromDB.GetSiteMessagesByKey("facCand")%></a></li>--%>
-                            <li><a href="/<%=Session("DomainName")%>/main/resourceInfo.aspx"><%=populateClassFromDB.GetSiteMessagesByKey("videoInfoRes")%></a></li>
+                            <li><a href="/main/resourceInfo.aspx"><%=populateClassFromDB.GetSiteMessagesByKey("videoInfoRes")%></a></li>
 
 
                         </ul>
@@ -271,7 +271,7 @@
                     </div>
                     <div class="footerBox">
                         <span class="footerTitle">
-                            <img src="/<%=Session("DomainName")%>/media/images/Live-Interview-video.png" style="width: 300px" alt="logo" /></span>
+                            <img src="/media/images/Live-Interview-video.png" style="width: 300px" alt="logo" /></span>
                         <p><%=populateClassFromDB.GetSiteMessagesByKey("liveInterviewDown")%></p>
                     </div>
                 </div>
@@ -280,7 +280,7 @@
             <center>
 
                 <p>
-                    <a href="/<%=Session("DomainName")%>/main/terms.aspx">Terms</a> <a href="~/main/privacypolicy.aspx"><%=populateClassFromDB.GetSiteMessagesByKey("privacyPolicy")%></a>
+                    <a href="/main/terms.aspx">Terms</a> <a href="~/main/privacypolicy.aspx"><%=populateClassFromDB.GetSiteMessagesByKey("privacyPolicy")%></a>
                 </p>
             </center>
         </div>
@@ -298,7 +298,7 @@
     <uc1:popMessage ID="popMessage1" runat="server" />
     <center><% =Session("site") %></center>
     <div id="localSupportDiv" style="text-align: center; display: none">
-        <a href="/<%=Session("DomainName")%>/general/contact.aspx">><%=populateClassFromDB.GetSiteMessagesByKey("contactChat")%></a>
+        <a href="/general/contact.aspx">><%=populateClassFromDB.GetSiteMessagesByKey("contactChat")%></a>
     </div>
     <script type="text/javascript">
         _linkedin_data_partner_id = "274460";

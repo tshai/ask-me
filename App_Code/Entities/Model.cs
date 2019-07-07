@@ -32,7 +32,6 @@ namespace Entities
         public Admins()
         {
             this.AdminsLogins = new HashSet<AdminsLogins>();
-            this.SupportCorrespondence = new HashSet<SupportCorrespondence>();
         }
     
         public int ID { get; set; }
@@ -43,8 +42,6 @@ namespace Entities
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<AdminsLogins> AdminsLogins { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<SupportCorrespondence> SupportCorrespondence { get; set; }
     }
 }
 namespace Entities
@@ -210,47 +207,27 @@ namespace Entities
     public partial class CardCam
     {
         public System.DateTime OrderDay { get; set; }
-        public string Price { get; set; }
+        public double PriceInDollar { get; set; }
         public int ID { get; set; }
-        public string SiteName { get; set; }
+        public int DomainID { get; set; }
         public string IpAddress { get; set; }
-        public decimal TimeExpire { get; set; }
         public string Lastdigits { get; set; }
-        public string SubSite { get; set; }
-        public System.DateTime OriginalDate { get; set; }
         public int UserID { get; set; }
         public byte UserAskToDelete { get; set; }
-        public byte AdminShow { get; set; }
-        public Nullable<byte> RegisterGift { get; set; }
-        public Nullable<byte> WinGame { get; set; }
-        public string UserGuid { get; set; }
-        public string TransactionID { get; set; }
-        public string AmountCurrency { get; set; }
-        public string Subpid { get; set; }
-        public Nullable<System.Guid> Pid { get; set; }
-        public Nullable<decimal> AffiliateCut { get; set; }
-        public string DomainName { get; set; }
-        public Nullable<int> NetPrice { get; set; }
-        public string ScratchingCardsId { get; set; }
-        public string Referer { get; set; }
-        public string Referrer { get; set; }
+        public Nullable<double> AffiliateCut { get; set; }
+        public Nullable<double> NetPrice { get; set; }
+        public Nullable<int> ReferrerID { get; set; }
         public string TransactionProcessor { get; set; }
-        public Nullable<byte> NoRealPayment { get; set; }
-        public Nullable<byte> ECommerceGateDebited { get; set; }
-        public Nullable<byte> ECommerceGateDebitedTrying { get; set; }
         public string OrderId { get; set; }
-        public Nullable<byte> DiscoveryOffer { get; set; }
-        public string Country { get; set; }
-        public string CCCountry { get; set; }
-        public string InatecTransactionid { get; set; }
+        public Nullable<int> CountryID { get; set; }
+        public Nullable<int> CCCountryID { get; set; }
+        public string InatecTransactionID { get; set; }
         public string InatecTransactionStatus { get; set; }
-        public Nullable<int> ShowInAdmin { get; set; }
-        public Nullable<byte> BuyFromSub { get; set; }
-        public Nullable<int> SubscriptionsPurchasesId { get; set; }
-        public Nullable<byte> JacS { get; set; }
         public int CcDetailsID { get; set; }
-        public Nullable<byte> CopyToLog { get; set; }
         public Nullable<byte> PaymentStatus { get; set; }
+        public int CustomerCurrencyID { get; set; }
+        public System.Guid CardCamGuid { get; set; }
+        public Nullable<double> CustomerMultipleFromDollar { get; set; }
     
         public virtual CcDetails CcDetails { get; set; }
         public virtual Users Users { get; set; }
@@ -325,8 +302,14 @@ namespace Entities
     
     public partial class ChatTimeUse
     {
-        public int TimeUse { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public ChatTimeUse()
+        {
+            this.UsersToUsersServicesPayments = new HashSet<UsersToUsersServicesPayments>();
+        }
+    
         public int ID { get; set; }
+        public int TimeUse { get; set; }
         public System.DateTime DateIn { get; set; }
         public System.DateTime Dateout { get; set; }
         public int SupplierID { get; set; }
@@ -334,26 +317,18 @@ namespace Entities
         public int CustomerID { get; set; }
         public bool SessionStatus { get; set; }
         public int UserAskToDelete { get; set; }
-        public byte UserValidate { get; set; }
-        public byte FullCharge { get; set; }
-        public byte BehindScreens { get; set; }
-        public byte SendMessage { get; set; }
-        public Nullable<decimal> MultiplySum { get; set; }
         public string EndError { get; set; }
-        public string PlayerReferrer { get; set; }
-        public Nullable<byte> VersionNum { get; set; }
-        public Nullable<int> SessionMinTime { get; set; }
-        public Nullable<double> PricePerMinute { get; set; }
-        public Nullable<double> TotalPrice { get; set; }
-        public byte RemoveStartTime { get; set; }
-        public Nullable<int> PerformerSeeTimeUse { get; set; }
-        public Nullable<int> Discount { get; set; }
-        public Nullable<byte> CloseDiscount { get; set; }
-        public double PerformerDiscount { get; set; }
-        public Nullable<byte> TheChatWasActive { get; set; }
-        public Nullable<System.DateTime> TheChatWasActiveDateIn { get; set; }
+        public Nullable<int> DomainID { get; set; }
+        public int VersionID { get; set; }
+        public Nullable<double> SupplierDiscount { get; set; }
+        public Nullable<System.DateTime> AnswerDateIn { get; set; }
         public System.Guid ChatTimeUseGuid { get; set; }
+        public byte IsAnswer { get; set; }
+        public byte CallViewStatus { get; set; }
+        public byte IsPayPerMinute { get; set; }
     
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<UsersToUsersServicesPayments> UsersToUsersServicesPayments { get; set; }
         public virtual Users Users { get; set; }
         public virtual Users Users1 { get; set; }
     }
@@ -363,20 +338,14 @@ namespace Entities
     using System;
     using System.Collections.Generic;
     
-    public partial class Countries
-    {
-        public int Id { get; set; }
-        public string CountryEn { get; set; }
-        public string CountryHe { get; set; }
-    }
-}
-namespace Entities
-{
-    using System;
-    using System.Collections.Generic;
-    
     public partial class CountryList
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public CountryList()
+        {
+            this.DomainsList = new HashSet<DomainsList>();
+        }
+    
         public string CountryName { get; set; }
         public int ID { get; set; }
         public int TimeZoneID { get; set; }
@@ -391,6 +360,8 @@ namespace Entities
         public int SiteMessageID { get; set; }
     
         public virtual Currencies Currencies { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<DomainsList> DomainsList { get; set; }
     }
 }
 namespace Entities
@@ -404,6 +375,8 @@ namespace Entities
         public Currencies()
         {
             this.CountryList = new HashSet<CountryList>();
+            this.Planes = new HashSet<Planes>();
+            this.SupplierToServicePrice = new HashSet<SupplierToServicePrice>();
         }
     
         public int ID { get; set; }
@@ -414,6 +387,48 @@ namespace Entities
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<CountryList> CountryList { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Planes> Planes { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<SupplierToServicePrice> SupplierToServicePrice { get; set; }
+    }
+}
+namespace Entities
+{
+    using System;
+    using System.Collections.Generic;
+    
+    public partial class DomainIDToUsers
+    {
+        public int ID { get; set; }
+        public int DomainID { get; set; }
+        public int UserID { get; set; }
+    
+        public virtual Users Users { get; set; }
+        public virtual DomainsList DomainsList { get; set; }
+    }
+}
+namespace Entities
+{
+    using System;
+    using System.Collections.Generic;
+    
+    public partial class DomainProperties
+    {
+        public int ID { get; set; }
+        public int DomainID { get; set; }
+        public string MainAPPActivity { get; set; }
+        public string AppBarBackgroundColor { get; set; }
+        public byte RealPhoneView { get; set; }
+        public string AppBackgroundColor { get; set; }
+        public byte ExtractUserPhoneContacts { get; set; }
+        public string AppButtonColor { get; set; }
+        public string AppSplashImage { get; set; }
+        public byte IsAddultApp { get; set; }
+        public string AppButtonTextColor { get; set; }
+        public string AppSplashIcon { get; set; }
+    
+        public virtual DomainsList DomainsList { get; set; }
     }
 }
 namespace Entities
@@ -423,6 +438,13 @@ namespace Entities
     
     public partial class DomainsList
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public DomainsList()
+        {
+            this.DomainIDToUsers = new HashSet<DomainIDToUsers>();
+            this.DomainProperties = new HashSet<DomainProperties>();
+        }
+    
         public int ID { get; set; }
         public string DomainName { get; set; }
         public int DomainTypeID { get; set; }
@@ -456,6 +478,12 @@ namespace Entities
         public Nullable<int> DnxCustomerID { get; set; }
         public int TemplateID { get; set; }
         public string Googletagmanager { get; set; }
+    
+        public virtual CountryList CountryList { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<DomainIDToUsers> DomainIDToUsers { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<DomainProperties> DomainProperties { get; set; }
     }
 }
 namespace Entities
@@ -485,12 +513,6 @@ namespace Entities
     
     public partial class Employees
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Employees()
-        {
-            this.SupportCorrespondence = new HashSet<SupportCorrespondence>();
-        }
-    
         public int ID { get; set; }
         public string Email { get; set; }
         public string Password { get; set; }
@@ -499,8 +521,6 @@ namespace Entities
         public byte Active { get; set; }
     
         public virtual EmployeeManageLevels EmployeeManageLevels { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<SupportCorrespondence> SupportCorrespondence { get; set; }
     }
 }
 namespace Entities
@@ -514,6 +534,7 @@ namespace Entities
         public Languages()
         {
             this.SiteMessagesToLanguages = new HashSet<SiteMessagesToLanguages>();
+            this.SupplierToLanguages = new HashSet<SupplierToLanguages>();
         }
     
         public int ID { get; set; }
@@ -525,6 +546,8 @@ namespace Entities
         public virtual Languages Languages2 { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<SiteMessagesToLanguages> SiteMessagesToLanguages { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<SupplierToLanguages> SupplierToLanguages { get; set; }
     }
 }
 namespace Entities
@@ -647,21 +670,18 @@ namespace Entities
     {
         public int Online { get; set; }
         public int SupplierID { get; set; }
-        public System.DateTime Lastvisit { get; set; }
-        public System.DateTime Ulastvisit { get; set; }
+        public System.DateTime SupplierLastVisit { get; set; }
+        public System.DateTime CustomerLastVisit { get; set; }
         public int CustomerID { get; set; }
         public System.Guid RndNumber { get; set; }
-        public int GetUserGettingSendUser { get; set; }
+        public int SupplierGettingCustomer { get; set; }
         public int LastCustomerID { get; set; }
         public System.DateTime LastStatusChange { get; set; }
-        public byte AdminAlert { get; set; }
         public byte FreeChat { get; set; }
         public System.DateTime TimeTheChatStart { get; set; }
-        public byte NewTip { get; set; }
+        public byte LiveMessage { get; set; }
         public int SumUserTime { get; set; }
         public int IsQA { get; set; }
-        public System.Guid UserTmpGuid { get; set; }
-        public int GetUserApproveSendUser { get; set; }
     
         public virtual Users Users { get; set; }
         public virtual Users Users1 { get; set; }
@@ -688,14 +708,78 @@ namespace Entities
     using System;
     using System.Collections.Generic;
     
-    public partial class PerformersPhotos
+    public partial class PaymentStrings
     {
-        public string PhotoGuid { get; set; }
+        public int ID { get; set; }
+        public string PaymentString { get; set; }
+        public short Active { get; set; }
+        public string PaymentTX { get; set; }
+        public int UserID { get; set; }
         public System.DateTime DateIn { get; set; }
-        public int PhotoId { get; set; }
-        public int SupplierID { get; set; }
+        public string PaymentPlayerID { get; set; }
+        public string TxnType { get; set; }
+    }
+}
+namespace Entities
+{
+    using System;
+    using System.Collections.Generic;
     
-        public virtual Users Users { get; set; }
+    public partial class Planes
+    {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Planes()
+        {
+            this.PlanToPlanproperties = new HashSet<PlanToPlanproperties>();
+        }
+    
+        public int ID { get; set; }
+        public int PlanTitle { get; set; }
+        public System.DateTime DateIn { get; set; }
+        public int PriceShow { get; set; }
+        public double PriceCalc { get; set; }
+        public int CurrencyID { get; set; }
+    
+        public virtual Currencies Currencies { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<PlanToPlanproperties> PlanToPlanproperties { get; set; }
+    }
+}
+namespace Entities
+{
+    using System;
+    using System.Collections.Generic;
+    
+    public partial class PlanProperties
+    {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public PlanProperties()
+        {
+            this.PlanToPlanproperties = new HashSet<PlanToPlanproperties>();
+        }
+    
+        public int ID { get; set; }
+        public System.DateTime DateIn { get; set; }
+        public int PropertyName { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<PlanToPlanproperties> PlanToPlanproperties { get; set; }
+    }
+}
+namespace Entities
+{
+    using System;
+    using System.Collections.Generic;
+    
+    public partial class PlanToPlanproperties
+    {
+        public int ID { get; set; }
+        public int PalnID { get; set; }
+        public int PlanPropertiesID { get; set; }
+        public int Quantity { get; set; }
+    
+        public virtual Planes Planes { get; set; }
+        public virtual PlanProperties PlanProperties { get; set; }
     }
 }
 namespace Entities
@@ -718,12 +802,12 @@ namespace Entities
     public partial class Prices
     {
         public int Id { get; set; }
-        public Nullable<int> PriceILS { get; set; }
-        public Nullable<int> TimeExpire { get; set; }
-        public string TextHE { get; set; }
-        public string DiscountText { get; set; }
-        public Nullable<byte> PriceStatus { get; set; }
-        public Nullable<int> PriceEUR { get; set; }
+        public int PriceInDollarPay { get; set; }
+        public int DisplayName { get; set; }
+        public byte IsVisible { get; set; }
+        public int PriceInDollarGet { get; set; }
+    
+        public virtual SiteMessages SiteMessages { get; set; }
     }
 }
 namespace Entities
@@ -777,11 +861,15 @@ namespace Entities
         public int ID { get; set; }
         public decimal PaySumParam { get; set; }
         public System.DateTime WindowsServiceLastUpdate { get; set; }
-        public string UserAppVersion { get; set; }
+        public Nullable<int> UserAppVersionID { get; set; }
         public Nullable<int> UserAppForceVesion { get; set; }
         public int VideoResoultionWidth { get; set; }
         public int VideoResoultionHeight { get; set; }
         public int FramePerSecond { get; set; }
+        public Nullable<int> MessageForAppUserUpgrade { get; set; }
+        public Nullable<byte> saveLogForWebRTC { get; set; }
+    
+        public virtual Versions Versions { get; set; }
     }
 }
 namespace Entities
@@ -794,6 +882,7 @@ namespace Entities
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public SiteMessages()
         {
+            this.Prices = new HashSet<Prices>();
             this.SiteMessagesToLanguages = new HashSet<SiteMessagesToLanguages>();
         }
     
@@ -802,6 +891,8 @@ namespace Entities
         public System.DateTime DateIn { get; set; }
         public Nullable<int> DataType { get; set; }
     
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Prices> Prices { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<SiteMessagesToLanguages> SiteMessagesToLanguages { get; set; }
     }
@@ -888,6 +979,49 @@ namespace Entities
     using System;
     using System.Collections.Generic;
     
+    public partial class SupplierToLanguages
+    {
+        public int ID { get; set; }
+        public int UserID { get; set; }
+        public int LanguageID { get; set; }
+        public System.DateTime DateIn { get; set; }
+    
+        public virtual Languages Languages { get; set; }
+        public virtual Users Users { get; set; }
+    }
+}
+namespace Entities
+{
+    using System;
+    using System.Collections.Generic;
+    
+    public partial class SupplierToServicePrice
+    {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public SupplierToServicePrice()
+        {
+            this.Users1 = new HashSet<Users>();
+        }
+    
+        public int ID { get; set; }
+        public int SupplierID { get; set; }
+        public System.DateTime DateIn { get; set; }
+        public double PricePerMinute { get; set; }
+        public int CurrencyID { get; set; }
+        public System.Guid SupplierToServicePriceGuid { get; set; }
+        public double PricePerMessage { get; set; }
+    
+        public virtual Currencies Currencies { get; set; }
+        public virtual Users Users { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Users> Users1 { get; set; }
+    }
+}
+namespace Entities
+{
+    using System;
+    using System.Collections.Generic;
+    
     public partial class SupportChat
     {
         public int ID { get; set; }
@@ -918,8 +1052,6 @@ namespace Entities
         public int EmployeeID { get; set; }
         public string Sms { get; set; }
     
-        public virtual Admins Admins { get; set; }
-        public virtual Employees Employees { get; set; }
         public virtual SupportNew SupportNew { get; set; }
     }
 }
@@ -974,9 +1106,23 @@ namespace Entities
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<SupportCorrespondence> SupportCorrespondence { get; set; }
-        public virtual Users Users { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<TicketViewDates> TicketViewDates { get; set; }
+        public virtual Users Users { get; set; }
+    }
+}
+namespace Entities
+{
+    using System;
+    using System.Collections.Generic;
+    
+    public partial class sysdiagrams
+    {
+        public string name { get; set; }
+        public int principal_id { get; set; }
+        public int diagram_id { get; set; }
+        public Nullable<int> version { get; set; }
+        public byte[] definition { get; set; }
     }
 }
 namespace Entities
@@ -1059,27 +1205,33 @@ namespace Entities
             this.CcDetails = new HashSet<CcDetails>();
             this.ChatTimeUse = new HashSet<ChatTimeUse>();
             this.ChatTimeUse1 = new HashSet<ChatTimeUse>();
+            this.DomainIDToUsers = new HashSet<DomainIDToUsers>();
             this.LogCcFaild = new HashSet<LogCcFaild>();
             this.LogChatTimeUse = new HashSet<LogChatTimeUse>();
             this.LogChatTimeUse1 = new HashSet<LogChatTimeUse>();
             this.LogLastVisit = new HashSet<LogLastVisit>();
             this.NotsAboutCustomers = new HashSet<NotsAboutCustomers>();
             this.OnlineUsers1 = new HashSet<OnlineUsers>();
-            this.PerformersPhotos = new HashSet<PerformersPhotos>();
             this.RoomConversation = new HashSet<RoomConversation>();
             this.RoomConversation1 = new HashSet<RoomConversation>();
             this.SendUsersWriteAboutGetUsers = new HashSet<SendUsersWriteAboutGetUsers>();
             this.SendUsersWriteAboutGetUsers1 = new HashSet<SendUsersWriteAboutGetUsers>();
+            this.SupplierToLanguages = new HashSet<SupplierToLanguages>();
+            this.SupplierToServicePrice = new HashSet<SupplierToServicePrice>();
             this.SupportNew = new HashSet<SupportNew>();
             this.UserComputer = new HashSet<UserComputer>();
             this.UserComputer1 = new HashSet<UserComputer>();
+            this.UsersPhotos = new HashSet<UsersPhotos>();
             this.UsersLoggedIn = new HashSet<UsersLoggedIn>();
+            this.UsersProperties = new HashSet<UsersProperties>();
             this.UsersReview = new HashSet<UsersReview>();
             this.UsersReview1 = new HashSet<UsersReview>();
             this.UsersScore1 = new HashSet<UsersScore>();
             this.UsersScore2 = new HashSet<UsersScore>();
             this.UsersToUsers = new HashSet<UsersToUsers>();
             this.UsersToUsers1 = new HashSet<UsersToUsers>();
+            this.UsersToUsersServicesPayments = new HashSet<UsersToUsersServicesPayments>();
+            this.UsersToUsersServicesPayments1 = new HashSet<UsersToUsersServicesPayments>();
             this.WindowsServiceLogs = new HashSet<WindowsServiceLogs>();
             this.WindowsServiceLogs1 = new HashSet<WindowsServiceLogs>();
         }
@@ -1091,30 +1243,22 @@ namespace Entities
         public int ID { get; set; }
         public string IdPhoto { get; set; }
         public string Phone { get; set; }
-        public string SendPayment { get; set; }
         public string Email { get; set; }
         public string Pic1 { get; set; }
-        public string Pic2 { get; set; }
-        public string Pic3 { get; set; }
         public string AdminDetails { get; set; }
         public string ExtraDetails { get; set; }
         public Nullable<int> YearBirth { get; set; }
-        public Nullable<int> Location { get; set; }
-        public Nullable<int> Gender { get; set; }
+        public int Gender { get; set; }
         public Nullable<int> Referrer { get; set; }
-        public Nullable<decimal> UsersScore { get; set; }
+        public Nullable<double> UsersScore { get; set; }
         public Nullable<System.DateTime> LastLogin { get; set; }
         public Nullable<byte> DemoPerformer { get; set; }
         public Nullable<int> StudioId { get; set; }
         public string IpAddress { get; set; }
         public string CommunicationDetails { get; set; }
-        public Nullable<int> PaymentsMethod { get; set; }
         public Nullable<byte> AdminApprovedCard { get; set; }
-        public Nullable<byte> MinSessionLength { get; set; }
-        public Nullable<double> PricePerMinute { get; set; }
-        public Nullable<int> CurrencyID { get; set; }
-        public Nullable<byte> SmsActivation { get; set; }
-        public Nullable<int> SmsCode { get; set; }
+        public byte SmsActivation { get; set; }
+        public int SmsCode { get; set; }
         public string CountryCode { get; set; }
         public System.Guid MainModelGuid { get; set; }
         public string FToken { get; set; }
@@ -1123,10 +1267,16 @@ namespace Entities
         public Nullable<double> Latitude { get; set; }
         public Nullable<double> Longitude { get; set; }
         public string City { get; set; }
-        public Nullable<byte> IsSupplier { get; set; }
+        public byte IsSupplier { get; set; }
         public string GenerateNumber { get; set; }
         public byte NeedUpdate { get; set; }
         public System.Guid UserChatGuid { get; set; }
+        public byte IsPublicUser { get; set; }
+        public int CustomerCurrencyID { get; set; }
+        public byte SubscriptionIsActive { get; set; }
+        public byte SubscriptionType { get; set; }
+        public Nullable<int> SupplierToServicePriceID { get; set; }
+        public int DomainID { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<AntiFraudLog> AntiFraudLog { get; set; }
@@ -1153,6 +1303,8 @@ namespace Entities
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ChatTimeUse> ChatTimeUse1 { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<DomainIDToUsers> DomainIDToUsers { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<LogCcFaild> LogCcFaild { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<LogChatTimeUse> LogChatTimeUse { get; set; }
@@ -1166,8 +1318,6 @@ namespace Entities
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<OnlineUsers> OnlineUsers1 { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<PerformersPhotos> PerformersPhotos { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<RoomConversation> RoomConversation { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<RoomConversation> RoomConversation1 { get; set; }
@@ -1175,6 +1325,11 @@ namespace Entities
         public virtual ICollection<SendUsersWriteAboutGetUsers> SendUsersWriteAboutGetUsers { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<SendUsersWriteAboutGetUsers> SendUsersWriteAboutGetUsers1 { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<SupplierToLanguages> SupplierToLanguages { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<SupplierToServicePrice> SupplierToServicePrice { get; set; }
+        public virtual SupplierToServicePrice SupplierToServicePrice1 { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<SupportNew> SupportNew { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
@@ -1184,7 +1339,11 @@ namespace Entities
         public virtual Users Users1 { get; set; }
         public virtual Users Users2 { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<UsersPhotos> UsersPhotos { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<UsersLoggedIn> UsersLoggedIn { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<UsersProperties> UsersProperties { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<UsersReview> UsersReview { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
@@ -1197,6 +1356,10 @@ namespace Entities
         public virtual ICollection<UsersToUsers> UsersToUsers { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<UsersToUsers> UsersToUsers1 { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<UsersToUsersServicesPayments> UsersToUsersServicesPayments { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<UsersToUsersServicesPayments> UsersToUsersServicesPayments1 { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<WindowsServiceLogs> WindowsServiceLogs { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
@@ -1219,6 +1382,37 @@ namespace Entities
         public string BrowserDetails { get; set; }
         public string Password { get; set; }
         public string SessionID { get; set; }
+    
+        public virtual Users Users { get; set; }
+    }
+}
+namespace Entities
+{
+    using System;
+    using System.Collections.Generic;
+    
+    public partial class UsersPhotos
+    {
+        public string PhotoGuid { get; set; }
+        public System.DateTime DateIn { get; set; }
+        public int ID { get; set; }
+        public int UserID { get; set; }
+    
+        public virtual Users Users { get; set; }
+    }
+}
+namespace Entities
+{
+    using System;
+    using System.Collections.Generic;
+    
+    public partial class UsersProperties
+    {
+        public int ID { get; set; }
+        public string PropertyName { get; set; }
+        public byte IsPublic { get; set; }
+        public int UserID { get; set; }
+        public System.DateTime DateIn { get; set; }
     
         public virtual Users Users { get; set; }
     }
@@ -1283,6 +1477,12 @@ namespace Entities
     
     public partial class UsersToUsersMessages
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public UsersToUsersMessages()
+        {
+            this.UsersToUsersServicesPayments = new HashSet<UsersToUsersServicesPayments>();
+        }
+    
         public int ID { get; set; }
         public System.DateTime DateIn { get; set; }
         public int CustomerID { get; set; }
@@ -1296,6 +1496,52 @@ namespace Entities
         public byte MessageType { get; set; }
         public string VideoImage { get; set; }
         public string MessageGuid { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<UsersToUsersServicesPayments> UsersToUsersServicesPayments { get; set; }
+    }
+}
+namespace Entities
+{
+    using System;
+    using System.Collections.Generic;
+    
+    public partial class UsersToUsersServicesPayments
+    {
+        public int ID { get; set; }
+        public Nullable<int> UsersToUsersMessagesID { get; set; }
+        public int SupplierToServicePriceID { get; set; }
+        public double CustomerMultipleFromDollar { get; set; }
+        public double SupplierMultipleFromDollar { get; set; }
+        public double TotalPriceInDollar { get; set; }
+        public Nullable<int> ChatTimeUseID { get; set; }
+        public Nullable<int> CustomerID { get; set; }
+    
+        public virtual ChatTimeUse ChatTimeUse { get; set; }
+        public virtual UsersToUsersMessages UsersToUsersMessages { get; set; }
+        public virtual Users Users { get; set; }
+        public virtual Users Users1 { get; set; }
+    }
+}
+namespace Entities
+{
+    using System;
+    using System.Collections.Generic;
+    
+    public partial class Versions
+    {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Versions()
+        {
+            this.Setting = new HashSet<Setting>();
+        }
+    
+        public int ID { get; set; }
+        public System.DateTime DateIn { get; set; }
+        public string VersionNumber { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Setting> Setting { get; set; }
     }
 }
 namespace Entities

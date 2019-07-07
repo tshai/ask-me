@@ -1,0 +1,264 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" %>
+
+<%@ Import Namespace="System.Linq" %>
+<%@ Register Src="../webcontrol/popMessage.ascx" TagName="popMessage" TagPrefix="uc1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- Hotjar Tracking Code for www.nifgashot.com -->
+<script>
+    (function (h, o, t, j, a, r) {
+        h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+        h._hjSettings = { hjid: 1281163, hjsv: 6 };
+        a = o.getElementsByTagName('head')[0];
+        r = o.createElement('script'); r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+</script>
+<script runat="server">
+    protected void Page_Load(object sender, System.EventArgs e)
+    {
+        Response.Cache.SetCacheability(HttpCacheability.NoCache);
+
+        if (Session["UserID"] == null)
+        {
+            Response.Redirect("/nifgashot/login.aspx");
+        }
+
+        if (checkIfNewSupportMessage(int.Parse(Session["UserID"].ToString())) == 1 & Request.Url.ToString().Contains("/nifgashot/tickets.aspx") == false & Request.Url.ToString().Contains("/nifgashot/readCorrespondenceHistory.aspx") == false)
+        {
+            try
+            {
+                errors.addErrorString("ticket redirect:" + Session["UserNum"]);
+            }
+            catch (Exception ex)
+            {
+            }
+            Response.Redirect("/nifgashot/tickets.aspx");
+        }
+
+        Response.Expires = 0;
+        Response.AddHeader("pragma", "no-cache");
+        Response.AddHeader("cache-control", "private");
+        Response.CacheControl = ("no-cache");
+
+        Session["time_balance"] = Nifgashot.sumUserBalance(int.Parse(Session["UserID"].ToString()));
+        Label1.Text = Session["time_balance"].ToString();
+        //Label1.Text = System.Convert.ToString(Session["time_balance"]);
+
+        // Call girl_player.LogUserActivetyInSitePages()
+
+        if (!IsPostBack)
+        {
+            HttpCookie objckusername;
+            objckusername = Request.Cookies["user"];
+        }
+
+        if (Request["message"] != null)
+        {
+            var message = populateClassFromDB.GetSiteMessages(int.Parse(Request.QueryString["message"].ToString()));
+            admin.popUp(Page, message);
+        }
+    }
+
+    public static int checkIfNewSupportMessage(int customerID)
+    {
+        using (var db = new Entities())
+        {
+            var q2 = (from a in db.SupportNew
+                      where a.UserID == customerID & a.IsReadCustomer == 0
+                      select a);
+            if (q2.Any() == false)
+            {
+                return 0;
+            }
+            else
+            {
+                return 1;
+            }
+        }
+    }
+</script>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138081008-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-138081008-1');
+    </script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122583017-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-122583017-1');
+    </script>
+
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <meta http-equiv="PRAGMA" content="NO-CACHE" />
+    <meta http-equiv="Expires" content="-1" />
+    <meta http-equiv="CACHE-CONTROL" content="NO-STORE" />
+    <style type="text/css">
+        #cameraExplain {
+            width: 100%;
+            height: 60px;
+            line-height: 60px;
+        }
+
+            #cameraExplain a:link, #cameraExplain a:visited {
+                text-decoration: none;
+                font-size: 20px;
+                color: white;
+            }
+
+        #promotion5 a:link {
+            color: white;
+            text-decoration: none;
+        }
+
+        #promotion5 a:visited {
+            color: white;
+            text-decoration: none;
+        }
+
+        .itemTemplate {
+            height: auto !important;
+        }
+
+        .signUpForm img {
+            height: 400px !important;
+            width: auto !important;
+        }
+    </style>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+<body class="user_body" style="margin-top: 0">
+    <form id="form1" runat="server">
+        <div id="wrapper">
+            <div class="top">
+                <div class="logo">
+                    <a href="/default.aspx">
+                        <img src="/App_Themes/main/images/nifgashot.png" /></a>
+                </div>
+                <div style="width: 250px; float: left;">
+                    <h2 class="time_left1">
+                        <%= Resources.Resources.Have %>&nbsp;<asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+                        &nbsp;<%= Resources.Resources.Seconds %></h2>
+                </div>
+                <ul class="topUl" id="topMenu">
+                    <li class="topLi"><a href="/nifgashot/performersList.aspx"><%= populateClassFromDB.GetSiteMessagesByKey("Main") %></a></li>
+                    <li class="topLi"><a href="/nifgashot/messages.aspx"><%= populateClassFromDB.GetSiteMessagesByKey("messages") %></a></li>
+                    <li class="topLi"><a href="/nifgashot/contact.aspx"><%=  populateClassFromDB.GetSiteMessagesByKey("supportCenter") %></a></li>
+                    <li class="topLi"><a href="/nifgashot/log_off.aspx"><%= populateClassFromDB.GetSiteMessagesByKey("LogOut") %></a></li>
+                </ul>
+
+                <div class="dropdown">
+                    <div id="mobileMenu" class="dropbtn" onclick="myFunction()"><i class="fas fa-bars"></i></div>
+                    <div id="myDropdown" class="dropdown-content">
+                        <li class="topLi"><a href="/nifgashot/performersList.aspx"><%= populateClassFromDB.GetSiteMessagesByKey("Main") %></a></li>
+                        <li class="topLi"><a href="/nifgashot/messages.aspx"><%= populateClassFromDB.GetSiteMessagesByKey("messages") %></a></li>
+                        <li class="topLi"><a href="/nifgashot/contact.aspx"><%=  populateClassFromDB.GetSiteMessagesByKey("supportCenter") %></a></li>
+                        <li class="topLi"><a href="/nifgashot/log_off.aspx"><%= populateClassFromDB.GetSiteMessagesByKey("LogOut") %></a></li>
+                    </div>
+                </div>
+            </div>
+            <div class="header3">
+                <%--				<div class="signUp">--%>
+
+                <div class="signUpForm">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+                <%--				</div>--%>
+            </div>
+
+        </div>
+        <div class="footer" style="display: none">
+            <div class="footerBox">
+                <ul>
+                    <li class="topLi"><a href="/nifgashot/performersList.aspx"><%= populateClassFromDB.GetSiteMessagesByKey("Main") %></a></li>
+                    <li class="topLi"><a href="/nifgashot/messages.aspx"><%= populateClassFromDB.GetSiteMessagesByKey("messages") %></a></li>
+                    <li class="topLi"><a href="/nifgashot/contact.aspx"><%=  populateClassFromDB.GetSiteMessagesByKey("supportCenter") %></a></li>
+                </ul>
+            </div>
+            <div class="footerBox">
+                <ul>
+                    <%--<li><a href="/users/rebill_card.aspx"><%= Resources.Resources.BuyingMoreTime%></a></li>--%>
+                    <%--<li><a href="/PhonePayment/PayCallCode.aspx"><%= Resources.Resources.BuyMoreTimeByThePhone %></a></li>--%>
+                    <%--						<li><a href="/users/terms.aspx">מונחים</a></li>
+						<li><a href="/users/privacypolicy.aspx">מדיניות פרטיות</a></li>--%>
+                </ul>
+            </div>
+            <div class="footerBox">
+                <img id="Img4" src="/App_Themes/main/images/visalogo.png" runat="server" alt="visa logo" style="width: 101px; height: 39px" />
+                <br />
+                <br />
+                <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="#" Text="" Visible="false"></asp:HyperLink>
+                <asp:Panel ID="googlePlus" runat="server" Visible="false">
+                    <div>
+                        regarding the confirmation of models being over 18  | חיות
+                עם בחורות ישראליות בביתן הפרטי</span> <span itemprop="rating" itemscope itemtype="http://data-vocabulary.org/Rating">
+                    <span itemprop="average"></span>out of <span itemprop="best">10</span>
+                </span>based on <span itemprop="votes">289</span> ratings. <span itemprop="count">5</span>
+                        user reviews.
+                    </div>
+                </asp:Panel>
+            </div>
+        </div>
+    </form>
+    <script type="text/javascript">
+
+        function myFunction() {
+            $("#myDropdown").addClass("show");
+        }
+
+        $(document).ready(function () {
+            if (screen.width < 999) {
+                $('#topMenu').css("display", "none");
+                $('#mobileMenu').css("display", "block");
+            }
+
+            $(window).click(function () {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            });
+
+            $('#mobileMenu').click(function (event) {
+                event.stopPropagation();
+            });
+        });
+
+        function blink(selector) {
+            $(selector).fadeOut('slow', function () {
+                $(this).fadeIn('slow', function () {
+                    blink(this);
+                });
+            });
+        }
+
+        blink('.fa-envelope');
+    </script>
+
+    <uc1:popMessage ID="popMessage2" runat="server" />
+
+</body>
+</html>

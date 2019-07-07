@@ -1,7 +1,8 @@
 ﻿var localVideo;
 var remoteVideo;
 var yourConn;
-var stream;
+var stream1='0';
+var track;
 var name = 'בחור';
 //var chat = $.connection.chatHub;
 var pc, sender;
@@ -22,7 +23,7 @@ function buildConnection() {
     catch (err) {
         console.log("46" - err.toString());
     }
-   
+
 
     //when a remote user adds stream to the peer connection, we display it 
     yourConn.ontrack = function (event) {//event listener
@@ -37,7 +38,7 @@ function buildConnection() {
     };
 
     /// open my camera 27-1-19
-    handleLogin('true', 1, function (x) {
+    handleLogin('true', 2, function (x) {
         if (x === 'true') {
             //  chat.server.Generic("Wrtc", JSON.stringify({
             //    type: "cOVAC",
@@ -84,10 +85,48 @@ function handleLogin(success, type, callback) {
     if (success === false) {
         alert("Ooops...try a different username");
     } else {
-        navigator.mediaDevices.getUserMedia({ video: Video, audio: true })
-            .then(function (myStream) {
-                localVideo.srcObject = myStream;
-                myStream.getTracks().forEach(track => yourConn.addTrack(track, myStream));
+        //********************** 
+        var cont;
+        if (type === 1) {
+            cont = { video: true, audio: true };
+        }
+        if (type === 2) {
+            cont = { video: false, audio: true };
+        }
+        if (type === 3) {
+            cont = {
+                video: {
+
+                    deviceId: 'sdfgd'
+                },
+                audio: {
+                    deviceId: 'sdfgd',
+                    sampleSize: 16,
+                    channelCount: 2
+                }
+            };
+        }
+
+        //yourConn.removeTrack(yourConn.getSenders()[0]);
+        if (stream1 != '0') {
+            yourConn.removeStream(stream1);
+        }
+       
+        navigator.mediaDevices.getUserMedia(
+
+            cont
+            //{ video: Video, audio: true }
+
+
+        )
+            .then(function (mysTREAM) {
+                stream1 = mysTREAM;
+                localVideo.srcObject = stream1;
+                yourConn.addStream(stream1);
+                //stream1.getTracks().forEach(track => yourConn.addTrack(track, stream1));
+                //stream1.getTracks().forEach(function (track) {
+                //    yourConn.addTrack(track, stream1);
+                //});
                 callback('true');
             })
             .catch(function (err) {
@@ -162,7 +201,7 @@ function handleCandidate(candidate) {
     }
     catch (err) {
         console.log("270-" + err.message);
-                //yourConn.addIceCandidate(new window.RTCIceCandidate(candidate.candidate)).catch(e => {
+        //yourConn.addIceCandidate(new window.RTCIceCandidate(candidate.candidate)).catch(e => {
     }
 
 };
@@ -170,32 +209,32 @@ function handleCandidate(candidate) {
 
 connection.on("SendMessage", function (message) {
     //console.log(message);
-        if (IsJsonString(message) === true) {
+    if (IsJsonString(message) === true) {
         var data = JSON.parse(message);
 
-            switch (data.type) {
-            
+        switch (data.type) {
+
             case "offer":
                 //alert("ss");
-                    console.log("GET-offer", "offer");
-                   // handleOffer(data.offer, "offer");
-                    handleOffer(data, "offer");
+                console.log("GET-offer", "offer");
+                // handleOffer(data.offer, "offer");
+                handleOffer(data, "offer");
                 break;
             case "answer":
                 console.log("GET-answer", "answer");
                 handleAnswer(data.answer);
                 break;
             case "candidate":
-                    console.log("GET-candidate", "candidate");
-                    handleCandidate(data);
+                console.log("GET-candidate", "candidate");
+                handleCandidate(data);
                 //handleCandidate(data.candidate);
                 break;
             case "leave":
                 handleLeave();
                 break;
             case "supplierAcceptChat":
-                    $("#waitForSuppliers").hide();
-                    $("#ringTone")[0].pause();
+                $("#waitForSuppliers").hide();
+                $("#ringTone")[0].pause();
                 return;
             case "conversation":
                 if (data.name === "finishChat5643g6a-") {// employee finish chat
@@ -214,7 +253,7 @@ connection.on("SendMessage", function (message) {
     if (message === "Login") {
         //console.log("Login-304", message);
         //handleLogin(('true', 1);
-        
+
     }
 
     if (message == "disconnectChat17" || message == "updateStatus743=1") {
@@ -248,11 +287,11 @@ function myTimer() {
 
 }
 var myVar = setInterval(myTimer, 3000);
-    //    .then(() => {
-    //    connection.invoke("GenericMessage", "Login", "Login", RndNumber.trim(), UserGuid.trim(), "0", "32E08B98-996B-4C5B-921A-35E43210FCB1").catch(function (err) {
-    //        return console.error(err.toString());
-    //    });
-    //});
+//    .then(() => {
+//    connection.invoke("GenericMessage", "Login", "Login", RndNumber.trim(), UserGuid.trim(), "0", "32E08B98-996B-4C5B-921A-35E43210FCB1").catch(function (err) {
+//        return console.error(err.toString());
+//    });
+//});
 
 //$.connection.hub.start().done(function () {
 //    chat.server.Generic("Initialize", "Initialize").catch(function (err) {
@@ -263,6 +302,52 @@ var myVar = setInterval(myTimer, 3000);
 //});
 
 
+function openCamera1() {
+    window.RTCPeerConnection = window.RTCPeerConnection || window.mozRTCPeerConnection || window.webkitRTCPeerConnection;
+    yourConn = new RTCPeerConnection(configuration);
+    //yourConn.removeStream(stream);//remove the stream from the connection .the other user stop see 
+    //if (stream1) {
+    //    stream1.getTracks().forEach(function (track) { track.stop(); });//delete all stream.this will stop sending video to the local video tag 
+    //}
+    handleLogin('true', 1, function (x) {
+        if (x == 'true') {
+        connection.invoke("Generic", "Wrtc", "openCam", RndNumber.trim(), CustomerID, SupplierID, "0", "32E08B98-996B-4C5B-921A-35E43210FCB1").catch(function (err) {
+            return console.log(err.message);
+        });
+
+        }
+    });
+
+
+}
+function closeMedia() {
+    console.log('Ending call');
+    yourConn.close();
+    //pc2.close();
+    yourConn = null;
+    //pc2 = null;
+    //hangupButton.disabled = true;
+    //callButton.disabled = false;
+
+}
+function closeCamera1() {
+
+
+
+    yourConn.removeStream(stream1);//remove the stream from the connection .the other user stop see 
+    if (stream1) {
+        stream1.getTracks().forEach(function (track) { track.stop(); });//delete all stream.this will stop sending video to the local video tag 
+    }
+    handleLogin('true', 2, function (x) {
+        if (x == 'true') {
+            connection.invoke("Generic", "Wrtc", "closeCam", RndNumber.trim(), CustomerID, SupplierID, "0", "32E08B98-996B-4C5B-921A-35E43210FCB1").catch(function (err) {
+                return console.log(err.message);
+            });
+        }
+    });
+
+
+}
 
 
 

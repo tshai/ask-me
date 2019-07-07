@@ -2,51 +2,59 @@
 
 <script runat="server">
 
-	Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs)
-		Dim head As HtmlHead = Page.Header
-		Dim metaDescription As New HtmlMeta()
-		metaDescription.Name = populateClassFromDB.GetSiteMessagesByKey("description")
-		metaDescription.Content = "שאלות כלליות עזרה ותשובות"
-		head.Controls.Add(metaDescription)
-		Page.Title = populateClassFromDB.GetSiteMessagesByKey("PricingTableTitle")
-	End Sub
+    Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs)
+        Dim head As HtmlHead = Page.Header
+        Dim metaDescription As New HtmlMeta()
+        metaDescription.Name = populateClassFromDB.GetSiteMessagesByKey("description")
+        metaDescription.Content = "שאלות כלליות עזרה ותשובות"
+        head.Controls.Add(metaDescription)
+        Page.Title = populateClassFromDB.GetSiteMessagesByKey("PricingTableTitle")
+        If Session("domainName") <> "en-US" Then
+            'featureLink.HRef = "#"
+            ' featureLink1.HRef = "#"
+            'featureLink2.HRef = "#"
+            'featureLink3.HRef = "#"
+            'featureLink4.HRef = "#"
+        End If
 
-	Protected Function showPrice(priceShow As Integer)
-		Using db = New Entities()
-			Dim domainName As String = Session("domainName")
-			Dim LanguageID = (From a In db.DomainsList Where a.DomainName = domainName Select a).FirstOrDefault().LanguageID
-			Dim planTitle_ = (From a In db.SiteMessagesToLanguages Where a.SiteMessageID = priceShow And a.LanguageID = LanguageID Select a).FirstOrDefault()
-			Return planTitle_.Message
-		End Using
-	End Function
+    End Sub
 
-	Protected Function showPlan(planTitle As Integer)
-		Using db = New Entities()
-			Dim domainName As String = Session("domainName")
-			Dim LanguageID = (From a In db.DomainsList Where a.DomainName = domainName Select a).FirstOrDefault().LanguageID
-			Dim planTitle_ = (From a In db.SiteMessagesToLanguages Where a.SiteMessageID = planTitle And a.LanguageID = LanguageID Select a).FirstOrDefault()
-			Return planTitle_.Message
-		End Using
-	End Function
+    Protected Function showPrice(priceShow As Integer)
+        Using db = New Entities.Entities()
+            Dim domainName As String = Session("domainName")
+            Dim LanguageID = (From a In db.DomainsList Where a.DomainName = domainName Select a).FirstOrDefault().LanguageID
+            Dim planTitle_ = (From a In db.SiteMessagesToLanguages Where a.SiteMessageID = priceShow And a.LanguageID = LanguageID Select a).FirstOrDefault()
+            Return planTitle_.Message
+        End Using
+    End Function
 
-	Protected Function showQuantity(planID As Integer, planPropertyID As Integer)
-		Using db = New Entities()
-			Dim plan_ = (From a In db.Planes Where a.ID = planID Select a).FirstOrDefault()
-			Dim planTOProperties_ = (From a In db.PlanToPlanproperties Where a.palnID = planID And a.planPropertiesID = planPropertyID Select a).FirstOrDefault()
-			If planTOProperties_.quantity = 0 Then
-				Return populateClassFromDB.GetSiteMessagesByKey("unlimited")
-			End If
-			If planPropertyID = 6 Then
-				If planTOProperties_.quantity < 1024 Then
-					Return planTOProperties_.quantity & " MB"
-				Else
-					Return planTOProperties_.quantity / 1024 & " GB"
-				End If
-			Else
-				Return planTOProperties_.quantity
-			End If
-		End Using
-	End Function
+    Protected Function showPlan(planTitle As Integer)
+        Using db = New Entities.Entities()
+            Dim domainName As String = Session("domainName")
+            Dim LanguageID = (From a In db.DomainsList Where a.DomainName = domainName Select a).FirstOrDefault().LanguageID
+            Dim planTitle_ = (From a In db.SiteMessagesToLanguages Where a.SiteMessageID = planTitle And a.LanguageID = LanguageID Select a).FirstOrDefault()
+            Return planTitle_.Message
+        End Using
+    End Function
+
+    Protected Function showQuantity(planID As Integer, planPropertyID As Integer)
+        Using db = New Entities.Entities()
+            Dim plan_ = (From a In db.Planes Where a.ID = planID Select a).FirstOrDefault()
+            Dim planTOProperties_ = (From a In db.PlanToPlanproperties Where a.palnID = planID And a.planPropertiesID = planPropertyID Select a).FirstOrDefault()
+            If planTOProperties_.quantity = 0 Then
+                Return populateClassFromDB.GetSiteMessagesByKey("unlimited")
+            End If
+            If planPropertyID = 6 Then
+                If planTOProperties_.quantity < 1024 Then
+                    Return planTOProperties_.quantity & " MB"
+                Else
+                    Return planTOProperties_.quantity / 1024 & " GB"
+                End If
+            Else
+                Return planTOProperties_.quantity
+            End If
+        End Using
+    End Function
 </script>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
 	<style>
@@ -84,12 +92,12 @@
 							<li><%#showQuantity(Eval("ID"), 7) %> <%=populateClassFromDB.GetSiteMessagesByKey("freePositions") %></li>
 							<li><%=populateClassFromDB.GetSiteMessagesByKey("candidateListPackages") %></li>
 							<li><%=populateClassFromDB.GetSiteMessagesByKey("AddBrand")%></li>
-							<li class="grey"><a href="../companies/companySignUp.aspx" class="button"><%=populateClassFromDB.GetSiteMessagesByKey("choose")%></a></li>
+							<%--<li class="grey"><a href="../companies/companySignUp.aspx" class="button"><%=populateClassFromDB.GetSiteMessagesByKey("choose")%></a></li>--%>
 						</ul>
 					</div>
 				</ItemTemplate>
 			</asp:ListView>
-			<asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:cam %>"
+			<asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:AskMe %>"
 				SelectCommand="select * from Planes"></asp:SqlDataSource>
 
 			<%--<div class="columns">
@@ -182,7 +190,7 @@
 			}
 
 			.price .header {
-				background-color: #111;
+				background-color: #0a5f6d;
 				color: white;
 				font-size: 25px;
 			}

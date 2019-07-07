@@ -215,6 +215,34 @@ public class Tools
         }
     }
 
+    public static bool ImageExtensionisOK(string fileExtension)
+    {
+        string[] allowedExtensions = new[] { ".jpg", ".jpeg", ".png", ".gif" };
+        for (int i = 0; i <= allowedExtensions.Length - 1; i++)
+        {
+            if ((fileExtension).ToLower() == allowedExtensions[i])
+                return true;
+        }
+        return false;
+    }
+
+    public static void multipleButtonClicks(System.Web.UI.Page myPage, System.Web.UI.WebControls.Button myButton)
+    {
+        System.Text.StringBuilder sb = new System.Text.StringBuilder();
+        if (myPage.Validators.Count > 0)
+        {
+            sb.Append("if (typeof(Page_ClientValidate) == 'function') { ");
+            sb.Append("if (Page_ClientValidate() == false) { return false; }} ");
+        }
+        sb.Append("this.value = 'please wait...';");
+        sb.Append("this.disabled = true;");
+        sb.Append(myPage.ClientScript.GetPostBackEventReference(myButton, ""));
+        // sb.Append(myPage.GetPostBackEventReference(myButton));
+        sb.Append(";");
+        myButton.Attributes.Add("onclick", sb.ToString());
+        sb = null;
+    }
+
 }
 public class countryData
 {

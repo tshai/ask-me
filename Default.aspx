@@ -72,7 +72,7 @@
                 width: 100%;
                 display: inline-block;
                 text-align: center;
-                COLOR: #474747;
+                COLOR: #000;
             }
 .feature {
     width: 300px;
